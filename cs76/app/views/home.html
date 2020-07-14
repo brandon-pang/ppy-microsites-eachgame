@@ -1,0 +1,498 @@
+<!--<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>-->
+<!--sec1 top-->
+<section id="section-one" ng-style="{'background-image':'url('+imgUrl+'main-banner.jpg)'}">
+	<div class="container">
+		<!-- top nav starts -->
+		<div class="top-nav">
+			<div class="navlink"><a href="{{pathUrl[0].loc}}" target="_blank">{{ 'goback' | translate}}</a></div>
+			<div class="logo-wrapper">
+				<a href="{{pathUrl[0].loc}}" target="_blank">
+					<img ng-src="https://d3mrh9k3iunait.cloudfront.net/static/event/cs71/assets/images/blackshot-logo.png"
+					     class="logo" alt="logo" style="width:300px;">
+				</a>
+			</div>
+			<div class="language-bar">
+				<div class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;">
+                            <img preload-image ng-src="{{imgUrl}}flag-{{ flag }}.svg" height="15" alt="flag">
+                        </span>
+						<span>{{ lang }}</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-uk.svg"
+                                     height="15" alt="english flag">
+                            </span>
+							<span translate="{{ 'english' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('de')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-germany.svg" height="15" alt="german flag">
+                            </span>
+							<span translate="{{ 'german' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('fr')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-france.svg" height="15"
+                                     alt="french flag"></span>
+							<span translate="{{ 'french' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('pt')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-brazil.svg" height="15"
+                                     alt="brazil flag"></span>
+							<span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- top nav ends -->
+		<div class="event-logo-cont" ng-style="{'background-image':'url('+imgUrl+'title-'+flag+'.png)'}"
+		     data-aos="zoom-in">
+		</div>
+		<div class="event-exp-cont">
+			<p class="desc" translate="s1-text1"></p>
+		</div>
+	</div>
+</section>
+<!--sec2 login content-->
+<section id="section-one-two" ng-style="{'background-image':'url('+imgUrl+'bgs/bg1.jpg)'}">
+	<div class="event-title-cont" data-aos="fade-up" data-aos-delay="400">
+		<div class="top-texts">
+			<h2 class="title">Steins VS Hearts</h2>
+			<p class="desc" translate="s2-text1"></p>
+			<h3 class="sub-title" translate="s2-sub-title"></h3>
+			<div class="score-box">
+				<img ng-src="{{imgUrl}}rifle.svg" alt="">
+				<p class="score-desc">{{'s2-box-text1'|translate}}</p>
+			</div>
+			<div class="score-box">
+				<img ng-src="{{imgUrl}}sniper.svg" alt="">
+				<p class="score-desc">{{'s2-box-text2'|translate}}</p>
+			</div>
+			<div class="score-box">
+				<img ng-src="{{imgUrl}}melee.svg" alt="">
+				<p class="score-desc">{{'s2-box-text3'|translate}}</p>
+			</div>
+			<div class="sign-in-box">
+				<div class="sign-in-cont" ng-show="!user.isLogin">
+					<p class="s-title">{{'s2-signin-text1'|translate}}</p>
+					<a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs76">
+						<div class="signin-btn">
+							<svg width="22px" height="28px" viewBox="0 0 20 25" version="1.1"
+							     xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+								<g id="icon-papaya" stroke="none" stroke-width="1" fill="#ffffff">
+									<g id="Home" transform="translate(-1083.000000, -966.000000)">
+										<g id="Papaya-Invite" transform="translate(0.000000, 920.000000)">
+											<g id="papaya" transform="translate(1083.000000, 46.000000)">
+												<path d="M11.4871795,0.4 L10.9230769,0.4 C-1.23076923,0.6 0.512820513,20.5 0.512820513,20.5 C1.12820513,26.6 8.15384615,24.9 9.23076923,20.9 C9.48717949,19.75 10.6153846,17.4 12.6666667,16.95 C18.3076923,15.65 19.6410256,11.35 19.6410256,8.7 C19.6410256,3.95 16.2564103,0.55 11.4871795,0.4 Z M11.1794872,12.85 C8.61538462,12.85 6.51282051,10.8 6.51282051,8.3 C6.51282051,5.8 8.61538462,3.75 11.1794872,3.75 C13.7435897,3.75 15.8461538,5.8 15.8461538,8.3 C15.8461538,10.8 13.7435897,12.85 11.1794872,12.85 Z M13.8461538,7.45 L12.6666667,7.45 C12.4102564,7.45 12.2564103,7.3 12.2564103,7.05 L12.2564103,5.9 C12.2564103,5.65 12.1025641,5.5 11.8461538,5.5 L10.5641026,5.5 C10.3076923,5.5 10.1538462,5.65 10.1538462,5.9 L10.1538462,7.05 C10.1538462,7.3 10,7.45 9.74358974,7.45 L8.56410256,7.45 C8.30769231,7.45 8.15384615,7.6 8.15384615,7.85 L8.15384615,9 C8.15384615,9.25 8.30769231,9.4 8.56410256,9.4 L9.74358974,9.4 C10,9.4 10.1538462,9.55 10.1538462,9.8 L10.1538462,11 C10.1538462,11.25 10.3076923,11.4 10.5641026,11.4 L11.8461538,11.4 C12.1025641,11.4 12.2564103,11.25 12.2564103,11 L12.2564103,9.85 C12.2564103,9.6 12.4102564,9.45 12.6666667,9.45 L13.8461538,9.45 C14.1025641,9.45 14.2564103,9.3 14.2564103,9.05 L14.2564103,7.9 C14.2051282,7.6 14,7.45 13.8461538,7.45 Z"
+												      id="Shape"></path>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+							<div class="sign-title">{{'sign-in'|translate}}</div>
+						</div>
+					</a>
+					<a href="https://www.papayaplay.com/account/signup.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs75"
+					   class="sub-title">{{'s2-singin-text2'|translate}}</a>
+				</div>
+				<div class="log-in-cont" ng-show="user.isLogin">
+					<div class="cir"
+					     ng-style="{'background-image':'url(https://blackshotupload.s3.amazonaws.com/'+user.photo+')'}"></div>
+					<div class="profile">
+						<div class="l-title">Hi</div>
+						<div class="l-username">{{user.userid}}</div>
+					</div>
+				</div>
+				<!-- Team A point -->
+				<div class="earn-point-cont" ng-show="user.isLogin && event.teamType=='A'">
+					<div class="team-text">Team Steins</div>
+					<div class="team-text-box">
+						<div class="point-title">{{'u-point'|translate}}</div>
+						<div class="point-desc">{{event.teamPointA|number}} PTS</div>
+					</div>
+				</div>
+				<!-- Team B point -->
+				<div class="earn-point-cont2" ng-show="user.isLogin && event.teamType=='B'">
+					<div class="team-text">Team Hearts</div>
+					<div class="team-text-box">
+						<div class="point-title">{{'u-point'|translate}}</div>
+						<div class="point-desc">{{event.teamPointB|number}} PTS</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="divline-wrap">
+				<div class="divline-l"></div>
+				<div class="divline-item">
+					<p class="item-text"
+					   ng-show="!user.isLogin || event.teamType=='N'">{{'select-u-team'|translate}}</p>
+					<p class="item-text" ng-show="event.teamType=='A' || event.teamType=='B'">{{'points'|translate}}</p>
+				</div>
+				<div class="divline-r"></div>
+			</div>
+
+			<!-- Team Selecter -->
+			<div class="team-select-cont" ng-show="!user.isLogin || event.teamType=='N'">
+				<div class="team-box1" ng-class="{'non-click':!user.isLogin,'':user.isLogin}"
+				     ng-click="[selectTeam('A'),isClick=false]">
+					<div class="team-title">STEINS</div>
+					<div class="team-img-wrap"><img ng-src="{{imgUrl}}section1/cs76-team1-icon.png" alt=""></div>
+					<div class="team-desc">
+						<p class="desc-title" ng-style="{'font-size': fontSize1 }">{{'prize-u-team'|translate}}</p>
+						<p class="desc-item">- HK416 Forest*<br>- MP7 Aurum<br>- G36 Desert</p>
+					</div>
+					<div class="team-slogan" ng-style="{'font-size': fontSize2 }">{{'pick-team'|translate}}</div>
+				</div>
+
+				<div class="team-box2" ng-class="{'non-click':!user.isLogin,'':user.isLogin}"
+				     ng-click="[selectTeam('B'), isClick=false]">
+					<div class="team-title2">GINGERBREAD HEARTS</div>
+					<div class="team-img-wrap"><img ng-src="{{imgUrl}}section1/cs76-team2-icon.png" alt=""></div>
+					<div class="team-desc">
+						<p class="desc-title" ng-style="{'font-size':fontSize1}">{{'prize-u-team'|translate}}</p>
+						<p class="desc-item">- HK416 Snow*<br>- MP7 Custom Type<br>- G36 Neon</p>
+					</div>
+					<div class="team-slogan" ng-style="{'font-size':fontSize2}">{{'pick-team'|translate}}</div>
+				</div>
+
+				<div class="selected-window" ng-show="event.teamSelectWindow">
+					<img ng-src="{{imgUrl}}section1/cs76-team1-icon.png" alt="" ng-if="teamType=='A'">
+					<img ng-src="{{imgUrl}}section1/cs76-team2-icon.png" alt="" ng-if="teamType=='B'">
+					<div class="w-title">{{event.teamSelectMsg}}</div>
+					<div class="y-btn-wrap">
+						<div class="y-btn" ng-click="[reqTeam(teamType), isClick=true]" ng-show="!isClick">YES</div>
+						<div class="n-btn" ng-click="[event.teamSelectWindow=false, isClick=true]"
+						     ng-show="!isClick">NO
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Team Gauge -->
+			<div class="team-gauge" ng-show="user.isLogin && event.teamType !='N'">
+				<div class="icon-loc-cont">
+					<div class="icon-steins-cont" ng-style="{'left':event.teamPosA}">
+						<div class="per-no">{{event.teamPerA}}</div>
+						<div class="icon-cont"><img ng-src="{{imgUrl}}section1/cs76-team1-icon.png" alt=""></div>
+					</div>
+					<div class="icon-ginger-cont" ng-style="{'right':event.teamPosB}">
+						<div class="per-no">{{event.teamPerB}}</div>
+						<div class="icon-cont"><img ng-src="{{imgUrl}}section1/cs76-team2-icon.png" alt=""></div>
+					</div>
+				</div>
+				<div class="bt-text">
+					<div class="left">STEINS</div>
+					<div class="right">GINGERBREAD HEARTS</div>
+				</div>
+			</div>
+			<div class="line" ng-show="user.isLogin && event.teamType !='N'"></div>
+
+			<!-- Team A -->
+			<div class="selected-team-box" ng-show="user.isLogin && event.teamType =='A'">
+				<div class="top-icon-cont"><img ng-src="{{imgUrl}}section1/cs76-team1-icon.png" alt=""></div>
+				<div class="mid-item-wrap">
+					<div class="mid-title">{{'prize-u-team'|translate}}</div>
+					<div class="mid-item-cont">
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/407.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>HK416 Forest*</div>
+							</div>
+						</div>
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/614.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>MP7 Aurum</div>
+							</div>
+						</div>
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/440.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>G36 Desert</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bt-pts-cont">{{event.teamPointA|number}} PTS</div>
+			</div>
+			<!-- Team A end -->
+			<!-- Team B-->
+			<div class="selected-team-box2" ng-show="user.isLogin && event.teamType =='B'">
+				<div class="top-icon-cont"><img ng-src="{{imgUrl}}section1/cs76-team2-icon.png" alt=""></div>
+				<div class="mid-item-wrap">
+					<div class="mid-title">{{'prize-u-team'|translate}}</div>
+					<div class="mid-item-cont">
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/721.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>HK416 Snow*</div>
+							</div>
+						</div>
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/576.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>MP7 Custom Type</div>
+							</div>
+						</div>
+						<div class="mid-item-box">
+							<div><img ng-src="{{imgUrl}}prizes/775.png" alt=""></div>
+							<div class="mid-text-state">
+								<div>G36 Neon</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bt-pts-cont">{{event.teamPointB|number}} PTS</div>
+			</div>
+			<!-- Team B end-->
+			<div class="team-notice-cont">{{'s2-singin-notice'|translate}}</div>
+		</div>
+	</div>
+</section>
+<!--Bring Back: Start -->
+<section id="section-two" ng-style="{'background-image':'url('+imgUrl+'bgs/bg2.jpg)'}">
+	<div class="container">
+		<div class="s4-title-wrap">
+			<h3 translate="s3-subtitle" data-aos="fade-up"></h3>
+			<h2 translate="s3-title" data-aos="fade-up"></h2>
+			<p translate="{{ 's3-text1' }}" data-aos="fade-up"></p>
+		</div>
+		<div class="map-cont">
+			<div class="map-left" data-aos="fade-right">
+				<div class="pageNoWrap">
+					<p>{{slickIndex0}}/5</p>
+				</div>
+				<slick class="slider-wrap" settings="slickConfig" id="slick0">
+					<img ng-src="{{imgUrl}}new-map/map-slider/berlin_01.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/map-slider/berlin_02.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/map-slider/berlin_03.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/map-slider/berlin_04.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/map-slider/berlin_05.jpg" alt="">
+				</slick>
+			</div>
+			<div class="map-right" data-aos="fade-left">
+				<div class="blueprint" ng-style="{'background-image':'url('+imgUrl+'new-map/view.png)'}">
+					<div class="point1">
+						<div class="point" ng-init="point1Visible = false" ng-mouseover="point1Visible = true"
+						     ng-mouseleave="point1Visible = false">
+							<span class="pulse1"></span>
+							<span class="pulse2"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-a.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point1Visible"
+						     ng-style="{'background-image':'url('+imgUrl+'new-map/view-pins/point1.jpg)'}"></div>
+					</div>
+
+					<div class="point2">
+						<div class="point" ng-init="point2Visible = false" ng-mouseover="point2Visible = true"
+						     ng-mouseleave="point2Visible = false">
+							<span class="pulse1-1"></span>
+							<span class="pulse2-1"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-b.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point2Visible"
+						     ng-style="{'background-image':'url('+imgUrl+'new-map/view-pins/point2.jpg)'}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Sec2; Brand new map: End -->
+
+<!--Sec4; Goldbox: Start -->
+<section id="section4-main" ng-style="{'background-image':'url('+imgUrl+'bgs/bg3.jpg)'}">
+	<div class="container">
+		<h3 data-aos="fade-up">GOLDBOX</h3>
+		<h2 translate="s4-title" data-aos="fade-up"></h2>
+		<p class="text-desc" translate="s4-text1" data-aos="fade-up"></p>
+		<a class="see-btn-link" href="{{pathUrl[2].loc}}" target="_blank">
+			<div class="see-btn" data-aos="fade-up"><p class="text">{{'goldbox-info' | translate}}</p></div>
+		</a>
+	</div>
+</section>
+<!--Sec4; New Weapon1: Start -->
+<section id="section4-fire" ng-style="{'background-image':'url('+imgUrl+'ice-fire/weapons-bg.jpg)'}">
+	<div class="container" data-aos="fade-up">
+		<slick class="slider-wrap" settings="slickConfig">
+			<img ng-src="{{imgUrl}}ice-fire/hk/cs76-hk416_1.png" alt="">
+			<img ng-src="{{imgUrl}}ice-fire/hk/cs76-hk416_2.png" alt="">
+		</slick>
+	</div>
+</section>
+
+<!--Sec4; New Weapon1 desc: Start -->
+<section id="section4-fire-desc">
+	<div class="container" data-aos="fade-up">
+		<h3 class="sub-title" data-aos="fade-up">{{'s4-w1-subtitle' | translate}}</h3>
+		<h2 class="title" data-aos="fade-up">HK416 OMEGA</h2>
+		<p class="desc" data-aos="fade-up" translate="s4-w1-desc"></p>
+	</div>
+</section>
+
+<!--Sec4; New Weapon2: Start -->
+<section id="section4-ice" ng-style="{'background-image':'url('+imgUrl+'ice-fire/weapons-bg.jpg)'}">
+	<div class="container" data-aos="fade-up">
+		<slick class="slider-wrap" settings="slickConfig">
+			<img ng-src="{{imgUrl}}ice-fire/hk/cs76-hk416-lite_1.png" alt="">
+			<img ng-src="{{imgUrl}}ice-fire/hk/cs76-hk416-lite_2.png" alt="">
+		</slick>
+	</div>
+</section>
+<!--Sec4; New Weapon2 desc: Start -->
+<section id="section4-ice-desc">
+	<div class="container">
+		<h3 class="sub-title" data-aos="fade-up">{{'s4-w2-subtitle' | translate}}</h3>
+		<h2 class="title" data-aos="fade-up">HK416 OMEGA lite</h2>
+		<p class="desc"  data-aos="fade-up" translate="s4-w2-desc"></p>
+	</div>
+</section>
+<!--Sec4; New Weapon: End -->
+
+<!--Sec5; Map Boost: Start -->
+<section id="section-five" ng-style="{'background-image':'url('+imgUrl+'events/map-boost-bg.jpg)'}">
+	<div class="container">
+		<div class="cont-left" data-aos="flip-left">
+			<h2 translate="s5-subtitle"></h2>
+			<p translate="{{ 's5-text' }}" class="context"></p>
+			<a class="see-btn-link" href="{{pathUrl[3].loc}}" target="_blank">
+				<div class="see-btn"><p class="text">{{'more-info' | translate}}</p></div>
+			</a>
+		</div>
+		<div class="cont-right">
+			<div class="pageNoWrap">
+				<p>{{slickIndex1}}/5</p>
+			</div>
+			<slick class="slider-wrap" settings="slickConfig" id="slick1">
+				<img ng-src="{{imgUrl}}boost-maps-slider/boost_berlin.jpg" alt="">
+				<img ng-src="{{imgUrl}}boost-maps-slider/boost_broken.jpg" alt="">
+				<img ng-src="{{imgUrl}}boost-maps-slider/boost_office.jpg" alt="">
+				<img ng-src="{{imgUrl}}boost-maps-slider/boost_reclaim.jpg" alt="">
+				<img ng-src="{{imgUrl}}boost-maps-slider/boost_scretbase.jpg" alt="">
+			</slick>
+		</div>
+	</div>
+</section>
+<!--Sec5; Map Boost: End -->
+<!--Sec6; Mastering zone control: Start -->
+<section id="section-six" ng-style="{'background-image':'url('+imgUrl+'events/mastering-bg.jpg)'}">
+	<div class="container">
+		<div class="cont-left" data-aos="flip-left">
+			<h2 translate="s6-title"></h2>
+			<p translate="{{ 's6-text' }}" class="context"></p>
+			<div class="calender-wrap">
+				<div class="cal-left">
+					<i class="icon-calendar"></i>
+				</div>
+				<div class="cal-right">
+					<p><span
+							class="text-bold">{{'every-friday-october' | translate}}</span><br>6th, 13th, 20th, 27th<br>20h (CEST)
+					</p>
+				</div>
+			</div>
+			<a class="see-btn-link" href="{{pathUrl[4].loc}}" target="_blank">
+				<div class="see-btn"><p class="text">{{'more-info' | translate}}</p></div>
+			</a>
+		</div>
+		<div class="cont-right" data-aos="flip-right">
+			<img ng-src="{{imgUrl}}events/polizei-char.png">
+		</div>
+	</div>
+</section>
+<!--Sec6; Mastering zone control: End -->
+<!--Sec7; Mastering zone control: Start -->
+<section id="section-seven" ng-style="{'background-image':'url('+imgUrl+'events/mastering-bg.jpg)'}">
+	<div class="container">
+		<div class="cont-left" data-aos="flip-left">
+			<h2>GM Brawl</h2>
+			<p translate="{{ 's7-text' }}" class="context"></p>
+			<div class="calender-wrap">
+				<div class="cal-left">
+					<i class="icon-calendar"></i>
+				</div>
+				<div class="cal-right">
+					<p><span
+							class="text-bold">{{'wednesday' | translate}}</span><br>{{'sep-19th-tue-oct' | translate}}<br>20h - 21h (CEST)
+					</p>
+				</div>
+			</div>
+			<a class="see-btn-link" href="{{pathUrl[5].loc}}" target="_blank">
+				<div class="see-btn"><p class="text">{{'more-info' | translate}}</p></div>
+			</a>
+		</div>
+		<div class="cont-right" data-aos="flip-right">
+			<img ng-src="{{imgUrl}}events/mastering-char.png">
+		</div>
+	</div>
+</section>
+<!--Sec6; Mastering zone control: End -->
+
+<script>
+	AOS.init({
+		offset: -500,
+		duration: 1200,
+		delay: 100
+	})
+	$('.various').fancybox({
+		maxWidth: 800,
+		maxHeight: 600,
+		fitToView: false,
+		width: '70%',
+		height: '70%',
+		autoSize: false,
+		closeClick: false,
+		openEffect: 'none',
+		closeEffect: 'none'
+	});
+
+	$('.mid-item-box').on('mouseover', function () {
+		$(this).find('.mid-text-state').removeClass('mid-out').addClass('mid-hover');
+	})
+
+	$('.mid-item-box').on('mouseout', function () {
+		$(this).find('.mid-text-state').removeClass('mid-hover').addClass('mid-out');
+	})
+
+
+	$.ajax('/users', {
+		success: (function(res) {
+			console.log(res);
+		}).bind(this),
+		error: (function(err) {
+			console.log(err.message);
+		}).bind(this)
+	});
+</script>
+<footer id="footer">
+	<div class="container">
+		<div class="flex-align-items flex-justify-between flex-container">
+			<div class="item1">
+				<a href="{{pathUrl[6].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+				                                  style="width:142px;"></a>
+			</div>
+			<div class="item2">
+				<p class="copyright">{{ 'copyright' | translate }}</p>
+			</div>
+			<div class="item3">
+				<a href="{{pathUrl[7].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+				                                  style="width:161px;"></a>
+			</div>
+		</div>
+	</div>
+</footer>

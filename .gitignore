@@ -1,15 +1,15 @@
 # dependencies
-/node_modules
+*/node_modules
 
 # production
-/build
-/dist
+*/build
+*/dist
 
 # misc
-/.idea
-/.tmp
-/.sass-cache
-.DS_Store
-config.codekit3
-Gruntfile-min.js
+*/.idea
+*/.tmp
+*/.sass-cache
+*/.DS_Store
+*/config.codekit3
+*/Gruntfile-min.js
 
