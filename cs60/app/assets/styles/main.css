@@ -1,0 +1,1072 @@
+@font-face {
+  font-family: 'Glyphter';
+  src: url("fonts/Glyphter.eot");
+  src: url("fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("fonts/Glyphter.woff") format("woff"), url("fonts/Glyphter.ttf") format("truetype"), url("fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 16, ../../../app/assets/styles/main.scss */
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 25, ../../../app/assets/styles/main.scss */
+.icon-header-mouse:before {
+  content: '\0041';
+}
+
+/* line 26, ../../../app/assets/styles/main.scss */
+.icon-arrow-up:before {
+  content: '\0044';
+}
+
+/* line 27, ../../../app/assets/styles/main.scss */
+.icon-arrow-down:before {
+  content: '\0045';
+}
+
+/* line 28, ../../../app/assets/styles/main.scss */
+.icon-arrow-left:before {
+  content: '\0046';
+}
+
+/* line 29, ../../../app/assets/styles/main.scss */
+.icon-arrow-right:before {
+  content: '\0047';
+}
+
+/* line 30, ../../../app/assets/styles/main.scss */
+.icon-go-back:before {
+  content: '\0048';
+}
+
+/* line 31, ../../../app/assets/styles/main.scss */
+.icon-home:before {
+  content: '\0049';
+}
+
+/* line 32, ../../../app/assets/styles/main.scss */
+.icon-home-active:before {
+  content: '\004A';
+}
+
+/* line 34, ../../../app/assets/styles/main.scss */
+.icon-arrow-left, .icon-arrow-right {
+  color: #fff;
+}
+
+/* line 40, ../../../app/assets/styles/main.scss */
+.ct-series-a .ct-bar {
+  stroke: #b0ac5f;
+  stroke-width: 40px;
+}
+
+/* line 45, ../../../app/assets/styles/main.scss */
+.ct-grid {
+  stroke: #888;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 51, ../../../app/assets/styles/main.scss */
+.ct-label.ct-horizontal.ct-end {
+  font-size: 1.4rem;
+  color: #fff;
+  stroke: #fff;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 59, ../../../app/assets/styles/main.scss */
+.ct-label.ct-vertical.ct-start {
+  font-size: 1.2rem;
+  color: #fff;
+  stroke: #fff;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 71, ../../../app/assets/styles/main.scss */
+.carousel {
+  position: relative;
+  width: 960px;
+  height: auto;
+  border: none;
+  overflow: visible;
+}
+
+/* slide container */
+/* line 81, ../../../app/assets/styles/main.scss */
+.carousel .slides {
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+
+/* slide item */
+/* line 90, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem {
+  position: absolute;
+  background-image: url(../images/section-nine-carousel-bg.jpg);
+  display: block !important;
+  opacity: 0.3 !important;
+}
+/* line 96, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem.active-slide {
+  opacity: 1 !important;
+  transform: scale(1.1, 1.1);
+}
+
+/* line 102, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description {
+  display: block;
+  padding: 20px;
+  width: 100%;
+}
+/* line 106, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description h4 {
+  font-size: 3.3rem;
+  font-weight: bold;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  letter-spacing: 3px;
+  padding-bottom: 10px;
+}
+/* line 113, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description p {
+  font-size: 2.2rem;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  line-height: 1;
+}
+
+/* line 120, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem img {
+  margin: 0 auto;
+  padding-top: 20px;
+  border: none;
+  display: block;
+  width: 40% !important;
+  height: auto !important;
+}
+
+/* line 129, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .wide-img {
+  width: 60% !important;
+  height: auto !important;
+}
+
+/* DIRECTION BUTTON */
+/* line 136, ../../../app/assets/styles/main.scss */
+.carousel-btn, .carousel .nextButton, .carousel .prevButton {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 9999;
+}
+/* line 143, ../../../app/assets/styles/main.scss */
+.carousel-btn i, .carousel .nextButton i, .carousel .prevButton i {
+  transition: all 0.2s;
+}
+/* line 145, ../../../app/assets/styles/main.scss */
+.carousel-btn i:hover, .carousel .nextButton i:hover, .carousel .prevButton i:hover {
+  color: #face70;
+}
+
+/* line 151, ../../../app/assets/styles/main.scss */
+.carousel .nextButton {
+  right: 10px;
+  top: 120px;
+}
+
+/* line 157, ../../../app/assets/styles/main.scss */
+.carousel .prevButton {
+  left: -10px;
+  top: 120px;
+}
+
+/* line 166, ../../../app/assets/styles/main.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 172, ../../../app/assets/styles/main.scss */
+.cust-btn {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  padding: 13px 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* line 183, ../../../app/assets/styles/main.scss */
+.tooltip-inner {
+  background-color: #face70;
+  color: #000;
+  font-size: 1.4rem;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* line 192, ../../../app/assets/styles/main.scss */
+.tooltip.left .tooltip-arrow {
+  border-left-color: #face70;
+}
+
+/* line 196, ../../../app/assets/styles/main.scss */
+.shadow-bg {
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent);
+  -webkit-background-image: linear-gradient(to bottom, black, transparent);
+  -moz-background-image: linear-gradient(to bottom, black, transparent);
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 206, ../../../app/assets/styles/main.scss */
+.white {
+  color: #fff;
+}
+
+/* line 210, ../../../app/assets/styles/main.scss */
+.black {
+  color: #000;
+}
+
+/* line 214, ../../../app/assets/styles/main.scss */
+.primary-color {
+  color: #b0ac5f;
+}
+
+/* line 218, ../../../app/assets/styles/main.scss */
+.secondary-color {
+  color: #face70;
+}
+
+/* line 222, ../../../app/assets/styles/main.scss */
+.section-four-color {
+  color: #b3ce4e;
+}
+
+/* line 226, ../../../app/assets/styles/main.scss */
+.section-six-color {
+  color: #897b61;
+}
+
+/* line 230, ../../../app/assets/styles/main.scss */
+.section-seven-color {
+  color: #f5b400;
+}
+
+/* line 234, ../../../app/assets/styles/main.scss */
+.section-eight-color {
+  color: #f87e4c;
+}
+
+/* line 238, ../../../app/assets/styles/main.scss */
+.section-nine-color {
+  color: #e05922;
+}
+
+/* line 242, ../../../app/assets/styles/main.scss */
+.section-ten-color {
+  color: #664a61;
+}
+
+/* line 246, ../../../app/assets/styles/main.scss */
+.section-eleven-color {
+  color: #ffc600;
+}
+
+/* line 250, ../../../app/assets/styles/main.scss */
+.extrabold {
+  font-weight: 900;
+}
+
+/* line 254, ../../../app/assets/styles/main.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 258, ../../../app/assets/styles/main.scss */
+.semi-bold {
+  font-weight: 600;
+}
+
+/* line 262, ../../../app/assets/styles/main.scss */
+.strike {
+  text-decoration: line-through;
+}
+
+/* line 266, ../../../app/assets/styles/main.scss */
+.no-strike {
+  text-decoration: none;
+}
+
+/* line 270, ../../../app/assets/styles/main.scss */
+.accent-font {
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+}
+
+/* line 278, ../../../app/assets/styles/main.scss */
+.ft-size-2 {
+  font-size: 2rem;
+}
+
+/* line 282, ../../../app/assets/styles/main.scss */
+.ft-size-2dot5 {
+  font-size: 2.5rem;
+}
+
+/* line 286, ../../../app/assets/styles/main.scss */
+.ft-size-3 {
+  font-size: 3rem;
+}
+
+/* line 290, ../../../app/assets/styles/main.scss */
+.ft-size-4 {
+  font-size: 4rem;
+}
+
+/* line 294, ../../../app/assets/styles/main.scss */
+.ft-size-5 {
+  font-size: 5rem;
+}
+
+/* line 298, ../../../app/assets/styles/main.scss */
+.ft-size-6 {
+  font-size: 6rem;
+}
+
+/* line 302, ../../../app/assets/styles/main.scss */
+.ft-size-7 {
+  font-size: 7rem;
+}
+
+/* line 306, ../../../app/assets/styles/main.scss */
+.ft-size-8 {
+  font-size: 8rem;
+}
+
+/* line 310, ../../../app/assets/styles/main.scss */
+.ft-size-9 {
+  font-size: 9rem;
+}
+
+/* line 314, ../../../app/assets/styles/main.scss */
+.ft-size-10 {
+  font-size: 10rem;
+}
+
+/* line 318, ../../../app/assets/styles/main.scss */
+.ft-size-11 {
+  font-size: 11rem;
+}
+
+/* line 322, ../../../app/assets/styles/main.scss */
+.ft-size-12 {
+  font-size: 12rem;
+}
+
+/* line 326, ../../../app/assets/styles/main.scss */
+.ft-size-13 {
+  font-size: 13rem;
+}
+
+/* line 330, ../../../app/assets/styles/main.scss */
+.line-height-dot5 {
+  line-height: 0.5;
+}
+
+/* line 334, ../../../app/assets/styles/main.scss */
+.line-height-dot8 {
+  line-height: 0.8;
+}
+
+/* line 338, ../../../app/assets/styles/main.scss */
+.line-height-1 {
+  line-height: 1;
+}
+
+/* line 342, ../../../app/assets/styles/main.scss */
+.lt-spacing-3 {
+  letter-spacing: 3px;
+}
+
+/* line 346, ../../../app/assets/styles/main.scss */
+.lt-spacing-5 {
+  letter-spacing: 5px;
+}
+
+/* line 350, ../../../app/assets/styles/main.scss */
+.lt-spacing-10 {
+  letter-spacing: 10px;
+}
+
+/* line 354, ../../../app/assets/styles/main.scss */
+.text-shadow {
+  text-shadow: 3px 3px 15px #000;
+}
+
+/* line 358, ../../../app/assets/styles/main.scss */
+.drop-shadow {
+  box-shadow: 5px 5px 10px #555;
+}
+
+/* line 362, ../../../app/assets/styles/main.scss */
+.pad-top-10 {
+  padding-top: 10px;
+}
+
+/* line 366, ../../../app/assets/styles/main.scss */
+.pad-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* line 370, ../../../app/assets/styles/main.scss */
+.pad-top-20 {
+  padding-top: 20px;
+}
+
+/* line 374, ../../../app/assets/styles/main.scss */
+.pad-bot-20 {
+  padding-bottom: 20px;
+}
+
+/* line 378, ../../../app/assets/styles/main.scss */
+.pad-top-30 {
+  padding-top: 30px;
+}
+
+/* line 382, ../../../app/assets/styles/main.scss */
+.pad-bot-30 {
+  padding-bottom: 30px;
+}
+
+/* line 386, ../../../app/assets/styles/main.scss */
+.pad-top-40 {
+  padding-top: 40px;
+}
+
+/* line 390, ../../../app/assets/styles/main.scss */
+.pad-bot-40 {
+  padding-bottom: 40px;
+}
+
+/* line 394, ../../../app/assets/styles/main.scss */
+.pad-top-50 {
+  padding-top: 50px;
+}
+
+/* line 398, ../../../app/assets/styles/main.scss */
+.pad-bot-50 {
+  padding-bottom: 50px;
+}
+
+/* line 402, ../../../app/assets/styles/main.scss */
+.pad-bot-60 {
+  padding-bottom: 60px;
+}
+
+/* line 406, ../../../app/assets/styles/main.scss */
+.pad-top-70 {
+  padding-top: 70px;
+}
+
+/* line 410, ../../../app/assets/styles/main.scss */
+.pad-top-100 {
+  padding-top: 100px;
+}
+
+/* line 414, ../../../app/assets/styles/main.scss */
+.pad-bot-70 {
+  padding-bottom: 70px;
+}
+
+/* line 418, ../../../app/assets/styles/main.scss */
+.pad-bot-100 {
+  padding-bottom: 100px;
+}
+
+/* line 422, ../../../app/assets/styles/main.scss */
+.pad-left-20 {
+  padding-left: 20px;
+}
+
+/* line 426, ../../../app/assets/styles/main.scss */
+.pad-right-20 {
+  padding-right: 20px;
+}
+
+/* line 430, ../../../app/assets/styles/main.scss */
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+/* line 434, ../../../app/assets/styles/main.scss */
+.mg-bot-20 {
+  margin-bottom: 20px;
+}
+
+/* line 438, ../../../app/assets/styles/main.scss */
+.mg-top-30 {
+  margin-top: 30px;
+}
+
+/* line 442, ../../../app/assets/styles/main.scss */
+.mg-bot-30 {
+  margin-bottom: 30px;
+}
+
+/* line 446, ../../../app/assets/styles/main.scss */
+.mg-top-50 {
+  margin-top: 50px;
+}
+
+/* line 450, ../../../app/assets/styles/main.scss */
+.mg-bot-50 {
+  margin-bottom: 50px;
+}
+
+/* line 454, ../../../app/assets/styles/main.scss */
+.col-20 {
+  float: left;
+  width: 20%;
+}
+
+/* line 459, ../../../app/assets/styles/main.scss */
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+/* line 464, ../../../app/assets/styles/main.scss */
+.col-33 {
+  float: left;
+  width: 33.333%;
+}
+
+/* line 469, ../../../app/assets/styles/main.scss */
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+/* line 474, ../../../app/assets/styles/main.scss */
+.col-60 {
+  float: left;
+  width: 60%;
+}
+
+/* line 479, ../../../app/assets/styles/main.scss */
+.col-70 {
+  float: left;
+  width: 70%;
+}
+
+/* line 484, ../../../app/assets/styles/main.scss */
+.col-80 {
+  float: left;
+  width: 80%;
+}
+
+/* line 489, ../../../app/assets/styles/main.scss */
+.table-center {
+  margin: 0 auto;
+  display: table;
+}
+
+/* line 497, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 501, ../../../app/assets/styles/main.scss */
+md-checkbox.md-checked.green-cb .md-icon {
+  background-color: #b0ac5f;
+}
+
+/* line 505, ../../../app/assets/styles/main.scss */
+md-checkbox.white-border .md-icon {
+  border-width: 1px;
+  border-color: #fff;
+}
+
+/* line 511, ../../../app/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 515, ../../../app/assets/styles/main.scss */
+p {
+  font-size: 1.6rem;
+}
+
+/* line 519, ../../../app/assets/styles/main.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 522, ../../../app/assets/styles/main.scss */
+a:hover {
+  text-decoration: none;
+  color: #face70;
+}
+
+/* line 528, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 533, ../../../app/assets/styles/main.scss */
+body {
+  color: #000;
+  font-family: "proxima-nova", verdana, sans-serif;
+  font-size: 1.6rem;
+  background-color: #000;
+  min-width: 960px;
+  max-width: 1920px;
+}
+
+/* line 544, ../../../app/assets/styles/main.scss */
+#side-nav {
+  position: fixed;
+  top: 35%;
+  right: 40px;
+  z-index: 9999;
+}
+/* line 550, ../../../app/assets/styles/main.scss */
+#side-nav .home {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 2.7rem;
+}
+/* line 559, ../../../app/assets/styles/main.scss */
+#side-nav .bullet {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+/* line 566, ../../../app/assets/styles/main.scss */
+#side-nav .bullet:hover {
+  background-color: #face70;
+}
+
+/* line 572, ../../../app/assets/styles/main.scss */
+#section-one {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  height: 1075px;
+}
+/* line 578, ../../../app/assets/styles/main.scss */
+#section-one #top-divider {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  z-index: 2;
+  background-color: #8b8b8b;
+}
+/* line 586, ../../../app/assets/styles/main.scss */
+#section-one .go-back {
+  font-size: 1.4rem;
+  position: relative;
+}
+/* line 589, ../../../app/assets/styles/main.scss */
+#section-one .go-back a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 593, ../../../app/assets/styles/main.scss */
+#section-one .go-back i {
+  color: #000;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+/* line 600, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-toggle {
+  color: #000;
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 606, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-toggle span:first-child {
+  padding-right: 10px;
+}
+/* line 611, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-menu {
+  background-color: #000;
+  margin: 0;
+  border: 0;
+  width: 160px;
+  right: 0;
+  left: auto;
+}
+/* line 620, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-menu li span:first-child {
+  padding: 0 10px;
+}
+/* line 624, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-menu li a {
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 628, ../../../app/assets/styles/main.scss */
+#section-one .dropdown .dropdown-menu li a:hover {
+  background: none;
+  color: #face70 !important;
+}
+/* line 637, ../../../app/assets/styles/main.scss */
+#section-one .logo {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 15px;
+  display: block;
+  margin: 0 auto;
+  -ms-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  -moz-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+}
+/* line 649, ../../../app/assets/styles/main.scss */
+#section-one .container {
+  position: relative;
+  z-index: 2;
+}
+/* line 654, ../../../app/assets/styles/main.scss */
+#section-one .scroll-down {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 180px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  transition: all 0.5s;
+}
+/* line 666, ../../../app/assets/styles/main.scss */
+#section-one .scroll-down:hover {
+  color: #face70;
+}
+/* line 669, ../../../app/assets/styles/main.scss */
+#section-one .scroll-down i {
+  font-size: 6rem;
+  line-height: 1;
+  display: block;
+}
+/* line 674, ../../../app/assets/styles/main.scss */
+#section-one .scroll-down span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  line-height: 1.2;
+  display: block;
+}
+
+/* line 685, ../../../app/assets/styles/main.scss */
+#section-two {
+  overflow: hidden;
+  background-image: url(../images/section-two-bg.png), url(../images/section-one-bg.jpg);
+  background-position: center top, center -1145px;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 930px;
+}
+/* line 692, ../../../app/assets/styles/main.scss */
+#section-two .container {
+  position: relative;
+}
+/* line 694, ../../../app/assets/styles/main.scss */
+#section-two .container .cust-btn {
+  border: 2px solid #face70;
+}
+/* line 696, ../../../app/assets/styles/main.scss */
+#section-two .container .cust-btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* line 704, ../../../app/assets/styles/main.scss */
+#section-three {
+  overflow: hidden;
+  background-image: url(../images/section-three-bg.png), url(../images/section-two-bg.png);
+  background-position: center top, center -929px;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 800px;
+}
+/* line 712, ../../../app/assets/styles/main.scss */
+#section-three .container {
+  position: relative;
+}
+/* line 715, ../../../app/assets/styles/main.scss */
+#section-three .container .day-5 {
+  background-image: url(../images/section-three-day-5-bg.jpg);
+  background-repeat: no-repeat;
+  float: left;
+  width: 260px;
+  height: 191px;
+  margin-right: 20px;
+}
+/* line 723, ../../../app/assets/styles/main.scss */
+#section-three .container .day-10 {
+  background-image: url(../images/section-three-day-10-bg.jpg);
+  background-repeat: no-repeat;
+  float: left;
+  width: 260px;
+  height: 191px;
+  margin-right: 20px;
+}
+/* line 731, ../../../app/assets/styles/main.scss */
+#section-three .container .day-15 {
+  background-image: url(../images/section-three-day-15-bg.jpg);
+  background-repeat: no-repeat;
+  float: left;
+  width: 260px;
+  height: 191px;
+}
+/* line 738, ../../../app/assets/styles/main.scss */
+#section-three .container .day-20 {
+  background-image: url(../images/section-three-day-20-bg.jpg);
+  background-repeat: no-repeat;
+  width: 819px;
+  height: 191px;
+}
+
+/* line 746, ../../../app/assets/styles/main.scss */
+#section-four {
+  overflow: hidden;
+  background-image: url(../images/section-four-bg.png), url(../images/section-three-bg.png);
+  background-position: center top, center -800px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* line 753, ../../../app/assets/styles/main.scss */
+#section-four .container {
+  position: relative;
+}
+
+/* line 759, ../../../app/assets/styles/main.scss */
+#section-five {
+  overflow: hidden;
+  background-image: url(../images/section-five-bg.png), url(../images/section-four-bg.png);
+  background-position: center top, center -900px;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+  height: 1100px;
+}
+/* line 767, ../../../app/assets/styles/main.scss */
+#section-five .container {
+  position: relative;
+}
+
+/* line 772, ../../../app/assets/styles/main.scss */
+#section-six {
+  overflow: hidden;
+  background-image: url(../images/section-six-bg.png), url(../images/section-five-bg.png);
+  background-position: center top, center -1100px;
+  background-repeat: no-repeat, no-repeat;
+  position: relative;
+}
+/* line 779, ../../../app/assets/styles/main.scss */
+#section-six .container {
+  position: relative;
+}
+/* line 783, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-prev, #section-six #section-six-slide .slick-next {
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* line 791, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide {
+  position: relative;
+}
+/* line 793, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide img {
+  width: 500px;
+}
+/* line 796, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-prev {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  z-index: 5;
+  color: #fff;
+}
+/* line 803, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-prev:hover {
+  color: #face70;
+}
+/* line 806, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-prev:before {
+  font-family: 'Glyphter';
+  content: '\0046';
+  font-size: 4rem;
+  transition: all 0.5s;
+}
+/* line 814, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-next {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  z-index: 5;
+  color: #fff;
+}
+/* line 821, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-next:hover {
+  color: #face70;
+}
+/* line 824, ../../../app/assets/styles/main.scss */
+#section-six #section-six-slide .slick-next:before {
+  font-family: 'Glyphter';
+  content: '\0047';
+  font-size: 4rem;
+  transition: all 0.5s;
+}
+/* line 833, ../../../app/assets/styles/main.scss */
+#section-six .section-six-subsection {
+  overflow: hidden;
+  background-color: #000;
+  position: relative;
+}
+/* line 837, ../../../app/assets/styles/main.scss */
+#section-six .section-six-subsection .checkbox-wrapper {
+  display: block;
+}
+/* line 842, ../../../app/assets/styles/main.scss */
+#section-six .van {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+}
+
+/* line 850, ../../../app/assets/styles/main.scss */
+#section-seven {
+  background-image: url(../images/section-seven-bg.jpg);
+  background-position: center 10%;
+  position: relative;
+}
+/* line 855, ../../../app/assets/styles/main.scss */
+#section-seven #section-seven-button {
+  margin-top: 50px;
+  background-image: url("../images/section-seven-button.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 330px;
+  height: 65px;
+  background-position: 0 0;
+}
+/* line 863, ../../../app/assets/styles/main.scss */
+#section-seven #section-seven-button:hover {
+  background-position: 0 -65px;
+}
+/* line 870, ../../../app/assets/styles/main.scss */
+#section-seven .container .col-33:first-child img {
+  margin-left: 50px;
+}
+/* line 874, ../../../app/assets/styles/main.scss */
+#section-seven .container .col-33:last-child img {
+  margin-left: 50px;
+}
+/* line 879, ../../../app/assets/styles/main.scss */
+#section-seven .container .cust-btn {
+  border: 2px solid #f5b400;
+}
+/* line 881, ../../../app/assets/styles/main.scss */
+#section-seven .container .cust-btn:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* line 890, ../../../app/assets/styles/main.scss */
+#section-eight {
+  overflow: hidden;
+  background-image: url(../images/section-eight-bg.png), url(../images/section-seven-bg.jpg);
+  background-position: center top, center -900px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 899, ../../../app/assets/styles/main.scss */
+#section-nine {
+  overflow: hidden;
+  background-image: url(../images/section-nine-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* line 905, ../../../app/assets/styles/main.scss */
+#section-nine hr {
+  border-color: #000;
+  border-width: 2px;
+}
+
+/* line 911, ../../../app/assets/styles/main.scss */
+#section-ten {
+  overflow: hidden;
+  background-image: url(../images/section-ten-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* line 919, ../../../app/assets/styles/main.scss */
+#section-eleven {
+  overflow: hidden;
+  background-image: url(../images/section-eleven-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* line 928, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #1e1e1e;
+}
+/* line 930, ../../../app/assets/styles/main.scss */
+footer .container {
+  padding: 20px 0;
+}
+/* line 932, ../../../app/assets/styles/main.scss */
+footer .container div:last-child {
+  padding-top: 12px;
+  color: #fff;
+}
+/* line 937, ../../../app/assets/styles/main.scss */
+footer img {
+  width: 230px;
+}

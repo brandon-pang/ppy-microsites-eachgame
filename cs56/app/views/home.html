@@ -1,0 +1,568 @@
+<span us-spinner="{radius:30, width:8, length: 16, color: '#e30000'}" spinner-on="showSpinner"></span>
+<div id="main">
+
+    <nav id="side-nav">
+        <ul class="text-center">
+            <li class="up" ng-click="main.prev()"><i class="icon-arrow-up white"></i></li>
+            <li class="home"><a href="#section-one" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"><i class="icon-home"></i></a></li>
+            <li class="bullet"><a href="#section-two" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MAP"></a></li>
+            <li class="bullet"><a href="#section-three" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MODE"></a></li>
+            <li class="bullet"><a href="#section-four" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="PACKAGE"></a></li>
+            <li class="bullet"><a href="#section-five" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="ITEM"></a></li>
+            <li class="bullet"><a href="#section-six" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="GOLDBOX"></a></li>
+            <li class="bullet"><a href="#section-seven" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="CONTEST"></a></li>
+            <li class="down" ng-click="main.next()"><i class="icon-arrow-down white"></i></li>
+        </ul>
+    </nav>
+
+    <section id="section-one" style="background-image: url('assets/images/section-one-bg.jpg');"> <!--preload-bg-image="assets/images/section-one-bg.jpg"-->
+        <div id="top-divider"></div>
+        <div class="shadow-bg"></div>
+        
+        <canvas id="xmas"></canvas>
+        <div style="display: flex; justify-content: center; align-items: center; height: inherit; position: absolute; left: 0; right: 0;">
+            <img preload-image ng-src="assets/images/section-one-title.png" default-image="assets/images/default.png" alt="section one title">
+        </div>
+        <div class="container">
+            <div class="go-back pad-top-50 pull-left"><a href="http://www.blackshot.com" target="_blank" class="text-capitalize"><i class="icon-go-back"></i>{{ 'goback' | translate }}</a></div>
+            <div class="dropdown pad-top-50 pull-right">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <span><img preload-image ng-src="assets/images/flag-{{ main.flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a ng-click="main.switchLanguage('en')">
+                            <span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize">{{ 'english' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('fr')">
+                            <span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize">{{ 'french' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('de')">
+                            <span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize">{{ 'german' | translate }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('pt')">
+                            <span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize">{{ 'portuguese' | translate }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+            <a href="http://www.blackshot.com" target="_blank" class="text-center logo"><img preload-image ng-src="assets/images/blackshot-logo.png" default-image="assets/images/default.png" width="390" height="89" alt="logo"></a>
+            <!-- <div style="height: 160px; min-width: 1px;"></div> -->
+            <!-- <img preload-image ng-src="assets/images/section-one-title.png" default-image="assets/images/default.png" class="center-block" alt="section one title" width="758" height="309" style="width: 758px; height: 309px;"> -->
+            <!--preload-image ng-src="assets/images/section-one-title.png"-->
+            <!-- <img src="assets/images/section-one-travis.png" class="travis" alt="travis"> -->
+         <!--    <div style="height: 190px; min-width: 1px;"></div> -->
+            
+        </div>
+        <div style="display: flex; justify-content: center; align-items: flex-end; height: inherit; position: absolute; left: 0; right: 0; top: 0; padding-bottom: 50px; z-index:999;">
+        <a href="#section-two" class="scroll-down" du-smooth-scroll du-scrollspy>
+            <i class="icon-header-mouse"></i>
+            <span class="text-uppercase" translate="{{ 'scrolldown' }}"></span>
+        </a>
+        </div>
+    </section>
+
+    <section id="section-two">
+        <section class="section-two-sub-section-one">
+            <div class="divider"></div>
+            <img preload-image ng-src="assets/images/section-two-flower-border.png" default-image="assets/images/default.png" class="img-responsive" alt="flower border">  
+            <div class="container pad-bot-70">
+                <h2 class="cursive-font gold" id="arc-one" style="text-shadow: 2px 2px 2px #000">Winter Wasteland</h2>
+                <img preload-image ng-src="assets/images/section-two-title-icon.svg" default-image="assets/images/default.png" class="title-icon center-block" alt="icon">
+                <h3 class="block-font gold text-center" style="text-shadow: 2px 2px 2px #000">{{ 'section-two-subtitle' | translate }}</h3>
+            </div>
+        </section>
+
+        <img preload-image ng-src="assets/images/section-two-wide-image.jpg" default-image="assets/images/default.png" alt="wide image" style="box-shadow: 0 0 30px #000; position: relative; z-index: 1; max-width: 100%;">
+        <img preload-image ng-src="assets/images/section-two-cathy.png" default-image="assets/images/default.png" alt="cathy" style="position: absolute; left: 0; top: 18%; z-index: 1;">
+
+        <section class="section-two-sub-section-two">
+            <div class="container pad-top-50">
+                <h6 class="block-font text-center">{{ 'section-two-article-one-title' | translate }}</h6>
+                <p class="text-center pad-top-20 pad-bot-50" translate="{{ 'section-two-article-one-description' }}"></p>
+                <img preload-image ng-src="assets/images/section-two-crown.svg" default-image="assets/images/default.png" class="center-block pad-bot-20" alt="crown" style="width: 335px;">
+                <h6 class="block-font text-center" translate="{{ 'section-two-article-two-title' }}"></h6>
+                <h6 class="cursive-font text-center pad-top-20 pad-bot-20">{{ 'section-two-article-two-subtitle' | translate }}</h6>
+                <!-- <p class="text-center" translate="{{ 'section-two-article-two-description' }}"></p> -->
+                <img preload-image ng-src="assets/images/section-two-crown.svg" default-image="assets/images/default.png" class="center-block pad-bot-20" alt="crown" style="width: 335px; transform: rotate(180deg);">
+            </div>
+            <img preload-image ng-src="assets/images/section-two-tree.png" default-image="assets/images/default.png" alt="tree" style="margin-top: -110px; width: 1100px; float: right;">
+            <div class="clearfix"></div>
+
+            <div class="container pad-bot-30">
+                <h5 class="gold text-center" translate="{{ 'section-two-article-three-title' }}" style="text-shadow: 2px 2px 2px #000;"></h5>
+                <p class="text-center text-uppercase pad-top-30" translate="{{ 'section-two-article-three-subtitle' }}"></p>
+                <p class="text-center pad-bot-30" translate="{{ 'section-two-article-three-description' }}"></p>
+                <div class="screenshot-container">
+                    <img preload-image ng-src="assets/images/section-two-screen-shot-one.jpg" default-image="assets/images/default.png" alt="screen shot one">
+                    <p class="text-center text-uppercase accent-font pad-top-20" translate="{{ 'section-two-article-three-screenshot-description-one' }}" style="font-weight: bold;"></p>
+                </div>
+                <div class="screenshot-container" style="float: right;">
+                    <img preload-image ng-src="assets/images/section-two-screen-shot-two.jpg" default-image="assets/images/default.png" alt="screen shot two">
+                    <p class="text-center text-uppercase accent-font pad-top-20" translate="{{ 'section-two-article-three-screenshot-description-two' }}" style="font-weight: bold;"></p>
+                </div>
+            </div>
+            <img preload-image ng-src="assets/images/section-two-flower-border.png" default-image="assets/images/default.png" class="img-responsive" alt="flower border" style="transform: rotate(180deg);">
+        </section>
+    </section>
+
+    <section id="section-three">
+        <div class="divider"></div>
+        <div class="container pad-top-70">
+           <h4 class="block-font white pad-bot-40" translate="{{ 'section-three-article-one-title' }}"></h4>
+           <div style="width: 48%; float: left;">
+               <video class="center-block drop-shadow" width="460" autoplay loop>
+                    <source src="assets/video/sd.mp4" type="video/mp4">
+                    <source src="assets/video/sd.ogv" type="video/ogv">
+                </video>
+                <p class="white pad-top-20">{{ 'section-three-article-one-description' | translate }}</p>
+            </div>
+            <div style="width: 48%; float: right;">
+                <img preload-image ng-src="assets/images/section-three-bomb.png" default-image="assets/images/default.png" alt="bomb" style="margin-top: -100px;">
+            </div>
+            <div class="clearfix"></div>
+            <h4 class="block-font white pad-bot-30" translate="{{ 'section-three-article-two-title' }}"></h4>
+            <div style="width: 50%; float: left;">
+                <h3 class="gold cursive-font pad-bot-20" style="float: left;">{{ 'section-three-article-two-event-title' | translate }}</h3>
+                <img preload-image ng-src="assets/images/section-three-icon.svg" default-image="assets/images/default.png" alt="christmas icon" style="float: left; width: 260px; margin: 10px 0 0 40px;">
+                <div class="clearfix"></div>
+                <p class="block-font white text-uppercase"><strong>{{ 'section-three-article-two-event-subtitle' | translate }}</strong></p>
+                <p class="white" translate="{{ 'section-three-article-two-event-description-one' }}"></p>
+                <p class="white" translate="{{ 'section-three-article-two-event-description-two' }}"></p>
+            </div>
+            <div style="width: 46%; float: right;">
+                 <video class="center-block drop-shadow" width="460" autoplay loop>
+                    <source src="assets/video/tfm.mp4" type="video/mp4">
+                    <source src="assets/video/tfm.ogv" type="video/ogv">
+                </video>
+                <p class="white pad-top-20">{{ 'section-three-article-two-description' | translate }}</p>
+            </div>
+            <img preload-image ng-src="assets/images/section-three-tree-border.png" default-image="assets/images/default.png" alt="tree">
+        </div>
+    </section>
+
+    <section id="section-four">
+        <div class="divider"></div>
+        <img preload-image ng-src="assets/images/section-four-santa-bg.png" default-image="assets/images/default.png" class="img-responsive" alt="santa background" style="position: relative; z-index: 2;">
+        <div style="width: 960px; position: absolute; left: 0; right: 0; top: 0; margin: 0 auto;">
+            <img preload-image ng-src="assets/images/section-four-banner.png" default-image="assets/images/default.png" alt="banner" id="section-four-banner">
+        </div>
+        <!-- <div class="container" style="position: relative;"> -->
+            <!-- <div id="package-carousel" class="carousel slide" data-ride="carousel" style="margin: -300px auto 0 auto; width: 870px;"> -->
+        
+        <div id="package-carousel" class="carousel slide" data-ride="carousel" style="margin: -300px auto 0 auto;">
+           
+            <ol class="carousel-indicators">
+                <li data-target="#package-carousel" data-slide-to="0" class=""></li>
+                <li data-target="#package-carousel" data-slide-to="1" class=""></li>
+                <li data-target="#package-carousel" data-slide-to="2" class="active"></li>
+            </ol>
+        
+            <div class="carousel-inner">
+                <div class="item">
+                    
+                     <img preload-image ng-src="assets/images/section-four-package-one.png" default-image="assets/images/default.png" alt="gift one">
+                  
+                </div>
+                <div class="item">
+                    
+                     <img preload-image ng-src="assets/images/section-four-package-two.png" default-image="assets/images/default.png" alt="gift two">
+                    
+                </div>
+                <div class="item active">
+                    
+                     <img preload-image ng-src="assets/images/section-four-package-three.png" default-image="assets/images/default.png" alt="gift three">
+                    
+                </div>
+            </div>
+        </div>
+       
+        <div class="clearfix"></div>
+        <a href="#package-carousel" target="_self" data-slide="prev" style="position:absolute; left: 8%; top: 65%; font-size: 5rem; text-shadow: 1px 1px 2px #000;"><span class="icon-arrow-left"></span></a>
+        <a href="#package-carousel" target="_self" data-slide="next" style="position:absolute; right: 8%; top: 65%; font-size: 5rem; text-shadow: 1px 1px 2px #000;"><span class="icon-arrow-right"></span></a>
+        <!-- </div> -->
+
+        <img preload-image ng-src="assets/images/section-four-bullets.png" default-image="assets/images/default.png" class="img-responsive" alt="bullets" style="width: 100%; margin-top: -130px; position: relative; z-index: 3;">
+    </section>
+
+    <section id="section-five">
+        <div class="divider"></div>
+    
+        <img preload-image ng-src="assets/images/section-five-tree-border.png" default-image="assets/images/default.png" class="img-responsive" alt="tree border" style="width: 100%; position: absolute; left: 0; top: 3px;">
+        <div style="position: absolute; left:0; right: 0; top: 90px; text-align: center;">
+            <img preload-image ng-src="assets/images/section-five-horn.png" default-image="assets/images/default.png" alt="horn left" style="display: inline-block;">
+            <h2 class="cursive-font gold text-capitalize" style="display: inline-block; vertical-align: middle; padding: 0 20px; text-shadow: 2px 2px 2px #000;">{{ 'new' | translate }}</h2>
+            <img preload-image ng-src="assets/images/section-five-horn.png" default-image="assets/images/default.png" alt="horn left" style="display: inline-block; transform: scaleX(-1);">
+            <h3 class="block-font gold text-center pad-bot-40" style="text-shadow: 2px 2px 2px #000;">{{ 'section-five-title' | translate }}</h3>
+        </div>
+        <div class="container" style="margin-top: 300px;">            
+            <video class="center-block drop-shadow" id="awp-candy">
+                <source src="assets/video/ak47.mp4" type="video/mp4">
+                <source src="assets/video/ak47.ogv" type="video/ogv">
+            </video>
+
+            <div style="width: 50%; float: left;">
+                <h5 class="text-uppercase pad-top-50"><strong>{{ 'section-five-awp-title' | translate }}</strong></h5>
+                <p class="pad-top-20 pad-bot-20">{{ 'section-five-awp-description' | translate }}</p>
+                <a href="https://www.youtube.com/watch?v=YuSem9KqvJM" class="text-uppercase cust-btn">{{ 'section-five-awp-button' | translate }}</a>
+            </div>
+
+            <div style="width: 50%; float: left; margin-top: 50px;">
+                <div class="ct-chart"></div>
+            </div>
+            <div class="clearfix"></div>
+            <hr style="border-color: #888;">
+
+            <div class="row pad-bot-20">
+                <div class="col-md-4">
+                    <div class="image-container-one" style="background-position: 20% 20%;">
+                        <img preload-image ng-src="assets/images/antlers-hat.png" default-image="assets/images/default.png" alt="antlers hat">
+                    </div>
+                    <div class="text-container">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-one-title' | translate }}</h6>
+                        <p>{{ 'section-five-item-one-description' | translate }}</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container-one" style="background-position: 30% 30%;">
+                        <img preload-image ng-src="assets/images/tree-knife.png" default-image="assets/images/default.png" alt="tree knife">
+                    </div>
+                    <div class="text-container">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-two-title' | translate }}</h6>
+                        <p>{{ 'section-five-item-two-description' | translate }}</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container-one" style="background-position: 40% 40%;">
+                        <img preload-image ng-src="assets/images/jingle-bell.png" default-image="assets/images/default.png" alt="jingle bell">
+                    </div>
+                    <div class="text-container">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-three-title' | translate }}</h6>
+                        <p translate="{{ 'section-five-item-three-description' }}"></p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="row pad-bot-20">
+                <div class="col-md-6">
+                    <div class="image-container-two" style="background-position: 50% 50%;">
+                        <img preload-image ng-src="assets/images/desert-eagle-candy.png" default-image="assets/images/default.png" alt="desert eagle candy">
+                    </div>
+                    <div class="text-container-two">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-four-title' | translate }}</h6>
+                        <p>{{ 'section-five-item-four-description' | translate }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container-two" style="background-position: 60% 60%;">
+                        <img preload-image ng-src="assets/images/m4a1.png" default-image="assets/images/default.png" alt="m4a1">
+                    </div>
+                    <div class="text-container-two">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-five-title' | translate }}</h6>
+                        <p>{{ 'section-five-item-five-description' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row pad-bot-20">
+                <div class="col-md-6">
+                    <div class="image-container-two" style="background-position: 70% 70%;">
+                        <img preload-image ng-src="assets/images/lantaka.png" default-image="assets/images/default.png" alt="lantaka">
+                    </div>
+                    <div class="text-container-two">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-six-title' | translate }}</h6>
+                        <p translate="{{ 'section-five-item-six-description' }}"></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container-two" style="background-position: 80% 80%;">
+                        <img preload-image ng-src="assets/images/lwrc.png" default-image="assets/images/default.png" alt="lwrc">
+                    </div>
+                    <div class="text-container-two">
+                        <h6 class="accent-font text-uppercase">{{ 'section-five-item-seven-title' | translate }}</h6>
+                        <p>{{ 'section-five-item-seven-description' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img preload-image ng-src="assets/images/section-five-flower-border.png" default-image="assets/images/default.png" class="img-responsive" alt="flower border" style="width: 100%;">
+    </section>
+
+    <section id="section-six">
+        <div class="divider"></div>
+
+        <div class="container pad-top-70 pad-bot-70">
+            <div style="width: 30%; float: left; position: relative;">
+                <img preload-image ng-src="assets/images/section-six-isabelle.png" default-image="assets/images/default.png" alt="isabelle" style="position: absolute; top: 5%; left: -55%; z-index: 1;">
+            </div>
+            <div style="width: 70%; float: right; padding-left: 120px;">
+                <h2 class="cursive-font white" id="arc-two" style="text-shadow: 2px 2px 2px #000; font-size: 7.5rem;">New Christmas</h2>
+                <img preload-image ng-src="assets/images/section-six-crown.png" default-image="assets/images/default.png" class="title-icon center-block" alt="icon" style="margin-top: -20px;">
+                <h3 class="block-font white text-center pad-top-10" style="text-shadow: 2px 2px 2px #000; font-size: 5rem;">{{ 'section-six-subtitle' | translate }}</h3>
+                <p class="block-font white text-center pad-top-20" style="text-shadow: 1px 1px 1px #000;" translate="{{ 'section-six-description' }}"></p>
+                <img preload-image ng-src="assets/images/section-six-frame.png" default-image="assets/images/default.png" class="center-block pad-top-30 pad-bot-30" alt="frame">
+                <iframe width="480" height="260" class="drop-shadow center-block" style="margin: 30px auto 50px auto; position: relative; z-index: 2;" src="https://www.youtube.com/embed/g0Fi1G4sPEg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-seven">
+        <div class="divider"></div>
+        <img preload-image ng-src="assets/images/section-seven-photo-board.png" default-image="assets/images/default.png" class="img-responsive" alt="photo board" style="width: 100%;">
+        <div class="container">
+            <img preload-image ng-src="assets/images/section-two-crown.svg" default-image="assets/images/default.png" class="center-block pad-bot-20" alt="crown" style="width: 500px;">
+            <h4 class="block-font text-center white" translate="{{ 'section-seven-title' }}"></h4>
+            <img preload-image ng-src="assets/images/section-seven-ornament.svg" default-image="assets/images/default.png" class="center-block pad-top-30" alt="ornament" style="width: 480px;">
+            <p class="text-center white pad-top-30" translate="{{ 'section-seven-description-one' }}"></p>
+            <p class="text-center white"><strong>{{ 'section-seven-description-two' | translate }}</strong></p>
+            <p class="text-center white" translate="{{ 'section-seven-description-three' }}"></p>
+            <p class="text-center white pad-bot-10" translate="{{ 'section-seven-description-four' }}"></p>
+            <a href="http://forum.blackshot.com/index.php?page=Thread&threadID=17549" class="text-uppercase cust-btn">{{ 'section-seven-button' | translate }}</a>
+            <img preload-image ng-src="assets/images/section-two-crown.svg" default-image="assets/images/default.png" class="center-block" alt="crown" style="width: 500px; transform: rotate(180deg);">
+        </div>
+        <img preload-image ng-src="assets/images/section-seven-christmas-lights.jpg" default-image="assets/images/default.png" class="img-responsive" alt="christmas lights" style="width: 100%;">
+    </section>
+
+    <footer id="footer">
+        <div class="divider"></div>
+        <div class="container">
+            <div class="pull-left"><img preload-image ng-src="assets/images/vertigo-logo.svg" default-image="assets/images/default.png" class="img-responsive" alt="vertigo logo"></div>
+            <div class="pull-right">&copy;2015 Vertigo Games, Inc. <span class="text-capitalize">{{ 'copyright' | translate }}</span></div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        var screenHeight = $(window).height();
+
+        $('#section-one').css('height', screenHeight);
+
+        $(window).on('resize', function() {
+            var screenHeight = $(window).height();
+            $('#section-one').css('height', screenHeight);
+        });
+
+        $('#arc-one').circleType({radius: 1080});
+        $('#arc-two').circleType({radius: 1080});
+        var data = {  
+        labels: ['Damage', 'Fire Rate', 'Weight', 'Magazine', 'Accuracy'],
+        // Our series array that contains series objects or in this case series data arrays
+        series: [
+          [9.8, 1.7, 5.8, 10, 10]
+        ]
+        };
+        var options = {
+        height: 250,
+        axisX: {
+            showGrid: false
+        },
+        axisY: {
+            type: Chartist.FixedScaleAxis,
+            ticks: [0, 2, 4, 6, 8, 10]
+        }
+        }
+
+        var chart = new Chartist.Bar('.ct-chart', data, options);
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#awp-candy", duration: 340})
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
+        .on("start end", function (e) {
+          $("#awp-candy").get(0).play();
+        })
+
+        // var scene = new ScrollMagic.Scene({triggerElement: "#section-one", duration: screenHeight})
+        // .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
+        // .on("start end", function (e) {
+        //     snowOn();
+        // })
+
+        // $(window).on('load', function (event) {
+        //     iProDevSnow();
+        //     // $('#main').css('visibility', 'visible');
+        // });
+        
+        // var bgOne = new Image();
+
+        // // bgOne.src = '../images/section-one-bg.jpg';
+
+        // bgOne.onload = function() {
+        //     alert('image loaded');
+        //     $('#section-one').css('background-image', 'url("assets/images/section-one-bg.jpg")');
+        // }
+        // bgOne.src = 'assets/images/section-one-bg.jpg';
+
+
+        // iProDevSnow Christmas! \o/
+
+        function snowOff() {
+            var canvas = document.getElementById("xmas"),
+            ctx = canvas.getContext("2d");
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            canvas.remove();
+            console.log('snowOff');
+        }
+        
+        var snowOn = function() {
+
+            (function() {
+                var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+                function(callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+                window.requestAnimationFrame = requestAnimationFrame;
+            })();
+
+            var flakes = [],
+                canvas = document.getElementById("xmas"),
+                ctx = canvas.getContext("2d"),
+                parent = canvas.parentNode,
+                retina = window.devicePixelRatio,
+                flakeCount = parent.offsetWidth < 767 ? 125 : 450,
+                mX = -200,
+                mY = -200;
+
+            canvas.width = parent.offsetWidth * retina;
+            canvas.height = parent.offsetHeight * retina;
+
+            function snowFrame() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                for (var i = 0; i < flakeCount; i++) {
+                    var flake = flakes[i],
+                        x = mX,
+                        y = mY,
+                        minDist = 200 * retina,
+                        x2 = flake.x,
+                        y2 = flake.y;
+
+                    var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                        dx = x2 - x,
+                        dy = y2 - y;
+
+                    if (dist < minDist) {
+                        var force = minDist / (dist * dist),
+                        xcomp = (x - x2) / dist * retina,
+                        ycomp = (y - y2) / dist * retina,
+                        deltaV = force / 2 * retina;
+
+                        flake.velX -= deltaV * xcomp;
+                        flake.velY -= deltaV * ycomp;
+                    } else {
+                        flake.velX *= .98;
+                        if (flake.velY <= flake.speed) {
+                            flake.velY = flake.speed
+                        }
+                        flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+                    }
+
+                    ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+                    flake.y += flake.velY;
+                    flake.x += flake.velX;
+                        
+                    if (flake.y >= canvas.height || flake.y <= 0) {
+                        reset(flake);
+                    }
+
+                    if (flake.x >= canvas.width || flake.x <= 0) {
+                        reset(flake);
+                    }
+
+                    ctx.beginPath();
+                    ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                requestAnimationFrame(snowFrame);
+            };
+
+            function reset(flake) {
+                flake.x = Math.floor(Math.random() * canvas.width);
+                flake.y = 0;
+                flake.size = ((Math.random() * 3) + getRandomInt(2, 4)) * retina;
+                flake.speed = ((Math.random() * 1) + 0.2) * retina;
+                flake.velY = flake.speed;
+                flake.velX = 0;
+                flake.opacity = (Math.random() * 0.5) + 0.4;
+            }
+
+            function init() {
+                for (var i = 0; i < flakeCount; i++) {
+                    var x = Math.floor(Math.random() * canvas.width),
+                        y = Math.floor(Math.random() * canvas.height),
+                        size = ((Math.random() * 3) + getRandomInt(2, 4)) * retina,
+                        speed = ((Math.random() * 1) + 0.2) * retina,
+                        opacity = (Math.random() * 0.5) + 0.4;
+
+                    flakes.push({
+                        speed: speed,
+                        velY: speed,
+                        velX: 0,
+                        x: x,
+                        y: y,
+                        size: size,
+                        stepSize: (Math.random()) / 30,
+                        step: 0,
+                        opacity: opacity
+                    });
+                }
+
+                snowFrame();
+            };
+
+            canvas.addEventListener("mouseenter", function() {
+                canvas.addEventListener("mousemove", function(e) {
+                    mX = (e.pageX - canvas.offsetLeft) * retina,
+                    mY = (e.pageY - canvas.offsetTop) * retina;
+                });
+            });
+
+            canvas.addEventListener("mouseleave", function() {
+                canvas.removeEventListener("mousemove");
+                mX = -300,
+                mY = -300;
+            });
+
+            window.addEventListener("resize",function(){
+                canvas.width = parent.offsetWidth * retina;
+                canvas.height = parent.offsetHeight * retina;
+            });
+
+            init();
+        };
+        // Returns a random integer between min (included) and max (excluded)
+        // Using Math.round() will give you a non-uniform distribution!
+        function getRandomInt(min, max) {
+          return Math.floor(Math.random() * (max - min)) + min;
+        }       
+
+        var scrollPos = $(window).scrollTop();
+        
+        if (scrollPos < screenHeight) {
+            snowOn();
+        }
+
+        setTimeout(function () {
+            snowOff();
+        }, 300000);
+
+    });
+</script>

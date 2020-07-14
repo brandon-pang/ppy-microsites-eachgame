@@ -1,0 +1,590 @@
+<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>
+
+<section id="section-one" style="background-image: url('assets/images/section-one-bg-en.jpg');">
+    <div class="divider"></div>
+    
+    <div class="container">
+        <div class="go-back pad-top-30" style="display: inline-block; width: 49%;">
+            <a href="http://www.blackshot.com" target="_blank" class="text-capitalize"><i class="icon-go-back"></i><span translate="{{ 'goback' }}"></span></a>
+        </div>
+        <div class="dropdown pad-top-30" style="display: inline-block; width: 38%; text-align: right;">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <span><img preload-image ng-src="assets/images/flag-{{ main.flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a ng-click="main.switchLanguage('en')">
+                        <span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize" translate="{{ 'english' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('de')">
+                        <span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize" translate="{{ 'german' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('fr')">
+                        <span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize" translate="{{ 'french' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('pt')">
+                        <span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+        
+        <a href="http://www.blackshot.com" target="_blank" class="text-center logo">
+            <img preload-image ng-src="assets/images/blackshot-logo.png" class="logo" default-image="assets/images/default.png" alt="logo">
+        </a>
+    </div>
+</section>
+
+<section id="section-two">
+    <div class="divider"></div>
+
+    <div class="container">
+        <img preload-image ng-src="assets/images/section-two-title.png" class="center-block" default-image="assets/images/default.png" alt="title">
+        <img preload-image ng-src="assets/images/lucky-box.png" id="lucky-box" class="center-block animated infinite tada" default-image="assets/images/default.png" alt="box">
+        <img preload-image ng-src="assets/images/lucky-shadow.png" id="lucky-shadow" class="center-block" default-image="assets/images/default.png" alt="shadow">
+        <img preload-image ng-src="assets/images/lucky-banner.png" class="center-block" default-image="assets/images/default.png" alt="banner" style="margin-top: -50px;">
+        <p class="text-uppercase text-center white bold accent-font" translate="{{ 'section-two-text1' }}"></p>
+        <p class="text-uppercase text-center white bold accent-font" translate="{{ 'section-two-text2' }}"></p>
+        <p class="text-uppercase text-center white bold accent-font" translate="{{ 'section-two-text3' }}"></p>
+    </div>
+</section>
+
+<section id="section-three">
+    <div class="divider"></div>
+
+    <div class="container">
+        <img preload-image ng-src="assets/images/section-three-title.png" class="center-block" default-image="assets/images/default.png" alt="title">
+        <div class="flex-wrapper pad-bot-20">   
+            <div class="col1">
+                <p class="text-uppercase white bold accent-font" translate="{{ 'section-three-text1' }}"></p>
+                <p class="text-uppercase white bold accent-font" translate="{{ 'section-three-text2' }}"></p>
+                <p class="text-uppercase white bold accent-font" translate="{{ 'section-three-text3' }}"></p>
+                <h3 class="text-uppercase bright-yellow-color bold accent-font" translate="{{ 'section-three-text4' }}"></h3>
+            </div>
+            <div class="col2" style="padding-left: 30px;">
+                <div id="before-login" ng-hide="isLogin == true">
+                    <p class="text-uppercase text-center bold accent-font bright-yellow-color pad-bot-20" translate="{{ 'before-sign-in' }}"></p>
+                    <a href="https://www.blackshot.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs62" class="cust-btn"><span class="text-uppercase bold">sign in</span></a>
+                </div>
+
+                <div id="after-login" ng-hide="isLogin == false">
+                    <div id="profile-photo" class="text-center"><img ng-src="https://blackshotupload.s3.amazonaws.com/{{ myInfo.PIPath }}" class="img-circle"></div>
+                    <p id="username" class="text-uppercase text-center bright-yellow-color bold accent-font pad-top-10">{{ myInfo.UserID }}</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="tile-wrapper"> 
+            <div class="tile day1">
+                <div class="tile-locked">1</div>
+                <div class="tile-header">
+                    <div class="col-50">day 1</div>
+                    <div class="col-50 text-right">may 18th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">G36 Graffit</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day1.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[0].Mission1 == 1, 'no-strike': eventData[0].Mission1 == 0 }" translate="{{ 'day1mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[0].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[0].Mission2 == 1, 'no-strike': eventData[0].Mission2 == 0 }" translate="{{ 'day1mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[0].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[0].Mission3 == 1, 'no-strike': eventData[0].Mission3 == 0 }" translate="{{ 'day1mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[0].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day1TimeLeft }}</div>
+                </div>
+            </div>
+        
+            <div class="tile day2">
+                <div class="tile-locked">2</div>
+                <div class="tile-header">
+                    <div class="col-50">day 2</div>
+                    <div class="col-50 text-right">may 19th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">katana</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day2.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[1].Mission1 == 1, 'no-strike': eventData[1].Mission1 == 0 }" translate="{{ 'day2mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[1].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[1].Mission2 == 1, 'no-strike': eventData[1].Mission2 == 0 }" translate="{{ 'day2mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[1].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[1].Mission3 == 1, 'no-strike': eventData[1].Mission3 == 0 }" translate="{{ 'day2mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[1].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day2TimeLeft }}</div>
+                </div>
+            </div>
+        
+            <div class="tile day3">
+                <div class="tile-locked">3</div>
+                <div class="tile-header">
+                    <div class="col-50">day 3</div>
+                    <div class="col-50 text-right">may 20th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">CBJ-MS Bayou</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day3.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[2].Mission1 == 1, 'no-strike': eventData[2].Mission1 == 0 }" translate="{{ 'day3mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[2].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[2].Mission2 == 1, 'no-strike': eventData[2].Mission2 == 0 }" translate="{{ 'day3mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[2].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[2].Mission3 == 1, 'no-strike': eventData[2].Mission3 == 0 }" translate="{{ 'day3mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[2].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day3TimeLeft }}</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tile-wrapper">
+            <div class="tile day4">
+                <div class="tile-locked">4</div>
+                <div class="tile-header">
+                    <div class="col-50">day 4</div>
+                    <div class="col-50 text-right">may 21st</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">Kriss Vector AS</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day4.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[3].Mission1 == 1, 'no-strike': eventData[3].Mission1 == 0 }" translate="{{ 'day4mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[3].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[3].Mission2 == 1, 'no-strike': eventData[3].Mission2 == 0 }" translate="{{ 'day4mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[3].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[3].Mission3 == 1, 'no-strike': eventData[3].Mission3 == 0 }" translate="{{ 'day4mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[3].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day4TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day5">
+                <div class="tile-locked">5</div>
+                <div class="tile-header">
+                    <div class="col-50">day 5</div>
+                    <div class="col-50 text-right">may 22nd</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">M1A Socom Tuning</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day5.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[4].Mission1 == 1, 'no-strike': eventData[4].Mission1 == 0 }" translate="{{ 'day5mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[4].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[4].Mission2 == 1, 'no-strike': eventData[4].Mission2 == 0 }" translate="{{ 'day5mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[4].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[4].Mission3 == 1, 'no-strike': eventData[4].Mission3 == 0 }" translate="{{ 'day5mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[4].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day5TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day6">
+                <div class="tile-locked">6</div>
+                <div class="tile-header">
+                    <div class="col-50">day 6</div>
+                    <div class="col-50 text-right">may 23rd</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">MP412 REX Thorn</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day6.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[5].Mission1 == 1, 'no-strike': eventData[5].Mission1 == 0 }" translate="{{ 'day6mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[5].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[5].Mission2 == 1, 'no-strike': eventData[5].Mission2 == 0 }" translate="{{ 'day6mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[5].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[5].Mission3 == 1, 'no-strike': eventData[5].Mission3 == 0 }" translate="{{ 'day6mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[5].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day6TimeLeft }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-wrapper">
+            <div class="tile day7">
+                <div class="tile-locked">7</div>
+                <div class="tile-header">
+                    <div class="col-50">day 7</div>
+                    <div class="col-50 text-right">may 24th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">Heist Bag</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day7.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[6].Mission1 == 1, 'no-strike': eventData[6].Mission1 == 0 }" translate="{{ 'day7mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[6].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[6].Mission2 == 1, 'no-strike': eventData[6].Mission2 == 0 }" translate="{{ 'day7mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[6].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[6].Mission3 == 1, 'no-strike': eventData[6].Mission3 == 0 }" translate="{{ 'day7mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[6].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day7TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day8">
+                <div class="tile-locked">8</div>
+                <div class="tile-header">
+                    <div class="col-50">day 8</div>
+                    <div class="col-50 text-right">may 25th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">AWP Candy</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day8.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[7].Mission1 == 1, 'no-strike': eventData[7].Mission1 == 0 }" translate="{{ 'day8mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[7].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[7].Mission2 == 1, 'no-strike': eventData[7].Mission2 == 0 }" translate="{{ 'day8mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[7].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[7].Mission3 == 1, 'no-strike': eventData[7].Mission3 == 0 }" translate="{{ 'day8mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[7].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day8TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day9">
+                <div class="tile-locked">9</div>
+                <div class="tile-header">
+                    <div class="col-50">day 9</div>
+                    <div class="col-50 text-right">may 26th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">AK47 MAT Tuning</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day9.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[8].Mission1 == 1, 'no-strike': eventData[8].Mission1 == 0 }" translate="{{ 'day9mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[8].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[8].Mission2 == 1, 'no-strike': eventData[8].Mission2 == 0 }" translate="{{ 'day9mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[8].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[8].Mission3 == 1, 'no-strike': eventData[8].Mission3 == 0 }" translate="{{ 'day9mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[8].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day9TimeLeft }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-wrapper">
+            <div class="tile day10">
+                <div class="tile-locked">10</div>
+                <div class="tile-header">
+                    <div class="col-50">day 10</div>
+                    <div class="col-50 text-right">may 27th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">Scar Aurum</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day10.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[9].Mission1 == 1, 'no-strike': eventData[9].Mission1 == 0 }" translate="{{ 'day10mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[9].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[9].Mission2 == 1, 'no-strike': eventData[9].Mission2 == 0 }" translate="{{ 'day10mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[9].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[9].Mission3 == 1, 'no-strike': eventData[9].Mission3 == 0 }" translate="{{ 'day10mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[9].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day10TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day11">
+                <div class="tile-locked">11</div>
+                <div class="tile-header">
+                    <div class="col-50">day 11</div>
+                    <div class="col-50 text-right">may 28th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">AK47 Tiger</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day11.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[10].Mission1 == 1, 'no-strike': eventData[10].Mission1 == 0 }" translate="{{ 'day11mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[10].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[10].Mission2 == 1, 'no-strike': eventData[10].Mission2 == 0 }" translate="{{ 'day11mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[10].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[10].Mission3 == 1, 'no-strike': eventData[10].Mission3 == 0 }" translate="{{ 'day11mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[10].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day11TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day12">
+                <div class="tile-locked">12</div>
+                <div class="tile-header">
+                    <div class="col-50">day 12</div>
+                    <div class="col-50 text-right">may 29th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">Medkit</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day12.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[11].Mission1 == 1, 'no-strike': eventData[11].Mission1 == 0 }" translate="{{ 'day12mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[11].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[11].Mission2 == 1, 'no-strike': eventData[11].Mission2 == 0 }" translate="{{ 'day12mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[11].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[11].Mission3 == 1, 'no-strike': eventData[11].Mission3 == 0 }" translate="{{ 'day12mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[11].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day12TimeLeft }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tile-wrapper" style="justify-content: center;">
+            <div class="tile day13">
+                <div class="tile-locked">13</div>
+                <div class="tile-header">
+                    <div class="col-50">day 13</div>
+                    <div class="col-50 text-right">may 30th</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">SMF Knife</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day13.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[12].Mission1 == 1, 'no-strike': eventData[12].Mission1 == 0 }" translate="{{ 'day13mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[12].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[12].Mission2 == 1, 'no-strike': eventData[12].Mission2 == 0 }" translate="{{ 'day13mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[12].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[12].Mission3 == 1, 'no-strike': eventData[12].Mission3 == 0 }" translate="{{ 'day13mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[12].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day13TimeLeft }}</div>
+                </div>
+            </div>
+
+            <div class="tile day14" style="padding-left: 20px;">
+                <div class="tile-locked">14</div>
+                <div class="tile-header">
+                    <div class="col-50">day 14</div>
+                    <div class="col-50 text-right">may 31st</div>
+                </div>
+                <div class="tile-body">
+                    <div class="img-container">
+                        <span class="weapon-name">MSR Omega</span>
+                        <span class="duration">3 {{ 'days' | translate }}</span>
+                        <img preload-image ng-src="assets/images/day14.png" class="center-block" default-image="assets/images/default.png" alt="prize">
+                    </div>
+                    <div class="task-row">
+                        <p ng-class="{ 'strike': eventData[13].Mission1 == 1, 'no-strike': eventData[13].Mission1 == 0 }" translate="{{ 'day14mission1' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[13].Mission1 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[13].Mission2 == 1, 'no-strike': eventData[13].Mission2 == 0 }" translate="{{ 'day14mission2' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[13].Mission2 == 0 || eventData == null"></i>
+                    </div>
+                    <div>
+                        <p ng-class="{ 'strike': eventData[13].Mission3 == 1, 'no-strike': eventData[13].Mission3 == 0 }" translate="{{ 'day14mission3' }}"></p>
+                        <i class="fa fa-check" ng-hide="eventData[13].Mission3 == 0 || eventData == null"></i>
+                    </div>
+                </div>
+                <div class="tile-footer">
+                    <div class="text-right"><span class="white">time left</span>  {{ day14TimeLeft }}</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="text-center pad-top-20"><small class="white">* Conditions update every hour</small></div>
+    </div>
+</section>
+
+<section id="section-four">
+    <div class="divider"></div>
+
+    <div class="container">
+        <div class="col-60">
+            <h2 class="text-uppercase gray-color bold accent-font">blackshot is getting</h2>
+            <h2 class="text-uppercase blue-color bold accent-font pad-bot-30">steaming hot</h2>
+
+            <h3 class="text-uppercase blue-color bold accent-font pad-bot-20" translate="{{ 'section-four-text1' }}"></h3>
+            <p class="text-uppercase white bold accent-font pad-bot-10" translate="{{ 'section-four-text2' }}"></p>
+            <p class="text-uppercase white bold accent-font pad-bot-30" translate="{{ 'section-four-text3' }}"></p>
+            <img preload-image ng-src="assets/images/blackshot-logo.png" class="center-block" default-image="assets/images/default.png" alt="blackshot">
+            <img preload-image ng-src="assets/images/steam-logo.png" class="center-block pad-top-30" default-image="assets/images/default.png" alt="steam">
+        </div>
+        <img preload-image ng-src="assets/images/pei.png" default-image="assets/images/default.png" id="pei" alt="pei">
+    </div>
+</section>
+
+<section id="section-five">
+    <div class="divider"></div>
+
+    <div class="row1">
+        <div class="container">
+            <div class="flex-center">
+                <div class="col-50">
+                    <img preload-image ng-src="assets/images/discord-logo.png" class="center-block" default-image="assets/images/default.png" alt="discord">
+                    <p class="text-uppercase white bold accent-font pad-top-20" translate="{{ 'section-five-text1' }}"></p>
+                    <p class="text-uppercase white bold accent-font pad-top-10" translate="{{ 'section-five-text2' }}"></p>
+                </div>
+                <div class="col-50" style="padding-left: 50px;">
+                    <iframe src="https://discordapp.com/widget?id=172118865197662208&theme=dark" width="350" height="400" allowtransparency="true" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row2">
+        <div class="container">
+            <div class="flex-center">
+                <p class="text-uppercase text-center white bold accent-font" translate="{{ 'section-five-text3' }}"></p>
+                <p class="text-uppercase text-center white bold accent-font pad-top-10 pad-bot-10" translate="{{ 'section-five-text4' }}"></p>
+                <h3 class="text-uppercase text-center blue-color bold accent-font" translate="{{ 'section-five-text5' }}"></h3>
+            </div>
+            <img preload-image ng-src="assets/images/discord-devices.jpg" class="center-block pad-top-30" default-image="assets/images/default.png" alt="device">
+        </div>
+    </div>
+    
+</section>
+
+<footer id="footer">
+    <div class="divider"></div>
+    <div class="container">
+        <div class="pull-left"><a href="http://www.vertigogames.com" target="_blank"><img style="height: 40px;" preload-image ng-src="https://blackshot.s3.amazonaws.com/static/assets/images/footer-ci.svg" default-image="assets/images/default.png" alt="vertigo logo"></a></div>
+        <div class="pull-right">&copy;2016 Vertigo Games, Inc. <span class="text-capitalize" translate="{{ 'copyright' }}"></span></div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+    });
+</script>

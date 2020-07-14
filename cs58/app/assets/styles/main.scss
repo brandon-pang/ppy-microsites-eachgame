@@ -1,0 +1,725 @@
+@import "variables";
+
+// ------------ // 
+
+// fonts //
+@font-face {
+    font-family: 'Glyphter';
+    src: url('fonts/Glyphter.eot');
+    src: url('fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Glyphter.woff') format('woff'),
+         url('fonts/Glyphter.ttf') format('truetype'),
+         url('fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.icon-header-mouse:before{content:'\0041';}
+.icon-arrow-up:before{content:'\0044';}
+.icon-arrow-down:before{content:'\0045';}
+.icon-arrow-left:before{content:'\0046';}
+.icon-arrow-right:before{content:'\0047';}
+.icon-go-back:before{content:'\0048';}
+.icon-home:before{content:'\0049';}
+.icon-home-active:before{content:'\004A';}
+
+.icon-arrow-left, .icon-arrow-right {
+	color: $white-color;
+}
+
+
+// CHART //
+.ct-series-a .ct-bar {
+  stroke: #9d8359;
+  stroke-width: 40px;
+}
+
+.ct-grid {
+  stroke: #888;
+  stroke-dasharray: 0;
+  shape-rendering:crispEdges;         
+}
+
+.ct-label.ct-horizontal.ct-end {
+  font-size: 1.4rem;
+  color: $white-color;
+}
+
+.ct-label.ct-vertical.ct-start {
+  font-size: 1.2rem;
+  color: $white-color;
+}
+
+// ------------ //
+
+// CAROUSEL //
+
+.carousel {
+  position : relative;
+  width : 960px;
+  height : auto;
+  border : none;
+  overflow : visible;
+}
+
+/* slide container */
+
+.carousel .slides {
+  border : none;
+  list-style : none;
+  position : relative;
+  overflow : visible;
+}
+
+/* slide item */
+
+.carousel .slides .slideItem {
+  position: absolute;
+  background-image: $url-carousel-box-bg;
+  display: block !important;
+  opacity: 0.3 !important;
+ 
+
+  &.active-slide {
+	  opacity: 1 !important;
+	  transform: scale(1.1, 1.1);
+  }
+}
+
+.carousel .slides .slideItem .description {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 140px !important;
+  h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: $accent-font;
+    padding-bottom: 10px;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+.carousel .slides .slideItem img {
+  margin: 0 auto;
+  padding-top: 20px;
+  border: none;
+  width: 350px !important;
+  height: 160px !important;
+  display: block;
+}
+
+/* DIRECTION BUTTON */
+
+.carousel-btn {
+  	position : absolute;
+	width : 35px;
+	height : 35px;
+	font-size: 5rem;
+	cursor : pointer;
+	z-index : 9999;
+	i {
+		transition: all 0.5s;
+		&:hover {
+			color: $purple-color;
+		}	
+	}
+}
+
+.carousel .nextButton, {
+	@extend .carousel-btn;
+	right : 10px;
+	top : 120px;
+}
+
+.carousel .prevButton {
+	@extend .carousel-btn;
+	left: -10px;
+	top: 120px;
+}
+
+
+
+// -------------- //
+
+
+// global classes //
+.container {
+	width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.cust-btn {
+	font-size: 1.7rem;
+	font-weight: bolder;
+	font-family: $accent-font;
+	padding: 13px 17px;
+	text-align: center;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.cust-btn-two {
+	background-position: 0px 0px;
+	transition: all 0.5s;
+	font-weight: bold;
+	font-family: $accent-font;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.tooltip-inner {
+	background-color: $purple-color;
+	color: $white-color;
+	font-size: 1.4rem;
+	font-family: $accent-font;
+	font-weight: bold;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: $purple-color;
+}
+
+#top-divider {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	z-index: 2;
+	background-image: linear-gradient(to right, $purple-color, $pink-color);
+	-webkit-background-image: linear-gradient(to right, $purple-color, $pink-color);
+	-moz-background-image: linear-gradient(to right, $purple-color, $pink-color);
+}
+
+.divider {
+	width: 100%;
+	height: 3px;
+	background-image: linear-gradient(to right, $purple-color, $pink-color);
+	-webkit-background-image: linear-gradient(to right, $purple-color, $pink-color);
+	-moz-background-image: linear-gradient(to right, $purple-color, $pink-color);
+}
+
+.shadow-bg {
+	background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0.8), rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(0,0,0,0.2), rgba(0,0,0,0));
+	-webkit-background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	-moz-background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	width: 100%; height: 120px;
+	left: 0; top: 0;
+	z-index: 1;
+}
+
+.white {
+	color: $white-color;
+}
+
+.purple {
+	color: $purple-color;
+}
+
+.pink {
+	color: $pink-color;
+}
+
+.extrabold {
+	font-weight: bolder;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.accent-font {
+	font-family: $accent-font;
+}
+
+.text-shadow {
+	text-shadow: 2px 2px 2px $black-color;
+}
+
+.drop-shadow {
+	box-shadow: 5px 5px 10px #555;
+}
+
+.pad-top-10 {
+	padding-top: 10px;
+}
+.pad-bot-10 {
+	padding-bottom: 10px;
+}
+
+.pad-top-20 {
+	padding-top: 20px;
+}
+.pad-bot-20 {
+	padding-bottom: 20px;
+}
+
+.pad-top-30 {
+	padding-top: 30px;
+}
+
+.pad-bot-30 {
+	padding-bottom: 30px;
+}
+
+.pad-top-40 {
+	padding-top: 40px;
+}
+
+.pad-bot-40 {
+	padding-bottom: 40px;
+}
+
+.pad-top-50 {
+	padding-top: 50px;
+}
+
+.pad-bot-50 {
+	padding-bottom: 50px;
+}
+
+.pad-top-70 {
+	padding-top: 70px;
+}
+
+.pad-bot-70 {
+	padding-bottom: 70px;
+}
+
+.pad-left-20 {
+	padding-left: 20px;
+}
+
+.pad-right-20 {
+	padding-right: 20px;
+}
+
+.col-33 {
+	float: left;
+	width: 33.333%;
+}
+
+.col-50 {
+	float: left;
+	width: 50%;
+}
+
+// --------------  //
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+// global elements //
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 11rem;
+}
+
+h2 {
+	font-size: 8rem;
+}
+
+h3 {
+	font-size: 4rem;
+}
+
+h4 {
+	font-size: 3rem;
+}
+
+h5 {
+	font-size: 2.7rem;
+}
+
+h6 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: $white-color;
+	&:hover {
+		text-decoration: none;
+		color: $pink-color;
+	}
+}
+
+ul {
+	list-style: none;
+	padding:0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	color: $black-color;
+	font-family: $default-font;
+	background-color: $black-color;
+	min-width: 960px;
+	max-width: 1920px;
+}
+
+// ------------- //
+
+#side-nav {
+	position: fixed;
+	top: 35%;
+	right: 40px;
+	z-index: 9999;
+
+	.up, .down {
+		cursor: pointer;
+		color: $white-color;
+		i {
+			&:hover {
+				color: $purple-color;
+			}	
+		}
+	}
+
+	.home {
+		margin-bottom: 10px;
+		a {
+			display: block;
+			width: 100%; height: 100%;
+			i {
+				font-size: 2rem;
+				color: $white-color;
+				&:hover {
+					color: $purple-color;
+				}
+			}
+			&.active {
+				i {
+					color: $purple-color;
+				}
+				
+				// i:before {
+				// 	content: "\004A";
+				// }
+			}
+		}
+	}
+	.bullet {
+		width: 12px; height: 12px; 
+		margin: 0 auto 15px auto;
+		
+		// border: 2px solid $white-color;
+		a {
+			width: 12px; height: 12px; 
+			border-radius: 100%;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: $white-color;
+			&.active {
+				border-radius: 100%;
+				background-color: $purple-color;
+			}
+			&:hover {
+				border-radius: 100%;
+				background-color: $purple-color;
+			}
+		}
+	}
+}
+
+#section-one {
+	// background-image: $url-section-one-bg;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	h1 {
+		letter-spacing: 6px;
+		text-shadow: 0 0 13px rgba($black-color, 0.5);
+		padding-top: 230px;
+	}
+	h5 {
+		letter-spacing: 10px;
+		text-shadow: 0 0 13px rgba($black-color, 0.5);
+		padding-bottom: 220px;
+	}
+	.go-back {
+		color: $white-color;
+		font-size: 1.4rem;
+		position: relative;
+		a {
+			text-decoration: none;
+		}
+		i {
+			padding-right: 8px;
+			vertical-align: middle;
+		}
+	}
+	.dropdown {
+		.dropdown-toggle {
+			font-size: 1.4rem;
+			text-decoration: none;
+			cursor: pointer;
+			span {
+				&:first-child {
+					padding-right: 10px;
+				}
+			}
+		}
+		.dropdown-menu {
+			background-color: $black-color;
+			margin: 0;
+			border: 0;
+            width: 160px;
+            right: 0;
+            left: auto;
+    		li {
+				span {
+					&:first-child {
+						padding: 0 10px;
+					}
+				}
+				a {
+					color: $white-color;
+					padding: 0;
+					cursor: pointer;
+					&:hover {
+						background: none;
+						color: $pink-color !important;
+					}
+				}
+			}
+		}
+	}
+
+	.logo {
+		position: absolute;
+		z-index: 1;
+    	left: 0; right: 0; top: 15px;
+    	display: block;
+    	margin: 0 auto;
+    	-ms-filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
+    	-moz-filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
+    	-webkit-filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
+		filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.5));
+	}
+
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.scroll-down {
+		position: relative;
+		z-index: 1;
+		text-decoration: none;
+		cursor: pointer;
+		display: block;
+		width: 180px;
+		text-align: center;
+		color: $white-color;
+		text-shadow: 2px 2px 2px $black-color;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+		&:hover {
+			color: $pink-color;
+		}
+		i {
+			font-size: 6rem;
+			line-height: 1;
+			display: block;
+		}
+		span {
+			font-size: 1.4rem;
+			font-weight: bold;
+			letter-spacing: 0.3rem;
+			line-height: 1.2;
+			display: block;
+		}
+	}
+		
+}
+
+#section-two {
+	background-image: $url-section-two-bg;
+	background-position: center center;
+	background-attachment: fixed;
+	position: relative;
+	h4 {
+		letter-spacing: 6px;
+	}
+}
+
+#section-three {
+	background-image: $url-section-three-bg;
+	background-position: center center;
+	position: relative;
+	.container {
+		position: relative;
+	}
+	.cust-btn {
+		border: 2px solid #9d8359;
+		&:hover {
+			color: #9d8359;
+		}
+	}
+}
+
+#section-four {
+	background-image: $url-section-four-bg;
+	background-position: center center;
+	position: relative;
+	.container {
+		padding-bottom: 110px;
+	}
+}
+
+#section-five {
+	background-image: $url-section-five-bg;
+	background-position: center center;
+	position: relative;
+	.container {
+		padding-bottom: 100px;
+	}
+	h4 {
+		letter-spacing: 6px;
+	}
+	a {
+		@extend .cust-btn-two;
+		width: 300px;
+		height: 65px;
+		font-size: 1.8rem;
+		background-image: $url-section-five-btn;
+		padding-left: 20px;
+		
+		&:hover {
+			background-position: 0px 65px;
+			color: $purple-color;
+		}
+	}
+}
+
+#section-six {
+	background-image: $url-section-six-bg;
+	background-position: center center;
+	position: relative;
+	.text-block {
+		padding-top: 100px;
+		position: relative;
+		z-index: 2;
+		span {
+			line-height: 1;
+		}	
+	}
+	
+	.container {
+		height: 1050px;
+		position: relative;
+	}
+	#pei {
+		position: absolute;
+		top: 10px;
+		right: 0;
+	}
+	h5 {
+		letter-spacing: 6px;
+	}
+}
+
+#section-seven {
+	background-image: $url-section-seven-bg;
+	background-position: center center;
+	background-attachment: fixed;
+	position: relative;
+	.container {
+		height: 1116px;
+		position: relative;
+	}
+	h2 {
+		line-height: 0.9;
+		transform: translateY(-100px);
+	}
+	.green {
+		color: #a5ae76;
+	}
+	a {
+		@extend .cust-btn-two;
+		width: 237px;
+		height: 65px;
+		font-size: 2.1rem;
+		line-height: 1;
+		background-image: $url-section-seven-btn;
+		padding-left: 45px;
+	
+		&:hover {
+			background-position: 0px 65px;
+			color: $black-color;
+		}
+	}
+}
+
+#section-eight {
+	background-image: $url-section-eight-bg;
+	background-position: center center;
+	position: relative;
+	h5 {
+		font-size: 2.4rem;
+	}
+	.container {
+		padding-top: 130px
+	}
+}
+
+#section-nine {
+	background-color: $black-color;
+	.table-striped > tbody >tr:nth-of-type(odd) {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+	thead {
+		font-size: 1.7rem;
+		tr > th {
+			border: none;
+		}
+	}
+	tbody tr td {
+		border-color: #575757 !important;
+	}
+	tbody > tr:last-child td {
+		border-bottom: 1px solid #575757;
+	}
+	
+}
+
+footer {
+	background-color: $bg-color;
+	.container {
+		padding: 20px 0;
+		div:last-child {
+			padding-top: 12px;
+			color: $white-color;
+		}
+	}
+	img {
+		width: 230px;
+	}
+}

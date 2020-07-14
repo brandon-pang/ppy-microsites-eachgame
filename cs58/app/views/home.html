@@ -1,0 +1,348 @@
+<nav id="side-nav">
+    <ul class="text-center">
+        <li class="up" ng-click="main.prev()"><i class="icon-arrow-up white"></i></li>
+        <li class="home"><a href="#section-one" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"><i class="icon-home"></i></a></li>
+        <li class="bullet"><a href="#section-two" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="AWP"></a></li>
+        <li class="bullet"><a href="#section-three" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="WEAPON"></a></li>
+        <li class="bullet"><a href="#section-four" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="ITEM"></a></li>
+        <li class="bullet"><a href="#section-five" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="GIVEAWAY"></a></li>
+        <li class="bullet"><a href="#section-six" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="PEI"></a></li>
+        <li class="bullet"><a href="#section-seven" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="EVENT"></a></li>
+        <li class="bullet"><a href="#section-eight" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MAP"></a></li>
+        <li class="bullet"><a href="#section-nine" class="tabs" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="PRIZE"></a></li>
+        <li class="down" ng-click="main.next()"><i class="icon-arrow-down white"></i></li>
+    </ul>
+</nav>
+
+<section id="section-one" style="background-image: url('http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-one-bg.jpg');"> <!--preload-bg-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-one-bg.jpg"-->
+    <div id="top-divider"></div>
+    <div class="shadow-bg"></div>
+    
+    <div class="container pad-bot-40">
+        <div class="go-back pad-top-50" style="display: inline-block; width: 49%;"><a href="http://www.blackshot.com" target="_blank" class="text-capitalize"><i class="icon-go-back"></i>{{ 'goback' | translate }}</a></div>
+        <div class="dropdown pad-top-50" style="display: inline-block; width: 49%; text-align: right;">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <span><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/flag-{{ main.flag }}.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a ng-click="main.switchLanguage('en')">
+                        <span><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/flag-uk.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize">{{ 'english' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('fr')">
+                        <span><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/flag-france.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize">{{ 'french' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('de')">
+                        <span><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/flag-germany.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize">{{ 'german' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('pt')">
+                        <span><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/flag-brazil.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize">{{ 'portuguese' | translate }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+        <a href="http://www.blackshot.com" target="_blank" class="text-center logo"><img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/blackshot-logo.png" class="logo" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" width="390" height="89" alt="logo"></a>
+        
+        <h1 class="text-uppercase text-center accent-font white extrabold">{{ 'section-one-title' | translate }}</h1>
+        <h5 class="text-uppercase text-center accent-font white bold">{{ 'section-one-subtitle' | translate }}</h5>
+
+        <div layout="row" layout-align="center center">
+            <a href="#section-two" class="scroll-down" du-smooth-scroll du-scrollspy>
+                <i class="icon-header-mouse"></i>
+                <span class="text-uppercase" translate="{{ 'scrolldown' }}"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="section-two">
+    <div class="divider"></div>
+
+    <div class="container pad-top-50 pad-bot-50">
+        <h2 class="text-uppercase text-center accent-font white extrabold">{{ 'section-two-title' | translate }}</h2>
+        <h4 class="text-uppercase text-center accent-font bold pad-top-20 pad-bot-30" style="color: #fdc689;">{{ 'section-two-desc' | translate }}</h4>
+        <div layout="row" layout-align="center center">
+            <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-two-img.png" width="866" height="180" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="awp monkey king">
+        </div>
+    </div>
+</section>
+
+<section id="section-three">
+    <div class="divider"></div>
+
+    <div class="container pad-top-40 pad-bot-30">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/new-banner.svg" width="100" height="100" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="new banner" style="left: 0; top:0; position: absolute;">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-three-ornament.png" height="39" width="146" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        <h2 class="text-uppercase text-center accent-font white extrabold pad-bot-50">{{ 'section-three-title' | translate }}</h2>
+        <video class="drop-shadow" id="ak47-srm" width="940" height="340">
+            <source src="http://blackshot.s3.amazonaws.com/static/event/cs58/assets/video/ak47-srm.mp4" type="video/mp4">
+            <source src="http://blackshot.s3.amazonaws.com/static/event/cs58/assets/video/ak47-srm.ogv" type="video/ogv">
+        </video>
+        <div class="pad-top-10">
+            <div class="col-50 pad-right-20">
+                <h3 class="text-uppercase accent-font white extrabold pad-top-30">AK-47 MAT Tuning</h3>
+                <p class="white pad-bot-20">{{ 'section-three-ak47-desc' | translate }}</p>
+                <!--<a href="#" target="_blank" class="cust-btn text-uppercase">{{ 'section-three-ak47-btn' | translate }}</a>-->
+            </div>
+            <div class="col-50 pad-left-20">
+                <div class="ct-chart" style="margin-top: 30px;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-four">
+    <div class="divider"></div>
+
+    <div class="container pad-top-70">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-four-ornament.png" height="30" width="365" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        <h2 class="text-uppercase text-center white accent-font extrabold pad-top-10 pad-bot-70" style="font-size: 7rem;">{{ 'section-four-title' | translate }}</h2>
+
+        <div class="carousel">
+            <div class="slides">
+                <div class="slideItem drop-shadow active-slide">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/ruyi-bang.png" width="350" height="160" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ruyi bang">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">ruyi bang</h4>
+                        <p>{{ 'section-four-ruyi-bang' | translate }}</p>
+                    </div>
+                </div>
+                 <div class="slideItem drop-shadow">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/monkey-king.png" width="350" height="160" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="wukong">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">wukong mask</h4>
+                        <p>{{ 'section-four-wukong-mask' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem drop-shadow">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/ak47-mat.png" width="350" height="160" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ak47">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">ak-47 mat edition</h4>
+                        <p>{{ 'section-four-ak47-mat' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
+<section id="section-five">
+    <div class="divider"></div>
+    
+    <div class="container pad-top-70">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/yellow-stars.svg" height="40" width="184" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="star" class="center-block">
+        <h2 class="text-uppercase text-center white accent-font extrabold pad-top-10" style="color: #ed1c24;">{{ 'section-five-title' | translate }}</h2>
+        <h4 class="text-uppercase text-center white accent-font extrabold pad-top-20 pad-bot-20" translate="{{ 'section-five-subtitle' }}"></h4>
+        <p class="text-center white pad-bot-20" translate="{{ 'section-five-desc' }}"></p>
+        <a href="https://www.blackshot.com/News/Detail?category=1210100&idx=3190" class="center-block text-uppercase">{{ 'section-five-btn' | translate }}</a>
+    </div>  
+</section>
+
+<section id="section-six">
+    <div class="divider"></div>
+
+    <div class="container">
+        <div style="width: 60%;" class="text-block">
+            <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-six-ornament-one.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+            <div class="text-uppercase text-center accent-font extrabold pad-top-20 pad-bot-10" style="color: #ff6699;" translate="{{ 'section-six-title' }}"></div>
+            <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-six-ornament-two.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+            <h5 class="text-uppercase text-center white accent-font extrabold pad-top-20 pad-bot-10" translate="{{ 'section-six-subtitle' }}"></h5>
+            <p class="white text-center pad-bot-10" translate="{{ 'section-six-desc' }}"></p>
+            <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-six-ornament-three.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        </div>
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/pei.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="pei" width="649" height="1002" id="pei">
+    </div>
+</section>
+
+<section id="section-seven">
+    <div class="divider"></div>
+
+    <div class="container pad-top-70">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-seven-ornament.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        <h2 class="text-uppercase text-center accent-font green extrabold" translate="{{ 'section-seven-title' }}"></h2>
+        <div style="transform: translateY(-70px);">
+            <p class="text-center" translate="{{ 'section-seven-heading-one' }}"></p>
+            <p class="text-center" translate="{{ 'section-seven-heading-two' }}"></p>
+            <p class="text-center" translate="{{ 'section-seven-heading-three' }}"></p>
+            <p class="text-center" translate="{{ 'section-seven-heading-four' }}"></p>
+            <p class="text-center white pad-bot-20" translate="{{ 'section-seven-ps' }}"></p>
+            <a href="http://forum.blackshot.com/index.php?page=Thread&postID=159777#post159777" class="center-block text-uppercase" translate="{{ 'section-seven-btn' }}"></a>
+        </div>
+    </div>
+</section>
+
+<section id="section-eight">
+    <div class="divider"></div>
+    
+    <div class="container">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-eight-title.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="title" class="center-block">
+        <h5 class="text-uppercase text-center bold accent-font pad-top-30 pad-bot-50">{{ 'section-eight-desc' | translate }}</h5>
+    </div>
+    <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-eight-map.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="map" width="1920" height="721" class="img-responsive">
+    <div style="min-height: 110px;"></div>
+</section>
+
+<section id="section-nine">
+    <div class="divider"></div>
+    
+    <div class="container pad-top-50 pad-bot-50">
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-nine-ornament-one.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        <h2 class="text-uppercase text-center white bold accent-font pad-top-10 pad-bot-10">{{ 'section-nine-title' | translate }}</h2>
+        <img preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/section-nine-ornament-two.png" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="ornament" class="center-block">
+        <p class="text-center white pad-top-30 pad-bot-50">{{ 'section-nine-subtitle' | translate }}</p>
+        <table class="table table-striped white">
+            <thead>
+                <tr>
+                    <th class="text-uppercase bold">{{ 'section-nine-achievements' | translate }}</th>
+                    <th class="text-uppercase bold">{{ 'section-nine-description' | translate }}</th>
+                    <th class="text-uppercase bold">{{ 'section-nine-prize' | translate }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Diving to the ground I</td>
+                    <td>{{ 'section-nine-tr-one-desc' | translate }}</td>
+                    <td>1000BP/Shock Absorbers (1D)</td>
+                </tr>
+                <tr>
+                    <td>Diving to the ground II</td>
+                    <td>{{ 'section-nine-tr-two-desc' | translate }}</td>
+                    <td>Shock Absorbers (3D)</td>
+                </tr>
+                <tr>
+                    <td>Partnership 101</td>
+                    <td>{{ 'section-nine-tr-three-desc' | translate }}</td>
+                    <td>Lover Bag LO (1D)</td>
+                </tr>
+                <tr>
+                    <td>Partnership 202</td>
+                    <td>{{ 'section-nine-tr-four-desc' | translate }}</td>
+                    <td>Lover Bag VE (1D)</td>
+                </tr>
+                <tr>
+                    <td>Partnership 303</td>
+                    <td>{{ 'section-nine-tr-five-desc' | translate }}</td>
+                    <td>M870 Rose (7D)</td>
+                </tr>
+                <tr>
+                    <td>Partnership 404</td>
+                    <td>{{ 'section-nine-tr-six-desc' | translate }}</td>
+                    <td>Cupid Wings (7D)</td>
+                </tr>
+                <tr>
+                    <td>Revengeful</td>
+                    <td>{{ 'section-nine-tr-seven-desc' | translate }}</td>
+                    <td>Bloody Rose (1D)</td>
+                </tr>
+                <tr>
+                    <td>Revengeful II</td>
+                    <td>{{ 'section-nine-tr-eight-desc' | translate }}</td>
+                    <td>OS Fiber Helmet MK-0 (3D)</td>
+                </tr>
+                <tr>
+                    <td>Revengeful III</td>
+                    <td>{{ 'section-nine-tr-nine-desc' | translate }}</td>
+                    <td>Multi Weapon 2 (7D)</td>
+                </tr>
+                <tr>
+                    <td>Master of Default MP5</td>
+                    <td>{{ 'section-nine-tr-ten-desc' | translate }}</td>
+                    <td>MP9 Goral (3D)</td>
+                </tr>
+                <tr>
+                    <td>Master of Default MP5 II</td>
+                    <td>{{ 'section-nine-tr-eleven-desc' | translate }}</td>
+                    <td>Tactic P II (3D)</td>
+                </tr>
+                <tr>
+                    <td>Master of Default MP5 III</td>
+                    <td>{{ 'section-nine-tr-twelve-desc' | translate }}</td>
+                    <td>1500 XP/ 50000 BP</td>
+                </tr>
+                <tr>
+                    <td>Master of Default M16A1</td>
+                    <td>{{ 'section-nine-tr-thirteen-desc' | translate }}</td>
+                    <td>M4 Corbetti (3D)</td>
+                </tr>
+                <tr>
+                    <td>Master of Default M16A1 II</td>
+                    <td>{{ 'section-nine-tr-fourteen-desc' | translate }}</td>
+                    <td>Tactic P I (3D)</td>
+                </tr>
+                <tr>
+                    <td>Master of Default M16A1 III</td>
+                    <td>{{ 'section-nine-tr-fifteen-desc' | translate }}</td>
+                    <td>1500 XP/ 50000 BP</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="divider"></div>
+    <div class="container">
+        <div class="pull-left"><img style="height: 40px;" preload-image ng-src="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/vertigo-logo.svg" default-image="http://d3mrh9k3iunait.cloudfront.net/static/event/cs58/assets/images/default.png" alt="vertigo logo"></div>
+        <div class="pull-right">&copy;2016 Vertigo Games, Inc. <span class="text-capitalize">{{ 'copyright' | translate }}</span></div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+        
+        $('.carousel').carousel({
+            carouselWidth: 960,
+            carouselHeight: 310,
+            directionNav: true
+        });
+
+        var data = {  
+            labels: ['Damage', 'Fire Rate', 'Weight', 'Magazine', 'Accuracy'],
+            // Our series array that contains series objects or in this case series data arrays
+            series: [
+              [5.5, 8.9, 6.7, 3, 8.5]
+            ]
+        };
+
+        var options = {
+            high: 10,
+            width: 450,
+            height: 250,
+            axisX: {
+                showGrid: false
+            },
+            axisY: {
+                type: Chartist.FixedScaleAxis,
+                ticks: [0, 2, 4, 6, 8, 10]
+            }
+        }
+
+        var chartOne = new Chartist.Bar('.ct-chart', data, options);
+
+         // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: "#ak47-srm", duration: 340})
+            .addTo(controller)
+            // .addIndicators() // add indicators (requires plugin)
+            .on("start end", function (e) {
+            $("#ak47-srm").get(0).play();
+        });
+    });
+</script>

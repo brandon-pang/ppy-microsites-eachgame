@@ -1,0 +1,435 @@
+<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="CHARACTER"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="EVENT"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="EGGHUNT"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="TUTORIAL"></a></li>
+        <li><a href="#section-six" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MAP"></a></li>
+        <li><a href="#section-seven" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="EVENT"></a></li>
+        <li><a href="#section-eight" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="SYSTEM"></a></li>
+        <li><a href="#section-nine" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="WEAPON"></a></li>
+        <li><a href="#section-ten" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="PACKAGE"></a></li>
+    </ul>
+</nav>
+
+<section id="section-one" style="background-image: url('assets/images/section-one-bg.jpg');">
+    <div id="top-divider"></div>
+    
+    <div class="container pad-bot-50">
+        <div class="go-back pad-top-30" style="display: inline-block; width: 49%;">
+            <a href="http://www.blackshot.com" target="_blank" class="text-capitalize"><i class="icon-go-back"></i><span translate="{{ 'goback' }}"></span></a>
+        </div>
+        <div class="dropdown pad-top-30" style="display: inline-block; width: 49%; text-align: right;">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <span><img preload-image ng-src="assets/images/flag-{{ main.flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a ng-click="main.switchLanguage('en')">
+                        <span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize" translate="{{ 'english' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('fr')">
+                        <span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize" translate="{{ 'french' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('de')">
+                        <span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize" translate="{{ 'german' }}"></span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('pt')">
+                        <span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+        
+        <a href="http://www.blackshot.com" target="_blank" class="text-center logo">
+            <img preload-image ng-src="assets/images/blackshot-logo.png" class="logo" default-image="assets/images/default.png" width="390" height="89" alt="logo">
+        </a>
+        <div style="min-height: 300px;"></div>
+        <div layout="row" layout-align="center center">
+            <img preload-image ng-src="assets/images/section-one-title.png" default-image="assets/images/default.png" alt="section one title" class="animated fadeInUpBig">
+        </div>
+        <div style="min-height: 100px;"></div>
+        <div layout="row" layout-align="center center">
+            <a href="#section-two" class="scroll-down" du-smooth-scroll du-scrollspy>
+                <i class="icon-header-mouse"></i>
+                <span class="text-uppercase" translate="{{ 'scrolldown' }}"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="section-two">
+    <div class="container pad-top-100 pad-bot-30">
+        <div id="player" style="display: block; margin: 0 auto 70px; position: relative; width: 620px; height: 350px;"></div>
+        <div class="col-50">
+            <div class="text-uppercase text-center accent-font primary-color extrabold ft-size-5 line-height-1" translate="{{ 'section-two-text-one' }}"></div>
+        </div>
+        <div class="col-50">
+            <img preload-image ng-src="assets/images/section-two-paratrooper.png" default-image="assets/images/default.png" alt="paratrooper" class="img-responsive center-block">
+            <div class="text-uppercase text-center accent-font primary-color bold ft-size-3">999D/30D/15D/9D/7D</div>
+            <div class="text-uppercase text-center accent-font white bold ft-size-2" translate="{{ 'is-available' }}"></div>
+            <img preload-image ng-src="assets/images/section-two-goldbox.png" default-image="assets/images/default.png" alt="goldbox" class="img-responsive center-block">
+        </div>
+        <div class="clearfix"></div>
+        <div class="text-uppercase text-center accent-font secondary-color bold ft-size-3 pad-top-30 pad-bot-50" translate="{{ 'section-two-text-two' }}"></div>
+        <div layout="row" layout-align="center center">
+            <a class="cust-btn center-block text-uppercase text-center accent-font secondary-color bold ft-size-2" translate="{{ 'section-two-btn-text' }}"></a>
+        </div>
+    </div>
+</section>
+
+<section id="section-three">
+    <div class="container pad-top-100 pad-bot-50">
+        <div class="text-uppercase text-center accent-font primary-color extrabold ft-size-7 line-height-1" translate="{{ 'section-three-title' }}"></div>
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-2 pad-top-3 pad-bot-30" translate="{{ 'section-three-text' }}"></div>
+        <div layout="row" layout-align="center center">
+            <div style="float:left;">
+                <div class="day-5" layout="row" layout-align="center center">
+                    <img preload-image ng-src="assets/images/section-three-day-5-item.png" default-image="assets/images/default.png" alt="item" class="img-responsive" style="max-width: 80%;">
+                </div>
+                <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3">KAL-Tec KSG</div>
+            </div>
+            <div style="float:left;">
+                <div class="day-10" layout="row" layout-align="center end">
+                    <img preload-image ng-src="assets/images/section-three-day-10-item.png" default-image="assets/images/default.png" alt="item" class="img-responsive" style="max-width: 65%;">
+                </div>
+                <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3">Rayne</div>
+            </div>
+            <div style="float:left;">
+                <div class="day-15" layout="row" layout-align="center end">
+                    <img preload-image ng-src="assets/images/section-three-day-15-item.png" default-image="assets/images/default.png" alt="item" class="img-responsive" style="max-width: 65%;">
+                </div>
+                <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3">Paratrooper</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="day-20 mg-top-20 center-block" layout="row" layout-align="center center">
+            <img preload-image ng-src="assets/images/section-three-day-20-item.png" default-image="assets/images/default.png" alt="item" class="img-responsive">
+        </div>
+        <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3">AWP GHOST</div>
+    </div>
+</section>
+
+<section id="section-four">
+    <div class="container pad-top-100 pad-bot-70">
+        <img preload-image ng-src="assets/images/section-four-title.png" default-image="assets/images/default.png" alt="title" class="center-block">
+        <div class="text-uppercase text-center accent-font white bold ft-size-3 line-height-1 pad-top-20 pad-bot-30" translate="{{ 'section-four-text-one' }}"></div>
+        <div class="col-30">
+            <div class="text-uppercase text-center accent-font white bold ft-size-3" translate="{{ 'section-four-easter-egg' }}"></div>
+            <img preload-image ng-src="assets/images/section-four-prize-one.jpg" default-image="assets/images/default.png" alt="prize" class="img-responsive center-block">
+            <p class="text-uppercase text-center accent-font white bold pad-top-10" translate="{{ 'section-four-easter-egg-desc' }}"></p>
+        </div>
+        
+        <div class="col-70">
+            <div class="text-uppercase text-center accent-font white bold ft-size-3" translate="{{ 'section-four-big-easter-egg' }}"></div>
+            <img preload-image ng-src="assets/images/section-four-prize-two.jpg" default-image="assets/images/default.png" alt="prize" class="img-responsive">
+            <p class="text-uppercase text-center accent-font white bold pad-top-10" translate="{{ 'section-four-big-easter-egg-desc' }}"></p>
+        </div>
+   </div>
+</section>
+
+<section id="section-five">
+    <div class="container pad-top-100">
+        <div class="col-70 pad-top-50">
+            <i class="text-uppercase accent-font white extrabold ft-size-9 line-height-dot8" translate="{{ 'section-five-title' }}"></i>
+            <div class="text-uppercase accent-font white bold ft-size-2dot5 line-height-1 pad-top-20 pad-bot-20" translate="{{ 'section-five-text-one' }}"></div>
+            <div class="text-uppercase accent-font white bold ft-size-2dot5 line-height-1 pad-bot-20" translate="{{ 'section-five-text-two' }}"></div>
+            <div id="player-two" style="display: block; margin: 0 auto 70px; position: relative; width: 620px; height: 350px;"></div>
+        </div>
+    </div>  
+</section>
+
+<section id="section-six">
+    <div class="container pad-top-100">
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-8 line-height-1" translate="{{ 'section-six-title' }}"></div>
+        <div class="text-uppercase text-center accent-font white bold ft-size-2dot5 pad-top-10 pad-bot-30" translate="{{ 'section-six-subtitle' }}"></div>
+    </div>
+    <div id="section-six-slide">
+        <div><img preload-image ng-src="assets/images/section-six-slide1.jpg" default-image="/assets/images/default.png"></div>
+        <div><img preload-image ng-src="assets/images/section-six-slide2.jpg" default-image="/assets/images/default.png"></div>
+        <div><img preload-image ng-src="assets/images/section-six-slide3.jpg" default-image="/assets/images/default.png"></div>
+        <div><img preload-image ng-src="assets/images/section-six-slide4.jpg" default-image="/assets/images/default.png"></div>
+        <div><img preload-image ng-src="assets/images/section-six-slide5.jpg" default-image="/assets/images/default.png"></div>
+    </div>
+    <div class="section-six-subsection">
+        <div class="container pad-top-50 pad-bot-50">
+            <div class="col-70">
+                <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                    <md-checkbox ng-model="main.data.cb1" ng-click="$storage.cb1 = !$storage.cb1" class="green-cb white-border" aria-label="cb1"></md-checkbox>
+                    <span ng-class="{ 'strike': main.data.cb1 == true, 'no-strike': main.data.cb1 == false }" translate="{{ 'task-one' }}"></span>
+                </div>
+                <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                    <md-checkbox ng-model="main.data.cb2" ng-click="$storage.cb2 = !$storage.cb2" class="green-cb white-border" aria-label="cb2"></md-checkbox>
+                    <span ng-class="{ 'strike': main.data.cb2 == true, 'no-strike': main.data.cb2 == false }" translate="{{ 'task-two' }}"></span>
+                </div>
+                <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                    <md-checkbox ng-model="main.data.cb3" ng-click="$storage.cb3 = !$storage.cb3" class="green-cb white-border" aria-label="cb3"></md-checkbox>
+                    <span ng-class="{ 'strike': main.data.cb3 == true, 'no-strike': main.data.cb3 == false }" translate="{{ 'task-three' }}"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="van" preload-image ng-src="assets/images/section-six-van.png" default-image="/assets/images/default.png">
+</section>
+
+<section id="section-seven">
+    <div class="container pad-top-50 pad-bot-70">
+        <img preload-image ng-src="assets/images/section-seven-logo.png" default-image="/assets/images/default.png" class="center-block">
+        <div class="text-uppercase text-center accent-font section-seven-color extrabold ft-size-4 pad-top-30" translate="{{ 'section-seven-date' }}"></div>
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-4" translate="{{ 'section-seven-time' }}"></div>
+        <div class="text-center">
+            <span class="text-uppercase accent-font section-seven-color extrabold ft-size-4" translate="{{ 'duration' }}"></span>
+            <span class="text-uppercase accent-font white extrabold ft-size-4" translate="{{ 'section-seven-duration' }}"></span>
+        </div>
+        <div layout="row" layout-align="center center">
+            <div class="col-33">
+                <img preload-image ng-src="assets/images/section-seven-prize-one.png" default-image="/assets/images/default.png" class="center-block">
+                <div class="text-uppercase text-center accent-font section-seven-color bold ft-size-2 lt-spacing-3 pad-top-20" translate="{{ 'section-seven-prize-one-title' }}"></div>
+                <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3" translate="{{ 'section-seven-prize-one-desc' }}"></div>
+            </div>
+            <div class="col-33">
+                <div class="text-uppercase text-center accent-font section-seven-color bold ft-size-5 lt-spacing-3 pad-top-20" translate="{{ 'prizes' }}"></div>
+            </div>
+            <div class="col-33">
+                <img preload-image ng-src="assets/images/section-seven-prize-two.png" default-image="/assets/images/default.png" class="center-block">
+                <div class="text-uppercase text-center accent-font section-seven-color bold ft-size-2 lt-spacing-3 pad-top-20" translate="{{ 'section-seven-prize-two-title' }}"></div>
+                <div class="text-uppercase text-center accent-font white bold ft-size-2 lt-spacing-3" translate="{{ 'section-seven-prize-two-desc' }}"></div>
+            </div>
+        </div>
+
+        <div class="text-uppercase text-center accent-font section-seven-color bold ft-size-3 lt-spacing-3" translate="{{ 'section-seven-rule-title' }}"></div>
+        <p class="text-uppercase text-center accent-font white bold lt-spacing-3 pad-top-20" translate="{{ 'section-seven-rule-one' }}"></p>
+        <p class="text-uppercase text-center accent-font white bold lt-spacing-3" translate="{{ 'section-seven-rule-two' }}"></p>
+        <p class="text-uppercase text-center accent-font white bold lt-spacing-3" translate="{{ 'section-seven-rule-three' }}"></p>
+        <div class="text-uppercase text-center accent-font section-seven-color bold ft-size-2 lt-spacing-3 pad-top-20 pad-bot-50" translate="{{ 'section-seven-rule-ps' }}"></div>
+        <div layout="row" layout-align="center center">
+            <a href="http://nforum.blackshot.com/index.php?p=/discussion/120/event-break-the-gm-defense#latest" target="_blank" class="cust-btn center-block text-uppercase text-center accent-font secondary-color bold ft-size-2" translate="{{ 'section-two-btn-text' }}"></a>
+        </div>
+    </div>
+</section>
+
+<section id="section-eight">
+    <div class="container pad-top-100 pad-bot-70">
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-7 pad-top-70" translate="{{ 'section-eight-title' }}"></div>
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-2 pad-bot-50" translate="{{ 'section-eight-subtitle' }}"></div>
+        <div layout="row" layout-align="center center" translate="{{ 'cartoon '}}"></div>
+        <div id="player-three" class="pad-top-50" style="display: block; margin: 0 auto 70px; position: relative; width: 620px; height: 350px;"></div>
+    </div>
+</section>
+
+<section id="section-nine">
+    <div class="container pad-top-70 pad-bot-70">
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-7">kal-tec rfb tuning</div>
+        <video id="kaltec" width="940" height="340">
+            <source src="assets/video/kaltec.mp4" type="video/mp4">
+            <source src="assets/video/kaltec.ogv" type="video/ogv">
+        </video>
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-3 pad-top-20" translate="{{ 'section-nine-text-one' }}"></div>
+        <hr>
+        <div class="text-uppercase text-center accent-font white extrabold ft-size-5 pad-top-20 pad-bot-30" translate="{{ 'section-nine-title' }}"></div>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slideItem active-slide">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="assets/images/section-nine-item-one.png" default-image="assets/images/default.png" alt="item">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center white">easter egg grenade</h4>
+                        <p class="text-uppercase text-center white">{{ 'section-nine-item-one' | translate }}</p>
+                    </div>
+                </div>
+                 <div class="slideItem">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="assets/images/section-nine-item-two.png" default-image="assets/images/default.png" alt="item">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center white">bunny ears</h4>
+                        <p class="text-uppercase text-center white">{{ 'section-nine-item-two' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="assets/images/section-nine-item-three.png" default-image="assets/images/default.png" alt="item" class="wide-img">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center white">Kal-Tec RFB</h4>
+                        <p class="text-uppercase text-center white">{{ 'section-nine-item-three' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem">
+                    <div class="carousel-image">
+                        <img preload-image ng-src="assets/images/section-nine-item-four.png" default-image="assets/images/default.png" alt="item" class="wide-img">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center white">Kal-Tec KSG</h4>
+                        <p class="text-uppercase text-center white">{{ 'section-nine-item-four' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pad-top-50">
+            <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                <md-checkbox ng-model="main.data.cb4" ng-click="$storage.cb4 = !$storage.cb4" class="green-cb white-border" aria-label="cb4"></md-checkbox>
+                <span ng-class="{ 'strike': main.data.cb4 == true, 'no-strike': main.data.cb4 == false }" translate="{{ 'task-four' }}"></span>
+            </div>
+            <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                <md-checkbox ng-model="main.data.cb5" ng-click="$storage.cb5 = !$storage.cb5" class="green-cb white-border" aria-label="cb5"></md-checkbox>
+                <span ng-class="{ 'strike': main.data.cb5 == true, 'no-strike': main.data.cb5 == false }" translate="{{ 'task-five' }}"></span>
+            </div>
+            <div class="checkbox-wrapper text-uppercase white accent-font bold ft-size-2">
+                <md-checkbox ng-model="main.data.cb6" ng-click="$storage.cb6 = !$storage.cb6" class="green-cb white-border" aria-label="cb6"></md-checkbox>
+                <span ng-class="{ 'strike': main.data.cb6 == true, 'no-strike': main.data.cb6 == false }" translate="{{ 'task-six' }}"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-ten">
+    <div class="container pad-top-70 pad-bot-70">
+        <div class="text-center pad-bot-20" translate="{{ 'section-ten-title' }}"></div>
+        <img preload-image ng-src="assets/images/section-ten-basket.png" default-image="assets/images/default.png" alt="basket" class="center-block">
+        <div class="text-uppercase text-center accent-font section-ten-color extrabold ft-size-2dot5 lt-spacing-1 pad-top-30" translate="{{ 'section-ten-text-one' }}"></div>
+        <div class="text-uppercase text-center accent-font section-ten-color bold ft-size-2dot5 lt-spacing-1 pad-top-20">acr / mcmillan black / KAC Flectarn<br>Glock 18 Camo / Death Scythe / Skull Grenade<br>Gift Box</div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="divider"></div>
+    <div class="container">
+        <div class="pull-left"><img style="height: 40px;" preload-image ng-src="assets/images/vertigo-logo.svg" default-image="assets/images/default.png" alt="vertigo logo"></div>
+        <div class="pull-right">&copy;2016 Vertigo Games, Inc. <span class="text-capitalize" translate="{{ 'copyright' }}"></span></div>
+    </div>
+</footer>
+
+<script>
+
+    if (typeof youtube_api_init == 'undefined') {
+        // This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = 'https://www.youtube.com/player_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    } else {
+        onYouTubeIframeAPIReady();
+    }
+
+    function onYouTubeIframeAPIReady() {
+        // This function creates an <iframe> (and YouTube player) after the API code downloads.
+        var player;
+        var playerTwo;
+        var playerThree;
+        player = new YT.Player('player', {
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0
+            },
+            height: 620,
+            width: 350,
+            videoId: 'hGE3xTUZ2CI',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                    event.target.playVideo();
+                }
+            }
+        });
+        playerTwo = new YT.Player('player-two', {
+            playerVars: {
+                autoplay: 0,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0
+            },
+            height: 620,
+            width: 350,
+            videoId: 'XQ2ESTlnvGU',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                }
+            }
+        });
+        playerThree = new YT.Player('player-three', {
+            playerVars: {
+                autoplay: 0,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0
+            },
+            height: 620,
+            width: 350,
+            videoId: 'nyl-XVpdo7g',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                }
+            }
+        });
+    };
+
+    var youtube_api_init = 1;
+
+    $(document).ready(function() {
+
+        $('#section-six-slide').slick({
+            infinite: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+            {
+              breakpoint: 1501,
+              settings: {
+                slidesToShow: 4
+              }
+            },
+            {
+              breakpoint: 1001,
+              settings: {
+                slidesToShow: 3
+              }
+            },
+            {
+              breakpoint: 501,
+              settings: {
+                slidesToShow: 2
+              }
+            }
+            ]
+        });
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('.carousel').carousel({
+            carouselWidth: 960,
+            carouselHeight: 380,
+            directionNav: true
+        });
+
+        // init controller
+        var controller = new ScrollMagic.Controller();
+
+        // build scene
+        var scene1 = new ScrollMagic.Scene({triggerElement: "#kaltec", duration: 340})
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
+        .on("start end", function (e) {
+            $("#kaltec").get(0).play();
+        });
+
+    });
+</script>

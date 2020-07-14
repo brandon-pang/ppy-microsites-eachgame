@@ -1,0 +1,264 @@
+<!--<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>-->
+
+<section id="section-one" style="background-image: url( {{imgUrl}}illust_dom_all.jpg );">
+	<div class="container">
+		<!-- top nav starts -->
+		<div class="top-nav">
+			<div class="navlink"><a href="{{pathUrl[0].loc}}" target="_blank">{{ 'goback' | translate}}</a></div>
+			<div class="logo-wrapper">
+				<a href="{{pathUrl[0].loc}}" target="_blank">
+					<img preload-image ng-src="{{imgUrl}}BS_LOGO-Transparent.png" default-image="{{imgUrl}}default.png"
+					     class="logo" alt="logo" style="width:300px;">
+				</a>
+			</div>
+			<div class="language-bar">
+				<div class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;">
+                            <img preload-image ng-src="{{imgUrl}}flag-{{ flag }}.svg"
+                                 default-image="{{imgUrl}}default.png" height="15" alt="flag">
+                        </span>
+						<span>{{ lang }}</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-uk.svg" default-image="{{imgUrl}}default.png"
+                                     height="15" alt="english flag">
+                            </span>
+							<span translate="{{ 'english' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('de')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-germany.svg"
+                                     default-image="{{imgUrl}}default.png" height="15" alt="german flag">
+                            </span>
+							<span translate="{{ 'german' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('fr')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-france.svg"
+                                     default-image="{{imgUrl}}default.png" height="15" alt="french flag"></span>
+							<span translate="{{ 'french' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('pt')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-brazil.svg"
+                                     default-image="{{imgUrl}}default.png" height="15" alt="brazil flag"></span>
+							<span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- top nav ends -->
+		<div class="event-logo-cont animated fadeIn" style="background-image: url( {{imgUrl}}title-{{flag}}.png );">
+		</div>
+	</div>
+	<div class="event-title-cont" data-aos="fade-up">
+		<div class="top-texts">
+			<h2>{{ 's1-title' | translate }}</h2>
+		</div>
+		<div class="top-texts2">
+			<p>{{ 's1-text1' | translate }}</p>
+		</div>
+	</div>
+	<div class="second-wrap" data-aos="fade-up">
+		<div class="col-div">
+			<div class="col-left">
+				<h2 translate="s2-title"></h2>
+				<p translate="{{ 's2-text1' }}"></p>
+			</div>
+			<div class="col-right">
+				<div class="place-img" style="background-image: url({{imgUrl}}section1b.png );">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="section-two" style="background-image:url('{{imgUrl}}map-bg.jpg');">
+	<div class="container">
+		<div class="s4-title-wrap">
+			<h3 translate="new-map" data-aos="fade-up"></h3>
+			<h2 translate="s3-title" data-aos="fade-up"></h2>
+			<p translate="{{ 's3-text1' }}" data-aos="fade-up"></p>
+		</div>
+		<div class="map-cont">
+			<div class="map-left" data-aos="fade-right">
+				<div class="pageNoWrap">
+					<p>{{slickIndex}}/5</p>
+				</div>
+				<slick class="slider-wrap" settings="slickConfig">
+					<img ng-src="{{imgUrl}}map-slider/01.jpg" alt="">
+					<img ng-src="{{imgUrl}}map-slider/02.jpg" alt="">
+					<img ng-src="{{imgUrl}}map-slider/03.jpg" alt="">
+					<img ng-src="{{imgUrl}}map-slider/04.jpg" alt="">
+					<img ng-src="{{imgUrl}}map-slider/05.jpg" alt="">
+				</slick>
+			</div>
+			<div class="map-right" data-aos="fade-left">
+				<div class="blueprint"
+				     style="background-image: url({{imgUrl}}top-view-melaka.png);">
+					<div class="point1">
+						<div class="point" ng-init="point1Visible = false" ng-mouseover="point1Visible = true"
+						     ng-mouseleave="point1Visible = false">
+							<span class="pulse1"></span>
+							<span class="pulse2"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-a.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point1Visible"
+						     style="background-image: url({{imgUrl}}map-interactive/a.jpg);"></div>
+					</div>
+
+					<div class="point2">
+						<div class="point" ng-init="point2Visible = false" ng-mouseover="point2Visible = true"
+						     ng-mouseleave="point2Visible = false">
+							<span class="pulse1"></span>
+							<span class="pulse2"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-b.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point2Visible"
+						     style="background-image: url({{imgUrl}}map-interactive/b.jpg);"></div>
+					</div>
+
+					<div class="point3">
+						<div class="point" ng-init="point3Visible = false" ng-mouseover="point3Visible = true"
+						     ng-mouseleave="point3Visible = false">
+							<span class="pulse1"></span>
+							<span class="pulse2"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-c.svg">
+						</div>
+						<div class="tb ng-hide"
+						     ng-show="point3Visible"
+						     style="background-image: url({{imgUrl}}map-interactive/c.jpg);"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="section-three" style="background-image:url('{{imgUrl}}placeholder5.jpg');">
+	<div class="container">
+		<div class="top">
+			<h2 translate="s4-title" data-aos="fade-up"></h2>
+			<div class="img-wrap" data-aos="flip-up">
+				<img ng-src="{{imgUrl}}capturing-zone-none.gif" alt="">
+				<img ng-src="{{imgUrl}}capturing-zone.gif" alt="">
+				<img ng-src="{{imgUrl}}capturing-zone-first-open.gif" alt="">
+			</div>
+		</div>
+		<div class="sub">
+			<div class="sub-left" data-aos="fade-right">
+				<p translate="s4-text1"></p>
+			</div>
+			<div class="sub-right">
+
+			</div>
+		</div>
+	</div>
+</section>
+<section id="section-four" style="background-image:url('{{imgUrl}}placeholder3.jpg');">
+	<div class="container">
+		<div class="top" data-aos="fade-up">
+			<h2 translate="s5-title"></h2>
+			<p translate="s5-text1"></p>
+		</div>
+		<div class="sub" data-aos="fade-up">
+			<table>
+				<tr>
+					<td>DOMinance</td>
+					<td translate="s5-achievement1"></td>
+				</tr>
+				<tr>
+					<td>DOMination</td>
+					<td translate="s5-achievement2"></td>
+				</tr>
+				<tr>
+					<td>DOMinator</td>
+					<td translate="s5-achievement3"></td>
+				</tr>
+				<tr>
+					<td>DOM Competitor I</td>
+					<td translate="s5-achievement4"></td>
+				</tr>
+				<tr>
+					<td>DOM Competitor II</td>
+					<td translate="s5-achievement5"></td>
+				</tr>
+				<tr>
+					<td>DOM Competitor III</td>
+					<td translate="s5-achievement6"></td>
+				</tr>
+				<tr>
+					<td>Defender</td>
+					<td translate="s5-achievement7"></td>
+				</tr>
+				<tr>
+					<td>Protector</td>
+					<td translate="s5-achievement8"></td>
+				</tr>
+				<tr>
+					<td>Iron Guard</td>
+					<td translate="s5-achievement9"></td>
+				</tr>
+				<tr>
+					<td>Unmoveable Wall</td>
+					<td translate="s5-achievement10"></td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+</section>
+<section id="section-five" style="background-image:url('{{imgUrl}}placeholder4.jpg');">
+	<div class="container">
+		<div class="cont-left" data-aos="fade-right">
+			<h2 translate="s6-title"></h2>
+			<p translate="{{ 's6-text1' }}" class="context"></p>
+			<a href="{{pathUrl[1].loc}}" target="_blank">
+				<div class="see-btn"><p class="text">{{'more-info' | translate}}</p></div>
+			</a>
+		</div>
+		<div class="cont-right" data-aos="fade-left">
+		</div>
+	</div>
+	<div class="img-wrap"><img ng-src="{{imgUrl}}last-section.png" alt=""></div>
+</section>
+<script>
+	AOS.init({
+		offset: 200,
+		duration: 1000,
+		delay: 100
+	})
+</script>
+<footer id="footer">
+	<div class="container">
+		<div class="flex-align-items flex-justify-between flex-container">
+			<div class="item1">
+				<a href="{{pathUrl[2].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+				                                  style="width:142px;"></a>
+			</div>
+			<div class="item2">
+				<p class="copyright">{{ 'copyright' | translate }}</p>
+			</div>
+			<div class="item3">
+				<a href="{{pathUrl[3].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+				                                  style="width:130px;"></a>
+			</div>
+		</div>
+	</div>
+</footer>

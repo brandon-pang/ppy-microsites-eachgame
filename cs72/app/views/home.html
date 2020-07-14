@@ -1,0 +1,407 @@
+<section id="top-nav" ng-show="topNavVisible" class="animated fadeIn">
+    <div class="container">
+        <ul>
+            <li><a href="#section2" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'new-game-mode' }}"></a><span></span></li>
+            <li><a href="#section3" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'new-map' }}"></a><span></span></li>
+            <li><a href="#section4" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'hunt-is-on' }}"></a><span></span></li>
+            <li><i class="icon-blackshot"></i></li>
+            <li><a href="#section5" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'accolades' }}"></a><span></span></li>
+            <li><a href="#section6" class="tabs" du-smooth-scroll du-scrollspy>claymore</a><span></span></li>
+            <li><a href="#section9" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'event' }}"></a><span></span></li>
+        </ul>
+    </div>
+</section>
+
+<section id="section1" style="background-image: url('./assets/images/section1/bg.jpg')">
+    <div class="container">
+        <!-- top nav starts -->
+        <div class="top-nav">
+            <div class="navlink"><a href="https://blackshot.papayaplay.com/blackshot.do" target="_blank">{{ 'goback' | translate}}</a></div>
+            <div class="logo-wrapper">
+                <a href="https://blackshot.papayaplay.com/blackshot.do" target="_blank"><img preload-image ng-src="assets/images/blackshot-logo.png" default-image="assets/images/default.png" class="logo" alt="logo"></a>
+            </div>
+            <div class="language-bar">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;"><img preload-image ng-src="assets/images/flag-{{ flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ lang }}</span><b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-click="switchLanguage('en')">
+                            <span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span translate="{{ 'english' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('de')">
+                            <span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span translate="{{ 'german' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('fr')">
+                            <span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span translate="{{ 'french' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('pt')">
+                            <span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+        <!-- top nav ends -->
+
+        <div class="title animated fadeIn" translate="{{ 'section1-title' }}"></div>
+
+        <div class="content-wrapper">
+            <h3 translate="{{ 'new-game-mode' }}"></h3>
+            <h2 translate="{{ 'section1-text1' }}"></h2>
+            <p translate="{{ 'section1-text2' }}"></p>
+            <p class="color1" translate="{{ 'section1-text3' }}"></p>
+
+            <div class="card-wrapper">
+                <div class="card1 card" preload-bg-image="assets/images/section1/card1-bg.jpg" default-image="assets/images/default.png">
+                    <div class="text-wrapper">
+                        <div class="subtitle" translate="{{ 'catch-me' }}"></div>
+                        <h3 translate="{{ 'hunt-is-on' }}"></h3>
+                    </div>
+                    <a href="#section4" class="btn1" du-smooth-scroll du-scrollspy translate="{{ 'check-now' }}"></a>
+                </div>
+                <div class="card2 card" preload-bg-image="assets/images/section1/card2-bg.jpg" default-image="assets/images/default.png">
+                    <div class="text-wrapper">
+                        <div class="subtitle" translate="{{ 'new-map' }}"></div>
+                        <h3 translate="{{ 'nowhere-safe' }}"></h3>
+                    </div>
+                    <a href="#section3" class="btn1" du-smooth-scroll du-scrollspy translate="{{ 'check-now' }}"></a>
+                </div>
+                <div class="card3 card" preload-bg-image="assets/images/section1/card3-bg.jpg" default-image="assets/images/default.png">
+                    <div class="text-wrapper">
+                        <div class="subtitle" translate="{{ 'new-items' }}"></div>
+                        <h3 translate="{{ 'spoils-of-battle' }}"></h3>
+                    </div>
+                    <a href="#section5" class="btn1" du-smooth-scroll du-scrollspy translate="{{ 'check-now' }}"></a>
+                </div>
+                <div class="card4 card" preload-bg-image="assets/images/section1/card4-bg.jpg" default-image="assets/images/default.png">
+                    <div class="text-wrapper">
+                        <div class="subtitle" translate="{{ 'new-game-mode' }}"></div>
+                        <h3 translate="{{ 'one-man-machine' }}"></h3>
+                    </div>
+                    <a href="#section2" class="btn1" du-smooth-scroll du-scrollspy translate="{{ 'check-now' }}"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="section2">
+    <div class="arrow" preload-bg-image="assets/images/section2/arrow.png" default-image="assets/images/default.png"></div>
+
+    <img class="char1" preload-image ng-src="assets/images/section2/char1.png" default-image="assets/images/default.png">
+    <img class="char2" preload-image ng-src="assets/images/section2/char2.png" default-image="assets/images/default.png">
+
+    <div class="container">
+        <h2 translate="{{ 'one-man-machine' }}"></h2>
+        <p translate="{{ 'section2-text1' }}"></p>
+    
+        <div id="player">
+    </div>
+</section>
+
+<section id="section3">
+    <div class="arrow" preload-bg-image="assets/images/section3/arrow.png" default-image="assets/images/default.png"></div>
+
+    <div class="container">
+        <h3 translate="{{ 'section3-title' }}"></h3>
+        <h2 translate="{{ 'nowhere-safe' }}"></h2>
+        <div class="blueprint" preload-bg-image="assets/images/section3/blueprint.png" default-image="assets/images/default.png">
+            <div class="point1">
+                <div class="point" ng-init="point1Visible = false" ng-mouseover="point1Visible = true" ng-mouseleave="point1Visible = false">
+                    <span class="pulse1"></span>
+                    <span class="pulse2"></span>
+                    <img width="25px" height="25px" preload-image ng-src="assets/images/section3/point.svg" default-image="assets/images/default.png">
+                </div>
+                <div class="tb" preload-bg-image="assets/images/section3/tb1.jpg" default-image="assets/images/default.png" ng-show="point1Visible"></div>
+            </div>
+
+            <div class="point2">
+                <div class="point" ng-init="point2Visible = false" ng-mouseover="point2Visible = true" ng-mouseleave="point2Visible = false">
+                    <span class="pulse1"></span>
+                    <span class="pulse2"></span>
+                    <img width="25px" height="25px" preload-image ng-src="assets/images/section3/point.svg" default-image="assets/images/default.png">
+                </div>
+                <div class="tb" preload-bg-image="assets/images/section3/tb2.jpg" default-image="assets/images/default.png" ng-show="point2Visible"></div>
+            </div>
+
+            <div class="point3">
+                <div class="point" ng-init="point3Visible = false" ng-mouseover="point3Visible = true" ng-mouseleave="point3Visible = false">
+                    <span class="pulse1"></span>
+                    <span class="pulse2"></span>
+                    <img width="25px" height="25px" preload-image ng-src="assets/images/section3/point.svg" default-image="assets/images/default.png">
+                </div>
+                <div class="tb" preload-bg-image="assets/images/section3/tb3.jpg" default-image="assets/images/default.png" ng-show="point3Visible"></div>
+            </div>
+
+            <div class="point4">
+                <div class="point" ng-init="point4Visible = false" ng-mouseover="point4Visible = true" ng-mouseleave="point4Visible = false">
+                    <span class="pulse1"></span>
+                    <span class="pulse2"></span>
+                    <img width="25px" height="25px" preload-image ng-src="assets/images/section3/point.svg" default-image="assets/images/default.png">
+                </div>
+                <div class="tb" preload-bg-image="assets/images/section3/tb4.jpg" default-image="assets/images/default.png" ng-show="point4Visible"></div>
+            </div>
+
+        </div>
+        
+        <div class="hr-title"><hr><h3 translate="{{ 'bonus-map' }}"></h3><hr></div>
+        <slick id="section3-carousel" settings="slickConfig">
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map1.jpg" default-image="assets/images/default.png"></div>
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map4.jpg" default-image="assets/images/default.png"></div>
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map2.jpg" default-image="assets/images/default.png"></div>
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map5.jpg" default-image="assets/images/default.png"></div>
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map3.jpg" default-image="assets/images/default.png"></div>
+            <div class="slide"><img preload-image ng-src="assets/images/section3/map6.jpg" default-image="assets/images/default.png"></div>
+        </slick>
+
+        <h4 translate="{{ 'section3-text1' }}"></h4>
+    </div>
+</section>
+
+<section id="section4">
+    <div class="arrow" preload-bg-image="assets/images/section4/arrow.png" default-image="assets/images/default.png"></div>
+
+    <div class="container">
+        <div class="title" preload-bg-image="assets/images/section4/title-bg.png">
+            <h3 translate="{{ 'catch-me' }}"></h3>
+            <h2 translate="{{ 'hunt-is-on' }}"></h2>
+        </div>
+
+        <p class="body-text" translate="{{ 'section4-text1' }}"></p>
+
+        <div class="card-wrapper">
+            <div class="card1 card">
+                <div class="top" preload-bg-image="assets/images/section4/card1.png" default-image="assets/images/default.png"></div>
+                <div class="bottom">
+                    <h2 translate="{{ 'prey' }}"></h2>
+                    <p translate="{{ 'section4-text2' }}"></p>
+                    <p translate="{{ 'section4-text3' }}"></p>
+                </div>
+            </div>
+            <div class="card2 card">
+                <div class="top" preload-bg-image="assets/images/section4/card2.png" default-image="assets/images/default.png"></div>
+                <div class="bottom">
+                    <h2 translate="{{ 'hunters' }}"></h2>
+                    <p translate="{{ 'section4-text4' }}"></p>
+                    <p translate="{{ 'section4-text5' }}"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section5">
+    <div class="arrow" preload-bg-image="assets/images/section5/arrow.png" default-image="assets/images/default.png"></div>
+
+    <div class="container">
+        <h2 translate="{{ 'spoils-of-battle' }}"></h2>
+        <p translate="{{ 'section5-text1' }}"></p>
+        <h3 class="subtitle" translate="{{ 'accolades' }}"></h3>
+
+        <div class="g-row">
+            <div class="badge-wrapper">
+                <div class="badge" preload-bg-image="assets/images/section5/survivor.png" default-image="assets/images/default.png"></div>
+                <p translate="{{ 'section5-text3' }}"></p>
+            </div>
+
+            <div class="badge-wrapper">
+                <div class="badge" preload-bg-image="assets/images/section5/hunter.png" default-image="assets/images/default.png"></div>
+                <p translate="{{ 'section5-text4' }}"></p>
+            </div>
+        </div>
+        
+        <div class="g-row">
+            <div class="badge-wrapper">
+                <div class="badge" preload-bg-image="assets/images/section5/supporter.png" default-image="assets/images/default.png"></div>
+                <p translate="{{ 'section5-text5' }}"></p>
+            </div>
+
+            <div class="badge-wrapper">
+                <div class="badge" preload-bg-image="assets/images/section5/revenger.png" default-image="assets/images/default.png"></div>
+                <p translate="{{ 'section5-text6' }}"></p>
+            </div>
+        </div>
+
+        <h3 translate="{{ 'new' }}"></h3>
+        <h2>Breaching Random Box</h2>
+    </div>
+    
+</section>
+
+<section id="section6">
+    <img id="box" preload-image ng-src="assets/images/section6/box.png" default-image="assets/images/default.png">
+
+    <div class="container">
+        <div class="card-wrapper">
+            <div class="card">
+                <img class="card-img" preload-image ng-src="assets/images/section6/claymore.png" default-image="assets/images/default.png">
+                <div class="bottom">
+                    <a class="btn2" data-fancybox href="https://www.youtube.com/watch?v=HQInCyYWUB8&feature=youtu.be"><i class="fa fa-play-circle"></i> <span translate="{{ 'how-it-works' }}"></span></a>
+                    <h3>claymore</h3>
+                </div>
+                <i class="icon-plus" ng-init="description1Visible = false" ng-click="description1Visible = !description1Visible; description2Visible = false; description3Visible = false"></i>
+            </div>
+
+            <div class="card">
+                <img class="card-img" preload-image ng-src="assets/images/section6/k17.png" default-image="assets/images/default.png">
+                <div class="bottom">
+                    <a class="btn2" data-fancybox href="https://www.youtube.com/watch?v=rUXdp0b_UG0&feature=youtu.be"><i class="fa fa-play-circle"></i> <span translate="{{ 'how-it-works' }}"></span></a>
+                    <h3>k17</h3>
+                </div>
+                <i class="icon-plus" ng-init="description2Visible = false" ng-click="description2Visible = !description2Visible; description1Visible = false; description3Visible = false"></i>
+            </div>
+
+            <div class="card card3">
+                <slick id="section6-carousel" class="card-img" settings="slickConfig2">
+                    <div class="slide"><img preload-image ng-src="assets/images/section6/grenade1.png" default-image="assets/images/default.png"></div>
+                    <div class="slide"><img preload-image ng-src="assets/images/section6/grenade2.png" default-image="assets/images/default.png"></div>
+                    <div class="slide"><img preload-image ng-src="assets/images/section6/grenade3.png" default-image="assets/images/default.png"></div>
+                    <div class="slide"><img preload-image ng-src="assets/images/section6/grenade4.png" default-image="assets/images/default.png"></div>
+                </slick>
+                
+                <div class="bottom">
+                    <h3 ng-if="slick2Index === 0">Plasma Grenade</h3>
+                    <h3 ng-if="slick2Index === 1">Smoke Grenade</h3>
+                    <h3 ng-if="slick2Index === 2">Skull Grenade</h3>
+                    <h3 ng-if="slick2Index === 3">Gas<br>Grenade</h3>
+                </div>
+                <i class="icon-plus" ng-init="description3Visible = false" ng-click="description3Visible = !description3Visible; description1Visible = false; description2Visible = false"></i>
+            </div>
+        </div>
+
+        <div class="description description1 animate bouceIn" ng-show="description1Visible">
+            <p translate="{{ 'section6-text1' }}"></p>
+            <div class="triangle triangle1"><div class="inner-triangle"></div></div>
+        </div>
+
+        <div class="description description2 animate bouceIn" ng-show="description2Visible">
+            <p translate="{{ 'section6-text2' }}"></p>
+            <div class="triangle triangle2"><div class="inner-triangle"></div></div>
+        </div>
+
+        <div class="description description3 animate bouceIn" ng-show="description3Visible">
+            <p translate="{{ 'section6-text3 '}}"></p>
+            <div class="triangle triangle3"><div class="inner-triangle"></div></div>
+        </div>
+
+        <div class="hr-title"><hr><h3 translate="{{ 'the-box' }}"></h3><hr></div>
+        <p class="bottom-text" translate="{{ 'section6-text4' }}"></p>
+    </div>
+</section>
+
+<section id="section7">
+    <div class="arrow" preload-bg-image="assets/images/section7/arrow.png" default-image="assets/images/default.png"></div>
+    <div class="container">
+        <div class="g-row">
+            <div class="col1">
+                <h2 translate="{{ 'section7-title' }}"></h2>
+                <p translate="{{ 'section7-text1' }}"></p>
+                <a href="http://forum.papayaplay.com/index.php?p=/discussion/355184/gm-event-king-of-thrones" target="_blank" class="btn1"><span class="icon-plus"></span><span>{{ 'more-info' | translate }}</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section8">
+    <div class="arrow" preload-bg-image="assets/images/section8/arrow.png" default-image="assets/images/default.png"></div>
+    <div class="container">
+        <h2 translate="{{ 'section8-title' }}"></h2>
+        <p translate="{{ 'section8-text1' }}"></p>
+
+        <div class="hr-title"><hr><h3 translate="{{ 'achievements' }}"></h3><hr></div>
+
+        <div class="media" ng-repeat="a in achievements">
+            <div class="media-left media-middle">
+                <img class="media-object" ng-src="assets/images/section8/{{ a.url }}">
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{ a.name }}</h4>
+                <i ng-if="lang === 'English'">{{ a.en }}</i>
+                <i ng-if="lang === 'Deutsche'">{{ a.de }}</i>
+                <i ng-if="lang === 'Français'">{{ a.fr }}</i>
+                <i ng-if="lang === 'Português'">{{ a.pt }}</i>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</section>
+
+<section id="section9">
+    <div class="arrow" preload-bg-image="assets/images/section9/arrow.png" default-image="assets/images/default.png"></div>
+    <div class="container">
+        <div class="g-row">
+            <div class="col1">
+                <h2 translate="{{ 'section9-title' }}"></h2>
+                <p translate="{{ 'section9-text1' }}"></p>
+                <p translate="{{ 'section9-text2' }}"></p> 
+                <p translate="{{ 'section9-text3' }}"></p>
+                <a href="http://forum.papayaplay.com/index.php?p=/discussion/355186/community-feedback-cs72-fend-for-yourself" target="_blank" class="btn1"><span class="icon-plus"></span><span>{{ 'more-info' | translate }}</span></a>
+            </div>
+
+            <div class="col2">
+                <img preload-image ng-src="assets/images/section9/char.png" default-image="assets/images/default.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="flex-default">
+            <div class="col1">
+                <a href="http://www.papayaplay.com/portal.do" target="_blank"><img preload-image ng-src="assets/images/papaya-logo.svg" default-image="assets/images/default.png" alt="papaya logo" style="width: 160px;"></a>
+            </div>
+            <div class="col2">
+                <a href="http://www.vertigogames.com" target="_blank">
+                    <img style="height: 28px;" preload-image ng-src="assets/images/footer-ci.svg" default-image="assets/images/default.png" alt="vertigo logo">
+                </a>
+                <small translate="{{ 'copyright' }}"></small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    if (typeof youtube_api_init == 'undefined') {
+        // This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = 'https://www.youtube.com/player_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    } else {
+        onYouTubeIframeAPIReady();
+    }
+
+    function onYouTubeIframeAPIReady() {
+        // This function creates an <iframe> (and YouTube player) after the API code downloads.
+        var player;
+        
+        player = new YT.Player('player', {
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0,
+                loop: 1,
+                enablejsapi: 1,
+                playlist: 'oFF2CKSOor0'
+            },
+            width: 760,
+            height: 425,
+            videoId: 'oFF2CKSOor0',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                    event.target.playVideo();
+                }
+            }
+        });
+    };
+
+    var youtube_api_init = 1;
+</script>

@@ -1,0 +1,15 @@
+<md-dialog>
+	<button ng-click="close()"><i class="fa fa-times" aria-hidden="true"></i></button>
+	<div>
+		<div translate="{{ 'your-balance' }}"></div>
+		<h4>{{ balance | number: 0 }}</h4>
+		<div>BSC</div>
+	</div>
+    <p translate="{{ 'buy-text1' }}"></p>
+    <h3>{{ name }} <span> {{ duration }} DAY(S)</span></h3>
+    <p class="pad-bot-10"><strong>{{ amount }} BSC</strong> <span translate="{{ 'section3-text4' }}"></span></p>
+	<a ng-click="buyItem()" class="btn4" translate="{{ 'buy-now' }}" ng-show="showBuyBtn"></a>
+	<p ng-show="!showBuyBtn">Loading...</p>
+	<hr>
+	<h5 translate="{{ 'warning-message2' }}"></h5>
+</md-dialog>

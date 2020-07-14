@@ -1,0 +1,343 @@
+<div id="top"></div>
+<div id="week2">
+    <section id="section1" style="background-image: url('assets/images/week2/section1/bg.jpg');">
+        <div class="divider"></div>
+        <div id="bg" style="background-image: url('assets/images/week2/section1/illustration.png');"></div>
+
+        <div class="container">
+
+            <div class="flex-wrapper">
+                <a href="http://blackshot.papayaplay.com/blackshot.do" target="_blank" class="col1"><span translate="{{ 'goback' }}"></span></a>
+                
+                <a href="http://blackshot.papayaplay.com/blackshot.do" target="_blank" class="text-center col2"><img preload-image ng-src="assets/images/blackshot-logo.png" class="logo" default-image="assets/images/default.png" alt="logo"></a>
+
+                <div class="dropdown col3">
+                    <a class="dropdown-toggle" data-toggle="dropdown"><span style="padding-right: 10px;"><img preload-image ng-src="assets/images/flag-{{ main.flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="main.switchLanguage('en')"><span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize" translate="{{ 'english' }}"></span></a></li>
+                        <li><a ng-click="main.switchLanguage('de')"><span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize" translate="{{ 'german' }}"></span></a></li>
+                        <li><a ng-click="main.switchLanguage('fr')"><span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize" translate="{{ 'french' }}"></span></a></li>
+                        <li><a ng-click="main.switchLanguage('pt')"><span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize" translate="{{ 'portuguese' }}"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="title-wrapper">
+                <img preload-image ng-src="assets/images/week2/section1/double.png" default-image="assets/images/default.png" id="double" alt="double">
+                <img preload-image ng-src="assets/images/week2/section1/trouble.png" default-image="assets/images/default.png" id="trouble" alt="trouble">
+            </div>
+
+            <div id="weeks-bg"></div>
+            <div id="weeks">
+                <a ui-sref="lang.week1">week 1</a>
+                <a ui-sref="lang.week2">week 2</a>
+            </div>
+            <div id="trigger1"></div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="container">
+            <div class="flex-center" style="width: 820px; margin: 0 auto;">
+                <div class="col1">
+                    <p class="text-center" translate="week2-section2-text1"></p>
+                </div>
+                <div class="col2">
+                    <div translate="{{ 'week2-section2-title' }}"></div>
+                </div>
+            </div>
+
+            <div>
+                <div id="awp-container">
+                    <div id="awp"></div>
+                    <h2 class="text-center">awp al sancak</h2>
+                </div>
+                
+                <div id="ak47-container">
+                    <div id="ak47"></div>
+                    <h2 class="text-center">ak 47 al bayrak</h2>
+                </div>
+                
+                <h5 class="text-center">choose your weapon</h5>
+                <div class="flex-center">
+                    <button id="awp-btn">AWP AL SANCAK</button>
+                    <button id="ak47-btn" class="active" style="margin-left: 20px;">AK 47 AL BAYRAK</button>
+                </div>
+            </div>
+            
+            <div class="goldbox">
+                <p class="text-center" translate="week2-section2-text2"></p>
+                <img preload-image ng-src="assets/images/week2/section2/goldbox.jpg" default-image="assets/images/default.png" alt="goldbox" class="center-block">
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="container">
+            <div translate="{{ 'week2-section3-title' }}"></div>
+            <h5 class="text-center" translate="{{ 'week2-section3-text1' }}"></h5>
+            <p class="text-center" translate="{{ 'week2-section3-text2' }}"></p>
+            
+            <div class="flex-center" style="padding: 30px 0 200px;">
+                <button translate="{{ 'week2-section3-text3' }}"></button>
+            </div>
+
+            <div class="flex-center">
+                <div class="box-container">
+                    <img preload-image ng-src="assets/images/week2/section3/5box1.png" default-image="assets/images/default.png" alt="lucky box" class="box-image animated infinite bounce">
+                    <h3 translate="{{ 'fifth' }}"></h3>
+                    <h4>win 5x</h4>
+                    <img preload-image ng-src="assets/images/week2/section3/luckybox6.png" default-image="assets/images/default.png" alt="lucky box" class="center-block img-responsive">
+                </div>
+                <div class="box-container">
+                    <img preload-image ng-src="assets/images/week2/section3/5box2.png" default-image="assets/images/default.png" alt="lucky box" class="box-image animated infinite bounce">
+                    <h3 translate="{{ 'tenth' }}"></h3>
+                    <h4>win 5x</h4>
+                    <img preload-image ng-src="assets/images/week2/section3/luckybox7.png" default-image="assets/images/default.png" alt="lucky box" class="center-block img-responsive">
+                </div>
+                <div class="box-container">
+                    <img preload-image ng-src="assets/images/week2/section3/10box1.png" default-image="assets/images/default.png" alt="lucky box" class="box-image animated infinite bounce" style="top: -150px;">
+                    <h3 translate="{{ 'fifteenth' }}"></h3>
+                    <h4>win 10x</h4>
+                    <img preload-image ng-src="assets/images/week2/section3/luckybox6.png" default-image="assets/images/default.png" alt="lucky box" class="center-block img-responsive">
+                </div>
+            </div>
+
+            <div class="flex-center big-box-container">
+                <img preload-image ng-src="assets/images/week2/section3/10box2.png" default-image="assets/images/default.png" alt="lucky box" class="big-box-image animated infinite bounce">
+                <div class="col1">
+                    <h3 translate="{{ 'twentieth' }}"></h3>
+                </div>
+                <div class="col2">
+                    <h4>win 10x</h4>
+                    <img preload-image ng-src="assets/images/week2/section3/luckybox7.png" default-image="assets/images/default.png" alt="lucky box" class="center-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="container">
+
+            <img preload-image ng-src="assets/images/week2/section4/character.png" default-image="assets/images/default.png" alt="character" id="char">
+
+            <div translate="{{ 'week2-section4-title' }}" class="pad-bot-30"></div>
+            
+            <div class="carousel2">
+                <div class="slides">
+                    <div class="slideItem active-slide">
+                        <div class="carousel-image">
+                            <img preload-image ng-src="assets/images/week2/section4/slide1.png" default-image="assets/images/default.png" alt="item">
+                        </div>
+                    </div>
+                    <div class="slideItem">
+                        <div class="carousel-image">
+                            <img preload-image ng-src="assets/images/week2/section4/slide2.png" default-image="assets/images/default.png" alt="item">
+                        </div>
+                    </div>
+                    <div class="slideItem">
+                        <div class="carousel-image">
+                            <img preload-image ng-src="assets/images/week2/section4/slide3.png" default-image="assets/images/default.png" alt="item">
+                        </div>
+                    </div>
+                    <div class="slideItem">
+                        <div class="carousel-image">
+                            <img preload-image ng-src="assets/images/week2/section4/slide4.png" default-image="assets/images/default.png" alt="item">
+                        </div>
+                    </div>
+                    <div class="slideItem">
+                        <div class="carousel-image">
+                            <img preload-image ng-src="assets/images/week2/section4/slide5.png" default-image="assets/images/default.png" alt="item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="text-center" translate="{{ 'week2-section4-text1' }}"></h4>
+            <p class="text-center" translate="{{ 'week2-section4-text2' }}"></p>
+
+            <div class="info-container">
+                <h3>haunted map<span> // </span><span translate="{{ 'achievements' }}"></span></h3>
+                <div class="achievements-container">
+                    <div class="cbox-wrapper">
+                        <md-checkbox ng-model="main.data.cb7" ng-click="$storage.cb7 = !$storage.cb7" aria-label="cb7"></md-checkbox>
+                        <span ng-class="{ 'strike': main.data.cb7 == true, 'no-strike': main.data.cb7 == false }" translate="{{ 'haunted-achievement1' }}"></span>
+                    </div>
+                    <div class="cbox-wrapper">
+                        <md-checkbox ng-model="main.data.cb8" ng-click="$storage.cb8 = !$storage.cb8" aria-label="cb2"></md-checkbox>
+                        <span ng-class="{ 'strike': main.data.cb8 == true, 'no-strike': main.data.cb8 == false }" translate="{{ 'haunted-achievement2' }}"></span>
+                    </div>
+                    <div class="cbox-wrapper">
+                        <md-checkbox ng-model="main.data.cb9" ng-click="$storage.cb9 = !$storage.cb9" aria-label="cb3"></md-checkbox>
+                        <span ng-class="{ 'strike': main.data.cb9 == true, 'no-strike': main.data.cb9 == false }" translate="{{ 'haunted-achievement3' }}"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="container">
+            <div id="trigger2"></div>
+            <img preload-image ng-src="assets/images/week2/section5/character.png" default-image="assets/images/default.png" alt="character" id="char2">
+            <img preload-image ng-src="assets/images/week2/section5/title.png" default-image="assets/images/default.png" alt="title" class="center-block">
+
+            <div class="text-box">
+                <p translate="{{ 'week2-section5-text1' }}"></p>
+                <h5 translate="{{ 'week2-section5-text2' }}"></h4>
+            </div>
+
+            <div class="flex-center">
+                <div class="day-box">
+                    <h3 translate="{{ 'sunday' }}">sunday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>snow</h4>
+                    <h4>han cargo</h4>
+                </div>
+
+                <div class="day-box">
+                    <h3 translate="{{ 'monday' }}">monday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>desert hawk (rm)</h4>
+                    <h4>rooftop</h4>
+                </div>
+
+                <div class="day-box">
+                    <h3 translate="{{ 'tuesday' }}">tuesday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>desert hawk (rm)</h4>
+                    <h4>rooftop</h4>
+                </div>
+
+                <div class="day-box">
+                    <h3 translate="{{ 'wednesday' }}">wednesday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>desert hawk (rm)</h4>
+                    <h4>rooftop</h4>
+                </div>
+            </div>
+
+            <div class="flex-center" style="margin-top: 20px;">
+                <div class="day-box">
+                    <h3 translate="{{ 'thursday' }}">thursday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>desert hawk (rm)</h4>
+                    <h4>rooftop</h4>
+                </div>
+
+                <div class="day-box">
+                    <h3 translate="{{ 'friday' }}">friday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>desert hawk (rm)</h4>
+                    <h4>rooftop</h4>
+                </div>
+
+                <div class="day-box">
+                    <h3 translate="{{ 'saturday' }}">saturday</h3>
+                    <h4>the haunted</h4>
+                    <h4>scrap yard</h4>
+                    <h4>factory</h4>
+                    <h4>snow</h4>
+                    <h4>han cargo</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer id="footer">
+    <div class="divider"></div>
+    <div class="container">
+        <div class="flex-wrapper">
+            <a href="http://www.papayaplay.com/portal.do"><img preload-image ng-src="assets/images/papaya-logo.svg" default-image="assets/images/default.png" alt="papaya logo" style="width: 160px;"></a>
+
+            <div>
+                <a href="http://www.vertigogames.com" target="_blank">
+                    <img style="height: 28px;" preload-image ng-src="https://blackshot.s3.amazonaws.com/static/assets/images/footer-ci.svg" default-image="assets/images/default.png" alt="vertigo logo">
+                </a>
+                <span class="text-capitalize" style="padding-left: 15px;" translate="{{ 'copyright' }}"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    // build scene
+    var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 800})
+        .setTween("#double", 1, {left: '600px', top: '-100px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    // build scene
+    var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 800})
+        .setTween("#trouble", 1, {left: '-600px', top: '250px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    var scene3 = new ScrollMagic.Scene({triggerElement: "#char", duration: 500})
+        .setTween("#char", 1, {left: '-400px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 500})
+        .setTween("#char2", 1, {top: '28px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    var scene5 = new ScrollMagic.Scene({triggerElement: "#top", duration: 400})
+        .setTween("#double", 1, { left: '0px', top: '0px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    var scene6 = new ScrollMagic.Scene({triggerElement: "#top", duration: 400})
+        .setTween("#trouble", 1, { left: '0px', top: '150px'}) // trigger a TweenMax.to tween
+        .addTo(controller);
+
+    $('#awp-btn').on('click', function() {
+        $(this).addClass('active');
+        $('#ak47-btn').removeClass('active');
+        $('#awp-container').show();
+        $('#ak47-container').hide();
+    });
+
+    $('#ak47-btn').on('click', function() {
+        $(this).addClass('active');
+        $('#awp-btn').removeClass('active');
+        $('#awp-container').hide();
+        $('#ak47-container').show();
+    });
+    
+    $('.carousel').carousel({
+        carouselWidth: 340,
+        carouselHeight: 380,
+        frontWidth: 340,
+        frontHeight: 380,
+        hMargin: 0.25,
+        backZoom: 0.9,
+        directionNav: false
+        //autoplay: true
+    });
+
+    $('.carousel2').carousel({
+        carouselWidth: 560,
+        carouselHeight: 360,
+        frontWidth: 560,
+        frontHeight: 360,
+        hMargin: 0.25,
+        backZoom: 0.9,
+        directionNav: false,
+        autoplay: true
+    });
+</script>

@@ -1,0 +1,1 @@
+"use strict";app.directive("tooltip",function(){return{restrict:"A",link:function(t,i,o){$(i).hover(function(){$(i).tooltip("show")},function(){$(i).tooltip("hide")})}}});

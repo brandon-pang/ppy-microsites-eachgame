@@ -1,0 +1,833 @@
+<section id="section1" style="background-image: url('assets/images/section1/bg.jpg')">
+    <div class="divider"></div>
+    
+    <div class="container">
+
+        <div class="flex-wrapper">
+            <a href="http://blackshot.papayaplay.com/blackshot.do" target="_blank" class="col1"><span class="icon-return" style="padding-right: 5px;"></span><span translate="{{ 'goback' }}"></span></a>
+            
+            <a href="http://blackshot.papayaplay.com/blackshot.do" target="_blank" class="text-center col2">
+                <img preload-image ng-src="assets/images/blackshot-logo.png" class="logo" default-image="assets/images/default.png" alt="logo">
+            </a>
+
+            <div class="dropdown col3">
+                <a class="dropdown-toggle" data-toggle="dropdown">
+                    <span style="padding-right: 10px;"><img preload-image ng-src="assets/images/flag-{{ main.flag }}.svg" default-image="assets/images/default.png" height="15" alt="flag"></span><span>{{ main.lang }}</span><b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a ng-click="main.switchLanguage('en')">
+                            <span><img preload-image ng-src="assets/images/flag-uk.svg" default-image="assets/images/default.png" height="15" alt="english flag"></span><span class="text-capitalize" translate="{{ 'english' }}"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('de')">
+                            <span><img preload-image ng-src="assets/images/flag-germany.svg" default-image="assets/images/default.png" height="15" alt="german flag"></span><span class="text-capitalize" translate="{{ 'german' }}"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('fr')">
+                            <span><img preload-image ng-src="assets/images/flag-france.svg" default-image="assets/images/default.png" height="15" alt="french flag"></span><span class="text-capitalize" translate="{{ 'french' }}"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a ng-click="main.switchLanguage('pt')">
+                            <span><img preload-image ng-src="assets/images/flag-brazil.svg" default-image="assets/images/default.png" height="15" alt="brazil flag"></span><span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <img id="char1" preload-image ng-src="assets/images/section1/char1.png" default-image="assets/images/default.png">
+        <img id="char2" preload-image ng-src="assets/images/section1/char2.png" default-image="assets/images/default.png">
+
+        <div class="title" translate="{{ 'section1-title' }}"></div>
+    </div>
+</section>
+
+<section id="section2">
+    <div class="container">
+        <div class="wrapper">
+            <div class="col1">
+                <h4 translate="{{ 'black-friday' }}"></h4>
+                <h3 translate="{{ 'section2-text1' }}"></h3>
+            </div>
+            <div class="col2">
+                <a href="#section3" du-smooth-scroll du-scrollspy class="btn2" translate="{{ 'see-all-deals' }}"></a>
+            </div>
+        </div>
+
+        <div translate="{{ 'section2-title' }}"></div>
+        <p class="text-center pad-top-20" translate="{{ 'section2-text2' }}"></p>
+        <p class="text-center" translate="{{ 'section2-text3' }}"></p>
+
+        <div class="big-display">
+            <div class="col1">
+                <span ng-show="isActive == 0">Taurus Judge</span>
+                <span ng-show="isActive == 1">SCAR Aurum</span>
+                <span ng-show="isActive == 2">Yuki</span>
+                <span ng-show="isActive == 3">UDT</span>
+                <span ng-show="isActive == 4">Paratrooper</span>
+                <span ng-show="isActive == 5">RK95 Freedom</span>
+                <span ng-show="isActive == 6">Enfield-WL</span>
+                <span ng-show="isActive == 7">AS50 Adder</span>
+                <span ng-show="isActive == 8">SMF Knife</span>
+                <span ng-show="isActive == 9">Med Kit Premium</span>
+                <span ng-show="isActive == 10">Speed Kit</span>
+                <span ng-show="isActive == 11">+10,000 BP</span>
+            </div>
+            <div class="col2">
+                <img ng-show="isActive == 0" src="assets/images/section2/tb/taurus.png">
+                <img ng-show="isActive == 1" src="assets/images/section2/tb/scar.png">
+                <img ng-show="isActive == 2" src="assets/images/section2/tb/yuki.png" style="max-width: 95%;">
+                <img ng-show="isActive == 3" src="assets/images/section2/tb/udt.png" style="max-width: 88%;">
+                <img ng-show="isActive == 4" src="assets/images/section2/tb/paratrooper.png" style="max-width: 88%;">
+                <img ng-show="isActive == 5" src="assets/images/section2/tb/freedom.png">
+                <img ng-show="isActive == 6" src="assets/images/section2/tb/enfield.png">
+                <img ng-show="isActive == 7" src="assets/images/section2/tb/adder.png">
+                <img ng-show="isActive == 8" src="assets/images/section2/tb/smf.png">
+                <img ng-show="isActive == 9" src="assets/images/section2/tb/medkit.png">
+                <img ng-show="isActive == 10" src="assets/images/section2/tb/speed.png">
+                <img ng-show="isActive == 11" src="assets/images/section2/tb/10kbp.png">
+            </div>
+        </div>
+
+        <div class="image-wrapper">
+            <figure ng-class="{ 'active': isActive == 0 }" ng-click="isActive = 0; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/taurus.png" default-image="assets/images/default.png" style="max-width: 60%;">
+                <figcaption>Taurus Judge</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 1 }" ng-click="isActive = 1; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/scar.png" default-image="assets/images/default.png">
+                <figcaption>SCAR Aurum</figcaption>
+            </figure>
+            <figure class="mg-right-0" ng-class="{ 'active': isActive == 2 }" ng-click="isActive = 2; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/yuki.png" default-image="assets/images/default.png">
+                <figcaption>Yuki</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 3 }" ng-click="isActive = 3; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/udt.png" default-image="assets/images/default.png" style="max-width: 70%;">
+                <figcaption>UDT</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 4 }" ng-click="isActive = 4; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/paratrooper.png" default-image="assets/images/default.png" style="max-width: 70%;">
+                <figcaption>Paratrooper</figcaption>
+            </figure>
+            <figure class="mg-right-0" ng-class="{ 'active': isActive == 5 }" ng-click="isActive = 5; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/freedom.png" default-image="assets/images/default.png">
+                <figcaption>RK95 Freedom</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 6 }" ng-click="isActive = 6; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/enfield.png" default-image="assets/images/default.png">
+                <figcaption>Enfield-WL</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 7 }" ng-click="isActive = 7; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/adder.png" default-image="assets/images/default.png">
+                <figcaption>AS50 Adder</figcaption>
+            </figure>
+            <figure class="mg-right-0" ng-class="{ 'active': isActive == 8 }" ng-click="isActive = 8; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/smf.png" default-image="assets/images/default.png">
+                <figcaption>SMF Knife</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 9 }" ng-click="isActive = 9; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/medkit.png" default-image="assets/images/default.png">
+                <figcaption>Med Kit Premium</figcaption>
+            </figure>
+            <figure ng-class="{ 'active': isActive == 10 }" ng-click="isActive = 10; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/speed.png" default-image="assets/images/default.png" style="max-width: 50%;">
+                <figcaption>Speed Kit</figcaption>
+            </figure>
+            <figure class="mg-right-0" ng-class="{ 'active': isActive == 11 }" ng-click="isActive = 11; stopItemInterval();">
+                <img preload-image ng-src="assets/images/section2/tb/10kbp.png" default-image="assets/images/default.png" style="max-width: 50%;">
+                <figcaption>+10,000 BP</figcaption>
+            </figure>
+        </div>
+    </div>
+</section>
+
+<section id="section3">
+    <div class="container">
+        <div translate="{{ 'section3-title' }}"></div>
+
+        <div class="before-login" ng-show="isLogin == false">
+            <p translate="{{ 'signin-message' }}" class="text-center"></p>
+            <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+            <a href="https://www.papayaplay.com/account/signup.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" translate="{{ 'create-account' }}" class="signup"></a>
+        </div>
+
+        <div class="after-login" ng-show="isLogin == true">
+            <div class="profile-container">
+                <span class="id">{{ myInfo.UserID }}</span>
+                <div id="profile-photo"><img ng-src="https://blackshotupload.s3.amazonaws.com/{{ myInfo.PIPath }}" class="img-circle"></div>
+                <span class="balance"><span translate="{{ 'your-balance' }}"></span><br><span>{{ balance | number: 0}} BSC</span></span>
+            </div>
+            <a href="https://www.papayaplay.com/shop/history.do" target="_blank"><span class="icon-clock"></span><span translate="{{ 'transaction-history' }}"></span></a>
+        </div>
+
+        <div class="warning-message flex-center"><span class="icon-attention"></span><span translate="{{ 'warning-message1' }}"></span></div>
+
+        <div id="section3-carousel" class="carousel">
+            <div class="slides">
+
+                <div class="slideItem slideItem3">
+                    <div class="top-container" ng-class="{ 'bg-after-buy': ak47BuyStatus == true }">
+                        <span class="tag" translate="{{ 'limited-time' }}"></span>
+                        <div class="dot-container">
+                            <span class="dot" ng-click="ak47Angle = 0" ng-class="{ 'dot-active': ak47Angle == 0 }"></span>
+                            <span class="dot" ng-click="ak47Angle = 1" ng-class="{ 'dot-active': ak47Angle == 1 }"></span>
+                        </div>
+                        <div class="weapon-container">
+                            <div ng-show="ak47Angle == 0">
+                                <img preload-image ng-src="assets/images/section3/card/hk1.png" default-image="assets/images/default.png">
+                            </div>
+                            <div ng-show="ak47Angle == 1">
+                                <img preload-image ng-src="assets/images/section3/card/hk2.png" default-image="assets/images/default.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom-container">
+                        <div class="menu-container">
+                        </div>
+                        <div class="price">
+                            <div class="before-buy" ng-show="ak47BuyStatus == false">
+                                <div ng-show="ak47PriceActive == 0">
+                                    BSC<br>
+                                    <strong>90</strong><br>
+                                    1 <span translate="{{ 'day' }}"></span>
+                                </div>
+                                <div ng-show="ak47PriceActive == 1">
+                                    BSC<br>
+                                    <strong>180</strong><br>
+                                    7 <span translate="{{ 'days' }}"></span>
+                                </div>
+                                <div ng-show="ak47PriceActive == 2">
+                                    BSC<br>
+                                    <strong>360</strong><br>
+                                    30 <span translate="{{ 'days' }}"></span>
+                                </div>
+                            </div>
+                            <div class="after-buy" ng-show="ak47BuyStatus == true">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            </div>
+                        </div>
+                        
+                        <div class="before-buy" ng-show="ak47BuyStatus == false">
+                            <h3>HK416 N</h3>
+                            <hr>
+                        </div>
+                        <div class="after-buy" ng-show="ak47BuyStatus == true">
+                            <div class="text1" translate="{{ 'congratulations' }}"></div>
+                            <h3>HK416 N</h3>
+                            <div class="text2" translate="{{ 'section3-text1' }}"></div>
+                            <div class="text3"><span class="icon-delivery"></span> <span translate="{{ 'section3-text2' }}"></span></div>
+                            <hr>
+                            <div class="text4"><span translate="{{ 'section3-text3' }}"></span> <a href="https://support.papayaplay.com" target="_blank"><u translate="{{ 'contact-support' }}"></u></a></div>
+                            <button class="btn4" ng-click="ak47BuyStatus = !ak47BuyStatus">continue shopping</button>
+                        </div>
+                        
+                        <ul class="tabs" ng-show="ak47BuyStatus == false">
+                            <li ng-click="ak47PriceActive = 0" ng-class="{ 'active2': ak47PriceActive == 0 }">1 <span translate="{{ 'day' }}"></span></li>
+                            <li ng-click="ak47PriceActive = 1" ng-class="{ 'active2': ak47PriceActive == 1 }">7 <span translate="{{ 'days' }}"></span></li>
+                            <li ng-click="ak47PriceActive = 2" ng-class="{ 'active2': ak47PriceActive == 2 }">30 <span translate="{{ 'days' }}"></span></li>
+                        </ul>
+                        
+                        <div class="tabs-content" ng-show="ak47BuyStatus == false">
+                            <div id="1day" ng-show="ak47PriceActive == 0">
+                                <p><strong>90 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(582, 'HK416 N', 1, 90, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="7days" ng-show="ak47PriceActive == 1">
+                                <p><strong>180 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(582, 'HK416 N', 7, 180, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="30days" ng-show="ak47PriceActive == 2">
+                                <p><strong>360 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(582, 'HK416 N', 30, 360, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="slideItem slideItem5">
+                    <div class="top-container" ng-class="{ 'bg-after-buy': enfieldBuyStatus == true }">
+                        <span class="tag" translate="{{ 'goldbox-only' }}"></span>
+                        <div class="dot-container">
+                            <span class="dot" ng-click="enfieldAngle = 0" ng-class="{ 'dot-active': enfieldAngle == 0 }"></span>
+                            <span class="dot" ng-click="enfieldAngle = 1" ng-class="{ 'dot-active': enfieldAngle == 1 }"></span>
+                        </div>
+                        <div class="weapon-container">
+                            <div ng-show="enfieldAngle == 0">
+                                <img preload-image ng-src="assets/images/section3/card/kriss1.png" default-image="assets/images/default.png">
+                            </div>
+                            <div ng-show="enfieldAngle == 1">
+                                <img preload-image ng-src="assets/images/section3/card/kriss2.png" default-image="assets/images/default.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom-container">
+                        <div class="menu-container">
+                        </div>
+                        <div class="price">
+                            <div class="before-buy" ng-show="enfieldBuyStatus == false">
+                                <div ng-show="enfieldPriceActive == 0">
+                                    BSC<br>
+                                    <strong>65</strong><br>
+                                    1 <span translate="{{ 'day' }}"></span>
+                                </div>
+                                <div ng-show="enfieldPriceActive == 1">
+                                    BSC<br>
+                                    <strong>135</strong><br>
+                                    7 <span translate="{{ 'days' }}"></span>
+                                </div>
+                                <div ng-show="enfieldPriceActive == 2">
+                                    BSC<br>
+                                    <strong>270</strong><br>
+                                    30 <span translate="{{ 'days' }}"></span>
+                                </div>
+                            </div>
+                            <div class="after-buy" ng-show="enfieldBuyStatus == true">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            </div>
+                        </div>
+                        
+                        <div class="before-buy" ng-show="enfieldBuyStatus == false">
+                            <h3>Kriss Vector AS</h3>
+                            <hr>
+                        </div>
+                        <div class="after-buy" ng-show="enfieldBuyStatus == true">
+                            <div class="text1" translate="{{ 'congratulations' }}"></div>
+                            <h3>Kriss Vector AS</h3>
+                            <div class="text2" translate="{{ 'section3-text1' }}"></div>
+                            <div class="text3"><span class="icon-delivery"></span> <span translate="{{ 'section3-text2' }}"></span></div>
+                            <hr>
+                            <div class="text4"><span translate="{{ 'section3-text3' }}"></span> <a href="https://support.papayaplay.com" target="_blank"><u translate="{{ 'contact-support' }}"></u></a></div>
+                            <button class="btn4" ng-click="enfieldBuyStatus = !enfieldBuyStatus">continue shopping</button>
+                        </div>
+                        
+                        <ul class="tabs" ng-show="enfieldBuyStatus == false">
+                            <li ng-click="enfieldPriceActive = 0" ng-class="{ 'active2': enfieldPriceActive == 0 }">1 <span translate="{{ 'day' }}"></span></li>
+                            <li ng-click="enfieldPriceActive = 1" ng-class="{ 'active2': enfieldPriceActive == 1 }">7 <span translate="{{ 'days' }}"></span></li>
+                            <li ng-click="enfieldPriceActive = 2" ng-class="{ 'active2': enfieldPriceActive == 2 }">30 <span translate="{{ 'days' }}"></span></li>
+                        </ul>
+                        
+                        <div class="tabs-content" ng-show="enfieldBuyStatus == false">
+                            <div id="1day" ng-show="enfieldPriceActive == 0">
+                                <p><strong>65 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(890, 'Kriss Vector AS', 1, 65, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="7days" ng-show="enfieldPriceActive == 1">
+                                <p><strong>135 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(890, 'Kriss Vector AS', 7, 135, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="30days" ng-show="enfieldPriceActive == 2">
+                                <p><strong>270 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(890, 'Kriss Vector AS', 30, 270, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideItem slideItem4">
+                    <div class="top-container" ng-class="{ 'bg-after-buy': katanaBuyStatus == true }">
+                        
+                        <div class="dot-container">
+                            <span class="dot" ng-click="katanaAngle = 0" ng-class="{ 'dot-active': katanaAngle == 0 }"></span>
+                            <span class="dot" ng-click="katanaAngle = 1" ng-class="{ 'dot-active': katanaAngle == 1 }"></span>
+                        </div>
+                        <div class="weapon-container">
+                            <div ng-show="katanaAngle == 0">
+                                <img preload-image ng-src="assets/images/section3/card/plasma1.png" default-image="assets/images/default.png">
+                            </div>
+                            <div ng-show="katanaAngle == 1">
+                                <img preload-image ng-src="assets/images/section3/card/plasma2.png" default-image="assets/images/default.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom-container">
+                        <div class="menu-container">
+                        </div>
+                        <div class="price">
+                            <div class="before-buy" ng-show="katanaBuyStatus == false">
+                                <div ng-show="katanaPriceActive == 0">
+                                    BSC<br>
+                                    <strong>35</strong><br>
+                                    1 <span translate="{{ 'day' }}"></span>
+                                </div>
+                                <div ng-show="katanaPriceActive == 1">
+                                    BSC<br>
+                                    <strong>105</strong><br>
+                                    7 <span translate="{{ 'days' }}"></span>
+                                </div>
+                                <div ng-show="katanaPriceActive == 2">
+                                    BSC<br>
+                                    <strong>210</strong><br>
+                                    30 <span translate="{{ 'days' }}"></span>
+                                </div>
+                            </div>
+                            <div class="after-buy" ng-show="katanaBuyStatus == true">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            </div>
+                        </div>
+                        
+                        <div class="before-buy" ng-show="katanaBuyStatus == false">
+                            <h3>Plasma Sword</h3>
+                            <hr>
+                        </div>
+                        <div class="after-buy" ng-show="katanaBuyStatus == true">
+                            <div class="text1" translate="{{ 'congratulations' }}"></div>
+                            <h3>Plasma Sword</h3>
+                            <div class="text2" translate="{{ 'section3-text1' }}"></div>
+                            <div class="text3"><span class="icon-delivery"></span> <span translate="{{ 'section3-text2' }}"></span></div>
+                            <hr>
+                            <div class="text4"><span translate="{{ 'section3-text3' }}"></span> <a href="https://support.papayaplay.com" target="_blank"><u translate="{{ 'contact-support' }}"></u></a></div>
+                            <button class="btn4" ng-click="katanaBuyStatus = !katanaBuyStatus">continue shopping</button>
+                        </div>
+                        
+                        <ul class="tabs" ng-show="katanaBuyStatus == false">
+                            <li ng-click="katanaPriceActive = 0" ng-class="{ 'active2': katanaPriceActive == 0 }">1 <span translate="{{ 'day' }}"></span></li>
+                            <li ng-click="katanaPriceActive = 1" ng-class="{ 'active2': katanaPriceActive == 1 }">7 <span translate="{{ 'days' }}"></span></li>
+                            <li ng-click="katanaPriceActive = 2" ng-class="{ 'active2': katanaPriceActive == 2 }">30 <span translate="{{ 'days' }}"></span></li>
+                        </ul>
+                        
+                        <div class="tabs-content" ng-show="katanaBuyStatus == false">
+                            <div id="1day" ng-show="katanaPriceActive == 0">
+                                <p><strong>35 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(988, 'Plasma Sword', 1, 35, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="7days" ng-show="katanaPriceActive == 1">
+                                <p><strong>105 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(988, 'Plasma Sword', 7, 105, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="30days" ng-show="katanaPriceActive == 2">
+                                <p><strong>210 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(988, 'Plasma Sword', 30, 210, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slideItem slideItem2">
+                    <div class="top-container" ng-class="{ 'bg-after-buy': fmgBuyStatus == true }">
+                        
+                        <div class="dot-container">
+                            <span class="dot" ng-click="fmgAngle = 0" ng-class="{ 'dot-active': fmgAngle == 0 }"></span>
+                            <span class="dot" ng-click="fmgAngle = 1" ng-class="{ 'dot-active': fmgAngle == 1 }"></span>
+                        </div>
+                        <div class="weapon-container">
+                            <div ng-show="fmgAngle == 0">
+                                <img preload-image ng-src="assets/images/section3/card/fmg1.png" default-image="assets/images/default.png">
+                            </div>
+                            <div ng-show="fmgAngle == 1">
+                                <img preload-image ng-src="assets/images/section3/card/fmg2.png" default-image="assets/images/default.png">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="bottom-container">
+                        <div class="menu-container">
+                        </div>
+                        <div class="price">
+                            <div class="before-buy" ng-show="fmgBuyStatus == false">
+                                <div ng-show="fmgPriceActive == 0">
+                                    BSC<br>
+                                    <strong>40</strong><br>
+                                    1 <span translate="{{ 'day' }}"></span>
+                                </div>
+                                <div ng-show="fmgPriceActive == 1">
+                                    BSC<br>
+                                    <strong>120</strong><br>
+                                    7 <span translate="{{ 'days' }}"></span>
+                                </div>
+                                <div ng-show="fmgPriceActive == 2">
+                                    BSC<br>
+                                    <strong>240</strong><br>
+                                    30 <span translate="{{ 'days' }}"></span>
+                                </div>
+                            </div>
+                            <div class="after-buy" ng-show="fmgBuyStatus == true">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            </div>
+                        </div>
+                        <div class="before-buy" ng-show="fmgBuyStatus == false">
+                            <h3>FMG-9 White Tuning</h3>
+                            <hr>
+                        </div>
+                        <div class="after-buy" ng-show="fmgBuyStatus == true">
+                            <div class="text1" translate="{{ 'congratulations' }}"></div>
+                            <h3>FMG-9 White Tuning</h3>
+                            <div class="text2" translate="{{ 'section3-text1' }}"></div>
+                            <div class="text3"><span class="icon-delivery"></span> <span translate="{{ 'section3-text2' }}"></span></div>
+                            <hr>
+                            <div class="text4"><span translate="{{ 'section3-text3' }}"></span> <a href="https://support.papayaplay.com" target="_blank"><u translate="{{ 'contact-support' }}"></u></a></div>
+                            <button class="btn4" ng-click="fmgBuyStatus = !fmgBuyStatus">continue shopping</button>
+                        </div>
+                        
+                        <ul class="tabs" ng-show="fmgBuyStatus == false">
+                            <li ng-click="fmgPriceActive = 0" ng-class="{ 'active2': fmgPriceActive == 0 }">1 <span translate="{{ 'day' }}"></span></li>
+                            <li ng-click="fmgPriceActive = 1" ng-class="{ 'active2': fmgPriceActive == 1 }">7 <span translate="{{ 'days' }}"></span></li>
+                            <li ng-click="fmgPriceActive = 2" ng-class="{ 'active2': fmgPriceActive == 2 }">30 <span translate="{{ 'days' }}"></span></li>
+                        </ul>
+                        
+                        <div class="tabs-content" ng-show="fmgBuyStatus == false">
+                            <div id="1day" ng-show="fmgPriceActive == 0">
+                                <p><strong>40 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(935, 'FMG-9 White Tuning', 1, 40, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="7days" ng-show="fmgPriceActive == 1">
+                                <p><strong>120 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(935, 'FMG-9 White Tuning', 7, 120, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="30days" ng-show="fmgPriceActive == 2">
+                                <p><strong>240 BSC</strong> <span translate="{{ 'section3-text4' }}"></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(935, 'FMG-9 White Tuning', 30, 240, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slideItem slideItem1 active-slide">
+                    <div class="top-container" ng-class="{ 'bg-after-buy': awpBuyStatus == true }">
+                        <span class="tag" translate="{{ 'new' }}"></span>
+                        <div class="dot-container" ng-show="awpActive == true">
+                            <span class="dot" ng-click="awpAngle = 0" ng-class="{ 'dot-active': awpAngle == 0 }"></span>
+                            <span class="dot" ng-click="awpAngle = 1" ng-class="{ 'dot-active': awpAngle == 1 }"></span>
+                        </div>
+                        <div class="weapon-container" ng-show="awpActive == true">
+                            <div ng-show="awpAngle == 0">
+                                <img preload-image ng-src="assets/images/section3/card/awp1.png" default-image="assets/images/default.png">
+                            </div>
+                            <div ng-show="awpAngle == 1">
+                                <img preload-image ng-src="assets/images/section3/card/awp2.png" default-image="assets/images/default.png">
+                            </div>
+                        </div>
+                        <div class="stat-container" ng-show="awpActive == false">
+                            <div id="awp-chart"></div>
+                        </div>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="menu-container">
+                            <a ng-click="awpActive = !awpActive"><span class="icon-stats"></span>Weapon Stats</a>
+                            <a ng-hide="browser === 'Firefox'" class="various fancybox.iframe" href="assets/video/awp.mp4"><span class="icon-180view"></span>180&deg;View</a>
+                            <a ng-show="browser === 'Firefox'" class="various fancybox.iframe" href="assets/video/awp.ogv"><span class="icon-180view"></span>180&deg;View</a>
+                        </div>
+                        <div class="price">
+                            <div class="before-buy" ng-show="awpBuyStatus == false">
+                                <div ng-show="awpPriceActive == 0">
+                                    BSC<br>
+                                    <strong>130</strong><br>
+                                    1 <span translate="{{ 'day' }}"></span>
+                                </div>
+                                <div ng-show="awpPriceActive == 1">
+                                    BSC<br>
+                                    <strong>390</strong><br>
+                                    7 <span translate="{{ 'days' }}"></span>
+                                </div>
+                                <div ng-show="awpPriceActive == 2">
+                                    BSC<br>
+                                    <strong>780</strong><br>
+                                    30 <span translate="{{ 'days' }}"></span>
+                                </div>
+                            </div>
+
+                            <div class="after-buy" ng-show="awpBuyStatus == true">
+                                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            </div>
+                        </div>
+                        
+                        <div class="before-buy" ng-show="awpBuyStatus == false">
+                            <h3>AWP ARC Reactor</h3>
+                            <hr>
+                        </div>
+                        <div class="after-buy" ng-show="awpBuyStatus == true">
+                            <div class="text1" translate="{{ 'congratulations' }}"></div>
+                            <h3>AWP ARC Reactor</h3>
+                            <div class="text2" translate="{{ 'section3-text1' }}"></div>
+                            <div class="text3"><span class="icon-delivery"></span> <span translate="{{ 'section3-text2' }}"></span></div>
+                            <hr>
+                            <div class="text4"><span translate="{{ 'section3-text3' }}"></span> <a href="https://support.papayaplay.com" target="_blank"><u translate="{{ 'contact-support' }}"></u></a></div>
+                            <button class="btn4" ng-click="awpBuyStatus = !awpBuyStatus">continue shopping</button>
+                        </div>
+                        
+                        <ul class="tabs" ng-show="awpBuyStatus == false">
+                            <li ng-click="awpPriceActive = 0" ng-class="{ 'active2': awpPriceActive == 0 }">1 <span translate="{{ 'day' }}"></span></li>
+                            <li ng-click="awpPriceActive = 1" ng-class="{ 'active2': awpPriceActive == 1 }">7 <span translate="{{ 'days' }}"></span></li>
+                            <li ng-click="awpPriceActive = 2" ng-class="{ 'active2': awpPriceActive == 2 }">30 <span translate="{{ 'days' }}"></span></li>
+                        </ul>
+                        
+                        <div class="tabs-content" ng-show="awpBuyStatus == false">
+                            <div id="1day" ng-show="awpPriceActive == 0">
+                                <p><strong>130 BSC</strong> <span translate="{{ 'section3-text4' }}"></span></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(1012, 'AWP ARC Reactor', 1, 130, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="7days" ng-show="awpPriceActive == 1">
+                                <p><strong>390 BSC</strong> <span translate="{{ 'section3-text4' }}"></span></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(1012, 'AWP ARC Reactor', 7, 390, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                            <div id="30days" ng-show="awpPriceActive == 2">
+                                <p><strong>780 BSC</strong> <span translate="{{ 'section3-text4' }}"></span></p>
+                                <a class="btn4" ng-show="isLogin == true" ng-click="confirm(1012, 'AWP ARC Reactor', 30, 780, $event)" translate="{{ 'buy-now' }}"></a>
+                                <a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs68" class="btn5 center-block" ng-show="isLogin == false"><span class="icon-papaya"></span><span class="text-uppercase" translate="{{ 'signin' }}"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end slides -->
+        </div>
+        <!-- end carousel -->
+        
+        <div class="adblock-message" translate="{{ 'adblock-message' }}"></div>
+
+        <ul class="tab-state">
+            <li class="active2">HK416 N</li>
+            <li>Kriss Vector AS</li>
+            <li>Plasma Sword</li>
+            <li>FMG-9 White Tuning</li>
+            <li><span class="flex-center">New Sniper</span>AWP ARC Reactor</li>
+        </ul>
+
+        <div class="red-wrapper">
+            <div class="col1">
+                <h4 translate="{{ 'more-sales' }}"></h4>
+                <h3 translate="{{ 'section3-text5' }}"></h3>
+            </div>
+            <div class="col2">
+                <a href="https://blackshot.papayaplay.com/blackshot.do?tp=news.view&postid=1204" target="_blank" class="btn2" translate="{{ 'see-all-deals' }}"></a>
+            </div>
+        </div>
+        <div id="trigger1"></div>
+        <div class="flex-center sharp-container">
+            <div class="col1">
+                <div id="section3-carousel2">
+                    <div><img preload-image ng-src="assets/images/section3/sharp-slide1.png" default-image="assets/images/default.png"></div>
+                    <div><img preload-image ng-src="assets/images/section3/sharp-slide2.png" default-image="assets/images/default.png" style="padding: 50px;"></div>
+                </div>
+            </div>
+            <div class="col2">
+                <div id="sharp-title" translate="{{ 'section3-title2' }}"></div>
+                <p translate="{{ 'section3-text6' }}"></p>
+
+                <div class="price-wrapper">
+                    <h3 translate="{{ 'section3-text7' }}"></h3>
+                    <div>2,000 BP</div>
+                </div>
+            </div>
+        </div>
+        <img preload-image ng-src="assets/images/section3/sharp-line.png" default-image="assets/images/default.png" class="center-block sharp-line">
+        <div id="trigger2"></div>            
+        <div class="survey-container">
+            <div translate="{{ 'section3-title3' }}"></div>
+            <p translate="{{ 'section3-text8' }}"></span></p>
+            <h4 translate="{{ 'section3-text9' }}"></h4>
+            <div translate="{{ 'survey-link' }}"></div>
+            <img preload-image ng-src="assets/images/section3/survey-ellie.png" default-image="assets/images/default.png" id="ellie">
+        </div>
+    </div>
+</section>
+
+<section id="section4">
+    <div class="container">
+        <h4 translate="{{ 'section4-text1' }}"></h4>
+
+        <div class="event-container flex-center event1">
+            <div class="col1">
+                <img preload-image ng-src="assets/images/section4/event1.jpg" default-image="assets/images/default.png">
+            </div>
+            <div class="col2">
+                <h3>goldbox</h3>
+                <div class="sub-section">
+                    <div class="sub-col1">
+                        <p translate="{{ 'section4-text2' }}"></p>
+                        <a href="https://blackshot.papayaplay.com/blackshot.do?tp=news.view&postid=1208" target="_blank" class="btn1"><span class='icon-plus'></span><span translate="{{ 'learn-more' }}"></span></a>
+                    </div>
+                    <div class="sub-col2">
+                        <h5 translate="{{ 'section4-text3' }}"></h5>
+                        <ul>
+                            <li>AWP Wukong</li>
+                            <li>Isabelle</li>
+                            <li>M24 Cupid</li>
+                            <li>SAR Skull Reaper</li>
+                            <li>AK47 Spider</li>
+                            <li>UZI Jaguar and more...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="event-container flex-center event2">
+            <div class="col1">
+                <div id="section4-slides">
+                    <div ng-show="mapActive == 0"><img preload-image ng-src="assets/images/section4/ballroom.jpg" default-image="assets/images/default.png"></div>
+                    <div ng-show="mapActive == 1"><img preload-image ng-src="assets/images/section4/rooftop.jpg" default-image="assets/images/default.png"></div>
+                    <div ng-show="mapActive == 2"><img preload-image ng-src="assets/images/section4/airport.jpg" default-image="assets/images/default.png"></div>
+                    <div ng-show="mapActive == 3"><img preload-image ng-src="assets/images/section4/rock2.jpg" default-image="assets/images/default.png"></div>
+                    <div ng-show="mapActive == 4"><img preload-image ng-src="assets/images/section4/chinatown.jpg" default-image="assets/images/default.png"></div>
+                </div>
+            </div>
+            <div class="col2">
+                <h3 translate="{{ 'map-boost' }}"></h3>
+                <div class="sub-section">
+                    <div class="sub-col1">
+                        <p translate="{{ 'section4-text4' }}"></p>
+                        <a href="https://blackshot.papayaplay.com/blackshot.do?tp=news.view&postid=1209" target="_blank" class="btn1"><span class='icon-plus'></span><span translate="{{ 'learn-more' }}"></span></a>
+                    </div>
+                    <div class="sub-col2">
+                        <h5 translate="{{ 'map' }}"></h5>
+                        <ul>
+                            <li ng-class="{ 'active': mapActive == 0 }">Ball Room</li>
+                            <li ng-class="{ 'active': mapActive == 1 }">Rooftop</li>
+                            <li ng-class="{ 'active': mapActive == 2 }">Airport</li>
+                            <li ng-class="{ 'active': mapActive == 3 }">Rock II</li>
+                            <li ng-class="{ 'active': mapActive == 4 }">Chinatown</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="event-container flex-center event3">
+            <div class="col1">
+                <img preload-image ng-src="assets/images/section4/event3.jpg" default-image="assets/images/default.png">
+            </div>
+            <div class="col2">
+                <h3 translate="{{ 'section4-text5' }}"></h3>
+                <div class="sub-section">
+                    <div class="sub-col1">
+                        <p translate="{{ 'section4-text6' }}"></p>
+                        <a href="https://blackshot.papayaplay.com/blackshot.do?tp=news.view&postid=1210" target="_blank" class="btn1"><span class='icon-plus'></span><span translate="{{ 'learn-more' }}"></span></a>
+                    </div>
+                    <div class="sub-col2">
+                        <p translate="{{ 'section4-text7' }}"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img preload-image ng-src="assets/images/section4/bs-symbol.png" default-image="assets/images/default.png" class="center-block pad-top-50 pad-bot-50">
+    </div>
+    
+</section>
+
+<footer id="footer">
+    <div class="divider"></div>
+    <div class="container">
+        <div class="flex-wrapper">
+            <a href="http://www.papayaplay.com/portal.do"><img preload-image ng-src="assets/images/papaya-logo.svg" default-image="assets/images/default.png" alt="papaya logo" style="width: 160px;"></a>
+            <div>
+                <a href="http://www.vertigogames.com" target="_blank">
+                    <img style="height: 28px;" preload-image ng-src="assets/images/footer-ci.svg" default-image="assets/images/default.png" alt="vertigo logo">
+                </a>
+                <span class="text-capitalize" style="padding-left: 15px;" translate="{{ 'copyright' }}"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $('#section3-carousel').carousel({
+            carouselWidth: 930,
+            carouselHeight: 340,
+            hMargin: 0.5,
+            frontWidth: 315,
+            frontHeight: 480,
+            directionNav: true,
+            buttonNav: true,
+            backZoom: 0.95,
+            backOpacity: 0.7,
+            slidesPerScroll: 3,
+            autoplay: true,
+            autoplayInterval: 10000,
+        });
+
+        $('#section3-carousel2').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 4000,
+            prevArrow: '<span class="icon-arrow1"></span>',
+            nextArrow: '<span class="icon-arrow2"></span>'
+        });
+
+        $('.various').fancybox({
+            maxWidth    : 800,
+            maxHeight   : 600,
+            fitToView   : false,
+            width       : '70%',
+            height      : '70%',
+            autoSize    : false,
+            closeClick  : false,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
+
+        var data = {  
+            labels: ['Damage', 'Fire Rate', 'Weight', 'Magazine', 'Accuracy'],
+            // Our series array that contains series objects or in this case series data arrays
+            series: [
+              [9.8, 1.8, 8.4, 1.0, 10]
+            ]
+        };
+
+        var options = {
+            high: 10,
+            width: 350,
+            height: 200,
+            axisX: {
+                showGrid: false,
+                type: Chartist.FixedScaleAxis,
+                ticks: [0, 2, 4, 6, 8, 10]
+            },
+            axisY: {
+                offset: 70
+            },
+            seriesBarDistance: 10,
+            reverseData: true,
+            horizontalBars: true
+        }
+
+        var awp = new Chartist.Bar('#awp-chart', data, options);
+
+        var controller = new ScrollMagic.Controller();
+
+        var scene1 = new ScrollMagic.Scene({duration: 300})
+            .setTween("#char1", 1, {left: '-300'})
+            .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({duration: 300})
+            .setTween("#char2", 1, {right: '-700'})
+            .addTo(controller);
+
+        var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 500})
+            .setTween("#sharp-title", 1, {left: '0'})
+            .addTo(controller);
+
+        var scene4 = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: 500})
+            .setTween("#ellie", 1, {right: '0'})
+            .addTo(controller);
+    });
+</script>

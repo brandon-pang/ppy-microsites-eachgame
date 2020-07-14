@@ -1,0 +1,48 @@
+@import 'variables';
+
+.flex-default {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btn1 {
+	@extend .flex-default;
+	
+	width: 170px;
+	height: 40px;
+	border: 2px solid $color2;
+	background-color: transparent;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.2s;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 2px;
+
+	span {
+		color: $color2;
+		&:first-child {
+			font-size: 2rem;
+			vertical-align: middle;
+    		line-height: 0;
+    		padding-right: 10px;
+		}
+		&:last-child {
+			font-weight: bold;
+			font-size: 1.3rem;
+		}
+	}
+
+	&:hover, &:focus {
+		background-color: $color1;
+		border-color: $color1;
+		color: $white;
+	}
+}

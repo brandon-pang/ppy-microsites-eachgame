@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Blackshot-microsite';
+    src: url('fonts/Blackshot-microsite.eot');
+    src: url('fonts/Blackshot-microsite.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Blackshot-microsite.woff') format('woff'),
+         url('fonts/Blackshot-microsite.ttf') format('truetype'),
+         url('fonts/Blackshot-microsite.svg#Blackshot-microsite') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+	font-family: 'Blackshot-microsite';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-achievments:before{content:'\0041';}
+.icon-blackshot:before{content:'\0042';}
+.icon-clock:before{content:'\0043';}
+.icon-delivery:before{content:'\0044';}
+.icon-arrow-right:before{content:'\0045';}
+.icon-arrow-left:before{content:'\0046';}
+.icon-new-page:before{content:'\0047';}
+.icon-snow:before{content:'\0048';}
+.icon-dot:before{content:'\0049';}
+.icon-ok:before{content:'\004a';}
+.icon-skull:before{content:'\004b';}
+.icon-locker:before{content:'\004c';}
+.icon-special:before{content:'\004d';}
+.icon-fail:before{content:'\004e';}
+.icon-logout:before{content:'\004f';}
+.icon-papaya:before{content:'\0050';}
+.icon-padlock:before{content:'\0051';}
+.icon-hashtag:before{content:'\0052';}
+.icon-stats:before{content:'\0053';}
+.icon-arrowlong:before{content:'\0054';}
+.icon-phoenix:before{content:'\0055';}
+.icon-box:before{content:'\0056';}
+.icon-show-more:before{content:'\0057';}
+.icon-show-less:before{content:'\0058';}
+.icon-meme:before{content:'\006d';}
+.icon-180view:before{content:'\0070';}
+.icon-return:before{content:'\0072';}
+.icon-time:before{content:'\0074';}
+.icon-close:before{content:'\0078';}
+.icon-morebsc:before{content:'\0024';}
+.icon-plus:before{content:'\002b';}
+.icon-check:before{content:'\005e';}
+.icon-arrow1:before{content:'\007b';}
+.icon-arrow2:before{content:'\007d';}
+.icon-attention:before{content:'\007e';}

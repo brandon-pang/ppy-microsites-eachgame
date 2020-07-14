@@ -1,0 +1,1600 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:400,500,600,700|Roboto:400,500,700");
+@font-face {
+  font-family: 'Glyphter';
+  src: url("fonts/Glyphter.eot");
+  src: url("fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("fonts/Glyphter.woff") format("woff"), url("fonts/Glyphter.ttf") format("truetype"), url("fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 14, ../../../app/assets/styles/main.scss */
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, ../../../app/assets/styles/main.scss */
+.icon-achievments:before {
+  content: '\0041';
+}
+
+/* line 24, ../../../app/assets/styles/main.scss */
+.icon-blackshot:before {
+  content: '\0042';
+}
+
+/* line 25, ../../../app/assets/styles/main.scss */
+.icon-clock:before {
+  content: '\0043';
+}
+
+/* line 26, ../../../app/assets/styles/main.scss */
+.icon-delivery:before {
+  content: '\0044';
+}
+
+/* line 27, ../../../app/assets/styles/main.scss */
+.icon-skull:before {
+  content: '\004b';
+}
+
+/* line 28, ../../../app/assets/styles/main.scss */
+.icon-locker:before {
+  content: '\004c';
+}
+
+/* line 29, ../../../app/assets/styles/main.scss */
+.icon-logout:before {
+  content: '\004f';
+}
+
+/* line 30, ../../../app/assets/styles/main.scss */
+.icon-papaya:before {
+  content: '\0050';
+}
+
+/* line 31, ../../../app/assets/styles/main.scss */
+.icon-stats:before {
+  content: '\0053';
+}
+
+/* line 32, ../../../app/assets/styles/main.scss */
+.icon-meme:before {
+  content: '\006d';
+}
+
+/* line 33, ../../../app/assets/styles/main.scss */
+.icon-180view:before {
+  content: '\0070';
+}
+
+/* line 34, ../../../app/assets/styles/main.scss */
+.icon-return:before {
+  content: '\0072';
+}
+
+/* line 35, ../../../app/assets/styles/main.scss */
+.icon-time:before {
+  content: '\0074';
+}
+
+/* line 36, ../../../app/assets/styles/main.scss */
+.icon-close:before {
+  content: '\0078';
+}
+
+/* line 37, ../../../app/assets/styles/main.scss */
+.icon-morebsc:before {
+  content: '\0024';
+}
+
+/* line 38, ../../../app/assets/styles/main.scss */
+.icon-plus:before {
+  content: '\002b';
+}
+
+/* line 39, ../../../app/assets/styles/main.scss */
+.icon-check:before {
+  content: '\005e';
+}
+
+/* line 40, ../../../app/assets/styles/main.scss */
+.icon-arrow1:before {
+  content: '\007b';
+}
+
+/* line 41, ../../../app/assets/styles/main.scss */
+.icon-arrow2:before {
+  content: '\007d';
+}
+
+/* line 42, ../../../app/assets/styles/main.scss */
+.icon-attention:before {
+  content: '\007e';
+}
+
+/* line 46, ../../../app/assets/styles/main.scss */
+.ct-series-a .ct-bar {
+  stroke: #ed2323;
+  stroke-width: 10px;
+}
+
+/* line 51, ../../../app/assets/styles/main.scss */
+.ct-grid {
+  stroke: transparent;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 57, ../../../app/assets/styles/main.scss */
+.ct-label.ct-horizontal.ct-end {
+  font-size: 1.2rem;
+  color: #000;
+  stroke: #ed2323;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 65, ../../../app/assets/styles/main.scss */
+.ct-label.ct-vertical.ct-start {
+  font-size: 1.2rem;
+  color: #000;
+  stroke: #ed2323;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 74, ../../../app/assets/styles/main.scss */
+md-dialog {
+  width: 480px;
+  height: 300px;
+  background-color: rgba(40, 44, 43, 0.9);
+  position: relative;
+  border-radius: 10px;
+}
+/* line 81, ../../../app/assets/styles/main.scss */
+md-dialog h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ed2323;
+  padding: 5px 0 10px;
+  font-family: "Roboto", sans-serif;
+}
+/* line 89, ../../../app/assets/styles/main.scss */
+md-dialog h3 span {
+  font-size: 1.7rem;
+}
+/* line 94, ../../../app/assets/styles/main.scss */
+md-dialog p {
+  text-align: center;
+  width: 220px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+/* line 101, ../../../app/assets/styles/main.scss */
+md-dialog hr {
+  border-color: #ed2323;
+}
+/* line 105, ../../../app/assets/styles/main.scss */
+md-dialog h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ed2323;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 114, ../../../app/assets/styles/main.scss */
+md-dialog .icon-close {
+  color: #ed2323;
+  font-size: 3rem;
+  text-align: center;
+  display: block;
+}
+/* line 121, ../../../app/assets/styles/main.scss */
+md-dialog button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+/* line 129, ../../../app/assets/styles/main.scss */
+md-dialog button i:hover, md-dialog button i:focus {
+  color: #ed2323;
+}
+/* line 135, ../../../app/assets/styles/main.scss */
+md-dialog div {
+  text-align: center;
+  width: 100px;
+  padding-top: 5px;
+  font-family: "Roboto", sans-serif;
+}
+/* line 141, ../../../app/assets/styles/main.scss */
+md-dialog div h4 {
+  color: #ffea00;
+  font-weight: 700;
+}
+/* line 146, ../../../app/assets/styles/main.scss */
+md-dialog div div {
+  font-size: 1rem;
+}
+/* line 148, ../../../app/assets/styles/main.scss */
+md-dialog div div:last-child {
+  color: #ffea00;
+  margin-top: -4px;
+  font-size: 1.1rem;
+}
+
+/* line 157, ../../../app/assets/styles/main.scss */
+.fancybox-skin {
+  background: #000 !important;
+}
+
+/* line 161, ../../../app/assets/styles/main.scss */
+.checkmark {
+  width: 80px;
+  height: 80px;
+  display: block;
+  stroke-width: 5;
+  stroke: #2dc30a;
+  margin: -10px auto 0;
+}
+
+/* line 170, ../../../app/assets/styles/main.scss */
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+/* line 194, ../../../app/assets/styles/main.scss */
+#section1 .divider {
+  width: 100%;
+  height: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 201, ../../../app/assets/styles/main.scss */
+.carousel-btn, #section3 #section3-carousel .nextButton, #section3 #section3-carousel .prevButton {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  font-size: 4rem;
+  cursor: pointer;
+  z-index: 9999;
+}
+/* line 208, ../../../app/assets/styles/main.scss */
+.carousel-btn i, #section3 #section3-carousel .nextButton i, #section3 #section3-carousel .prevButton i {
+  transition: all 0.5s;
+}
+/* line 210, ../../../app/assets/styles/main.scss */
+.carousel-btn i:hover, #section3 #section3-carousel .nextButton i:hover, #section3 #section3-carousel .prevButton i:hover, .carousel-btn i:focus, #section3 #section3-carousel .nextButton i:focus, #section3 #section3-carousel .prevButton i:focus {
+  color: #760101;
+}
+
+/* line 218, ../../../app/assets/styles/main.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 224, ../../../app/assets/styles/main.scss */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 230, ../../../app/assets/styles/main.scss */
+.pad-top-10 {
+  padding-top: 10px;
+}
+
+/* line 234, ../../../app/assets/styles/main.scss */
+.pad-bot-10 {
+  padding-bottom: 10px;
+}
+
+/* line 238, ../../../app/assets/styles/main.scss */
+.pad-top-20 {
+  padding-top: 20px;
+}
+
+/* line 242, ../../../app/assets/styles/main.scss */
+.pad-bot-20 {
+  padding-bottom: 20px;
+}
+
+/* line 246, ../../../app/assets/styles/main.scss */
+.pad-top-30 {
+  padding-top: 30px;
+}
+
+/* line 250, ../../../app/assets/styles/main.scss */
+.pad-bot-30 {
+  padding-bottom: 30px;
+}
+
+/* line 254, ../../../app/assets/styles/main.scss */
+.pad-top-40 {
+  padding-top: 40px;
+}
+
+/* line 258, ../../../app/assets/styles/main.scss */
+.pad-bot-40 {
+  padding-bottom: 40px;
+}
+
+/* line 262, ../../../app/assets/styles/main.scss */
+.pad-top-50 {
+  padding-top: 50px;
+}
+
+/* line 266, ../../../app/assets/styles/main.scss */
+.pad-bot-50 {
+  padding-bottom: 50px;
+}
+
+/* line 270, ../../../app/assets/styles/main.scss */
+.pad-top-60 {
+  padding-top: 60px;
+}
+
+/* line 274, ../../../app/assets/styles/main.scss */
+.pad-bot-60 {
+  padding-bottom: 60px;
+}
+
+/* line 278, ../../../app/assets/styles/main.scss */
+.pad-top-70 {
+  padding-top: 70px;
+}
+
+/* line 282, ../../../app/assets/styles/main.scss */
+.pad-top-100 {
+  padding-top: 100px;
+}
+
+/* line 286, ../../../app/assets/styles/main.scss */
+.pad-bot-70 {
+  padding-bottom: 70px;
+}
+
+/* line 290, ../../../app/assets/styles/main.scss */
+.pad-bot-100 {
+  padding-bottom: 100px;
+}
+
+/* line 294, ../../../app/assets/styles/main.scss */
+.pad-left-20 {
+  padding-left: 20px;
+}
+
+/* line 298, ../../../app/assets/styles/main.scss */
+.pad-right-20 {
+  padding-right: 20px;
+}
+
+/* line 302, ../../../app/assets/styles/main.scss */
+.mg-right-0 {
+  margin-right: 0 !important;
+}
+
+/* line 306, ../../../app/assets/styles/main.scss */
+.mg-left-10 {
+  margin-left: 10px;
+}
+
+/* line 310, ../../../app/assets/styles/main.scss */
+.mg-top-20 {
+  margin-top: 20px;
+}
+
+/* line 314, ../../../app/assets/styles/main.scss */
+.mg-bot-20 {
+  margin-bottom: 20px;
+}
+
+/* line 318, ../../../app/assets/styles/main.scss */
+.mg-top-30 {
+  margin-top: 30px;
+}
+
+/* line 322, ../../../app/assets/styles/main.scss */
+.mg-bot-30 {
+  margin-bottom: 30px;
+}
+
+/* line 326, ../../../app/assets/styles/main.scss */
+.mg-top-50 {
+  margin-top: 50px;
+}
+
+/* line 330, ../../../app/assets/styles/main.scss */
+.mg-bot-50 {
+  margin-bottom: 50px;
+}
+
+/* line 336, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 341, ../../../app/assets/styles/main.scss */
+body {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  background-color: #000;
+  min-width: 960px;
+  max-width: 1920px;
+}
+
+/* line 350, ../../../app/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 354, ../../../app/assets/styles/main.scss */
+p {
+  font-size: 1.6rem;
+}
+
+/* line 358, ../../../app/assets/styles/main.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 361, ../../../app/assets/styles/main.scss */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #ed2323;
+}
+
+/* line 367, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 372, ../../../app/assets/styles/main.scss */
+hr {
+  border-top: 1px solid #fff;
+  width: 30%;
+}
+
+/* line 380, ../../../app/assets/styles/main.scss */
+.btn1, .btn2, .btn3, .btn4, .btn5 {
+  cursor: pointer;
+}
+
+/* line 385, ../../../app/assets/styles/main.scss */
+.btn1 {
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 18px;
+  color: #000;
+}
+/* line 399, ../../../app/assets/styles/main.scss */
+.btn1 span:first-child {
+  padding-right: 15px;
+  padding-top: 5px;
+  font-size: 2rem;
+}
+/* line 405, ../../../app/assets/styles/main.scss */
+.btn1:hover, .btn1:focus {
+  background-color: #ffea00;
+  color: #000;
+}
+
+/* line 412, ../../../app/assets/styles/main.scss */
+.btn2 {
+  width: 170px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+/* line 424, ../../../app/assets/styles/main.scss */
+.btn2:hover, .btn2:focus {
+  background-color: #ed2323;
+  color: #fff;
+}
+
+/* line 431, ../../../app/assets/styles/main.scss */
+.btn3 {
+  width: 190px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2dc30a;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+/* line 444, ../../../app/assets/styles/main.scss */
+.btn3:hover, .btn3:focus {
+  background-color: #282c2b;
+  color: #fff;
+}
+
+/* line 451, ../../../app/assets/styles/main.scss */
+.btn4 {
+  width: 180px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #2dc30a;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+/* line 465, ../../../app/assets/styles/main.scss */
+.btn4:hover, .btn4:focus {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+/* line 472, ../../../app/assets/styles/main.scss */
+.btn4-1 {
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #ffea00;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+/* line 488, ../../../app/assets/styles/main.scss */
+.btn4-1 span:first-child {
+  padding-top: 6px;
+  padding-right: 5px;
+  font-size: 2.3rem;
+  vertical-align: middle;
+}
+/* line 496, ../../../app/assets/styles/main.scss */
+.btn4-1:hover, .btn4-1:focus {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+/* line 503, ../../../app/assets/styles/main.scss */
+.btn5 {
+  width: 240px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+/* line 516, ../../../app/assets/styles/main.scss */
+.btn5 span:first-child {
+  font-size: 2rem;
+  padding-top: 4px;
+}
+/* line 520, ../../../app/assets/styles/main.scss */
+.btn5:hover, .btn5:focus {
+  background-color: #2dc30a;
+  border-color: #2dc30a;
+  color: #fff;
+}
+
+/* line 529, ../../../app/assets/styles/main.scss */
+#section1 {
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  height: 1030px;
+}
+/* line 536, ../../../app/assets/styles/main.scss */
+#section1 .container {
+  position: relative;
+  padding-bottom: 20px;
+}
+/* line 541, ../../../app/assets/styles/main.scss */
+#section1 .divider {
+  background-color: #ed2323;
+}
+/* line 546, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+/* line 554, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col1 {
+  z-index: 2;
+}
+/* line 556, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col1 i {
+  color: #fff;
+  padding-right: 8px;
+}
+/* line 562, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-toggle {
+  cursor: pointer;
+}
+/* line 564, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-toggle:hover, #section1 .flex-wrapper .col3 .dropdown-toggle:focus {
+  color: #ed2323;
+  text-decoration: none;
+}
+/* line 569, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-menu {
+  background-color: #000;
+  border-radius: 0;
+  margin: 0;
+  border: 0;
+}
+/* line 576, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-menu li span:first-child {
+  padding: 0 10px;
+}
+/* line 580, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-menu li a {
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 585, ../../../app/assets/styles/main.scss */
+#section1 .flex-wrapper .col3 .dropdown-menu li a:hover, #section1 .flex-wrapper .col3 .dropdown-menu li a:focus {
+  background: none;
+  color: #ed2323;
+}
+/* line 595, ../../../app/assets/styles/main.scss */
+#section1 .title {
+  padding-top: 200px;
+  position: relative;
+  z-index: 4;
+}
+/* line 601, ../../../app/assets/styles/main.scss */
+#section1 #char1 {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  z-index: 1;
+}
+/* line 608, ../../../app/assets/styles/main.scss */
+#section1 #char2 {
+  position: absolute;
+  top: 120px;
+  right: -900px;
+  z-index: 2;
+}
+
+/* line 616, ../../../app/assets/styles/main.scss */
+#section2 {
+  background-image: url(../images/section2/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 150px;
+  padding-bottom: 45px;
+  overflow: hidden;
+}
+/* line 624, ../../../app/assets/styles/main.scss */
+#section2 p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+/* line 629, ../../../app/assets/styles/main.scss */
+#section2 .wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 900px;
+  z-index: 3;
+  width: 880px;
+  height: 230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282c2b;
+  color: #fff;
+  padding: 0 60px;
+  border-radius: 20px;
+}
+/* line 646, ../../../app/assets/styles/main.scss */
+#section2 .wrapper h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+/* line 652, ../../../app/assets/styles/main.scss */
+#section2 .wrapper h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #ed2323;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+}
+/* line 663, ../../../app/assets/styles/main.scss */
+#section2 .big-display {
+  width: 820px;
+  height: 190px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 5px solid #ed2323;
+  margin: 50px auto 20px;
+}
+/* line 672, ../../../app/assets/styles/main.scss */
+#section2 .big-display .col1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+/* line 678, ../../../app/assets/styles/main.scss */
+#section2 .big-display .col2 img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 686, ../../../app/assets/styles/main.scss */
+#section2 .image-wrapper {
+  width: 820px;
+  margin: 0 auto;
+}
+/* line 689, ../../../app/assets/styles/main.scss */
+#section2 .image-wrapper figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 270px;
+  height: 190px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 5px solid #666;
+  overflow: hidden;
+  position: relative;
+}
+/* line 702, ../../../app/assets/styles/main.scss */
+#section2 .image-wrapper figure img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 707, ../../../app/assets/styles/main.scss */
+#section2 .image-wrapper figure figcaption {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+/* line 715, ../../../app/assets/styles/main.scss */
+#section2 .image-wrapper figure.active {
+  border-color: #ed2323;
+  background-color: rgba(237, 35, 35, 0.6);
+}
+
+/* line 723, ../../../app/assets/styles/main.scss */
+#section3 {
+  background-image: url(../images/section3/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 65px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 731, ../../../app/assets/styles/main.scss */
+#section3 .before-login {
+  padding-top: 20px;
+}
+/* line 733, ../../../app/assets/styles/main.scss */
+#section3 .before-login p {
+  padding-top: 20px;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+/* line 738, ../../../app/assets/styles/main.scss */
+#section3 .before-login .signup {
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
+  font-size: 1.2rem;
+}
+/* line 746, ../../../app/assets/styles/main.scss */
+#section3 .after-login {
+  padding-top: 20px;
+}
+/* line 748, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  margin: 80px auto 0;
+  background-color: rgba(40, 44, 43, 0.4);
+  border: 1px solid #ed2323;
+  border-radius: 20px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+/* line 761, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container .id {
+  margin-left: 30px;
+  width: 117px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.6rem;
+}
+/* line 770, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container #profile-photo img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ed2323;
+  position: absolute;
+  left: 150px;
+  top: -30px;
+}
+/* line 779, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container .balance {
+  margin-right: 30px;
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+/* line 789, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container .balance span:first-child {
+  font-size: 0.9rem;
+}
+/* line 792, ../../../app/assets/styles/main.scss */
+#section3 .after-login .profile-container .balance span:last-child {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+/* line 799, ../../../app/assets/styles/main.scss */
+#section3 .after-login a {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  text-align: right;
+  font-size: 1.1rem;
+  padding-right: 15px;
+}
+/* line 807, ../../../app/assets/styles/main.scss */
+#section3 .after-login a span:first-child {
+  padding-right: 5px;
+}
+/* line 814, ../../../app/assets/styles/main.scss */
+#section3 .warning-message {
+  width: 530px;
+  height: 60px;
+  margin: 35px auto 0;
+  background-color: rgba(237, 35, 35, 0.3);
+  border: 1px solid #ed2323;
+}
+/* line 821, ../../../app/assets/styles/main.scss */
+#section3 .warning-message span:first-child {
+  font-size: 3rem;
+  padding-top: 8px;
+  padding-right: 10px;
+}
+/* line 829, ../../../app/assets/styles/main.scss */
+#section3 .adblock-message {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 160px;
+  text-align: center;
+}
+/* line 836, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel {
+  position: relative;
+  margin: 0 auto;
+  width: 930px;
+  height: auto;
+  border: none;
+  overflow: visible;
+  padding-top: 60px;
+}
+/* line 845, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+/* line 853, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .bg-after-buy {
+  background-image: url(../images/section3/card/bg-confirmation.jpg) !important;
+}
+/* line 858, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem1 .tag {
+  width: 100px;
+  background-color: #ed2323;
+  border: 1px solid #ed2323;
+}
+/* line 864, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem1 .top-container {
+  background-image: url(../images/section3/card/bg-awp.png);
+}
+/* line 870, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem2 .top-container {
+  background-image: url(../images/section3/card/bg-fmg.png);
+}
+/* line 876, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem3 .tag {
+  width: 200px;
+  background-color: #2dc30a;
+  border: 1px solid #2dc30a;
+}
+/* line 881, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem3 .top-container {
+  background-image: url(../images/section3/card/bg-ak47.png);
+}
+/* line 887, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem4 .top-container {
+  background-image: url(../images/section3/card/bg-katana.png);
+}
+/* line 893, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem5 .tag {
+  width: 150px;
+  background-color: #d2b885;
+  border: 1px solid #d2b885;
+}
+/* line 898, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem5 .top-container {
+  background-image: url(../images/section3/card/bg-enfield.png);
+}
+/* line 903, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 315px;
+  height: 480px;
+  border-radius: 20px;
+}
+/* line 913, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 220px;
+  position: relative;
+}
+/* line 919, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 0;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 0px 20px 0px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 932, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .dot-container {
+  position: absolute;
+  top: 100px;
+  right: 10px;
+}
+/* line 936, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .dot-container .dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #000;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+/* line 944, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .dot-container .dot:hover, #section3 #section3-carousel .slides .slideItem .top-container .dot-container .dot:focus, #section3 #section3-carousel .slides .slideItem .top-container .dot-container .dot.dot-active {
+  background-color: #ed2323;
+}
+/* line 949, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .weapon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+/* line 954, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .weapon-container img {
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+/* line 962, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .top-container .stat-container {
+  transform: scale(0.8) translate(-20px, 0px);
+}
+/* line 967, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container {
+  background-color: #282c2b;
+  height: 260px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+/* line 973, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .menu-container {
+  display: flex;
+  justify-content: space-between;
+  height: 41px;
+  font-size: 1rem;
+  padding: 10px 15px 0;
+}
+/* line 979, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .menu-container a {
+  cursor: pointer;
+}
+/* line 982, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .menu-container span {
+  display: inline-block;
+  font-size: 1.8rem;
+  vertical-align: middle;
+  padding-top: 3px;
+  padding-right: 5px;
+}
+/* line 991, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .price {
+  width: 80px;
+  height: 80px;
+  border: 3px solid #2dc30a;
+  border-radius: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -40px;
+  margin: 0 auto;
+  color: #2dc30a;
+  text-align: center;
+  background-color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding-top: 7px;
+}
+/* line 1006, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .price strong {
+  font-size: 3rem;
+}
+/* line 1011, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+/* line 1019, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 70px;
+}
+/* line 1026, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .before-buy hr {
+  border-color: #ed2323;
+}
+/* line 1030, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .before-buy h3 {
+  color: #ed2323;
+}
+/* line 1035, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy {
+  text-align: center;
+}
+/* line 1037, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy hr {
+  border-color: #2dc30a;
+}
+/* line 1041, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy h3 {
+  color: #2dc30a;
+  padding: 0;
+}
+/* line 1046, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy i {
+  font-size: 6rem;
+}
+/* line 1050, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text1, #section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text2 {
+  font-size: 1.5rem;
+}
+/* line 1054, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text1 {
+  padding-top: 5px;
+}
+/* line 1058, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text3, #section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text4 {
+  font-size: 1.2rem;
+}
+/* line 1062, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text3 {
+  color: #2dc30a;
+  padding-top: 10px;
+}
+/* line 1066, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text3 span:first-child {
+  font-size: 1.8rem;
+  vertical-align: middle;
+}
+/* line 1073, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .text4 {
+  padding: 5px 0 10px;
+}
+/* line 1077, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .btn4 {
+  background: none;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  drop-shadow: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* line 1085, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .btn4:hover, #section3 #section3-carousel .slides .slideItem .bottom-container .after-buy .btn4:focus {
+  background-color: #2dc30a;
+}
+/* line 1092, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .tabs {
+  display: block;
+  height: 23px;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+}
+/* line 1097, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .tabs li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  font-size: 1.3rem;
+  padding-bottom: 2px;
+}
+/* line 1105, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .tabs li:hover, #section3 #section3-carousel .slides .slideItem .bottom-container .tabs li:focus {
+  color: #ed2323;
+}
+/* line 1108, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .tabs li.active2 {
+  border-bottom: 3px solid #ed2323;
+  color: #ed2323;
+  font-weight: 700;
+}
+/* line 1116, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .slides .slideItem .bottom-container .tabs-content p {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 10px 0;
+}
+/* line 1129, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .nextButton {
+  right: -40px;
+  top: 280px;
+}
+/* line 1135, ../../../app/assets/styles/main.scss */
+#section3 #section3-carousel .prevButton {
+  left: -60px;
+  top: 280px;
+}
+/* line 1142, ../../../app/assets/styles/main.scss */
+#section3 .tab-state {
+  display: block;
+  height: 35px;
+  margin-top: 50px;
+  position: relative;
+  border-bottom: 2px solid #fff;
+}
+/* line 1148, ../../../app/assets/styles/main.scss */
+#section3 .tab-state:before, #section3 .tab-state:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  right: 100%;
+  bottom: -2px;
+  width: 4000px;
+  z-index: 1;
+}
+/* line 1159, ../../../app/assets/styles/main.scss */
+#section3 .tab-state:after {
+  right: auto;
+  left: 100%;
+  width: 4000px;
+}
+/* line 1164, ../../../app/assets/styles/main.scss */
+#section3 .tab-state li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  padding-bottom: 11px;
+  cursor: pointer;
+}
+/* line 1174, ../../../app/assets/styles/main.scss */
+#section3 .tab-state li:last-child {
+  position: relative;
+}
+/* line 1176, ../../../app/assets/styles/main.scss */
+#section3 .tab-state li:last-child span {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  background-color: #ffea00;
+  font-size: 0.9rem;
+  color: #000;
+  width: 70px;
+  height: 20px;
+  margin: 0 auto;
+  font-weight: normal;
+}
+/* line 1188, ../../../app/assets/styles/main.scss */
+#section3 .tab-state li:last-child span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #ffea00 transparent transparent transparent;
+}
+/* line 1202, ../../../app/assets/styles/main.scss */
+#section3 .tab-state li.active2 {
+  border-bottom: 5px solid #ed2323;
+  color: #ed2323;
+  font-weight: 700;
+}
+/* line 1210, ../../../app/assets/styles/main.scss */
+#section3 .red-wrapper {
+  width: 820px;
+  height: 160px;
+  margin: 35px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(237, 35, 35, 0.7);
+  color: #fff;
+  padding: 0 60px;
+  border-radius: 20px;
+}
+/* line 1222, ../../../app/assets/styles/main.scss */
+#section3 .red-wrapper h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+/* line 1228, ../../../app/assets/styles/main.scss */
+#section3 .red-wrapper h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ffea00;
+  text-transform: uppercase;
+  display: inline-block;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
+}
+/* line 1239, ../../../app/assets/styles/main.scss */
+#section3 .red-wrapper .btn2:hover, #section3 .red-wrapper .btn2:focus {
+  background-color: #ffea00;
+  color: #000;
+}
+/* line 1246, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container {
+  padding-top: 30px;
+}
+/* line 1248, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 {
+  width: 60%;
+}
+/* line 1250, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 {
+  background-image: url(../images/section3/sharp-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 90%;
+}
+/* line 1254, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+/* line 1259, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 .slick-arrow {
+  position: absolute;
+  top: 55%;
+  z-index: 2;
+  cursor: pointer;
+}
+/* line 1264, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 .slick-arrow.icon-arrow1 {
+  left: 10px;
+  font-size: 6rem;
+}
+/* line 1268, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 .slick-arrow.icon-arrow2 {
+  right: 10px;
+  font-size: 6rem;
+}
+/* line 1272, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col1 #section3-carousel2 .slick-arrow:hover, #section3 .sharp-container .col1 #section3-carousel2 .slick-arrow:focus {
+  color: #ed2323;
+}
+/* line 1278, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 {
+  width: 40%;
+  padding-top: 240px;
+}
+/* line 1281, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 p {
+  padding-top: 20px;
+}
+/* line 1283, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 p strong {
+  text-transform: uppercase;
+  font-style: italic;
+}
+/* line 1289, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 #sharp-title {
+  position: relative;
+  left: 500px;
+}
+/* line 1294, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 .price-wrapper {
+  padding-top: 30px;
+}
+/* line 1296, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 .price-wrapper h3 {
+  width: 220px;
+  font-size: 2.4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  float: left;
+}
+/* line 1303, ../../../app/assets/styles/main.scss */
+#section3 .sharp-container .col2 .price-wrapper div {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  background-color: #ffea00;
+  border-radius: 20px;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+/* line 1321, ../../../app/assets/styles/main.scss */
+#section3 .sharp-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* line 1327, ../../../app/assets/styles/main.scss */
+#section3 .survey-container {
+  margin-top: 200px;
+  position: relative;
+}
+/* line 1330, ../../../app/assets/styles/main.scss */
+#section3 .survey-container p {
+  width: 330px;
+  padding-top: 40px;
+}
+/* line 1333, ../../../app/assets/styles/main.scss */
+#section3 .survey-container p span {
+  color: #ffea00;
+  font-weight: 700;
+}
+/* line 1338, ../../../app/assets/styles/main.scss */
+#section3 .survey-container h4 {
+  width: 330px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+/* line 1346, ../../../app/assets/styles/main.scss */
+#section3 .survey-container a {
+  margin-bottom: 80px;
+}
+/* line 1350, ../../../app/assets/styles/main.scss */
+#section3 .survey-container #ellie {
+  position: absolute;
+  top: -100px;
+  right: -500px;
+}
+
+/* line 1358, ../../../app/assets/styles/main.scss */
+#section4 {
+  background-image: url(../images/section4/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding-top: 80px;
+  overflow: hidden;
+}
+/* line 1365, ../../../app/assets/styles/main.scss */
+#section4 h4 {
+  font-size: 2.8rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+/* line 1372, ../../../app/assets/styles/main.scss */
+#section4 .event-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 910px;
+  height: 250px;
+  justify-content: flex-start;
+}
+/* line 1380, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col1 {
+  width: 301px;
+}
+/* line 1384, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 {
+  width: 609px;
+  padding: 20px 30px;
+}
+/* line 1388, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* line 1396, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 p {
+  padding-top: 10px;
+}
+/* line 1400, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 h5 {
+  letter-spacing: 3px;
+  color: #ff9900;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+/* line 1409, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section {
+  padding-top: 20px;
+}
+/* line 1411, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1, #section4 .event-container .col2 .sub-section .sub-col2 {
+  float: left;
+  width: 50%;
+}
+/* line 1415, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 p, #section4 .event-container .col2 .sub-section .sub-col2 p {
+  padding: 0;
+  font-size: 1.4rem;
+}
+/* line 1420, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 ul li, #section4 .event-container .col2 .sub-section .sub-col2 ul li {
+  font-size: 1.4rem;
+}
+/* line 1424, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 strong, #section4 .event-container .col2 .sub-section .sub-col2 strong {
+  text-transform: uppercase;
+  color: #ff9900;
+}
+/* line 1429, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 .active, #section4 .event-container .col2 .sub-section .sub-col2 .active {
+  color: #ff9900;
+  font-weight: 700;
+}
+/* line 1432, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 .active:before, #section4 .event-container .col2 .sub-section .sub-col2 .active:before {
+  content: '> ';
+}
+/* line 1437, ../../../app/assets/styles/main.scss */
+#section4 .event-container .col2 .sub-section .sub-col1 {
+  padding-right: 20px;
+}
+
+/* line 1445, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px 0 100px;
+  font-size: 1.3rem;
+}
+/* line 1449, ../../../app/assets/styles/main.scss */
+footer .flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
