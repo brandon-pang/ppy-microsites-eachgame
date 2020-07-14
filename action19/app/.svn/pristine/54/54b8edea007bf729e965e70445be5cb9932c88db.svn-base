@@ -1,0 +1,1214 @@
+<!--<section id="top-nav" ng-show="topNavVisible" class="animated fadeIn">
+    <div class="container">
+        <ul>
+            <li><a href="#section2" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'new-game-mode' }}"></a><span></span></li>
+            <li><a href="#section3" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'new-map' }}"></a><span></span></li>
+            <li><a href="#section4" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'hunt-is-on' }}"></a><span></span></li>
+            <li><i class="icon-blackshot"></i></li>
+            <li><a href="#section5" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'accolades' }}"></a><span></span></li>
+            <li><a href="#section6" class="tabs" du-smooth-scroll du-scrollspy>claymore</a><span></span></li>
+            <li><a href="#section9" class="tabs" du-smooth-scroll du-scrollspy translate="{{ 'event' }}"></a><span></span></li>
+        </ul>
+    </div>
+</section>-->
+
+<section id="logo-top">
+    <div class="container">
+        <!-- top nav starts -->
+        <div class="top-nav">
+            <div class="navlink"><a href="{{ linkUrl.dekaron }}" target="_blank">{{ 'goback' | translate }}</a></div>
+            <div class="language-bar">
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;"><img preload-image ng-src="{{imgUrl}}/flag-{{ flag }}.svg"
+                                                                default-image="{{imgUrl}}/default.png" height="15"
+                                                                alt="flag"></span><span>{{ lang }}</span><b
+                            class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-click="switchLanguage('en')">
+                            <span><img preload-image ng-src="{{imgUrl}}/flag-uk.svg"
+                                       default-image="{{imgUrl}}/default.png" height="15"
+                                       alt="english flag"></span><span translate="{{ 'english' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('de')" style="display:none">
+                            <span><img preload-image ng-src="{{imgUrl}}/flag-germany.svg"
+                                       default-image="{{imgUrl}}/default.png" height="15"
+                                       alt="german flag"></span><span translate="{{ 'german' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('fr')" style="display:none">
+                            <span><img preload-image ng-src="{{imgUrl}}/flag-france.svg"
+                                       default-image="{{imgUrl}}/default.png" height="15"
+                                       alt="french flag"></span><span translate="{{ 'french' }}"></span>
+                        </li>
+                        <li ng-click="switchLanguage('pt')">
+                            <span><img preload-image ng-src="{{imgUrl}}/flag-brazil.svg"
+                                       default-image="{{imgUrl}}/default.png" height="15"
+                                       alt="brazil flag"></span><span class="text-capitalize"
+                                                                      translate="{{ 'portuguese' }}"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- logo starts-->
+        <div>
+            <div class="logo-wrapper">
+                <a href="{{ linkUrl.dekaron }}" target="_blank">
+                    <ul>
+                        <li><img preload-image ng-src="{{imgUrl}}/dk_logo.png" default-image="{{imgUrl}}/default.png"
+                                 class="logo" alt="logo"/></li>
+                        <li><img preload-image ng-src="{{imgUrl}}/update_copy.png"
+                                 default-image="{{imgUrl}}/default.png" class="logo" alt="logo"/></li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section1">
+    <div class="container">
+        <h2 translate="{{ 'section1-title' }}"></h2>
+        <h1 translate="{{ 'section1-subtitle' }}"></h1>
+        <p translate="{{ 'section1-text1' }}"></p>
+
+        <div class="container">
+            <ul id="dungeon" class="nav nav-tabs" role="tablist">
+                <li role="presentation" ng-repeat="node in dungeonNode" class="{{node.class}} centered ">
+                    <a href="{{node.tablink}}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                        | translate}}</a>
+                </li>
+            </ul>
+            <!-- contents -->
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="d-node1">
+                    <div class="container">
+                        <div id="s1-tab1-slide">
+                            <div ng-repeat="sl in s1sl0">
+                                <img preload-image ng-src="{{s1imgPath}}sl0/{{sl.image}}"
+                                     default-image="{{imgUrl}}/default.png">
+                            </div>
+                        </div>
+                        <div id="arrows0">
+                            <span id="title0">Forgotten Underground Temple</span>
+                            <div class="slick-next0">
+                                <span class="icon-arrow-r"></span>
+                            </div>
+                            <span id="pageNo0"></span>
+                            <div class="slick-prev0">
+                                <span class="icon-arrow-l"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="d-node2">
+                    <div class="container">
+                        <div class="flex-default">
+                            <div class="col1">
+                                <h4 translate="{{ 's1-tab2-title' }}"></h4>
+                                <p translate="{{ 's1-tab2-text' }}"></p>
+                            </div>
+                            <div class="col2">
+                                <img preload-image ng-src="{{imgUrl}}/section1/section1-map.jpg"
+                                     default-image="{{imgUrl}}/default.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="d-node3">
+                    <div id="s1-tab3-slide">
+                        <div ng-repeat="sl in s1sl1">
+                            <img ng-src="{{s1imgPath}}sl1/{{sl.image}}">
+                        </div>
+                    </div>
+                    <div id="arrows1">
+                        <span id="title1"></span>
+                        <div class="slick-next1">
+                            <span class="icon-arrow-r"></span>
+                        </div>
+                        <span id="pageNo1"></span>
+                        <div class="slick-prev1">
+                            <span class="icon-arrow-l"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="d-node4">
+                    <div id="s1-tab4-slide">
+                        <div ng-repeat="sl in s1sl2">
+                            <img ng-src="{{s1imgPath}}sl2/{{sl.image}}">
+                        </div>
+                    </div>
+                    <div id="arrows2">
+                        <span id="title2"></span>
+                        <div class="slick-next2">
+                            <span class="icon-arrow-r"></span>
+                        </div>
+                        <span id="pageNo2"></span>
+                        <div class="slick-prev2">
+                            <span class="icon-arrow-l"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<a href="#" target="_blank" class="btn1">
+        <span>{{ 'see-more' | translate }}</span>
+    </a>-->
+    <div class="container-arrow">
+        <div class="div-arrow-left">
+            <span class="icon-arrow-l"></span>
+        </div>
+        <div class="div-arrow-right">
+            <span class="icon-arrow-r"></span>
+        </div>
+    </div>
+    <script>
+        $('.div-arrow-right').click(function () {
+            $('.nav-tabs > .active').next('li').find('a').trigger('click');
+        });
+
+        $('.div-arrow-left').click(function () {
+            $('.nav-tabs > .active').prev('li').find('a').trigger('click');
+        });
+
+        $('.nav-tabs').on('show.bs.tab', function(e) {
+            //e.target.css('display','inline');
+            var link=e.target.text;
+            if(link=="#d-node3"){
+
+            }
+        });
+    </script>
+</section>
+
+<section id="section2">
+    <div class="container">
+        <h1 translate="{{ 'section2-subtitle' }}"></h1>
+        <p translate="{{ 'section2-text1'    }}"></p>
+        <div class="flex-default">
+            <div class="col1">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" ng-repeat="node in s2nodes" class="{{node.class}}">
+                        <a href="{{node.tablink}}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                            | translate}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <div class="tab-content clearfix">
+                    <div ng-repeat="tab in s2tabs" class="tab-pane fade {{tab.class}}" id="{{ tab.tablink }}">
+                        <h4>{{tab.name | translate}} {{tab.reward | translate}}</h4>
+                        <h2>Quest</h2>
+                        <p translate="{{tab.quest}}"></p>
+                        <div ng-if=" tab.map !='' " class="map-wrap">
+                            <p><span class="icon-castle"></span> {{ tab.map | translate }} </p>
+                        </div>
+                        <div ng-if=" tab.effect !='' ">
+                            <h2>Effect</h2>
+                            <p translate="{{ tab.effect }}"></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-wrapper">
+            <br><br>
+            <h4>{{ 'section2-videoTitle' | translate }} </h4>
+            <br><br>
+            <div id="player"></div>
+        </div>
+    </div>
+</section>
+
+<section id="section3">
+    <div class="container">
+        <h1 translate="{{ 'section3-subtitle' }}"></h1>
+        <p translate="{{ 'section3-text1'    }}"></p>
+        <div class="container">
+            <ul id="s3" class="nav nav-tabs" role="tablist1">
+                <li role="presentation" ng-repeat="node in s3tabs" class="{{node.class}} centered ">
+                    <a href="{{node.tablink}}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                        | translate}}</a>
+                </li>
+            </ul>
+            <!-- contents -->
+            <div class="tab-content clearfix">
+                <div class="tab-pane fade active in" id="s3-node1">
+                    <div class="container">
+                        <div class="flex-default">
+                            <div class="col1">
+                                <h4 translate="{{ 's3-tab1-title'}}"></h4>
+                                <p translate="{{ 's3-tab1-text'}}"></p>
+                            </div>
+                            <div class="col2">
+                                <img preload-image ng-src="{{imgUrl}}/section3/section3-npc-map.png"
+                                     default-image="{{imgUrl}}/default.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s3-node2">
+                    <div class="container" style="padding-top:25px;">
+                        <div id="player3"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s3-node3">
+                    <div class="container">
+                        <div class="flex-default">
+                            <div class="col1">
+                                <h4 translate="{{ 's3-tab3-title' }}"></h4>
+                                <p translate="{{ 's3-tab3-text' }}"></p>
+                            </div>
+                            <div class="col2">
+                                <img preload-image ng-src="{{imgUrl}}/section3/catalyst.png"
+                                     default-image="{{imgUrl}}/default.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s3-node4">
+                    <img preload-image ng-src="{{imgUrl}}/section3/section3-new-items.jpg"
+                         default-image="{{imgUrl}}/default.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<a href="{{linkUrl.learnmore}}" target="_blank" class="btn1">{{ 'learn-more' | translate }}</a>-->
+    <div class="container-arrow">
+        <div class="div-arrow-left1">
+            <span class="icon-arrow-l"></span>
+        </div>
+        <div class="div-arrow-right1">
+            <span class="icon-arrow-r"></span>
+        </div>
+    </div>
+    <script>
+        $('.div-arrow-right1').click(function () {
+            $('#s3 > .active').next('li').find('a').trigger('click');
+        });
+
+        $('.div-arrow-left1').click(function () {
+            $('#s3 > .active').prev('li').find('a').trigger('click');
+        });
+    </script>
+</section>
+
+<section id="section4">
+    <div class="container">
+        <h1 translate="{{ 'section4-subtitle' }}"></h1>
+        <p translate="{{ 'section4-text1'    }}"></p>
+        <div class="container">
+            <ul id="s4" class="nav nav-tabs" role="tablist">
+                <li role="presentation" ng-repeat="node in s4tabs" class="{{node.class}} centered ">
+                    <a href="{{node.tablink}}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                        | translate}}</a>
+                </li>
+            </ul>
+            <!-- contents -->
+            <div class="tab-content clearfix">
+                <div class="tab-pane fade active in" id="s4-node1">
+                    <div class="container">
+                        <div class="flex-default">
+                            <div class="col1">
+                                <h4 translate="{{ 's4-tab1-btn-name'}}"></h4>
+                                <p translate="{{ 's4-tab1-text'}}"></p>
+                            </div>
+                            <div class="col2">
+                                <div id="s4-tab1-slide">
+                                    <div ng-repeat="sl in s4sl0">
+                                        <img preload-image ng-src="{{s4sl_url}}s0/{{sl.imgName}}"
+                                             default-image="{{imgUrl}}/default.png">
+                                    </div>
+                                </div>
+                                <div id="s4-arrows0">
+                                    <span id="s4-title0"></span>
+                                    <div class="s4-slick-next0">
+                                        <span class="icon-arrow-r"></span>
+                                    </div>
+                                    <span id="s4-pageNo0"></span>
+                                    <div class="s4-slick-prev0">
+                                        <span class="icon-arrow-l"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s4-node2">
+                    <div class="container">
+                        <div class="flex-default">
+                            <div class="col1">
+                                <h4 translate="{{ 's4-tab2-btn-name'}}"></h4>
+                                <p translate="{{ 's4-tab2-text'}}"></p>
+                            </div>
+                            <div class="col2">
+                                <div id="s4-tab2-slide">
+                                    <div ng-repeat="sl1 in s4sl1">
+                                        <img preload-image ng-src="{{s4sl_url}}s1/{{sl1.imgName}}"
+                                             default-image="{{imgUrl}}/default.png">
+                                    </div>
+                                </div>
+                                <div id="s4-arrows1">
+                                    <span id="s4-title1"></span>
+                                    <div class="s4-slick-next1">
+                                        <span class="icon-arrow-r"></span>
+                                    </div>
+                                    <span id="s4-pageNo1"></span>
+                                    <div class="s4-slick-prev1">
+                                        <span class="icon-arrow-l"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s4-node3">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4 translate="{{ 's4-tab3-btn-name'}}"></h4>
+                            <p translate="{{ 's4-tab3-text'}}"></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h3 translate="{{ 's4-tab3-header'}}"></h3>
+                            <p translate="{{ 's4-tab3-content'}}"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<a href="#" target="_blank" class="btn1">{{ 'learn-more' | translate }}</a>-->
+
+    <div class="container-arrow">
+        <div class="div-arrow-left3">
+            <span class="icon-arrow-l"></span>
+        </div>
+        <div class="div-arrow-right3">
+            <span class="icon-arrow-r"></span>
+        </div>
+    </div>
+    <script>
+        $('.div-arrow-right3').click(function () {
+            $('#s4 > .active').next('li').find('a').trigger('click');
+        });
+
+        $('.div-arrow-left3').click(function () {
+            $('#s4 > .active').prev('li').find('a').trigger('click');
+        });
+    </script>
+</section>
+
+<section id="section5">
+    <div class="container">
+        <h1 translate="{{ 'section5-subtitle' }}"></h1>
+        <p translate="{{ 'section5-text1'    }}"></p>
+        <div class="container">
+            <div class="flex-default">
+                <div class="col1">
+                    <h4 translate="{{ 's5-sub-title' }}"></h4>
+                    <p translate="{{ 's5-sub-text' }}"></p>
+                </div>
+                <div class="col2">
+                    <div id="player2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section6">
+    <div class="container">
+        <h1 translate="{{ 'section6-subtitle' }}"></h1>
+        <p translate="{{ 'section6-text1' }}"></p>
+        <div class="container">
+            <ul id="s6" class="nav nav-tabs" role="tablist">
+                <li role="presentation" ng-repeat="node in s6tabs" class="{{ node.class }} centered ">
+                    <a href="{{ node.tablink }}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                        | translate}}</a>
+                </li>
+            </ul>
+            <!-- contents -->
+            <div class="tab-content clearfix">
+                <div class="tab-pane fade active in" id="s6-node1">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4 translate="{{ 's6-tab1-btn-name'}}"></h4>
+                            <h2 translate="{{ 's6-tab1-title1'}}"></h2>
+                            <p translate="{{ 's6-tab1-text1'}}"></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h2 translate="{{ 's6-tab1-title2'}}"></h2>
+                            <p translate="{{ 's6-tab1-text2'}}"></p>
+                            <h2 translate="{{ 's6-tab1-title3'}}"></h2>
+                            <p translate="{{ 's6-tab1-text3'}}"></p>
+                        </div>
+                    </div>
+                    <!--<div class="img-float">
+                        <img preload-image ng-src="{{imgUrl}}/section6/section6-npc.png"
+                             default-image="{{imgUrl}}/default.png">
+                    </div>-->
+                </div>
+                <div class="tab-pane fade" id="s6-node2">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4 translate="{{ 's6-tab2-btn-name'}}"></h4>
+                            <h2 translate="{{ 's6-tab2-title1'}}"></h2>
+                            <p translate="{{ 's6-tab2-text1'}}"></p>
+                            <h2 translate="{{ 's6-tab2-title2'}}"></h2>
+                            <p translate="{{ 's6-tab2-text2'}}"></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h2 translate="{{ 's6-tab2-title3'}}"></h2>
+                            <p translate="{{ 's6-tab2-text3'}}"></p>
+                            <h2 translate="{{ 's6-tab2-title4'}}"></h2>
+                            <p translate="{{ 's6-tab2-text4'}}"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="s6-node3">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <h4 translate="{{ 's6-tab3-btn-name'}}"></h4>
+                            <h2 translate="{{ 's6-tab3-title1'}}"></h2>
+                            <p translate="{{ 's6-tab3-text1'}}"></p>
+                            <h2 translate="{{ 's6-tab3-title2'}}"></h2>
+                            <p translate="{{ 's6-tab3-text2'}}"></p>
+                        </div>
+                        <div class="col-xs-6">
+                            <h2 translate="{{ 's6-tab3-title3'}}"></h2>
+                            <p translate="{{ 's6-tab3-text3'}}"></p>
+                            <h2 translate="{{ 's6-tab3-title4'}}"></h2>
+                            <p translate="{{ 's6-tab3-text4'}}"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<a href="#" target="_blank" class="btn1">{{ 'learn-more' | translate }}</a>-->
+
+    <div class="container-arrow">
+        <div class="div-arrow-left4">
+            <span class="icon-arrow-l"></span>
+        </div>
+        <div class="div-arrow-right4">
+            <span class="icon-arrow-r"></span>
+        </div>
+    </div>
+    <script>
+        $('.div-arrow-right4').click(function () {
+            $('#s6 > .active').next('li').find('a').trigger('click');
+        });
+
+        $('.div-arrow-left4').click(function () {
+            $('#s6 > .active').prev('li').find('a').trigger('click');
+        });
+    </script>
+</section>
+
+<section id="section7">
+    <div class="container">
+        <h1 translate="{{ 'section7-subtitle' }}"></h1>
+        <p translate="{{ 'section7-text1'    }}"></p>
+
+        <div class="flex-default">
+            <div class="col1">
+                <ul class="nav nav-pills nav-stacked" role="tablist">
+                    <li role="presentation" ng-repeat="node in s7nodes" class="{{node.class}}">
+                        <a href="{{node.tablink}}" target="_self" role="tab" data-toggle="tab" class="text-uppercase">{{node.text
+                            | translate}}</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <div class="tab-content clearfix">
+                    <div class="tab-pane fade in active" id="s7-node1">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab1-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'protection' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab1-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab1-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab1-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content2'}}"></p>
+
+                                <h2 translate="{{ 'honor'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab1-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content3'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'destruction'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab1-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content4'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node2">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab2-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'archer' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content0'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content1'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content2'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'hunter'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content3'}}"></p>
+
+                                <h2 translate="{{ 'trans-up'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content4'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content5'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab2-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab2-content6'}}"></p>
+
+                                <h2 translate="{{ 'common' }}"></h2>
+                                <p translate="{{ 's7-tab2-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node3">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab3-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'fire' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content0'}}"></p>
+
+                                <h2 translate="{{ 'energy'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content1'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content2'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content3'}}"></p>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content4'}}"></p>
+
+                                <h2 translate="{{ 'trans-up'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content5'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content6'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab3-skill7' | translate }}</h3>
+                                <p translate="{{ 's7-tab3-content7'}}"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node4">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab4-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'domination' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab4-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab4-content0'}}"></p>
+
+                                <h2 translate="{{ 'alteration'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab4-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab4-content1'}}"></p>
+
+                                <h2 translate="{{ 'trans-up'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab4-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab4-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab4-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab4-content3'}}"></p>
+
+                                <h2 translate="{{ 'meister'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab4-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab4-content4'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node5">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab5-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'healing' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content0'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content1'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content2'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content3'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content4'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content5'}}"></p>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'blood'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content6'}}"></p>
+
+                                <h2 translate="{{ 'trans-up' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill7' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content7'}}"></p>
+
+                                <h2 translate="{{ 'meister'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill8' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content8'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill9' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content9'}}"></p>
+
+                                <h3 class="text-uppercase">{{ 's7-tab5-skill10' | translate }}</h3>
+                                <p translate="{{ 's7-tab5-content10'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node6">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab6-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'fighting-spirit' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content3'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content4'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content5'}}"></p>
+                                <h2 translate="{{ 'trans-up'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab6-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab6-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node7">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab7-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'spear' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content3'}}"></p>
+                                <h2 translate="{{ 'guardarm'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content4'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content5'}}"></p>
+                                <h2 translate="{{ 'trans-up'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab7-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab7-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node8">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab8-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'rule' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content0'}}"></p>
+
+                                <h2 translate="{{ 'shadow-krieger'}}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content3'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content4'}}"></p>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'transformation' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content5'}}"></p>
+                                <h2 translate="{{ 'trans-up' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content6'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill7' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content7'}}"></p>
+                                <h2 translate="{{ 'meister' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab8-skill8' | translate }}</h3>
+                                <p translate="{{ 's7-tab8-content8'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node9">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab9-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'heal' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content3'}}"></p>
+
+                                <h2 translate="{{ 'scythe' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content4'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content5'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content6'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill7' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content7'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill8' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content8'}}"></p>
+                                <h2 translate="{{ 'trans-up' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab9-skill9' | translate }}</h3>
+                                <p translate="{{ 's7-tab9-content9'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node10">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab10-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'energy' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content2'}}"></p>
+
+                                <h2 translate="{{ 'destruction' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab1-content3'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'pain' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content4'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content5'}}"></p>
+                                <h2 translate="{{ 'trans-up' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab10-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab10-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node11">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab11-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'fury' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content1'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content2'}}"></p>
+
+                                <h2 translate="{{ 'great-falchion' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content3'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content4'}}"></p>
+
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'katar' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content5'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab11-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab11-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="s7-node12">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h4 translate="{{ 's7-tab12-btn-name' }}"></h4>
+
+                                <h2 translate="{{ 'attack' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill0' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content0'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill1' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content1'}}"></p>
+
+                                <h2 translate="{{ 'aegis' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill2' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content2'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill3' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content3'}}"></p>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2 translate="{{ 'inat' }}"></h2>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill4' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content4'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill5' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content5'}}"></p>
+                                <h3 class="text-uppercase">{{ 's7-tab12-skill6' | translate }}</h3>
+                                <p translate="{{ 's7-tab12-content6'}}"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section8">
+    <div class="container">
+        <h1 translate="{{ 'section8-subtitle' }}"></h1>
+        <p translate="{{ 'section8-text1'    }}"></p>
+    </div>
+    <div class="container">
+        <div class="flex-default">
+            <div class="col1">
+                <h4 translate="{{ 'section8-potion-title' }}"></h4>
+                <p translate="{{ 'section8-potion-context' }}"></p>
+            </div>
+            <div class="col2">
+                <img preload-image ng-src="{{imgUrl}}/section8/potions.png"
+                     default-image="{{imgUrl}}/default.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section-node" ng-repeat="node in secNode">
+    <div class="container">
+        <div class="flex-default">
+            <div class="col1">
+                <h1 translate="{{node.title}}"></h1>
+                <h2 ng-if=" node.subtitle !='' ">{{ node.subtitle | translate }}</h2>
+                <p translate="{{node.text}}"></p>
+                <a ng-if=" node.button !='' " href="{{node.linkUrl}}" target="_blank" class="btn1">
+                    <span class="icon-plus"></span>
+                    <span>{{  node.button | translate }}</span>
+                </a>
+            </div>
+            <div class="col2">
+                <img preload-image ng-src="{{imgUrl}}/section_node/{{ node.image }} "
+                     default-image="{{imgUrl}}/default.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <div class="container">
+        <div class="flex-default">
+            <div class="col1">
+                <a href="{{linkUrl.papayaplay}}" target="_blank">
+                    <img preload-image ng-src="{{imgUrl}}/papaya-logo.svg" default-image="{{imgUrl}}/default.png" alt="papaya logo" style="width: 160px;">
+                </a>
+            </div>
+            <div class="col2">
+                <p translate="{{ 'copyright' }}"></p>
+            </div>
+            <div class="col3">
+                <a href="{{linkUrl.ubifun}}" target="_blank">
+                    <img style="height: 28px;" preload-image ng-src="{{imgUrl}}/ubifun-logo.png"
+                         default-image="{{imgUrl}}/default.png" alt="vertigo logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type='text/javascript'>
+    if (typeof youtube_api_init == 'undefined') {
+        // This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+
+        tag.src = 'https://www.youtube.com/player_api';
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    } else {
+        onYouTubeIframeAPIReady();
+    }
+
+    function onYouTubeIframeAPIReady() {
+        // This function creates an <iframe> (and YouTube player) after the API code downloads.
+        var player = new YT.Player('player', {
+            playerVars: {
+                autoplay: 0,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0,
+                loop: 0,
+                enablejsapi: 1,
+                playlist: 'kjNGiyfXmjE'
+            },
+            width: 560,
+            height: 315,
+            videoId: 'kjNGiyfXmjE',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                    //event.target.playVideo();
+                }
+            }
+        });
+
+        var player2 = new YT.Player('player2', {
+            playerVars: {
+                autoplay: 0,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0,
+                loop: 0,
+                enablejsapi: 1,
+                playlist: 'FKQQeWKd9-0'
+            },
+            width: 400,
+            height: 225,
+            videoId: 'FKQQeWKd9-0',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                    //event.target.playVideo();
+                }
+            }
+        });
+
+        var player3 = new YT.Player('player3', {
+            playerVars: {
+                autoplay: 0,
+                controls: 0,
+                showsearch: 0,
+                showinfo: 0,
+                loop: 0,
+                enablejsapi: 1,
+                playlist: 's-GL0gJi8K8'
+            },
+            width: 720,
+            height: 405,
+            videoId: 's-GL0gJi8K8',
+            events: {
+                onReady: function (event) {
+                    event.target.mute();
+                    //event.target.playVideo();
+                }
+            }
+        });
+    }
+    var youtube_api_init = 1;
+
+    var itemArr=["Bishop's Bible",
+                "Ductile Stone",
+                "Helpyron's Eye",
+                "Helpyron's Heart",
+                "Helpyron's Nail",
+                "Helpyron's Skin",
+                "Baron's"];
+
+    var monArr=["Baron Sorcerer of Death - Mini Boss",
+                "The Monarch of Darkness Helpyron - Boss monster",
+                "Bishop Maxiris Sorcerer of Death - Mini Boss",
+                "Other Monsters",
+                "Other Monsters",
+                "Other Monsters",
+                "Other Monsters",
+                "Other Monsters",
+                "Other Monsters"];
+
+    var weaponArr=["Axe", "Blood-Whip", "Bow",
+        "Crossbow", "Dagger",
+        "Dual-Blade",
+        "Falchion",
+        "Gauntlet",
+        "Great-Axe",
+        "Great-Mace",
+        "Great-Sword",
+        "Guardarm",
+        "Katar","Mace","Orb",
+        "SealForce",
+        "Spear",
+        "Sword",
+        "Twin-Sword", "Wand"];
+
+    var armorArr=["Aloken","Segnale", "Seguriper", "Vicious Summoner","Azure Knight",
+        "Bagi Warrior", "Black Wizard", "Conserra Summoner", "Dragon Knight", "Half Bagi",
+        "Incar Magician", "Segita Hunter"];
+
+    $(document).ready(function () {
+        // section1
+        var slick0 = $('#s1-tab1-slide').slick({
+            arrows: false,
+            appendArrows: $('#arrows0')
+        });
+        var cp0 = $('#s1-tab1-slide').slick('getCurrent') + 1;
+        var tp0 = $('#s1-tab1-slide').slick('getDotCount') + 1;
+        $('#pageNo0').text(cp0 + ' / ' + tp0);
+        $('.slick-next0').on('click', function () {
+            slick0.slick('slickNext');
+        });
+        $('.slick-prev0').on('click', function () {
+            slick0.slick('slickPrev');
+        });
+        $('#s1-tab1-slide').on('afterChange', function (event, slick, currentSlide) {
+            var totalPage = slick.slideCount;
+            var currentPage = slick.currentSlide + 1;
+            var setTag = currentPage + ' / ' + totalPage;
+            $("#pageNo0").text(setTag);
+        });
+
+        // s1
+        var slick1 = $('#s1-tab3-slide').slick({
+            arrows: false,
+            appendArrows: $('#arrows1')
+        });
+        var cp1 = $('#s1-tab3-slide').slick('getCurrent') + 1;
+        var tp1 = $('#s1-tab3-slide').slick('getDotCount') + 1;
+        $("#title1").text(monArr[0]);
+
+        $('#pageNo1').text(cp1 + ' / ' + tp1);
+        $('.slick-next1').on('click', function () {
+            slick1.slick('slickNext');
+        });
+        $('.slick-prev1').on('click', function () {
+            slick1.slick('slickPrev');
+        });
+        $('#s1-tab3-slide').on('afterChange', function (event, slick, currentSlide) {
+            var totalPage = slick.slideCount;
+            var currentPage = slick.currentSlide + 1;
+            var setTag = currentPage + ' / ' + totalPage;
+            $("#pageNo1").text(setTag);
+            $("#title1").text(monArr[slick.currentSlide]);
+        });
+
+        // s2
+        var slick2 = $('#s1-tab4-slide').slick({
+            arrows: false,
+            appendArrows: $('#arrows2')
+        });
+        var cp2 = $('#s1-tab4-slide').slick('getCurrent') + 1;
+        var tp2 = $('#s1-tab4-slide').slick('getDotCount') + 1;
+        $('#pageNo2').text(cp2 + ' / ' + tp2);
+        $("#title2").text(itemArr[0]);
+        $('.slick-next2').on('click', function () {
+            slick2.slick('slickNext');
+        });
+        $('.slick-prev2').on('click', function () {
+            slick2.slick('slickPrev');
+        });
+        $('#s1-tab4-slide').on('afterChange', function (event, slick, currentSlide) {
+            var totalPage = slick.slideCount;
+            var currentPage = slick.currentSlide + 1;
+            var setTag = currentPage + ' / ' + totalPage;
+            $("#pageNo2").text(setTag);
+            $("#title2").text(itemArr[slick.currentSlide]);
+        });
+
+        //
+        // section4
+        //
+        // s0
+        var s4sl0 = $('#s4-tab1-slide').slick({
+            arrows: false,
+            appendArrows: $('#s4-arrows0')
+        });
+
+        var s4cp = $('#s4-tab1-slide').slick('getCurrent') + 1;
+        var s4tp = $('#s4-tab1-slide').slick('getDotCount') + 1;
+
+        $('#s4-pageNo0').text(s4cp + ' / ' + s4tp);
+        $("#s4-title0").text(weaponArr[0]);
+        $('.s4-slick-next0').on('click', function () {
+            s4sl0.slick('slickNext');
+        });
+        $('.s4-slick-prev0').on('click', function () {
+            s4sl0.slick('slickPrev');
+        });
+
+        // On swipe event
+        $('#s4-tab1-slide').on('afterChange', function (event, slick, currentSlide) {
+            var totalPage = slick.slideCount;
+            var currentPage = slick.currentSlide + 1;
+            var setTag = currentPage + ' / ' + totalPage;
+            $("#s4-pageNo0").text(setTag);
+            $("#s4-title0").text(weaponArr[slick.currentSlide]);
+        });
+
+        // s1
+        var s4sl1 = $('#s4-tab2-slide').slick({
+            arrows: false,
+            appendArrows: $('#s4-arrows1')
+        });
+
+        var s4cp1 = $('#s4-tab2-slide').slick('getCurrent') + 1;
+        var s4tp1 = $('#s4-tab2-slide').slick('getDotCount') + 1;
+
+        $('#s4-pageNo1').text(s4cp1 + ' / ' + s4tp1);
+        $("#s4-title1").text(armorArr[0]);
+        $('.s4-slick-next1').on('click', function () {
+            s4sl1.slick('slickNext');
+        });
+        $('.s4-slick-prev1').on('click', function () {
+            s4sl1.slick('slickPrev');
+        });
+
+        $('#s4-tab2-slide').on('afterChange', function (event, slick, currentSlide) {
+            var totalPage = slick.slideCount;
+            var currentPage = slick.currentSlide + 1;
+            var setTag = currentPage + ' / ' + totalPage;
+            $("#s4-pageNo1").text(setTag);
+            $("#s4-title1").text(armorArr[slick.currentSlide]);
+        });
+    });
+</script>

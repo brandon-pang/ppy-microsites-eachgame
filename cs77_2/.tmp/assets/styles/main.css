@@ -1,0 +1,1470 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Open+Sans:300,400,600,700,800");
+/* line 4, ../../../app/assets/styles/scss/_global.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 10, ../../../app/assets/styles/scss/_global.scss */
+.tooltip-inner {
+  background-color: #fadd01;
+  color: #000;
+  font-size: 1.4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* line 19, ../../../app/assets/styles/scss/_global.scss */
+.tooltip.left .tooltip-arrow {
+  border-left-color: #fadd01;
+}
+
+/* line 23, ../../../app/assets/styles/scss/_global.scss */
+.white {
+  color: #fff;
+}
+
+/* line 27, ../../../app/assets/styles/scss/_global.scss */
+.black {
+  color: #000;
+}
+
+/* line 31, ../../../app/assets/styles/scss/_global.scss */
+.bright-yellow-color {
+  color: #fadd01;
+}
+
+/* line 35, ../../../app/assets/styles/scss/_global.scss */
+.extrabold {
+  font-weight: 900;
+}
+
+/* line 39, ../../../app/assets/styles/scss/_global.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 43, ../../../app/assets/styles/scss/_global.scss */
+.semi-bold {
+  font-weight: 500;
+}
+
+/* line 47, ../../../app/assets/styles/scss/_global.scss */
+.strike {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* line 52, ../../../app/assets/styles/scss/_global.scss */
+.no-strike {
+  text-decoration: none;
+}
+
+/* line 56, ../../../app/assets/styles/scss/_global.scss */
+.accent-font {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* line 60, ../../../app/assets/styles/scss/_global.scss */
+.text-shadow {
+  text-shadow: 3px 3px 15px #000;
+}
+
+/* line 64, ../../../app/assets/styles/scss/_global.scss */
+.drop-shadow {
+  box-shadow: 5px 5px 10px #555;
+}
+
+/* line 68, ../../../app/assets/styles/scss/_global.scss */
+.pad-bot-70 {
+  padding-bottom: 70px;
+}
+
+/* line 73, ../../../app/assets/styles/scss/_global.scss */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 79, ../../../app/assets/styles/scss/_global.scss */
+.flex-center-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 85, ../../../app/assets/styles/scss/_global.scss */
+.table-center {
+  margin: 0 auto;
+  display: table;
+}
+
+/* line 91, ../../../app/assets/styles/scss/_global.scss */
+.flex-direction {
+  flex-direction: column;
+}
+
+/* line 97, ../../../app/assets/styles/scss/_global.scss */
+.flex-direction-row {
+  flex-direction: row;
+}
+
+/* line 103, ../../../app/assets/styles/scss/_global.scss */
+.flex-align-items, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  align-items: center;
+}
+
+/* line 109, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify {
+  justify-content: flex-start;
+}
+
+/* line 115, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify-center, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  justify-content: center;
+}
+
+/* line 121, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify-between {
+  justify-content: space-between;
+}
+
+/* line 127, ../../../app/assets/styles/scss/_global.scss */
+.flex-flow-wrap {
+  flex-flow: row wrap;
+}
+
+/* line 134, ../../../app/assets/styles/scss/_global.scss */
+.flex-container, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  display: flex;
+}
+
+/* line 140, ../../../app/assets/styles/scss/_global.scss */
+.flex-item {
+  align-items: center;
+}
+
+/* line 146, ../../../app/assets/styles/scss/_global.scss */
+.flex-item-left {
+  align-items: flex-start;
+}
+
+/* line 151, ../../../app/assets/styles/scss/_global.scss */
+.flex-item-right {
+  align-items: flex-end;
+}
+
+/* line 163, ../../../app/assets/styles/scss/_global.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 169, ../../../app/assets/styles/scss/_global.scss */
+.btn1 {
+  width: 160px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 182, ../../../app/assets/styles/scss/_global.scss */
+.btn1 span:first-child {
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 0;
+  padding-right: 10px;
+}
+/* line 188, ../../../app/assets/styles/scss/_global.scss */
+.btn1 span:last-child {
+  font-size: 1.3rem;
+}
+/* line 193, ../../../app/assets/styles/scss/_global.scss */
+.btn1:hover, .btn1:focus {
+  background-color: #f6a623;
+  border-color: #f6a623;
+  color: #fff;
+}
+
+/* line 200, ../../../app/assets/styles/scss/_global.scss */
+.btn2 {
+  width: 271px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #29B06D;
+  text-transform: uppercase;
+}
+/* line 211, ../../../app/assets/styles/scss/_global.scss */
+.btn2 span {
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+/* line 218, ../../../app/assets/styles/scss/_global.scss */
+.btn2:hover, .btn2:focus {
+  background-color: #FDBB01;
+  color: #fff;
+}
+
+/* line 224, ../../../app/assets/styles/scss/_global.scss */
+.color1 {
+  color: #FDBB01;
+}
+
+/* line 228, ../../../app/assets/styles/scss/_global.scss */
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-size: cover;
+}
+
+/* line 237, ../../../app/assets/styles/scss/_global.scss */
+.invisible {
+  display: none;
+}
+
+/* line 239, ../../../app/assets/styles/scss/_global.scss */
+.visible {
+  display: block;
+}
+
+/* line 241, ../../../app/assets/styles/scss/_global.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.eot");
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.woff") format("woff"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.ttf") format("truetype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 13, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='icon-']:before {
+  font-family: 'Glyphter';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-locked:before {
+  content: '\0041';
+}
+
+/* line 25, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-blackshot:before {
+  content: '\0042';
+}
+
+/* line 27, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-calendar:before {
+  content: '\0043';
+}
+
+/* line 29, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-aim:before {
+  content: '\0044';
+}
+
+/* line 31, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-right:before {
+  content: '\0045';
+}
+
+/* line 33, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-left:before {
+  content: '\0046';
+}
+
+/* line 35, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-new-page:before {
+  content: '\0047';
+}
+
+/* line 37, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-snow:before {
+  content: '\0048';
+}
+
+/* line 39, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-dot:before {
+  content: '\0049';
+}
+
+/* line 41, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-clock:before {
+  content: '\004a';
+}
+
+/* line 43, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-skull:before {
+  content: '\004b';
+}
+
+/* line 45, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-completed:before {
+  content: '\004c';
+}
+
+/* line 47, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-fail:before {
+  content: '\004d';
+}
+
+/* line 49, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-logout:before {
+  content: '\004f';
+}
+
+/* line 51, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-papaya:before {
+  content: '\0050';
+}
+
+/* line 53, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-hashtag:before {
+  content: '\0052';
+}
+
+/* line 55, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-stats:before {
+  content: '\0053';
+}
+
+/* line 57, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrowlong:before {
+  content: '\0054';
+}
+
+/* line 59, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-phoenix:before {
+  content: '\0055';
+}
+
+/* line 61, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-show-more:before {
+  content: '\0057';
+}
+
+/* line 63, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-show-less:before {
+  content: '\0058';
+}
+
+/* line 65, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-meme:before {
+  content: '\006d';
+}
+
+/* line 67, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-180view:before {
+  content: '\0070';
+}
+
+/* line 69, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-return:before {
+  content: '\0072';
+}
+
+/* line 71, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-time:before {
+  content: '\0074';
+}
+
+/* line 73, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-close:before {
+  content: '\0078';
+}
+
+/* line 75, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-morebsc:before {
+  content: '\0024';
+}
+
+/* line 77, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-plus:before {
+  content: '\002b';
+}
+
+/* line 79, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-check:before {
+  content: '\005e';
+}
+
+/* line 81, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow1:before {
+  content: '\007b';
+}
+
+/* line 83, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow2:before {
+  content: '\007d';
+}
+
+/* line 85, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-attention:before {
+  content: '\007e';
+}
+
+@font-face {
+  font-family: 'cs75-icon-text';
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.eot");
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.eot?#iefix") format("embedded-opentype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.woff2") format("woff2"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.woff") format("woff"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.ttf") format("truetype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.svg#lt_festival") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 100, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='cs75-icon-']:before {
+  font-family: "cs75-icon-text";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 110, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-spin1:before {
+  content: '\e830';
+}
+
+/* line 114, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-shield:before {
+  content: '\f132';
+  font-size: 40px;
+}
+
+/* line 122, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-heart:before {
+  content: '\e800';
+}
+
+/* line 126, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-zone:before {
+  content: '\e801';
+  font-size: 42px;
+  margin-top: 8px;
+}
+
+/* line 132, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-kill:before {
+  content: '\e802';
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: -6px;
+  margin-right: -5px;
+}
+
+/* line 140, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-crown:before {
+  content: '\e844';
+  font-size: 38px;
+  margin-top: 8px;
+}
+
+/* line 7, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 51, ../../../app/assets/styles/main.scss */
+body {
+  color: #676767;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  min-width: 960px;
+  font-size: 15px;
+}
+/* line 57, ../../../app/assets/styles/main.scss */
+body [aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+/* line 62, ../../../app/assets/styles/main.scss */
+body [aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+/* line 68, ../../../app/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 72, ../../../app/assets/styles/main.scss */
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+/* line 81, ../../../app/assets/styles/main.scss */
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* line 87, ../../../app/assets/styles/main.scss */
+p, a {
+  font-family: "Open Sans", sans-serif;
+  color: #676767;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* line 91, ../../../app/assets/styles/main.scss */
+h3 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+/* line 97, ../../../app/assets/styles/main.scss */
+h4 {
+  color: #3b3d40;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* line 103, ../../../app/assets/styles/main.scss */
+h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* line 112, ../../../app/assets/styles/main.scss */
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+/* line 117, ../../../app/assets/styles/main.scss */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #f6a623;
+}
+
+/* line 123, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 128, ../../../app/assets/styles/main.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 130, ../../../app/assets/styles/main.scss */
+.see-btn-link {
+  width: 155px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* line 135, ../../../app/assets/styles/main.scss */
+.see-btn-link .see-btn {
+  width: 100%;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-out;
+}
+/* line 143, ../../../app/assets/styles/main.scss */
+.see-btn-link .see-btn .text {
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+/* line 149, ../../../app/assets/styles/main.scss */
+.see-btn-link .see-btn:hover {
+  background-color: #D5B77B;
+  border: 1px solid #D5B77B;
+  transition: all 0.3s ease-in;
+}
+/* line 152, ../../../app/assets/styles/main.scss */
+.see-btn-link .see-btn:hover .text {
+  color: white;
+}
+
+/* line 160, ../../../app/assets/styles/main.scss */
+.circle-text {
+  cursor: pointer;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #077432;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  transition: all .3s ease-out;
+}
+/* line 173, ../../../app/assets/styles/main.scss */
+.circle-text:hover {
+  background-color: #077432;
+  color: white;
+  transition: all .3s ease-in;
+}
+
+/* line 180, ../../../app/assets/styles/main.scss */
+.p-green-bg {
+  background-color: #077432;
+  color: white;
+}
+
+/* line 185, ../../../app/assets/styles/main.scss */
+.box-index20 {
+  z-index: 38 !important;
+}
+
+/* line 189, ../../../app/assets/styles/main.scss */
+.yellow {
+  color: #D5B77B;
+  font-weight: 600;
+}
+
+/* line 195, ../../../app/assets/styles/main.scss */
+#side-nav {
+  position: fixed;
+  top: 35%;
+  right: 40px;
+  z-index: 9999;
+}
+/* line 201, ../../../app/assets/styles/main.scss */
+#side-nav .home {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px 3px #000;
+}
+/* line 211, ../../../app/assets/styles/main.scss */
+#side-nav .bullet {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #000;
+}
+/* line 219, ../../../app/assets/styles/main.scss */
+#side-nav .bullet:hover {
+  background-color: #fadd01;
+}
+
+/* line 225, ../../../app/assets/styles/main.scss */
+#section-one, #section-two, #section-three, #section-four, #section-five {
+  background-color: #000;
+}
+
+/* line 229, ../../../app/assets/styles/main.scss */
+.divide-liner {
+  width: 100%;
+  height: 10px;
+  background-color: #D5B77B;
+}
+
+/* line 235, ../../../app/assets/styles/main.scss */
+.section-1 {
+  background: no-repeat top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 242, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav {
+  justify-content: space-between;
+  height: 170px;
+  font-size: 0.9em;
+}
+/* line 247, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 251, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink a, .section-1 .container .top-nav .language-bar a {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 255, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink a:hover, .section-1 .container .top-nav .navlink a:focus, .section-1 .container .top-nav .language-bar a:hover, .section-1 .container .top-nav .language-bar a:focus {
+  color: #f6a623;
+}
+/* line 261, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink {
+  width: 170px;
+}
+/* line 265, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar {
+  cursor: pointer;
+}
+/* line 267, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown {
+  width: 160px;
+  padding-left: 30px;
+}
+/* line 271, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 0;
+  top: 28px;
+}
+/* line 276, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: #000;
+  padding: 5px 0 5px 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* line 285, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li span:first-child {
+  width: 20%;
+  text-align: right;
+}
+/* line 289, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li span:last-child {
+  width: 80%;
+  padding-left: 10px;
+}
+/* line 294, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li:hover, .section-1 .container .top-nav .language-bar .dropdown-menu li:focus {
+  background-color: #f6a623;
+}
+/* line 301, ../../../app/assets/styles/main.scss */
+.section-1 .container .event-logo-cont {
+  margin-top: 30px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: no-repeat top center;
+  height: 490px;
+}
+/* line 311, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont {
+  width: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 314, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont .part--left__btn {
+  display: block;
+  margin: 3px;
+  height: 61px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  transition: all .3s ease-out;
+}
+/* line 325, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont .part--left__btn:hover {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 331, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont .part--right__btn {
+  display: block;
+  margin: 3px;
+  height: 61px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
+  transition: all .3s ease-out;
+}
+/* line 342, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont .part--right__btn:hover {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 348, ../../../app/assets/styles/main.scss */
+.section-1 .container .part--cont .active {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 355, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 40px;
+  width: 940px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 368, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__img {
+  margin-bottom: 20px;
+}
+/* line 371, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__title {
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 61px;
+}
+/* line 377, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__desc {
+  width: 84%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #676767;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+/* line 382, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--dn {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 387, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--dn .dn--left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 391, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--dn .dn--right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 394, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--dn .dn--right .dn__btn {
+  display: block;
+  height: 40px;
+  width: 300px;
+  border-radius: 100px;
+  background-color: #D5B77B;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 404, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--dn .dn--right .dn__btn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid #676767;
+  transition: all .3s ease-in;
+}
+/* line 413, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--tabs {
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 416, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--tabs .tab--wrap {
+  margin: 10px;
+  width: 33.3333333333%;
+}
+/* line 419, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--tabs .tab--wrap .tab__btn {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border: 1px solid #676767;
+  border-radius: 100px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 429, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont--tabs .tab--wrap .tab__btn:hover {
+  color: white;
+  background-color: #D5B77B;
+  border: 1px solid #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 439, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slick-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+/* line 446, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slick-dots .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(198, 198, 198, 0.5);
+  border-radius: 100%;
+  margin-right: 5px;
+}
+/* line 454, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slick-dots .dot:hover, .section-1 .s1--cont .cont-item--slider .slick-dots .dot:focus {
+  background-color: #BA893E;
+}
+/* line 460, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slick-dots .slick-active .dot {
+  background-color: #BA893E;
+}
+/* line 465, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap {
+  height: 370px;
+  width: 940px;
+}
+/* line 468, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-slide {
+  transform: scale(0.8);
+  transition: .3s ease-in-out all;
+}
+/* line 473, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-slide.slick-center {
+  opacity: 1;
+  transform: scale(1);
+}
+/* line 477, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 25px;
+}
+/* line 483, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-arrow.icon-arrow1 {
+  left: -5%;
+}
+/* line 486, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-arrow.icon-arrow2 {
+  right: -5%;
+}
+/* line 489, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .cont-item--slider .slider-wrap .slick-arrow:hover, .section-1 .s1--cont .cont-item--slider .slider-wrap .slick-arrow:focus {
+  color: #FDBB01;
+}
+
+/* line 498, ../../../app/assets/styles/main.scss */
+.section-4 {
+  background: no-repeat top center;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 503, ../../../app/assets/styles/main.scss */
+.section-4 .s4--cont__texts {
+  width: 940px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 507, ../../../app/assets/styles/main.scss */
+.section-4 .s4--cont__texts img {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+/* line 511, ../../../app/assets/styles/main.scss */
+.section-4 .s4--cont__texts .texts__subtitle {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #676767;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+/* line 514, ../../../app/assets/styles/main.scss */
+.section-4 .s4--cont__texts .texts__title {
+  margin-bottom: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 61px;
+}
+/* line 518, ../../../app/assets/styles/main.scss */
+.section-4 .s4--cont__texts .texts__desc {
+  width: 68%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #676767;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+/* line 524, ../../../app/assets/styles/main.scss */
+.section-4 .check__text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #CBA968;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+/* line 531, ../../../app/assets/styles/main.scss */
+.section-4 .cont--tabs {
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 534, ../../../app/assets/styles/main.scss */
+.section-4 .cont--tabs .tab--wrap {
+  margin: 5px;
+  width: 16.6666666667%;
+}
+/* line 537, ../../../app/assets/styles/main.scss */
+.section-4 .cont--tabs .tab--wrap .tab__btn {
+  display: block;
+  height: 40px;
+  width: 100%;
+  border-radius: 100px;
+  background-color: #F7F7F7;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  transition: all .3s ease-out;
+}
+/* line 547, ../../../app/assets/styles/main.scss */
+.section-4 .cont--tabs .tab--wrap .tab__btn:hover {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 553, ../../../app/assets/styles/main.scss */
+.section-4 .cont--tabs .tab--wrap .active {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 560, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 696px;
+}
+/* line 567, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .match_graph {
+  position: relative;
+  width: 3565px;
+  height: 696px;
+  transition: all .3s ease-in;
+}
+/* line 573, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-left {
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  top: 55%;
+  left: 3%;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 584, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-left i {
+  margin-left: -2px;
+  color: white;
+}
+/* line 588, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-left:hover {
+  background-color: #BA893E;
+  transition: all;
+}
+/* line 593, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-right {
+  cursor: pointer;
+  z-index: 11;
+  position: absolute;
+  top: 55%;
+  right: 3%;
+  height: 25px;
+  width: 25px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 604, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-right i {
+  margin-left: 2px;
+  color: white;
+}
+/* line 608, ../../../app/assets/styles/main.scss */
+.section-4 .match--cont .arrow-right:hover {
+  background-color: #BA893E;
+}
+/* line 614, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont {
+  margin-bottom: 60px;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 618, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet__left {
+  width: 70%;
+}
+/* line 620, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet__left .bet__title {
+  margin-bottom: 10px;
+}
+/* line 623, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet__left .bet__desc {
+  margin-bottom: 20px;
+  width: 98%;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+}
+/* line 628, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet__left .btn--bet {
+  display: block;
+  height: 40px;
+  width: 36%;
+  border: 1px solid #676767;
+  border-radius: 100px;
+  background-color: #676767;
+  text-transform: uppercase;
+  transition: all .3s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+/* line 639, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet__left .btn--bet:hover {
+  color: white;
+  background-color: #D5B77B;
+  transition: all .3s ease-in;
+  border: 1px solid #D5B77B;
+}
+/* line 647, ../../../app/assets/styles/main.scss */
+.section-4 .s4--bet-cont .bet_right {
+  width: 30%;
+}
+
+/* line 653, ../../../app/assets/styles/main.scss */
+.section-6 {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background: no-repeat top center;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 662, ../../../app/assets/styles/main.scss */
+.section-6 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+/* line 668, ../../../app/assets/styles/main.scss */
+.section-6 .container h3 {
+  margin-bottom: 10px;
+}
+/* line 671, ../../../app/assets/styles/main.scss */
+.section-6 .container h2 {
+  margin-bottom: 10px;
+}
+/* line 674, ../../../app/assets/styles/main.scss */
+.section-6 .container .text-desc {
+  margin-bottom: 30px;
+  width: 600px;
+  text-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+/* line 680, ../../../app/assets/styles/main.scss */
+.section-6 .container .see-btn-link {
+  width: 260px;
+}
+/* line 684, ../../../app/assets/styles/main.scss */
+.section-6 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 688, ../../../app/assets/styles/main.scss */
+.section-6 .container .slick-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+/* line 695, ../../../app/assets/styles/main.scss */
+.section-6 .container .slick-dots .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(198, 198, 198, 0.5);
+  border-radius: 100%;
+  margin-right: 5px;
+}
+/* line 703, ../../../app/assets/styles/main.scss */
+.section-6 .container .slick-dots .dot:hover, .section-6 .container .slick-dots .dot:focus {
+  background-color: #BA893E;
+}
+/* line 709, ../../../app/assets/styles/main.scss */
+.section-6 .container .slick-dots .slick-active .dot {
+  background-color: #BA893E;
+}
+/* line 715, ../../../app/assets/styles/main.scss */
+.section-6 .container .slider-wrap {
+  height: 288px;
+  width: 790px;
+}
+/* line 718, ../../../app/assets/styles/main.scss */
+.section-6 .container .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 25px;
+}
+/* line 724, ../../../app/assets/styles/main.scss */
+.section-6 .container .slider-wrap .slick-arrow.icon-arrow1 {
+  left: 0;
+}
+/* line 727, ../../../app/assets/styles/main.scss */
+.section-6 .container .slider-wrap .slick-arrow.icon-arrow2 {
+  right: 0;
+}
+/* line 730, ../../../app/assets/styles/main.scss */
+.section-6 .container .slider-wrap .slick-arrow:hover, .section-6 .container .slider-wrap .slick-arrow:focus {
+  color: #FDBB01;
+}
+
+/* line 738, ../../../app/assets/styles/main.scss */
+.section-8 {
+  background: #fff no-repeat top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+/* line 743, ../../../app/assets/styles/main.scss */
+.section-8 .container {
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 748, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-left {
+  width: 50%;
+  z-index: 30;
+}
+/* line 751, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-left h2 {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 755, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-left .context {
+  width: 96%;
+  margin-bottom: 30px;
+}
+/* line 759, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-left .btn__video {
+  height: 35px;
+  width: 260px;
+  border: 1px solid #676767;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #545454;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 771, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-left .btn__video:hover {
+  color: white;
+  background-color: #D5B77B;
+  border: 1px solid #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 780, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-right {
+  width: 50%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 786, ../../../app/assets/styles/main.scss */
+.section-8 .container .cont-right .cont--video {
+  height: 400px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 797, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #4A4A4A;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+/* line 802, ../../../app/assets/styles/main.scss */
+footer .container {
+  width: 860px;
+}
+/* line 805, ../../../app/assets/styles/main.scss */
+footer .container .flex-container .item1, footer .container .flex-default .item1, footer .container .btn1 .item1, footer .container .btn2 .item1, footer .section-1 .container .top-nav .item1, .section-1 footer .container .top-nav .item1, footer .section-1 .container .top-nav .language-bar .dropdown-menu li .item1, .section-1 footer .container .top-nav .language-bar .dropdown-menu li .item1 {
+  padding-top: 4px;
+}
+/* line 808, ../../../app/assets/styles/main.scss */
+footer .container .flex-container .item2, footer .container .flex-default .item2, footer .container .btn1 .item2, footer .container .btn2 .item2, footer .section-1 .container .top-nav .item2, .section-1 footer .container .top-nav .item2, footer .section-1 .container .top-nav .language-bar .dropdown-menu li .item2, .section-1 footer .container .top-nav .language-bar .dropdown-menu li .item2 {
+  padding-top: 10px;
+}
+/* line 815, ../../../app/assets/styles/main.scss */
+footer .copyright {
+  color: #DCDCDC;
+  font-size: 15px;
+}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Glyphter';
+  src: url('https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/styles/fonts/Glyphter.eot');
+  src: url('https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/styles/fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+  url('https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/styles/fonts/Glyphter.woff') format('woff'),
+  url('https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/styles/fonts/Glyphter.ttf') format('truetype'),
+  url('https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/styles/fonts/Glyphter.svg#Glyphter') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class*='act19-p2-icon-']:before{
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+.act19-p2-icon-star:before{content:'\0041';}
+.act19-p2-icon-arrow-r:before{content:'\0042';}
+.act19-p2-icon-arrow-l:before{content:'\0043';}
+.act19-p2-icon-attack:before{content:'\0044';}
+.act19-p2-icon-emblem:before{content:'\0045';}
+.act19-p2-icon-yes:before{content:'\0046';}
+.act19-p2-icon-no:before{content:'\0047';}
+.act19-p2-icon-clock:before{content:'\0048';}
+.act19-p2-icon-defense:before{content:'\0049';}
+
+
+

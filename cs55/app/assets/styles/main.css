@@ -1,0 +1,958 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext);
+@font-face {
+  font-family: 'Glyphter';
+  src: url("fonts/Glyphter.eot");
+  src: url("fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("fonts/Glyphter.woff") format("woff"), url("fonts/Glyphter.ttf") format("truetype"), url("fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 16, ../../../app/assets/styles/main.scss */
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 25, ../../../app/assets/styles/main.scss */
+.icon-header-mouse:before {
+  content: '\0041';
+}
+
+/* line 26, ../../../app/assets/styles/main.scss */
+.icon-arrow-up:before {
+  content: '\0044';
+}
+
+/* line 27, ../../../app/assets/styles/main.scss */
+.icon-arrow-down:before {
+  content: '\0045';
+}
+
+/* line 28, ../../../app/assets/styles/main.scss */
+.icon-arrow-left:before {
+  content: '\0046';
+}
+
+/* line 29, ../../../app/assets/styles/main.scss */
+.icon-arrow-right:before {
+  content: '\0047';
+}
+
+/* line 30, ../../../app/assets/styles/main.scss */
+.icon-go-back:before {
+  content: '\0048';
+}
+
+/* line 31, ../../../app/assets/styles/main.scss */
+.icon-home:before {
+  content: '\0049';
+}
+
+/* line 32, ../../../app/assets/styles/main.scss */
+.icon-home-active:before {
+  content: '\004A';
+}
+
+/* line 34, ../../../app/assets/styles/main.scss */
+.icon-arrow-left, .icon-arrow-right {
+  color: #fff;
+}
+
+/* Make clicks pass-through */
+/* line 42, ../../../app/assets/styles/main.scss */
+#loading-bar,
+#loading-bar-spinner {
+  pointer-events: none;
+  -webkit-pointer-events: none;
+  transition: 350ms linear all;
+}
+
+/* line 52, ../../../app/assets/styles/main.scss */
+#loading-bar.ng-enter,
+#loading-bar.ng-leave.ng-leave-active,
+#loading-bar-spinner.ng-enter,
+#loading-bar-spinner.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+/* line 59, ../../../app/assets/styles/main.scss */
+#loading-bar.ng-enter.ng-enter-active,
+#loading-bar.ng-leave,
+#loading-bar-spinner.ng-enter.ng-enter-active,
+#loading-bar-spinner.ng-leave {
+  opacity: 1;
+}
+
+/* line 66, ../../../app/assets/styles/main.scss */
+#loading-bar .bar {
+  transition: width 350ms;
+  background-image: linear-gradient(to right, #1897f8, #db283e);
+  -webkit-background-image: linear-gradient(to right, #1897f8, #db283e);
+  -moz-background-image: linear-gradient(to right, #1897f8, #db283e);
+  position: fixed;
+  z-index: 10002;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-bottom-right-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+/* Fancy blur effect */
+/* line 86, ../../../app/assets/styles/main.scss */
+#loading-bar .peg {
+  position: absolute;
+  width: 70px;
+  right: 0;
+  top: 0;
+  height: 2px;
+  opacity: .45;
+  -ms-box-shadow: #29d 1px 0 6px 1px;
+  box-shadow: #29d 1px 0 6px 1px;
+  border-radius: 100%;
+}
+
+/* line 102, ../../../app/assets/styles/main.scss */
+#loading-bar-spinner {
+  display: block;
+  position: fixed;
+  z-index: 10002;
+  top: 10px;
+  left: 10px;
+}
+
+/* line 110, ../../../app/assets/styles/main.scss */
+#loading-bar-spinner .spinner-icon {
+  width: 14px;
+  height: 14px;
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+  -ms-animation: loading-bar-spinner 400ms linear infinite;
+  animation: loading-bar-spinner 400ms linear infinite;
+}
+@-ms-keyframes loading-bar-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-bar-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* line 152, ../../../app/assets/styles/main.scss */
+.ct-series-a .ct-bar {
+  stroke: #dc273b;
+  stroke-width: 40px;
+}
+
+/* line 157, ../../../app/assets/styles/main.scss */
+.ct-grid {
+  stroke: #888;
+  stroke-dasharray: 0;
+  shape-rendering: crispEdges;
+}
+
+/* line 163, ../../../app/assets/styles/main.scss */
+.ct-label.ct-horizontal.ct-end {
+  font-size: 1.4rem;
+  color: #000;
+}
+
+/* line 168, ../../../app/assets/styles/main.scss */
+.ct-label.ct-vertical.ct-start {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+@keyframes slideInTitle {
+  0% {
+    left: -1000px;
+    -webkit-filter: initial;
+    filter: initial;
+    opacity: 0;
+  }
+  80% {
+    left: 0px;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 1;
+  }
+  90% {
+    left: 10px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    -webkit-filter: initial;
+    filter: initial;
+    opacity: 1;
+  }
+}
+@keyframes slideInChar {
+  0% {
+    right: -200px;
+    opacity: 0;
+  }
+  80% {
+    right: 0px;
+    opacity: 1;
+  }
+  90% {
+    right: 5px;
+    opacity: 0.95;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes slideInCartoon {
+  0% {
+    right: -1500px;
+    bottom: -250px;
+    -webkit-filter: initial;
+    filter: initial;
+    opacity: 0;
+  }
+  25% {
+    right: -1000px;
+    bottom: -150px;
+    opacity: 1;
+  }
+  50% {
+    right: -500px;
+    bottom: -50px;
+    opacity: 1;
+  }
+  75% {
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+  }
+  100% {
+    right: 0px;
+    opacity: 1;
+  }
+}
+@keyframes sway {
+  0%, 100% {
+    left: -50px;
+  }
+  50% {
+    left: 0px;
+  }
+}
+/* line 267, ../../../app/assets/styles/main.scss */
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  height: auto;
+  border: none;
+  overflow: visible;
+}
+
+/* slide container */
+/* line 278, ../../../app/assets/styles/main.scss */
+.carousel .slides {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+
+/* slide item */
+/* line 289, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem {
+  position: absolute;
+  /*cursor : pointer; */
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-image: url("../images/weapon-bg-regular.jpg");
+  background-size: cover;
+  filter: brightness(0.3);
+  -webkit-filter: brightness(0.3);
+  -moz-filter: brightness(0.3);
+}
+/* line 301, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem.gold-box {
+  background-image: url("../images/weapon-bg-goldbox.jpg");
+}
+/* line 304, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem.active-slide {
+  filter: initial !important;
+  -webkit-filter: initial !important;
+  -moz-filter: initial !important;
+}
+
+/* line 311, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description {
+  display: block;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  height: 130px !important;
+}
+/* line 317, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  letter-spacing: 0;
+  padding-bottom: 10px;
+}
+/* line 324, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem .description p {
+  font-size: 1.4rem;
+}
+
+/* line 329, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* line 338, ../../../app/assets/styles/main.scss */
+.carousel-image {
+  height: 207px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+/* line 344, ../../../app/assets/styles/main.scss */
+.carousel .slides .slideItem img {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 350px !important;
+  height: 170px !important;
+  padding-top: 50px;
+}
+
+/* DIRECTION BUTTON */
+/* line 355, ../../../app/assets/styles/main.scss */
+.carousel .nextButton {
+  position: absolute;
+  right: 10px;
+  top: 133px;
+  width: 35px;
+  height: 35px;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* line 366, ../../../app/assets/styles/main.scss */
+.carousel .prevButton {
+  position: absolute;
+  left: -10px;
+  top: 133px;
+  width: 35px;
+  height: 35px;
+  font-size: 5rem;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* buttons container */
+/* line 380, ../../../app/assets/styles/main.scss */
+.carousel .buttonNav {
+  position: relative;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+/* numbers */
+/* line 388, ../../../app/assets/styles/main.scss */
+.carousel .buttonNav .numbers {
+  position: relative;
+  float: left;
+  margin: 5px;
+  color: #828282;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: Arial, Verdana;
+}
+
+/* line 400, ../../../app/assets/styles/main.scss */
+.carousel .buttonNav .numbers:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* line 405, ../../../app/assets/styles/main.scss */
+.carousel .buttonNav .numberActive {
+  background: none;
+  color: #000;
+  cursor: default;
+}
+
+/* line 415, ../../../app/assets/styles/main.scss */
+.container {
+  width: 960px;
+}
+
+/* line 419, ../../../app/assets/styles/main.scss */
+.new-flag {
+  width: 150px;
+}
+
+/* line 423, ../../../app/assets/styles/main.scss */
+.cust-btn {
+  padding: 15px 30px;
+  font-size: 1.7rem;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  text-align: center;
+  background-color: #1699f5;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+/* line 435, ../../../app/assets/styles/main.scss */
+.cust-btn:hover {
+  color: #fff;
+  background-color: #dc273b;
+}
+
+/* line 441, ../../../app/assets/styles/main.scss */
+#top-divider {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  z-index: 2;
+  background-image: linear-gradient(to right, #1897f8, #db283e);
+  -webkit-background-image: linear-gradient(to right, #1897f8, #db283e);
+  -moz-background-image: linear-gradient(to right, #1897f8, #db283e);
+}
+
+/* line 451, ../../../app/assets/styles/main.scss */
+.divider {
+  width: 100%;
+  height: 3px;
+  background-image: linear-gradient(to right, #1897f8, #db283e);
+  -webkit-background-image: linear-gradient(to right, #1897f8, #db283e);
+  -moz-background-image: linear-gradient(to right, #1897f8, #db283e);
+}
+
+/* line 459, ../../../app/assets/styles/main.scss */
+.shadow-bg {
+  background-image: linear-gradient(to bottom, black, transparent);
+  -webkit-background-image: linear-gradient(to bottom, black, transparent);
+  -moz-background-image: linear-gradient(to bottom, black, transparent);
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+/* line 469, ../../../app/assets/styles/main.scss */
+.red {
+  color: #dc273b;
+}
+
+/* line 473, ../../../app/assets/styles/main.scss */
+.blue {
+  color: #1699f5;
+}
+
+/* line 477, ../../../app/assets/styles/main.scss */
+.white {
+  color: #fff;
+}
+
+/* line 481, ../../../app/assets/styles/main.scss */
+.special-font {
+  font-family: "Lobster", cursive;
+}
+
+/* line 485, ../../../app/assets/styles/main.scss */
+.accent-font {
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+}
+
+/* line 489, ../../../app/assets/styles/main.scss */
+.text-shadow {
+  text-shadow: 3px 3px #000;
+}
+
+/* line 493, ../../../app/assets/styles/main.scss */
+.drop-shadow {
+  box-shadow: 3px 3px rgba(128, 128, 128, 0.5);
+}
+
+/* line 497, ../../../app/assets/styles/main.scss */
+.mg-left-10 {
+  margin-left: 10px !important;
+}
+
+/* line 501, ../../../app/assets/styles/main.scss */
+.pad-top-10 {
+  padding-top: 10px !important;
+}
+
+/* line 504, ../../../app/assets/styles/main.scss */
+.pad-bot-10 {
+  padding-bottom: 10px !important;
+}
+
+/* line 508, ../../../app/assets/styles/main.scss */
+.pad-top-20 {
+  padding-top: 20px !important;
+}
+
+/* line 511, ../../../app/assets/styles/main.scss */
+.pad-bot-20 {
+  padding-bottom: 20px !important;
+}
+
+/* line 515, ../../../app/assets/styles/main.scss */
+.pad-top-30 {
+  padding-top: 30px;
+}
+
+/* line 519, ../../../app/assets/styles/main.scss */
+.pad-bot-30 {
+  padding-bottom: 30px;
+}
+
+/* line 523, ../../../app/assets/styles/main.scss */
+.pad-top-50 {
+  padding-top: 50px;
+}
+
+/* line 527, ../../../app/assets/styles/main.scss */
+.pad-bot-50 {
+  padding-bottom: 50px;
+}
+
+/* line 531, ../../../app/assets/styles/main.scss */
+.pad-left-20 {
+  padding-left: 20px;
+}
+
+/* line 535, ../../../app/assets/styles/main.scss */
+.pad-right-20 {
+  padding-right: 20px;
+}
+
+/* line 539, ../../../app/assets/styles/main.scss */
+.pad-top-70 {
+  padding-top: 70px;
+}
+
+/* line 543, ../../../app/assets/styles/main.scss */
+.pad-bot-70 {
+  padding-bottom: 70px;
+}
+
+/* line 550, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 556, ../../../app/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 560, ../../../app/assets/styles/main.scss */
+h1 {
+  font-size: 16.5rem;
+  font-weight: 500;
+  text-shadow: 3px 3px #000;
+}
+
+/* line 566, ../../../app/assets/styles/main.scss */
+h2 {
+  font-size: 6.5rem;
+  font-weight: 500;
+}
+
+/* line 571, ../../../app/assets/styles/main.scss */
+h3 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+/* line 576, ../../../app/assets/styles/main.scss */
+h4 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  letter-spacing: 6px;
+}
+
+/* line 583, ../../../app/assets/styles/main.scss */
+h5 {
+  font-size: 2rem;
+}
+
+/* line 587, ../../../app/assets/styles/main.scss */
+p {
+  font-size: 1.6rem;
+}
+
+/* line 591, ../../../app/assets/styles/main.scss */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 594, ../../../app/assets/styles/main.scss */
+a:hover {
+  text-decoration: none;
+  color: #dc273b;
+}
+
+/* line 600, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 605, ../../../app/assets/styles/main.scss */
+body {
+  color: #000;
+  font-family: "proxima-nova", verdana, sans-serif;
+  background-color: #000;
+  min-width: 960px;
+}
+
+/* line 614, ../../../app/assets/styles/main.scss */
+#side-nav {
+  position: fixed;
+  top: 40%;
+  right: 40px;
+  z-index: 9999;
+}
+/* line 620, ../../../app/assets/styles/main.scss */
+#side-nav .up, #side-nav .down {
+  cursor: pointer;
+}
+/* line 625, ../../../app/assets/styles/main.scss */
+#side-nav .home a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 628, ../../../app/assets/styles/main.scss */
+#side-nav .home a i {
+  font-size: 2rem;
+  color: #dc273b;
+}
+/* line 633, ../../../app/assets/styles/main.scss */
+#side-nav .home a.active i:before {
+  content: "\004A";
+}
+/* line 639, ../../../app/assets/styles/main.scss */
+#side-nav .bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 auto 10px auto;
+  border-radius: 100%;
+  border: 2px solid #1699f5;
+}
+/* line 645, ../../../app/assets/styles/main.scss */
+#side-nav .bullet a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 649, ../../../app/assets/styles/main.scss */
+#side-nav .bullet a.active {
+  background-color: #1699f5;
+}
+
+/* line 656, ../../../app/assets/styles/main.scss */
+header {
+  background: url("../images/header-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/* line 662, ../../../app/assets/styles/main.scss */
+header .go-back {
+  color: #fff;
+  font-size: 1.4rem;
+  position: relative;
+}
+/* line 666, ../../../app/assets/styles/main.scss */
+header .go-back a {
+  text-decoration: none;
+}
+/* line 669, ../../../app/assets/styles/main.scss */
+header .go-back i {
+  padding-right: 8px;
+  vertical-align: middle;
+}
+/* line 675, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-toggle {
+  font-size: 1.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 680, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-toggle span:first-child {
+  padding-right: 10px;
+}
+/* line 685, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-menu {
+  background-color: #000;
+  margin: 0;
+  border: 0;
+}
+/* line 691, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-menu li span:first-child {
+  padding: 0 10px;
+}
+/* line 695, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-menu li a {
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+}
+/* line 699, ../../../app/assets/styles/main.scss */
+header .dropdown .dropdown-menu li a:hover {
+  background: none;
+  background-color: #dc273b !important;
+}
+/* line 708, ../../../app/assets/styles/main.scss */
+header .logo {
+  position: absolute;
+  z-index: 1;
+  left: 50px;
+  right: 0;
+  top: 30px;
+  display: block;
+  width: 390px;
+  margin: 0 auto;
+}
+/* line 717, ../../../app/assets/styles/main.scss */
+header .container {
+  position: relative;
+  z-index: 2;
+}
+/* line 722, ../../../app/assets/styles/main.scss */
+header #header-title-line-one {
+  position: relative;
+  animation: slideInTitle 1s linear 1s 1 forwards;
+  opacity: 0;
+}
+/* line 729, ../../../app/assets/styles/main.scss */
+header #header-title-line-two {
+  position: relative;
+  animation: slideInTitle 1s linear 1.5s 1 forwards;
+  opacity: 0;
+}
+/* line 736, ../../../app/assets/styles/main.scss */
+header #header-subtitle {
+  position: relative;
+  animation: slideInTitle 1s linear 2s 1 forwards;
+  opacity: 0;
+}
+/* line 743, ../../../app/assets/styles/main.scss */
+header .header-cartoon {
+  float: left;
+  width: 450px;
+  position: relative;
+  animation: slideInCartoon 0.7s linear 3s 1 forwards;
+  opacity: 0;
+}
+/* line 752, ../../../app/assets/styles/main.scss */
+header .header-char {
+  position: absolute;
+  width: 500px;
+  right: 0;
+  bottom: 0;
+  animation: slideInChar 1s linear 1s 1 forwards;
+  opacity: 0;
+}
+/* line 761, ../../../app/assets/styles/main.scss */
+header .scroll-down {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  cursor: pointer;
+  padding-top: 160px;
+  margin-left: -70px;
+}
+/* line 769, ../../../app/assets/styles/main.scss */
+header .scroll-down i {
+  font-size: 6rem;
+  vertical-align: bottom;
+}
+/* line 773, ../../../app/assets/styles/main.scss */
+header .scroll-down span {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  line-height: 1.5rem;
+  text-align: center;
+  display: block;
+  width: 180px;
+}
+
+/* line 787, ../../../app/assets/styles/main.scss */
+#section-one {
+  background: url("../images/section-one-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/* line 793, ../../../app/assets/styles/main.scss */
+#section-one .cartoon-container {
+  background-color: #fff;
+  width: 460px;
+  height: 380px;
+  padding: 20px;
+}
+/* line 797, ../../../app/assets/styles/main.scss */
+#section-one .cartoon-container img {
+  width: 420px;
+  height: 290px;
+}
+/* line 800, ../../../app/assets/styles/main.scss */
+#section-one .cartoon-container h5 {
+  font-family: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+  font-weight: 500;
+}
+
+/* line 807, ../../../app/assets/styles/main.scss */
+#section-two {
+  background: url("../images/section-two-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/* line 813, ../../../app/assets/styles/main.scss */
+#section-two .event-one {
+  background: url("../images/section-two-event-one.jpg") center center no-repeat;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+/* line 817, ../../../app/assets/styles/main.scss */
+#section-two .event-one h3 {
+  font-style: italic;
+}
+/* line 822, ../../../app/assets/styles/main.scss */
+#section-two .event-two {
+  background: url("../images/section-two-event-two.jpg") center center no-repeat;
+  padding: 30px;
+}
+/* line 825, ../../../app/assets/styles/main.scss */
+#section-two .event-two h3 {
+  line-height: 0.9;
+  font-style: italic;
+}
+/* line 829, ../../../app/assets/styles/main.scss */
+#section-two .event-two ul {
+  list-style: initial;
+  padding-left: 15px;
+}
+/* line 835, ../../../app/assets/styles/main.scss */
+#section-two .cust-btn {
+  padding: 12px 45px;
+  font-size: 2.5rem;
+  display: table;
+  margin: 0 auto;
+}
+
+/* line 843, ../../../app/assets/styles/main.scss */
+#section-three {
+  background: url("../images/section-three-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/* line 849, ../../../app/assets/styles/main.scss */
+#section-three .video-container {
+  position: relative;
+}
+/* line 851, ../../../app/assets/styles/main.scss */
+#section-three .video-container .blue-char {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 855, ../../../app/assets/styles/main.scss */
+#section-three .video-container .red-char {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 861, ../../../app/assets/styles/main.scss */
+#section-three h3 {
+  font-style: italic;
+}
+
+/* line 866, ../../../app/assets/styles/main.scss */
+#section-four {
+  background: url("../images/section-four-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+/* line 872, ../../../app/assets/styles/main.scss */
+#section-four .container {
+  padding-top: 120px;
+}
+/* line 876, ../../../app/assets/styles/main.scss */
+#section-four h1 {
+  font-size: 17rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* line 884, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #1e1e1e;
+}
+/* line 886, ../../../app/assets/styles/main.scss */
+footer .container {
+  padding: 20px 0 80px;
+}
+/* line 888, ../../../app/assets/styles/main.scss */
+footer .container div:last-child {
+  padding-top: 8px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+/* line 894, ../../../app/assets/styles/main.scss */
+footer img {
+  width: 230px;
+}
+
+/*# sourceMappingURL=main.css.map */

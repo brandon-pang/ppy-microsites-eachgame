@@ -1,0 +1,177 @@
+// fonts //
+@font-face {
+  font-family : 'Glyphter';
+  src         : url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/Glyphter.eot');
+  src         : url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/Glyphter.woff') format('woff'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/Glyphter.ttf') format('truetype'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/Glyphter.svg#Glyphter') format('svg');
+  font-weight : normal;
+  font-style  : normal;
+}
+
+[class*='icon-']:before {
+  font-family             : 'Glyphter';
+  display                 : inline-block;
+  font-style              : normal;
+  font-weight             : normal;
+  line-height             : 1;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale
+}
+
+.icon-locked:before { content : '\0041'; }
+.icon-blackshot:before { content : '\0042'; }
+.icon-calendar:before { content : '\0043'; }
+.icon-aim:before { content : '\0044'; }
+.icon-arrow-right:before { content : '\0045'; }
+.icon-arrow-left:before { content : '\0046'; }
+.icon-new-page:before { content : '\0047'; }
+.icon-snow:before { content : '\0048'; }
+.icon-dot:before { content : '\0049'; }
+.icon-clock:before { content : '\004a'; }
+.icon-skull:before { content : '\004b'; }
+.icon-completed:before { content : '\004c'; }
+.icon-fail:before { content : '\004d'; }
+.icon-logout:before { content : '\004f'; }
+.icon-papaya:before { content : '\0050'; }
+.icon-hashtag:before { content : '\0052'; }
+.icon-stats:before { content : '\0053'; }
+.icon-arrowlong:before { content : '\0054'; }
+.icon-phoenix:before { content : '\0055'; }
+.icon-show-more:before { content : '\0057'; }
+.icon-show-less:before { content : '\0058'; }
+.icon-meme:before { content : '\006d'; }
+.icon-180view:before { content : '\0070'; }
+.icon-return:before { content : '\0072'; }
+.icon-time:before { content : '\0074'; }
+.icon-close:before { content : '\0078'; }
+.icon-morebsc:before { content : '\0024'; }
+.icon-plus:before { content : '\002b'; }
+.icon-check:before { content : '\005e'; }
+.icon-arrow1:before { content : '\007b'; }
+.icon-arrow2:before { content : '\007d'; }
+.icon-attention:before { content : '\007e'; }
+
+@font-face {
+  font-family : 'cs75-icon-text';
+  src         : url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.eot');
+  src         : url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.eot?#iefix') format('embedded-opentype'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.woff2') format('woff2'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.woff') format('woff'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.ttf') format('truetype'),
+  url('https://stactic.papayapla.com/static/event/cs75/assets/styles/fonts/lt_festival.svg#lt_festival') format('svg');
+  font-weight : normal;
+  font-style  : normal;
+
+}
+
+[class*='cs75-icon-']:before {
+  font-family             : "cs75-icon-text";
+  display                 : inline-block;
+  font-style              : normal;
+  font-weight             : normal;
+  line-height             : 1;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale
+}
+
+.cs75-icon-spin1:before {
+  content : '\e830';
+}
+
+.cs75-icon-shield:before {
+  content : '\f132';
+  font-size:40px;
+}
+
+.cs75-icon-heart:before {
+  content : '\e800';
+}
+
+.cs75-icon-zone:before {
+  content : '\e801';
+  font-size:42px;
+  margin-top:8px;
+}
+
+.cs75-icon-kill:before {
+  content : '\e802';
+  font-size:50px;
+  margin-top:10px;
+  margin-left:-6px;
+  margin-right:-5px;
+}
+
+.cs75-icon-crown:before {
+  content : '\e844';
+  font-size:38px;
+  margin-top:8px;
+}
+
+@font-face {
+  font-family : 'cs79-icon-text';
+  src         : url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.eot');
+  src         : url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.eot?#iefix') format('embedded-opentype'),
+                url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.woff2') format('woff2'),
+                url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.woff') format('woff'),
+                url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.ttf') format('truetype'),
+                url('https://stactic.papayapla.com/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.svg#cs79_webfont') format('svg');
+  font-weight : normal;
+  font-style  : normal;
+}
+
+
+@font-face {
+  font-family : 'bs-sea-official';
+  src         : url('https://static.papayaplay.com/static/assets/styles/fonts/bs-sea-official.eot');
+  src         : url('https://static.papayaplay.com/static/assets/styles/fonts/bs-sea-official.eot?#iefix') format('embedded-opentype'),
+  url('https://static.papayaplay.com/static/assets/styles/fonts/bs-sea-official.woff') format('woff'),
+  url('https://static.papayaplay.com/static/assets/styles/fonts/bs-sea-official.ttf') format('truetype'),
+  url('https://static.papayaplay.com/static/assets/styles/fonts/bs-sea-official.svg#bs-sea-official') format('svg');
+  font-weight : normal;
+  font-style  : normal;
+}
+
+[class*='cs79-icon-']:before {
+  font-family             : "cs79-icon-text";
+  display                 : inline-block;
+  font-style              : normal;
+  font-weight             : normal;
+  line-height             : 1;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale
+}
+
+.cs79-icon-arrow1:before { content: '\e800'; }
+.cs79-icon-arrow2:before { content: '\e80a'; }
+.cs79-icon-calendar:before { content: '\e801'; }
+.cs79-icon-check:before { content: '\e802'; }
+.cs79-icon-clock:before { content: '\e803'; }
+.cs79-icon-lock:before { content: '\e805'; }
+.cs79-icon-papaya:before { content: '\e806'; }
+.cs79-icon-star:before { content: '\e807'; }
+.cs79-icon-cross:before { content: '\e808'; }
+.cs79-icon-dot:before { content: '\e809'; }
+.cs79-icon-incomplete:before { content: '\e80b'; }
+.cs79-icon-completed:before { content: '\e80c'; }
+.cs79-icon-open:before { content: '\e80d'; }
+.cs79-icon-close:before { content: '\e80e'; }
+
+[class*='bs-social-icon-']:before {
+  display                 : inline-block;
+  font-family             : 'bs-sea-official';
+  font-style              : normal;
+  font-weight             : normal;
+  line-height             : 1;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  vertical-align          : middle;
+}
+
+
+.bs-social-icon-discord:before { content : '\0045'; }
+
+.bs-social-icon-facebook:before { content : '\0046'; }
+
+.bs-social-icon-youtube:before { content : '\004c'; }

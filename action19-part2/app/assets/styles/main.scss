@@ -1,0 +1,1406 @@
+@import "scss/variables";
+@import "scss/global";
+@import "scss/fonts";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display : none !important;
+}
+
+// elements //
+html {
+  font-size : 10px;
+}
+
+body {
+  font-family : $primary-font;
+  color       : $light-gray;
+  //font-size:15px;
+  line-height : 1.3em;
+  font-weight : 300;
+  min-width   : 1100px;
+
+  //max-width: 1920px;
+}
+
+h2, h3, h4, p {
+  margin      : 0;
+  font-family : $pri-font;
+}
+
+h1 {
+  font-family    : $sec-font;
+  color          : $white;
+  font-size      : 32px;
+  line-height    : 1.3em;
+  letter-spacing : 0.01em;
+  font-weight    : 500;
+}
+
+h4 {
+  color       : $light-gray;
+  font-size   : 24px;
+  line-height : 1.1em;
+  font-weight : 700;
+}
+
+h2 {
+  color          : $yellow;
+  font-size      : 16px;
+  font-weight    : 300;
+  letter-spacing : 0.05em;
+  text-transform : uppercase;
+}
+
+p {
+  color          : $light-gray;
+  font-size      : 15px;
+  line-height    : 1.3em;
+  letter-spacing : 0.05em;
+  font-weight    : 300;
+}
+
+h3 {
+  color          : $dark-gray;
+  font-size      : 14px;
+  line-height    : 1.2em;
+  font-weight    : 300;
+  letter-spacing : 0.05em;
+}
+
+a {
+  font-family     : $pri-font;
+  text-decoration : none;
+  color           : $white;
+  cursor          : pointer;
+  &:hover, &:focus {
+	text-decoration : none;
+  }
+}
+
+ul {
+  list-style : none;
+  padding    : 0;
+}
+
+figcaption {
+  font-style     : italic;
+  font-size      : 1.2rem;
+  text-transform : uppercase;
+  text-align     : center;
+  margin-left    : -17px;
+}
+
+// ------------- //
+@mixin set-text-style($color, $size) {
+  color       : $color;
+  font-size   : $size;
+  font-weight : 300;
+  font-family : $primary-font;
+}
+
+@mixin table-style($width,$firstColWidth) {
+  border-collapse  : collapse;
+  background-color : black;
+  width            : $width;
+  tr {
+	th {
+	  padding-top      : 20px;
+	  padding-bottom   : 20px;
+	  @include set-text-style(#00C4F9, 16px);
+	  line-height      : 19px;
+	  text-align       : center;
+	  border-bottom    : 1px solid #4A4A4A;
+	  text-transform   : uppercase;
+	  &:first-child {
+		width : $firstColWidth;
+	  }
+	  background-color : black;
+	}
+	td {
+	  padding-top    : 18px;
+	  padding-bottom : 15px;
+	  text-align     : center;
+	  &:first-child {
+		padding-left   : 30px;
+		padding-top    : 18px;
+		padding-bottom : 15px;
+		text-align     : left;
+		i {
+		  @include set-text-style(#F5A623, 16px);
+		  margin-right : 10px;
+		}
+	  }
+	  .i-no {
+		@include set-text-style(#747474, 16px);
+	  }
+	  .i-yes {
+		@include set-text-style(#00C4F9, 21px);
+	  }
+	}
+	&:nth-child(odd) {
+	  background-color : rgba(74, 74, 74, 0.2);
+	}
+  }
+}
+
+#top-nav {
+  position         : fixed;
+  top              : 0;
+  left             : 0;
+  right            : 0;
+  z-index          : 9999;
+  background-color : $black;
+  ul {
+	@extend .flex-default;
+	height          : 50px;
+	justify-content : space-around;
+	margin          : 0;
+	li {
+	  a {
+		font-size      : 1.6rem;
+		color          : $color2;
+		font-family    : $secondary-font;
+		font-style     : italic;
+		font-weight    : bold;
+		text-transform : uppercase;
+		padding-bottom : 13px;
+		&:hover, &:focus, &.active {
+		  border-bottom : 2px solid $color2;
+		}
+	  }
+
+	  &:nth-child(4) {
+		line-height : 0;
+	  }
+
+	  i {
+		font-size   : 3.5rem;
+		line-height : 0;
+	  }
+	}
+  }
+}
+
+#logo-top {
+  background-image      : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/dk-act19-pt2-bg.jpg);
+  background-repeat     : no-repeat;
+  background-position   : top center;
+  background-size       : 100%;
+  background-attachment : fixed;
+
+  .container {
+	position : relative;
+  }
+
+  .top-nav {
+	@extend .flex-default;
+	justify-content : space-between;
+	height          : 90px;
+	font-size       : 0.9em;
+
+	.navlink, .language-bar {
+	  @extend .flex-default;
+	  height           : 40px;
+	  background-color : rgba($black, 0.5);
+
+	  a {
+		font-size : 1.4rem;
+		&:hover, &:focus {
+		  color : $color1;
+		}
+	  }
+	}
+
+	.navlink {
+	  width : 170px;
+
+	}
+
+	.language-bar {
+	  .dropdown {
+		width        : 160px;
+		padding-left : 30px;
+	  }
+	  .dropdown-menu {
+		background-color : rgba($black, 0.5);
+		border           : none;
+		border-radius    : 0;
+		padding-left     : 17px;
+		top              : 28px;
+		li {
+		  @extend .flex-default;
+		  text-transform : capitalize;
+		  font-size      : 1.4rem;
+		  color          : $white;
+		  padding        : 5px 0;
+		  transition     : all 0.3s;
+		  cursor         : pointer;
+		  span {
+			&:first-child {
+			  width      : 20%;
+			  text-align : right;
+			}
+			&:last-child {
+			  width        : 80%;
+			  padding-left : 10px;
+			}
+		  }
+		  &:hover, &:focus {
+			background-color : $color1;
+		  }
+		}
+	  }
+	}
+  }
+
+  .logo-wrapper {
+	padding-bottom : 90px;
+	li:first-child {
+	  text-align : center;
+	  margin     : 0 auto;
+	}
+	li:last-child {
+	  text-align : center;
+	  margin     : 40px auto;
+	}
+  }
+}
+
+#section1, #section2, #section3, #section4, #section5, #section7, #section8, #section9 {
+  position : relative;
+}
+
+#section2 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section-master-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top;
+  background-color    : $background-gray;
+  padding-top         : 80px;
+  padding-bottom      : 80px;
+  display             : flex;
+  align-items         : center;
+  justify-content     : center;
+  flex-direction      : column;
+  .container {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	flex-direction  : column;
+	text-align      : center;
+	h2 {
+	}
+	h1 {
+	  margin-top    : 10px;
+	  margin-bottom : 20px;
+	}
+	p {
+	  width         : 521px;
+	  margin-bottom : 50px;
+	}
+	.container {
+	  display         : flex;
+	  align-items     : center;
+	  justify-content : center;
+
+	  table {
+		@include table-style(970px, 24%);
+	  }
+	}
+  }
+  .sergio-cont {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	width           : 100%;
+	margin-top      : 30px;
+	.con-left {
+	  display         : flex;
+	  align-items     : center;
+	  justify-content : center;
+	  width           : 200px;
+	}
+	.con-right {
+	  display         : flex;
+	  align-items     : flex-start;
+	  justify-content : flex-start;
+	  flex-direction  : column;
+	  width           : 630px;
+	  .title {
+		@include set-text-style(#00C4F9, 24px);
+		font-family    : "Glegoo", sans-serif;
+		text-transform : capitalize;
+		margin-bottom  : 20px;
+	  }
+	  .text-ul {
+		li {
+		  @include set-text-style(#DBDBDB, 15px);
+		  line-height : 18px;
+		}
+	  }
+	}
+  }
+  .crystal-cont {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	flex-direction  : column;
+	text-align      : center;
+	margin-top      : 10px;
+	img {
+	  margin-bottom : 20px;
+	}
+	h1 {
+	  margin-top    : 10px;
+	  margin-bottom : 20px;
+	}
+	p {
+	  width         : 521px;
+	  margin-bottom : 50px;
+	}
+	table {
+	  @include table-style(970px, 24%);
+	}
+  }
+  .enhance-cont {
+	margin-top : 20px;
+	.title {
+	  text-align    : center;
+	  margin-bottom : 30px;
+	}
+	.sub-title1 {
+	  @include set-text-style(#00C4F9, 16px);
+	  margin-bottom  : 20px;
+	  text-transform : inherit;
+	}
+	.sub-title2 {
+	  @include set-text-style(#FAFAFA, 15px);
+	  margin-bottom  : 10px;
+	  text-transform : capitalize;
+	}
+	.text {
+	  @include set-text-style(#dadada, 15px);
+	}
+  }
+}
+
+#section4 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section-master-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top;
+  background-color    : $background-gray;
+  padding-bottom      : 40px;
+  .container {
+	position   : relative;
+	text-align : center;
+	h2 {
+	  margin : 10px auto;
+	}
+	h1 {
+	  margin-top    : 10px;
+	  margin-bottom : 20px;
+	}
+	p {
+	  width         : 521px;
+	  margin-bottom : 50px;
+	  margin        : 10px auto;
+	}
+
+	.nav-tabs {
+	  padding-top   : 30px;
+	  text-align    : center;
+	  border-bottom : 1px solid $tab-boarder-color;
+	  li {
+		float         : none;
+		display       : inline-block;
+		border-bottom : none;
+		padding-left  : 40px;
+		padding-right : 40px;
+		*display      : inline; /* ie7 fix */
+		zoom          : 1; /* hasLayout ie7 trigger */
+
+		a {
+		  color            : $dark-gray;
+		  background-color : transparent;
+		  border-radius    : 0;
+		  margin-right     : 0;
+		  font-size        : 13px;
+		  letter-spacing   : 1.2px;
+		  border-bottom    : transparent;
+
+		  &:hover {
+			color            : $yellow;
+			background-color : transparent;
+			border-left      : 1px solid transparent;
+			border-right     : 1px solid transparent;
+			border-top       : 1px solid transparent;
+		  }
+		}
+
+		&.active {
+		  border-top       : 1px solid $tab-boarder-color;
+		  border-bottom    : transparent;
+		  border-left      : 1px solid $tab-boarder-color;
+		  border-right     : 1px solid $tab-boarder-color;
+		  z-index          : 100;
+		  background-color : $tabpane-bg-color;
+		  a {
+			color  : $white;
+			border : none !important;
+		  }
+		}
+	  }
+	}
+	.tab-content {
+	  background-color : $tabpane-bg-color;
+	  height           : 340px;
+	}
+	.flex-default {
+	  text-align     : left;
+	  padding-top    : 30px;
+	  padding-right  : 20px;
+	  padding-left   : 20px;
+	  padding-bottom : 20px;
+
+	  .col1 {
+		width : 50%;
+		h4 {
+		  padding-top : 0px;
+		}
+		p {
+		  padding-top : 20px;
+		  width       : 100%;
+		}
+	  }
+	  .col2 {
+		position : relative;
+		width    : 50%;
+		h1 {
+		  padding-top : 0px;
+		}
+		p {
+		  padding-top : 20px;
+		  width       : 100%;
+		}
+		.row {
+		  position : absolute;
+		  bottom   : 80px;
+		  width    : 100%;
+		  img {
+			//border: 1px solid white;
+			width  : 100%;
+			height : 240px;
+		  }
+		}
+		#s4-arrows0, #s4-arrows1 {
+		  position         : relative;
+		  right            : 10px;
+		  width            : 100%;
+		  height           : 40px;
+		  bottom           : 30px;
+		  background-color : rgba(0, 0, 0, 0.5);
+		  .s4-slick-prev0, .s4-slick-next0, .s4-slick-prev1, .s4-slick-next1 {
+			position     : relative;
+			bottom       : -13px;
+			right        : 30px;
+			padding-left : 20px;
+			float        : right;
+			font-size    : 1em;
+		  }
+
+		  #s4-title0, #s4-title1 {
+			position : relative;
+			left     : 30px;
+			bottom   : -11px;
+		  }
+
+		  #s4-pageNo0, #s4-pageNo1 {
+			position : relative;
+			float    : right;
+			bottom   : -11px;
+			right    : 20px;
+		  }
+
+		}
+	  }
+	}
+
+	#s4-node3 {
+	  .col-xs-6 {
+		padding    : 50px;
+		text-align : left;
+		h1 {
+		  padding-top : 0px;
+		}
+		h4 {
+		  padding-top : 0px;
+		}
+		p {
+		  padding-top : 20px;
+		  width       : 100%;
+		}
+	  }
+	}
+  }
+
+  .btn1 {
+	margin : 30px auto;
+  }
+  .container-arrow {
+	width    : 1040px;
+	margin   : 0px auto;
+	position : relative;
+	z-index  : 1000;
+	top      : -200px;
+	.div-arrow-left3, .div-arrow-right3 {
+	  font-size : 2em;
+	  &:hover {
+		color : $yellow;
+	  }
+	}
+	.div-arrow-left3 {
+	  float        : left;
+	  padding-left : 20px;
+	}
+	.div-arrow-right3 {
+	  float : right;
+	  //padding-right: 40px;
+	}
+  }
+}
+
+#section11 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section-master-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top;
+  background-color    : $black;
+  padding-top         : 60px;
+  padding-bottom      : 80px;
+  position            : relative;
+  display             : flex;
+  align-items         : center;
+  justify-content     : center;
+  flex-direction      : column;
+  .container {
+	text-align : center;
+	position   : relative;
+
+	h2 {
+	  margin : 10px auto;
+	}
+	h1 {
+	  margin : 10px auto;
+	}
+	p {
+	  width         : 480px;
+	  margin-bottom : 50px;
+	  margin        : 10px auto;
+	}
+
+	.nav-tabs {
+	  padding-top   : 30px;
+	  text-align    : center;
+	  border-bottom : 1px solid $tab-boarder-color;
+
+	  li {
+		padding-left  : 20px;
+		padding-right : 20px;
+		float         : none;
+		display       : inline-block;
+		border-bottom : none;
+		*display      : inline; /* ie7 fix */
+		zoom          : 1; /* hasLayout ie7 trigger */
+
+		a {
+		  color            : $dark-gray;
+		  background-color : transparent;
+		  border-radius    : 0;
+		  margin-right     : 0;
+		  font-size        : 13px;
+		  letter-spacing   : 1.2px;
+		  border-bottom    : transparent;
+
+		  &:hover {
+			color            : $yellow;
+			background-color : transparent;
+			border-left      : 1px solid transparent;
+			border-right     : 1px solid transparent;
+			border-top       : 1px solid transparent;
+		  }
+		}
+
+		&.active {
+		  border-top       : 1px solid $tab-boarder-color;
+		  border-bottom    : transparent;
+		  border-left      : 1px solid $tab-boarder-color;
+		  border-right     : 1px solid $tab-boarder-color;
+		  z-index          : 100;
+		  background-color : $tabpane-bg-color;
+		  a {
+			color  : $white;
+			border : none !important;
+		  }
+		}
+	  }
+	}
+
+  }
+  .tab-content {
+	background-color : $tabpane-bg-color;
+	height           : 450px;
+	//position: relative;
+	.tab-pane {
+	  padding-top : 25px;
+	  .container {
+		width : 98%;
+	  }
+	  .row {
+		position : absolute;
+		bottom   : 62px;
+		width    : 100%;
+		img {
+		  //border: 1px solid white;
+		  width  : 100%;
+		  height : 365px;
+		}
+	  }
+	  #arrows0, #arrows1, #arrows2 {
+		position         : relative;
+		bottom           : 40px;
+		width            : 100%;
+		height           : 40px;
+		background-color : rgba(0, 0, 0, 0.5);
+
+		.slick-prev0, .slick-next0,
+		.slick-prev1, .slick-next1,
+		.slick-prev2, .slick-next2 {
+		  position     : relative;
+		  bottom       : -13px;
+		  right        : 30px;
+		  padding-left : 20px;
+		  float        : right;
+		  font-size    : 1em;
+		}
+
+		#title0, #title1, #title2 {
+		  position : relative;
+		  left     : 30px;
+		  bottom   : -11px;
+		}
+
+		#pageNo0, #pageNo1, #pageNo2 {
+		  position : relative;
+		  float    : right;
+		  bottom   : -11px;
+		  right    : 20px;
+		}
+	  }
+	}
+	.flex-default {
+	  text-align : left;
+	  padding    : 20px;
+
+	  .col1 {
+		padding-right : 140px;
+
+		h4 {
+		  padding-top : 0px;
+		}
+		p {
+		  padding-top : 20px;
+		  width       : 100%;
+		}
+	  }
+	  .col2 {
+		padding-top   : 15px;
+		padding-right : 20px;
+		margin        : auto 0px;
+		img {
+		  width : 100%;
+		}
+
+	  }
+	}
+  }
+  .btn1 {
+	margin : 50px auto;
+  }
+  .container-arrow {
+	width    : 1040px;
+	margin   : 0px auto;
+	position : relative;
+	z-index  : 1000;
+	top      : -245px;
+	.div-arrow-left, .div-arrow-right {
+	  font-size : 2em;
+	  &:hover {
+		color : $yellow;
+	  }
+	}
+	.div-arrow-left {
+	  float        : left;
+	  padding-left : 20px;
+	}
+	.div-arrow-right {
+	  float : right;
+	}
+  }
+  .buff-title {
+	margin-top     : 40px;
+	margin-bottom  : 40px;
+	@include set-text-style(#00C4F9, 24px);
+	font-family    : "Glegoo", sans-serif;
+	text-transform : capitalize;
+	text-align     : center;
+  }
+  .buff-cont {
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+
+	.text-cont {
+	  display         : flex;
+	  justify-content : center;
+	  align-items     : center;
+	  flex-direction  : column;
+	  margin          : 20px;
+	}
+
+	.title-warp {
+	  display         : flex;
+	  justify-content : center;
+	  align-items     : center;
+	  margin-bottom   : 20px;
+	  i {
+		color        : #00C4F9;
+		font-size    : 24px;
+		margin-top   : 1px;
+		margin-right : 5px;
+	  }
+	}
+	.buff-box {
+	  border-top       : 1px solid #4A4A4A;
+	  background-color : rgba(74, 74, 74, 0.2);
+	  padding          : 20px;
+	  width            : 421px;
+	  display          : flex;
+	  justify-content  : center;
+	  align-items      : center;
+	  .buff-ul {
+		.text-wrap {
+		  width          : 270px;
+		  border         : 1px solid #DBDBDB;
+		  border-radius  : 10px;
+		  margin         : 10px;
+		  padding        : 10px;
+		  text-align     : center;
+		  @include set-text-style(#DBDBDB, 16px);
+		  text-transform : uppercase;
+		}
+	  }
+	}
+  }
+  .buff-text {
+	margin-top    : 10px;
+	margin-bottom : 40px;
+	text-align    : center;
+  }
+  .give-title {
+	margin-top     : 40px;
+	margin-bottom  : 30px;
+	@include set-text-style(#00C4F9, 24px);
+	font-family    : "Glegoo", sans-serif;
+	text-transform : capitalize;
+	text-align     : center;
+  }
+  .give-text {
+	text-align : center;
+	width      : 580px;
+	margin     : 10px auto;
+  }
+  table {
+	border-collapse  : collapse;
+	background-color : black;
+	width            : 746px;
+	tr {
+	  th {
+		padding-top      : 20px;
+		padding-bottom   : 20px;
+		@include set-text-style(#00C4F9, 16px);
+		line-height      : 19px;
+		border-bottom    : 1px solid #4A4A4A;
+		text-transform   : uppercase;
+		background-color : black;
+	  }
+	  td {
+		padding-top    : 18px;
+		padding-bottom : 15px;
+		&:nth-child(1) {
+		  width : 250px;
+		}
+		&:nth-child(2) {
+		  width : 250px;
+		}
+		&:nth-child(3) {
+		}
+	  }
+	  &:nth-child(odd) {
+		background-color : rgba(74, 74, 74, 0.2);
+	  }
+	}
+	.text-icon-wrap {
+	  display     : flex;
+	  align-items : center;
+
+	  i {
+		font-size    : 20px;
+		margin-right : 10px;
+	  }
+	  p {
+	  }
+
+	}
+  }
+}
+
+#section5 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section-master-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top;
+  background-size     : cover;
+  background-color    : $black;
+  padding-top         : 30px;
+  padding-bottom      : 30px;
+  position            : relative;
+  display             : flex;
+  align-items         : center;
+  justify-content     : center;
+  flex-direction      : column;
+
+  h1 {
+	text-align : center;
+  }
+  p {
+	text-align    : center;
+	margin-bottom : 40px;
+  }
+  img {
+	margin-bottom : 40px;
+  }
+
+  .div-cont {
+	display          : flex;
+	align-items      : center;
+	justify-content  : center;
+	width            : 750px;
+	background-color : rgba(74, 74, 74, 0.2);
+	padding          : 10px;
+	.left {
+	  padding-right : 15px;
+	}
+	.right {
+	  padding-left : 15px;
+	  padding-top  : 30px;
+	}
+  }
+  .title-wrap {
+	display          : flex;
+	align-items      : center;
+	justify-content  : flex-start;
+	background-color : black;
+	border-bottom    : 1px solid #4A4A4A;
+	padding          : 20px;
+	i {
+	  color        : #00C4F9;
+	  font-size    : 25px;
+	  margin-right : 10px;
+	}
+	h1 {
+	}
+
+  }
+  .buff-ul {
+	.text-wrap {
+	  width          : 270px;
+	  border         : 1px solid #DBDBDB;
+	  border-radius  : 10px;
+	  margin         : 10px;
+	  padding        : 10px;
+	  text-align     : center;
+	  @include set-text-style(#DBDBDB, 16px);
+	  text-transform : uppercase;
+	}
+  }
+  .tb1-cont {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	flex-direction  : column;
+	h2 {
+	  text-align     : center;
+	  @include set-text-style(#00C4F9, 24px);
+	  font-family    : "Glegoo", sans-serif;
+	  text-transform : inherit;
+	  margin-top     : 40px;
+	  margin-bottom  : 20px;
+	}
+	p {
+	  width      : 580px;
+	  text-align : center;
+	}
+	.tb1-wrap {
+	  border-collapse  : collapse;
+	  background-color : black;
+	  width            : 746px;
+	  tr {
+		th {
+		  padding-top      : 20px;
+		  padding-bottom   : 20px;
+		  @include set-text-style(#00C4F9, 16px);
+		  line-height      : 19px;
+		  border-bottom    : 1px solid #4A4A4A;
+		  text-transform   : uppercase;
+		  background-color : black;
+		  &:nth-child(1) {
+			padding-left : 20px;
+		  }
+		}
+		td {
+		  padding-top    : 18px;
+		  padding-bottom : 15px;
+		  &:nth-child(1) {
+			width        : 350px;
+			padding-left : 20px;
+		  }
+		  &:nth-child(2) {
+			width : 200px;
+		  }
+		}
+		&:nth-child(odd) {
+		  background-color : rgba(74, 74, 74, 0.2);
+		}
+	  }
+	}
+	.tb2-wrap {
+	  border-collapse  : collapse;
+	  background-color : black;
+	  width            : 746px;
+	  tr {
+		th {
+		  padding-top      : 20px;
+		  padding-bottom   : 20px;
+		  @include set-text-style(#00C4F9, 16px);
+		  line-height      : 19px;
+		  border-bottom    : 1px solid #4A4A4A;
+		  text-transform   : uppercase;
+		  background-color : black;
+		  &:nth-child(1) {
+			padding-left : 20px;
+		  }
+		}
+		td {
+		  padding-top    : 18px;
+		  padding-bottom : 15px;
+		  &:nth-child(1) {
+			width        : 350px;
+			padding-left : 20px;
+		  }
+		  &:nth-child(2) {
+			width : 200px;
+		  }
+		  &:nth-child(3) {
+		  }
+		}
+		&:nth-child(odd) {
+		  background-color : rgba(74, 74, 74, 0.2);
+		}
+	  }
+	}
+	.tb3-wrap {
+	  border-collapse  : collapse;
+	  background-color : black;
+	  width            : 746px;
+	  tr {
+		th {
+		  padding-top      : 20px;
+		  padding-bottom   : 20px;
+		  @include set-text-style(#00C4F9, 16px);
+		  line-height      : 19px;
+		  border-bottom    : 1px solid #4A4A4A;
+		  text-transform   : uppercase;
+		  background-color : black;
+		  &:nth-child(1) {
+			padding-left : 20px;
+		  }
+		}
+		td {
+		  padding-top    : 18px;
+		  padding-bottom : 15px;
+		  &:nth-child(1) {
+			width        : 200px;
+			padding-left : 20px;
+		  }
+		  &:nth-child(2) {
+			width : 200px;
+		  }
+		  &:nth-child(3) {
+		  }
+		  &:nth-child(4) {
+		  }
+		}
+		&:nth-child(odd) {
+		  background-color : rgba(74, 74, 74, 0.2);
+		}
+	  }
+	}
+	.sub-text {
+	  margin-top    : 20px;
+	  width         : 749px;
+	  margin-bottom : 0px;
+	  @include set-text-style(#00C4F9, 15px);
+	}
+  }
+  .tb4-cont {
+	display         : flex;
+	align-items     : center;
+	justify-content : center;
+	flex-direction  : column;
+	h2 {
+	  text-align     : center;
+	  @include set-text-style(#00C4F9, 24px);
+	  font-family    : "Glegoo", sans-serif;
+	  text-transform : inherit;
+	  margin-top     : 40px;
+	  margin-bottom  : 20px;
+	}
+	p {
+	  width : 640px;
+	}
+	img {
+	}
+  }
+}
+
+#section12 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section4-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top;
+  background-color    : $black;
+  padding-top         : 30px;
+  padding-bottom      : 80px;
+  position            : relative;
+
+  .container {
+	text-align : center;
+	position   : relative;
+
+	h2 {
+	  margin : 10px auto;
+	}
+	h1 {
+	  margin : 10px auto;
+	}
+	p {
+	  padding-top : 0px;
+	  margin      : 10px auto;
+	  width       : 80%;
+	}
+
+	.nav-tabs {
+	  padding-top   : 30px;
+	  text-align    : center;
+	  border-bottom : 1px solid $tab-boarder-color;
+
+	  li {
+		padding-left  : 20px;
+		padding-right : 20px;
+		float         : none;
+		display       : inline-block;
+		border-bottom : none;
+		*display      : inline; /* ie7 fix */
+		zoom          : 1; /* hasLayout ie7 trigger */
+
+		a {
+		  color            : $dark-gray;
+		  background-color : transparent;
+		  border-radius    : 0;
+		  margin-right     : 0;
+		  font-size        : 13px;
+		  letter-spacing   : 1.2px;
+		  border-bottom    : transparent;
+
+		  &:hover {
+			color            : $yellow;
+			background-color : transparent;
+			border-left      : 1px solid transparent;
+			border-right     : 1px solid transparent;
+			border-top       : 1px solid transparent;
+		  }
+		}
+
+		&.active {
+		  border-top       : 1px solid $tab-boarder-color;
+		  border-bottom    : transparent;
+		  border-left      : 1px solid $tab-boarder-color;
+		  border-right     : 1px solid $tab-boarder-color;
+		  z-index          : 100;
+		  background-color : $tabpane-bg-color;
+		  a {
+			color  : $white;
+			border : none !important;
+		  }
+		}
+	  }
+	}
+
+  }
+  .tab-content {
+	background-color : $tabpane-bg-color;
+	height           : 450px;
+	//position: relative;
+	.tab-pane {
+	  padding-top : 25px;
+	  .container {
+		width : 98%;
+	  }
+	  .row {
+		position : absolute;
+		bottom   : 62px;
+		width    : 100%;
+		img {
+		  //border: 1px solid white;
+		  width  : 100%;
+		  height : 365px;
+		}
+	  }
+	  #s12-arrows {
+		position         : relative;
+		bottom           : 40px;
+		width            : 100%;
+		height           : 40px;
+		background-color : rgba(0, 0, 0, 0.5);
+
+		#s12-prev, #s12-next {
+		  position     : relative;
+		  bottom       : -13px;
+		  right        : 30px;
+		  padding-left : 20px;
+		  float        : right;
+		  font-size    : 1em;
+		}
+
+		#s12-title {
+		  position : relative;
+		  left     : 30px;
+		  bottom   : -11px;
+		}
+
+		#s12-pageNo {
+		  position : relative;
+		  float    : right;
+		  bottom   : -11px;
+		  right    : 20px;
+		}
+	  }
+	}
+	.flex-default {
+	  align-items : center;
+	  text-align: left;
+	  width:100%;
+	  .col1 {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 20px;
+		width:60%;
+		h4 {
+		  text-transform : capitalize;
+		  margin-bottom: 10px;
+		}
+		p {
+		  margin-left    : 0px;
+		  padding-top    : 0px;
+		}
+	  }
+	  .col2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width:40%;
+		margin-right: 20px;
+		img {
+		  width:380px;
+		  height:auto;
+		}
+
+
+	  }
+	}
+  }
+  .btn1 {
+	margin : 50px auto;
+  }
+  .container-arrow {
+	width    : 1040px;
+	margin   : 0px auto;
+	position : relative;
+	z-index  : 1000;
+	top      : -245px;
+	.div-arrow-left, .div-arrow-right {
+	  font-size : 2em;
+	  &:hover {
+		color : $yellow;
+	  }
+	}
+	.div-arrow-left {
+	  float        : left;
+	  padding-left : 20px;
+	}
+	.div-arrow-right {
+	  float : right;
+	}
+
+  }
+}
+
+#section6 {
+  background-image    : url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/part2/assets/images/section-master-bg.jpg);
+  background-repeat   : no-repeat;
+  background-position : top center;
+  background-color    : $black;
+  padding-top         : 30px;
+  padding-bottom      : 60px;
+  display             : flex;
+  justify-content     : center;
+  align-items         : center;
+  flex-direction      : column;
+  h2 {
+  }
+  h1 {
+	margin-top    : 5px;
+	margin-bottom : 10px;
+	width         : 635px;
+	text-align    : center;
+  }
+  .text-wrap {
+	display          : flex;
+	justify-content  : center;
+	align-items      : center;
+	flex-direction   : column;
+	width            : 746px;
+	background-color : #000000;
+	padding          : 40px;
+	h2 {
+	  @include set-text-style(#00C4F9, 24px);
+	  font-family    : "Glegoo", sans-serif;
+	  text-transform : capitalize;
+	  line-height    : 43px;
+	  span {
+		color : #ED930C;
+	  }
+	  margin-bottom  : 20px;
+	}
+  }
+  .gap-text {
+	margin-top    : 20px;
+	margin-bottom : 40px;
+  }
+  .text-wrap2 {
+	width            : 746px;
+	background-color : #000000;
+	display          : flex;
+	justify-content  : center;
+	align-items      : center;
+	flex-direction   : column;
+	padding          : 20px;
+
+	.text2-title {
+	  @include set-text-style(#00C4F9, 24px);
+	  font-family    : "Glegoo", sans-serif;
+	  text-transform : capitalize;
+	  line-height    : 43px;
+	  margin-bottom  : 20px;
+	}
+	.div-cont {
+	  display         : flex;
+	  justify-content : center;
+	  align-items     : flex-start;
+	  .left {
+		margin-right : 20px;
+		h2 {
+		  margin-bottom : 20px;
+		}
+		p {
+		}
+	  }
+	  .right {
+		margin-left : 20px;
+		table {
+		  border-collapse  : collapse;
+		  background-color : black;
+		  width            : 320px;
+		  tr {
+			td {
+			  padding-top    : 18px;
+			  padding-bottom : 15px;
+			  &:nth-child(1) {
+				padding-left : 20px;
+			  }
+			  &:nth-child(2) {
+			  }
+			}
+			&:nth-child(odd) {
+			  background-color : rgba(74, 74, 74, 0.2);
+			}
+		  }
+		}
+	  }
+	}
+  }
+  .btn-wrap {
+	margin-top      : 50px;
+	display         : flex;
+	justify-content : center;
+	align-items     : center;
+	flex-direction  : column;
+	h1 {
+	  width       : 597px;
+	  @include set-text-style(white, 24px);
+	  font-family : "Glegoo", sans-serif;
+	  line-height : 43px;
+	}
+	.btn-wrapper {
+	  margin-top      : 10px;
+	  display         : flex;
+	  align-items     : center;
+	  justify-content : center;
+	  height          : 45px;
+	  width           : 220px;
+	  border          : 1px solid #FFFFFF;
+	  border-radius   : 100px;
+	  @include set-text-style(white, 16px);
+	  text-transform  : uppercase;
+	  transition      : all 0.3s ease-out;
+	  &:hover {
+		background-color : #00C4F9;
+		border           : 1px solid #00C4F9;
+		color            : black;
+		transition       : all 0.3s ease-in;
+	  }
+	}
+  }
+}
+
+footer {
+  background-color : $footer-color;
+  padding          : 30px 0;
+  font-size        : 1.3rem;
+  color            : $white;
+
+  small {
+	margin-left : 15px;
+  }
+  .flex-default {
+	justify-content : space-between;
+  }
+}

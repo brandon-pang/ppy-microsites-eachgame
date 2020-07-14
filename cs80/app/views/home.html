@@ -1,0 +1,841 @@
+<!--<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>-->
+<!--top-->
+<section class="section-1" ng-style="{'background-image':'url('+imgUrl+'bgs/bs-lunargames_01.jpg)'}">
+	<div class="container">
+		<!-- top nav starts -->
+		<div class="top-nav">
+			<div class="navlink"><a href="{{pathUrl[0].loc}}" target="_blank">{{ 'goback' | translate}}</a></div>
+			<div class="logo-wrapper">
+				<a href="{{pathUrl[0].loc}}" target="_blank">
+					<img ng-src="https://papayacdn.s3.amazonaws.com/static/assets/images/blackshot/common/blackshot-logo.png"
+					     class="logo" alt="logo" style="width:300px;">
+				</a>
+			</div>
+			<div class="language-bar">
+				<div class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<span style="padding-right: 10px;"><img ng-src="{{imgUrl}}flag-{{ flag }}.svg" height="15"
+						                                        alt="flag"></span>
+						<span>{{ lang }}</span><b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-uk.svg"
+                                     height="15" alt="english flag">
+                            </span>
+							<span translate="{{ 'english' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('de')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-germany.svg" height="15" alt="german flag">
+                            </span>
+							<span translate="{{ 'german' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('fr')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-france.svg" height="15"
+                                     alt="french flag"></span>
+							<span translate="{{ 'french' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('pt')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-brazil.svg" height="15"
+                                     alt="brazil flag"></span>
+							<span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- top nav ends -->
+		<div class="event-logo-cont" ng-style="{'background-image':'url('+imgUrl+'title-'+flag+'.png)'}"
+		     data-aos="zoom-in">
+		</div>
+		<div class="event-exp-cont" data-aos="fade-up">
+			<p class="desc" translate="s1_desc"></p>
+		</div>
+	</div>
+</section>
+
+<!-- new weapons -->
+<section class="section-2" ng-style="{'background-image':'url('+imgUrl+'bgs/bs-lunargames_02_a.jpg)'}">
+	<div class="cont__texts" data-aos="fade-up">
+		<h3 class="texts__subtitle" translate="common_new_weapons"></h3>
+		<h2 class="texts__title">CORGI JACK</h2>
+		<p class="texts__desc" translate="s2_desc"></p>
+	</div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}new-weapons/weapon-mdr-corgi.png" alt="">
+			<img ng-src="{{imgUrl}}new-weapons/weapon-mdr-corgi2.png" alt="">
+		</slick>
+	</div>
+	<div class="cont__left_texts" data-aos="fade-up">
+		<h4 class="texts__subtitle" translate="common_new_weapons"></h4>
+		<h2 class="texts__title">MDR CORGI JACK</h2>
+		<p class="texts__desc" translate="s2_weapon_desc1"></p>
+		<div class="btn--container">
+			<a href="{{imgUrl}}new-weapons/MDR_CORGI_JACK.mp4"
+			   class="see-btn-link various fancybox.iframe">{{'common_3dview' | translate}}</a>
+			<a href="{{imgUrl}}new-weapons/stats-mdr.png" class="see-btn-link various">{{'stats' | translate}}</a>
+		</div>
+	</div>
+	<div class="div-line"></div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}new-weapons/weapon-mcmillan.png" alt="">
+			<img ng-src="{{imgUrl}}new-weapons/weapon-mcmillan2.png" alt="">
+		</slick>
+	</div>
+	<div class="cont__left_texts" data-aos="fade-up">
+		<h4 class="texts__subtitle" translate="common_new_weapons"></h4>
+		<h2 class="texts__title">Mcmillan corgi jack</h2>
+		<p class="texts__desc" translate="s2_weapon_desc2"></p>
+		<div class="btn--container">
+			<a href="{{imgUrl}}new-weapons/MCMILLAN_CORGI_JACK.mp4"
+			   class="see-btn-link various fancybox.iframe">{{'common_3dview' | translate}}</a>
+			<a href="{{imgUrl}}new-weapons/stats-mcmillan.png"
+			   class="see-btn-link various fancybox.iframe">{{'stats' | translate}}</a>
+		</div>
+	</div>
+
+	<!-- Complete the corgi -->
+
+	<div class="look--cont">
+		<h2 class="texts__title" translate="s2_notice_title"></h2>
+		<div class="cont--sliders">
+			<div class="cont__slider">
+				<slick class="slider-wrap" settings="slickConfig1" id="slick2">
+					<div><img ng-src="{{imgUrl}}new-weapons/item-helmet.png" alt=""></div>
+					<div><img ng-src="{{imgUrl}}new-weapons/item-mask.png" alt=""></div>
+					<div><img ng-src="{{imgUrl}}new-weapons/item-backpack.png" alt=""></div>
+					<div><img ng-src="{{imgUrl}}new-weapons/item-grenade.png" alt=""></div>
+				</slick>
+			</div>
+		</div>
+		<div class="nav__slider">
+			<div class="slider__box" ng-class="{'active':slickIndex2==0}" ng-click="slickConfig1.method.slickGoTo(0)"
+			     ng-style="{'background-image':'url('+imgUrl+'new-weapons/item-helmet-thumb.png'}">
+				<div class="title">helmet</div>
+			</div>
+			<div class="slider__box" ng-class="{'active':slickIndex2==1}" ng-click="slickConfig1.method.slickGoTo(1)"
+			     ng-style="{'background-image':'url('+imgUrl+'new-weapons/item-mask-thumb.png'}">
+				<div class="title">mask</div>
+			</div>
+			<div class="slider__box" ng-class="{'active':slickIndex2==2}" ng-click="slickConfig1.method.slickGoTo(2)"
+			     ng-style="{'background-image':'url('+imgUrl+'new-weapons/item-backpack-thumb.png'}">
+				<div class="title">backpack</div>
+			</div>
+			<div class="slider__box" ng-class="{'active':slickIndex2==3}" ng-click="slickConfig1.method.slickGoTo(3)"
+			     ng-style="{'background-image':'url('+imgUrl+'new-weapons/item-grenade-thumb.png'}">
+				<div class="title">grenade</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- new weapons -->
+<section class="section-3" ng-style="{'background-image':'url('+imgUrl+'bgs/bs-lunargames_02_b.jpg)'}">
+	<div class="cont__texts" data-aos="fade-up">
+		<h3 class="subtitle" translate="s3_subtitle"></h3>
+		<h2 class="title" translate="s3_title"></h2>
+		<p class="desc" translate="s3_desc"></p>
+	</div>
+
+	<div class="section--daily-items">
+		<h4 class="noc__title" translate="s3_carousel_title1">valentine’s top prizes</h4>
+
+		<div class="section3-carousel">
+			<div class="slides">
+				<div class="slideItem active-slide">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-1.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">MANTIS and NINA</h5>
+					</div>
+				</div>
+				<div class="slideItem">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-2.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">AK47 PROJECT DRAGON</h5>
+					</div>
+				</div>
+				<div class="slideItem">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-3.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">AK-103 NZ1</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="cont--daily-items">
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/08 | {{"thursday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/09 | {{"friday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/10 | {{"saturday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/11 | {{"sunday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/12 | {{"monday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/13 | {{"tuesday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/14 | {{"wednesday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/15 | {{"thursday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/16 | {{"friday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/17 | {{"saturday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/valentines-box.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">VALENTINE'S BOX 1x</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="div--line2"></div>
+
+	<div class="section--daily-items">
+		<h4 class="noc__title" translate="s3_carousel_title2"></h4>
+
+		<div class="section4-carousel">
+			<div class="slides">
+				<div class="slideItem active-slide">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-4.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">MDR Corgi Jack</h5>
+					</div>
+				</div>
+				<div class="slideItem">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-5.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">McMillan Corgi Jack</h5>
+					</div>
+				</div>
+				<div class="slideItem">
+					<div class="carousel-image">
+						<img ng-src="{{imgUrl}}attendance/top-prize-6.png" alt="item">
+						<h5 class="noc__title center-block" style="font-size:20px;">TAURUS JUDGE</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<ul class="cont--daily-items">
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/08 | {{"thursday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/09 | {{"friday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/10 | {{"saturday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/11 | {{"sunday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/12 | {{"monday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/13 | {{"tuesday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/14 | {{"wednesday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/15 | {{"thursday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/16 | {{"friday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+			<li class="daily-item__box"
+			    ng-style="{'background-image':'url('+imgUrl+'attendance/red-pocket-card-bg.jpg)'}">
+				<div class="box__top">02/17 | {{"saturday" | translate}}</div>
+				<div class="box__mid"><img ng-src="{{imgUrl}}attendance/red-pocket.png" alt=""></div>
+				<div class="box__bt">
+					<h6 class="subtitle">{{"prize" | translate}}</h6>
+					<p class="name">RED ENVELOPE 1x</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="server-time">
+		<p>
+			<i class="icon-clock"></i>{{'server'|translate}} {{'time'|translate}} (CET) {{ event.serverTime | amDateFormat:'H:mm A - MMMM DD' }}
+		</p>
+	</div>
+</section>
+
+<!--2018 reason why-->
+<section class="section-4" ng-style="{'background-image':'url('+imgUrl+'bgs/bs-lunargames_03.jpg)'}">
+	<div class="cont__texts">
+		<h3 class="subtitle" translate="s4_subtitle"></h3>
+		<h2 class="title" translate="s4_title"></h2>
+		<p class="desc" translate="s4_desc"></p>
+		<a class="gold-btn-link" href="{{pathUrl[1].loc}}"
+		   target="_blank">{{'common_full_goldbox_list' | translate}}</a>
+	</div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}goldbox/goldbox1.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox2.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox3.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox4.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox5.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox6.png" alt="">
+		</slick>
+	</div>
+</section>
+
+<!--2018 reason why-->
+<section class="section-4-1" ng-style="{'background-image':'url('+imgUrl+'bgs/bg-valentines.jpg)'}">
+	<div class="cont__texts">
+		<h3 class="subtitle" translate="s5_subtitle"></h3>
+		<h2 class="title" translate="s5_title"></h2>
+		<p class="desc" translate="s5_desc"></p>
+		<a class="gold-btn-link" href="{{pathUrl[2].loc}}"
+		   target="_blank">{{'more-info' | translate}}</a>
+	</div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}valentines/valentine-slide01.png" alt="">
+			<img ng-src="{{imgUrl}}valentines/valentine-slide02.png" alt="">
+			<img ng-src="{{imgUrl}}valentines/valentine-slide03.png" alt="">
+			<img ng-src="{{imgUrl}}valentines/valentine-slide04.png" alt="">
+		</slick>
+	</div>
+</section>
+
+<!-- Love is in the air -->
+<section class="section-5" ng-style="{'background-image':'url('+imgUrl+'bgs/bs-lunargames_05.jpg)'}">
+	<div class="s7--cont__texts" data-aos="fade-up">
+		<h3 class="texts__subtitle" translate="s6_subtitle"></h3>
+		<h2 class="texts__title" translate="s6_title"></h2>
+		<p class="texts__desc" translate="s6_desc"></p>
+	</div>
+	<ul class="s7--tabs" data-aos="fade-up">
+		<li class="s7--tab" ng-class="{active:s7tabIndex[0]}" ng-click="s7tabClick(0)">office sd</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[1]}" ng-click="s7tabClick(1)">titan valley sd</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[2]}" ng-click="s7tabClick(2)">hunting tfm</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[3]}" ng-click="s7tabClick(3)">twin tower tdm</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[4]}" ng-click="s7tabClick(4)">hans cargo sdi</li>
+	</ul>
+	<div class="s7--map-cont" ng-show="s7tabIndex[0]" ng-class="{'animated fadeIn':s7tabIndex[0]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/map01.jpg)'}">
+			<div class="bg__text">office sd</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[1]" ng-class="{'animated fadeIn':s7tabIndex[1]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/map02.jpg)'}">
+			<div class="bg__text">titan valley sd</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[2]" ng-class="{'animated fadeIn':s7tabIndex[2]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/map03.jpg)'}">
+			<div class="bg__text">hunting tfm</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[3]" ng-class="{'animated fadeIn':s7tabIndex[3]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/map04.jpg)'}">
+			<div class="bg__text">twin tower tdm</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[4]" ng-class="{'animated fadeIn':s7tabIndex[4]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/map05.jpg)'}">
+			<div class="bg__text">hans cargo sdi</div>
+		</div>
+	</div>
+</section>
+
+<!-- gm event -->
+<section class="section-6"
+         ng-style="{'background-image':'url(https://papayacdn.s3.amazonaws.com/static/event/blackshot/cs79/assets/images/bgs/bg6.jpg)'}">
+	<div class="container">
+		<div class="cont-left">
+			<h3 class="subtitle">{{'s7_subtitle'|translate}}</h3>
+			<h2 class="title">GM Lunar Bash</h2>
+			<p translate="s7_desc" class="context"></p>
+			<div class="calender-wrap">
+				<div class="cal-left">
+					<i class="icon-calendar"></i>
+				</div>
+				<div class="cal-right">
+					<p translate="s7_date"></p>
+				</div>
+			</div>
+			<a class="see-btn-link" href="{{pathUrl[3].loc}}" target="_blank">{{'more-info' | translate}}</a>
+		</div>
+		<div class="cont-right"></div>
+	</div>
+</section>
+
+<!-- live streaming -->
+<section class="section-7" ng-style="{'background-image':'url('+imgUrl+'bgs/bar.jpg)'}">
+	<div id="subsection1">
+		<div class="cont__texts">
+			<h3 class="subtitle" translate="s8_subtitle"></h3>
+			<h2 class="title" translate="s8_title"></h2>
+			<p class="desc" translate="s8_desc"></p>
+		</div>
+		<div class="container">
+			<div id="step1" ng-show="user.isLogin !== true">
+				<div class="s__col1">
+					<p translate="s8_notice_title"></p>
+				</div>
+				<div class="s__col2">
+					<a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs80"
+					   translate="sign-in"></a>
+				</div>
+				<div class="s__col3">
+					<a href="https://www.papayaplay.com/account/signup.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs80" class="create--btn" translate="create-account"></a>
+				</div>
+			</div>
+
+			<div id="step2" ng-show="user.isLogin === true && event.userData.UserData.length === 0">
+				<div class="subtitle text-center">Please choose a country to support</div>
+				<div class="row">
+					<div class="col1">
+						<div class="flag-wrapper" ng-repeat="flag in flags">
+							<img ng-src="{{imgUrl}}section5/subsection1/flags/{{flag.url}}"
+							     ng-click="selectCountry(user.unid, flag.code)">
+						</div>
+					</div>
+					<div class="col2">
+						<div><span>{{ user.userid }}</span> <img
+								ng-src="{{imgUrl}}section5/subsection1/flags/none.png" class="mg-left-20"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="step3"
+			     ng-show="user.isLogin === true && event.userData.UserData.length > 0 && event.userData.UserData[0].CountryCode !== ''">
+				<div class="subtitle text-center">These are all your medals</div>
+				<div class="row">
+					<div class="col1">
+						<div><img
+								ng-src="{{imgUrl}}section5/subsection1/flags/{{ event.userData.UserData[0].CountryCode }}.png"
+								class="mg-left-20"><span>{{ convert2name(event.userData.UserData[0].CountryCode) }}</span>
+						</div>
+					</div>
+					<div class="col2">
+						<div class="gold">{{ event.userData.UserData[0].Gold }}</div>
+						<div class="silver">{{ event.userData.UserData[0].Silver }}</div>
+						<div class="bronze">{{ event.userData.UserData[0].Bronze }}</div>
+					</div>
+					<div class="col3">
+						<div><img ng-src="https://blackshotupload.s3.amazonaws.com/{{user.photo}}"
+						          class="img-circle"><span>{{ user.userid }}</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subsection2">
+		<div class="container">
+			<h3 class="text-center" translate="s8_table_title"
+			    ng-show="user.isLogin === true && event.userData.UserData.length > 0 && event.userData.UserData[0].CountryCode !== ''"></h3>
+			<table class="table table-hover"
+			       ng-show="user.isLogin === true && event.userData.UserData.length > 0 && event.userData.UserData[0].CountryCode !== ''">
+				<thead>
+				<th translate="common_place"></th>
+				<th translate="common_country"></th>
+				<th><img preload-image ng-src="{{imgUrl}}section5/subsection2/gold.png"></th>
+				<th><img preload-image ng-src="{{imgUrl}}section5/subsection2/silver.png"></th>
+				<th><img preload-image ng-src="{{imgUrl}}section5/subsection2/bronze.png"></th>
+				<th translate="common_totalpts"></th>
+				</thead>
+				<tbody>
+				<tr ng-repeat="record in event.userData.RankData"
+				    ng-class="{ 'highlighted': event.userData.UserData[0].CountryCode === record.CountryCode }">
+					<td ng-class="{ 'red': record.RNUM === 1 }">{{ record.RNUM }}</td>
+					<td><img ng-src="{{imgUrl}}section5/subsection2/flags/{{ record.CountryCode }}.png">
+						<p>{{ convert2name(record.CountryCode) }}</p></td>
+					<td>{{ record.Gold | number: 0 }}</td>
+					<td>{{ record.Silver | number: 0 }}</td>
+					<td>{{ record.Bronze | number: 0 }}</td>
+					<td>{{ record.Gold * 10 + record.Silver * 5 + record.Bronze * 1 | number: 0}}</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<div class="img--logo">
+				<img ng-src="{{imgUrl}}medals-section/lunar-games.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="subsection3">
+		<div class="container-fluid">
+			<div class="container">
+				<img preload-image ng-src="{{imgUrl}}medals-section/medals.png" class="center-block"
+				     style="max-width: 70%;">
+
+				<div class="date-container center-block">
+					<i class="icon-calendar"></i>
+					<p translate="s8_date"></p>
+				</div>
+				<div class="text-container text-container1">
+					<img preload-image ng-src="{{imgUrl}}section5/subsection3/step1.png">
+					<h4 translate="s8_title_rule1"></h4>
+					<p translate="s8_desc_rule1"></p>
+				</div>
+				<div class="text-container text-container2">
+					<img preload-image ng-src="{{imgUrl}}section5/subsection3/step2.png">
+					<h4 translate="s8_title_rule2"></h4>
+					<p translate="s8_desc_rule2"></p>
+				</div>
+				<div class="text-container text-container3">
+					<img preload-image ng-src="{{imgUrl}}section5/subsection3/step3.png">
+					<h4 translate="s8_title_rule3"></h4>
+					<p translate="s8_desc_rule3"></p>
+				</div>
+
+				<h6 class="mid--title center-block" translate="s8_point_subtitle"></h6>
+				<img ng-src="{{imgUrl}}medals-section/medal-points.png" class="center-block pad-top-30">
+				<div class="notice--title" translate="s8_point_notice1"></div>
+
+				<img ng-src="{{imgUrl}}section5/subsection3/rewards.png" class="center-block">
+				<h5 class="text-uppercase text-center" translate="rewards" style="margin-top:10px;margin-bottom: 10px;"></h5>
+
+				<div class="rate--row">
+					<div class="r--col col1">
+						<img ng-src="{{imgUrl}}section5/subsection3/trophy-silver.png" class="center-block">
+						<div class="wrap--box">
+							<div class="rate--box"><p class="big-text">2</p>
+								<p class="small-text">nd</p></div>
+							<div class="rank" translate="common_2nd_country"></div>
+							<div class="com-prize" translate="common_prize"></div>
+							<div class="prize">15 Winter Game Lucky Boxes<br>New Arctic Package 7 Days<br>Silver Trophy 30 Days
+							</div>
+						</div>
+
+					</div>
+					<div class="r--col col2">
+						<img ng-src="{{imgUrl}}section5/subsection3/trophy-gold.png" class="center-block">
+						<div class="wrap--box">
+							<div class="rate--box"><p class="big-text">1</p>
+								<p class="small-text">st</p></div>
+							<div class="rank" translate="common_1st_country"></div>
+							<div class="com-prize" translate="common_prize"></div>
+							<div class="prize">20 Winter Game Lucky Boxes<br>New Arctic Package 7 Days<br>Gold Trophy 30 Days
+							</div>
+						</div>
+					</div>
+					<div class="r--col col3">
+						<img ng-src="{{imgUrl}}section5/subsection3/trophy-bronze.png" class="center-block">
+						<div class="wrap--box">
+							<div class="rate--box"><p class="big-text">3</p>
+								<p class="small-text">rd</p></div>
+							<div class="rank" translate="common_3rd_country"></div>
+							<div class="com-prize" translate="common_prize"></div>
+							<div class="prize">5 Winter Game Lucky Boxes<br>New Arctic Package 7 Days<br>Bronze Trophy 30 Days
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<img ng-src="{{imgUrl}}section5/subsection3/trophy.png" class="reward--icon center-block">
+
+				<div class="rate--row">
+					<div class="r--col col4">
+						<div class="wrap--box">
+							<div class="rate--box"><p class="big-text">4</p>
+								<p class="small-text">th</p></div>
+							<div class="rank" translate="common_4th_country"></div>
+							<div class="com-prize" translate="common_prize"></div>
+							<div class="prize">1 Winter Game Lucky Box<br>New Arctic Package 7 Days</div>
+						</div>
+
+					</div>
+					<div class="r--col col4">
+						<div class="wrap--box">
+							<div class="rate--box"><p class="big-text">5</p>
+								<p class="small-text">th</p></div>
+							<div class="rank" translate="common_5th_country"></div>
+							<div class="com-prize" translate="common_prize"></div>
+							<div class="prize">1 Winter Game Lucky Box<br>New Arctic Package 7 Days</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="luckybox--cont center-block">
+					<div class="cont__left"><img ng-src="{{imgUrl}}medals-section/boxes.png" alt=""></div>
+					<div class="cont__right">
+						<h2 class="title">Winter Games Lucky Box</h2>
+						<p class="desc" translate="s8_point_notice2"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-8" ng-style="{'background-image':'url('+imgUrl+'bgs/marathon-bg.jpg)'}">
+	<img ng-src="{{imgUrl}}bgs/marathon-chars.png" id="sil" class="center-block">
+	<div class="container">
+		<div class="title" translate="s9_title"></div>
+		<div id="gauge">
+			<div id="before-login" ng-show="user.isLogin !== true">
+				<div class="top__text" translate="common_youlogin"></div>
+				<a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs80"><span>Sign in</span></a>
+			</div>
+			<div id="after-login" ng-show="user.isLogin === true">
+				<div class="afterlogin__wrap">
+					<div class="top__text" translate="common_remaining"></div>
+					<h2 class="time__text">{{ event.playTime | time }}</h2>
+					<div class="bt__text" translate="common_tocomplete"></div>
+				</div>
+				<round-progress
+						max="3600"
+						current="event.playTime"
+						color="#fff"
+						bgcolor="rgba(255,255,255,0.4)"
+						radius="110"
+						stroke="15"
+						semi="false"
+						rounded="true"
+						clockwise="true"
+						responsive="false"
+						duration="800"
+						animation="easeInOutQuart"
+						animation-delay="0">
+				</round-progress>
+			</div>
+		</div>
+
+		<div class="objective--cont">
+			<h3 class="subtitle" translate="s9_timeloop_subtitle1"></h3>
+			<h2 class="title" translate="s9_timeloop_title1"></h2>
+			<p class="desc" translate="s9_timeloop_desc1"></p>
+			<div class="items--cont">
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/60h.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="objective"></h5>
+					<h6 class="desc" translate="s9_objective1"></h6>
+				</div>
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/prizeak47.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="prizes"></h5>
+					<h6 class="desc">ak47 snow 7 days</h6>
+				</div>
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/calendar.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="date"></h5>
+					<h6 class="desc" translate="s9_date1"></h6>
+				</div>
+			</div>
+		</div>
+		<div class="objective--cont">
+			<h3 class="subtitle" translate="s9_timeloop_subtitle2"></h3>
+			<h2 class="title" translate="s9_timeloop_title2"></h2>
+			<p class="desc" translate="s9_timeloop_desc2"></p>
+			<div class="items--cont">
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/50kills.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="objective"></h5>
+					<h6 class="desc" translate="s9_objective2"></h6>
+				</div>
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/prize2.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="prizes"></h5>
+					<h6 class="desc">AWP Spectre 7 days</h6>
+				</div>
+				<div class="item">
+					<img ng-src="{{imgUrl}}medals-section/calendar.png" class="center-block pad-bot-10">
+					<h5 class="title" translate="date"></h5>
+					<h6 class="desc" translate="s9_date1"></h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	AOS.init({
+		offset: -500,
+		duration: 1000,
+		delay: 100
+	});
+	$(document).ready(function () {
+		$('.various').fancybox({
+			maxWidth    : 800,
+			maxHeight   : 600,
+			fitToView   : false,
+			width       : '70%',
+			height      : '70%',
+			autoSize    : false,
+			closeClick  : false,
+			openEffect  : 'none',
+			closeEffect : 'none'
+		});
+		$('.section3-carousel').carousel({
+			carouselHeight: 200,
+			frontWidth: 360,
+			frontHeight: 200,
+			hMargin: 0.6,
+			backZoom: 0.8,
+			directionNav: false,
+			autoplay: true
+		});
+
+		$('.section4-carousel').carousel({
+			carouselHeight: 200,
+			frontWidth: 360,
+			frontHeight: 200,
+			hMargin: 0.6,
+			backZoom: 0.8,
+			directionNav: false,
+			autoplay: true
+		});
+	});
+</script>
+<footer id="footer">
+	<div class="container">
+		<div class="flex-align-items flex-justify-between flex-container">
+			<div class="item1">
+				<a href="{{pathUrl[4].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+				                                  style="width:142px;"></a>
+			</div>
+			<div class="item2">
+				<p class="copyright">{{ 'copyright' | translate }}</p>
+			</div>
+			<div class="item3">
+				<a href="{{pathUrl[5].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+				                                  style="width:161px;"></a>
+			</div>
+		</div>
+	</div>
+</footer>

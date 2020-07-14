@@ -1,0 +1,1505 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+/* line 3, ../../../app/assets/styles/scss/_global.scss */
+.flex-default, .btn1, .btn2, .g-slick-carousel .slick-dots, .hr-title, #top-nav ul, #logo-top .top-nav, #logo-top .top-nav .navlink, #logo-top .top-nav .language-bar, #logo-top .top-nav .language-bar .dropdown-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 9, ../../../app/assets/styles/scss/_global.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 15, ../../../app/assets/styles/scss/_global.scss */
+.btn1 {
+  width: 160px;
+  height: 40px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-size: 1.5rem;
+}
+/* line 28, ../../../app/assets/styles/scss/_global.scss */
+.btn1:hover, .btn1:focus {
+  background-color: #f6a623;
+  border-color: #f6a623;
+  color: #fff;
+}
+
+/* line 35, ../../../app/assets/styles/scss/_global.scss */
+.btn2 {
+  width: 120px;
+  height: 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+/* line 42, ../../../app/assets/styles/scss/_global.scss */
+.btn2 span {
+  font-size: 1rem;
+  font-family: "Glegoo", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+/* line 49, ../../../app/assets/styles/scss/_global.scss */
+.btn2:hover, .btn2:focus {
+  background-color: #f6a623;
+  color: #fff;
+}
+
+/* line 55, ../../../app/assets/styles/scss/_global.scss */
+.color1 {
+  color: #f6a623;
+}
+
+/* line 59, ../../../app/assets/styles/scss/_global.scss */
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-size: cover;
+}
+
+/* line 69, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-dots {
+  margin-top: 35px;
+}
+/* line 73, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-dots .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #666;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+/* line 81, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-dots .dot:hover, .g-slick-carousel .slick-dots .dot:focus {
+  background-color: #fff;
+}
+/* line 87, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-dots .slick-active .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+/* line 95, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-arrow {
+  position: absolute;
+  top: 35%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 5rem;
+}
+/* line 101, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-arrow.icon-arrow1 {
+  left: 50px;
+}
+/* line 104, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-arrow.icon-arrow2 {
+  right: 50px;
+}
+/* line 107, ../../../app/assets/styles/scss/_global.scss */
+.g-slick-carousel .slick-arrow:hover, .g-slick-carousel .slick-arrow:focus {
+  color: #f6a623;
+}
+
+/* line 113, ../../../app/assets/styles/scss/_global.scss */
+.hr-title {
+  height: 30px;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+/* line 120, ../../../app/assets/styles/scss/_global.scss */
+.hr-title hr {
+  width: 200px;
+  height: 3px;
+  border: none;
+}
+/* line 125, ../../../app/assets/styles/scss/_global.scss */
+.hr-title hr:first-child {
+  background: linear-gradient(to right, transparent 0%, white 100%);
+}
+/* line 129, ../../../app/assets/styles/scss/_global.scss */
+.hr-title hr:last-child {
+  background: linear-gradient(to left, transparent 0%, white 100%);
+}
+/* line 134, ../../../app/assets/styles/scss/_global.scss */
+.hr-title h3 {
+  padding-top: 0 !important;
+}
+
+/* line 139, ../../../app/assets/styles/scss/_global.scss */
+.invisible {
+  display: none;
+}
+
+/* line 141, ../../../app/assets/styles/scss/_global.scss */
+.visible {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url("fonts/Glyphter.eot");
+  src: url("fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("fonts/Glyphter.woff") format("woff"), url("fonts/Glyphter.ttf") format("truetype"), url("fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 12, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='icon-']:before {
+  display: inline-block;
+  font-family: 'Glyphter';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 22, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-castle:before {
+  content: '\0041';
+}
+
+/* line 23, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-r:before {
+  content: '\0042';
+}
+
+/* line 24, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-l:before {
+  content: '\0043';
+}
+
+/* line 25, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-triangle:before {
+  content: '\0044';
+}
+
+/* line 26, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-circle:before {
+  content: '\0045';
+}
+
+/* line 27, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-square:before {
+  content: '\0046';
+}
+
+/* line 5, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 10, ../../../app/assets/styles/main.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 14, ../../../app/assets/styles/main.scss */
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #DCDCDC;
+  line-height: 1.3em;
+  font-weight: 300;
+  min-width: 1100px;
+}
+
+/* line 26, ../../../app/assets/styles/main.scss */
+h2, h3, h4, p {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* line 31, ../../../app/assets/styles/main.scss */
+h1 {
+  font-family: "Glegoo", sans-serif;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+/* line 40, ../../../app/assets/styles/main.scss */
+h4 {
+  color: #DCDCDC;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-weight: 700;
+}
+
+/* line 47, ../../../app/assets/styles/main.scss */
+h2 {
+  color: #f6a623;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* line 54, ../../../app/assets/styles/main.scss */
+p {
+  color: #DCDCDC;
+  font-size: 15px;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+/* line 62, ../../../app/assets/styles/main.scss */
+h3 {
+  color: #999999;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+/* line 70, ../../../app/assets/styles/main.scss */
+a {
+  font-family: "Roboto Condensed", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* line 75, ../../../app/assets/styles/main.scss */
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+/* line 80, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 85, ../../../app/assets/styles/main.scss */
+figcaption {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -17px;
+}
+
+/* line 95, ../../../app/assets/styles/main.scss */
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #000;
+}
+/* line 102, ../../../app/assets/styles/main.scss */
+#top-nav ul {
+  height: 50px;
+  justify-content: space-around;
+  margin: 0;
+}
+/* line 108, ../../../app/assets/styles/main.scss */
+#top-nav ul li a {
+  font-size: 1.6rem;
+  color: #f6a623;
+  font-family: "Glegoo", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 13px;
+}
+/* line 116, ../../../app/assets/styles/main.scss */
+#top-nav ul li a:hover, #top-nav ul li a:focus, #top-nav ul li a.active {
+  border-bottom: 2px solid #f6a623;
+}
+/* line 121, ../../../app/assets/styles/main.scss */
+#top-nav ul li:nth-child(4) {
+  line-height: 0;
+}
+/* line 125, ../../../app/assets/styles/main.scss */
+#top-nav ul li i {
+  font-size: 3.5rem;
+  line-height: 0;
+}
+
+/* line 133, ../../../app/assets/styles/main.scss */
+#logo-top {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+/* line 139, ../../../app/assets/styles/main.scss */
+#logo-top .container {
+  position: relative;
+}
+/* line 143, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav {
+  justify-content: space-between;
+  height: 90px;
+  font-size: 0.9em;
+}
+/* line 149, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .navlink, #logo-top .top-nav .language-bar {
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 154, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .navlink a, #logo-top .top-nav .language-bar a {
+  font-size: 1.4rem;
+}
+/* line 156, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .navlink a:hover, #logo-top .top-nav .navlink a:focus, #logo-top .top-nav .language-bar a:hover, #logo-top .top-nav .language-bar a:focus {
+  color: #DCDCDC;
+}
+/* line 162, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .navlink {
+  width: 170px;
+}
+/* line 167, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown {
+  width: 160px;
+  padding-left: 30px;
+}
+/* line 171, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0;
+  padding-left: 17px;
+  top: 28px;
+}
+/* line 177, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown-menu li {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 5px 0;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* line 186, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown-menu li span:first-child {
+  width: 20%;
+  text-align: right;
+}
+/* line 190, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown-menu li span:last-child {
+  width: 80%;
+  padding-left: 10px;
+}
+/* line 195, ../../../app/assets/styles/main.scss */
+#logo-top .top-nav .language-bar .dropdown-menu li:hover, #logo-top .top-nav .language-bar .dropdown-menu li:focus {
+  background-color: #DCDCDC;
+}
+/* line 203, ../../../app/assets/styles/main.scss */
+#logo-top .logo-wrapper {
+  padding-bottom: 90px;
+}
+/* line 205, ../../../app/assets/styles/main.scss */
+#logo-top .logo-wrapper li:first-child {
+  text-align: center;
+  margin: 0 auto;
+}
+/* line 209, ../../../app/assets/styles/main.scss */
+#logo-top .logo-wrapper li:last-child {
+  text-align: center;
+  margin: 40px auto;
+}
+
+/* line 216, ../../../app/assets/styles/main.scss */
+#section1, #section2, #section3, #section4, #section5, #section7, #section8, #section9 {
+  position: relative;
+}
+
+/* line 220, ../../../app/assets/styles/main.scss */
+#section1 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section1/section1-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+}
+/* line 229, ../../../app/assets/styles/main.scss */
+#section1 .container {
+  text-align: center;
+  position: relative;
+}
+/* line 234, ../../../app/assets/styles/main.scss */
+#section1 .container h2 {
+  margin: 10px auto;
+}
+/* line 237, ../../../app/assets/styles/main.scss */
+#section1 .container h1 {
+  margin: 10px auto;
+}
+/* line 240, ../../../app/assets/styles/main.scss */
+#section1 .container p {
+  padding-top: 30px;
+  margin: 10px auto;
+  width: 80%;
+}
+/* line 246, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs {
+  padding-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid #979797;
+}
+/* line 251, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs li {
+  padding-left: 20px;
+  padding-right: 20px;
+  float: none;
+  display: inline-block;
+  border-bottom: none;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */
+}
+/* line 260, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+  margin-right: 0;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  border-bottom: transparent;
+}
+/* line 269, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs li a:hover {
+  color: #f6a623;
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+/* line 278, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs li.active {
+  border-top: 1px solid #979797;
+  border-bottom: transparent;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  z-index: 100;
+  background-color: #111111;
+}
+/* line 285, ../../../app/assets/styles/main.scss */
+#section1 .container .nav-tabs li.active a {
+  color: #fff;
+  border: none !important;
+}
+/* line 294, ../../../app/assets/styles/main.scss */
+#section1 .tab-content {
+  background-color: #111111;
+  height: 450px;
+}
+/* line 298, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane {
+  padding-top: 25px;
+}
+/* line 300, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane .container {
+  width: 98%;
+}
+/* line 303, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane .row {
+  position: absolute;
+  bottom: 62px;
+  width: 100%;
+}
+/* line 307, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane .row img {
+  width: 100%;
+  height: 365px;
+}
+/* line 313, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane #arrows0, #section1 .tab-content .tab-pane #arrows1, #section1 .tab-content .tab-pane #arrows2 {
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 320, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane #arrows0 .slick-prev0, #section1 .tab-content .tab-pane #arrows0 .slick-next0,
+#section1 .tab-content .tab-pane #arrows0 .slick-prev1, #section1 .tab-content .tab-pane #arrows0 .slick-next1,
+#section1 .tab-content .tab-pane #arrows0 .slick-prev2, #section1 .tab-content .tab-pane #arrows0 .slick-next2, #section1 .tab-content .tab-pane #arrows1 .slick-prev0, #section1 .tab-content .tab-pane #arrows1 .slick-next0,
+#section1 .tab-content .tab-pane #arrows1 .slick-prev1, #section1 .tab-content .tab-pane #arrows1 .slick-next1,
+#section1 .tab-content .tab-pane #arrows1 .slick-prev2, #section1 .tab-content .tab-pane #arrows1 .slick-next2, #section1 .tab-content .tab-pane #arrows2 .slick-prev0, #section1 .tab-content .tab-pane #arrows2 .slick-next0,
+#section1 .tab-content .tab-pane #arrows2 .slick-prev1, #section1 .tab-content .tab-pane #arrows2 .slick-next1,
+#section1 .tab-content .tab-pane #arrows2 .slick-prev2, #section1 .tab-content .tab-pane #arrows2 .slick-next2 {
+  position: relative;
+  bottom: -13px;
+  right: 30px;
+  padding-left: 20px;
+  float: right;
+  font-size: 1em;
+}
+/* line 331, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane #arrows0 #title0, #section1 .tab-content .tab-pane #arrows0 #title1, #section1 .tab-content .tab-pane #arrows0 #title2, #section1 .tab-content .tab-pane #arrows1 #title0, #section1 .tab-content .tab-pane #arrows1 #title1, #section1 .tab-content .tab-pane #arrows1 #title2, #section1 .tab-content .tab-pane #arrows2 #title0, #section1 .tab-content .tab-pane #arrows2 #title1, #section1 .tab-content .tab-pane #arrows2 #title2 {
+  position: relative;
+  left: 30px;
+  bottom: -11px;
+}
+/* line 337, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .tab-pane #arrows0 #pageNo0, #section1 .tab-content .tab-pane #arrows0 #pageNo1, #section1 .tab-content .tab-pane #arrows0 #pageNo2, #section1 .tab-content .tab-pane #arrows1 #pageNo0, #section1 .tab-content .tab-pane #arrows1 #pageNo1, #section1 .tab-content .tab-pane #arrows1 #pageNo2, #section1 .tab-content .tab-pane #arrows2 #pageNo0, #section1 .tab-content .tab-pane #arrows2 #pageNo1, #section1 .tab-content .tab-pane #arrows2 #pageNo2 {
+  position: relative;
+  float: right;
+  bottom: -11px;
+  right: 20px;
+}
+/* line 345, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default, #section1 .tab-content .btn1, #section1 .tab-content .btn2, #section1 .tab-content .g-slick-carousel .slick-dots, .g-slick-carousel #section1 .tab-content .slick-dots, #section1 .tab-content .hr-title, #section1 .tab-content #top-nav ul, #top-nav #section1 .tab-content ul, #section1 .tab-content #logo-top .top-nav, #logo-top #section1 .tab-content .top-nav, #section1 .tab-content #logo-top .top-nav .navlink, #logo-top .top-nav #section1 .tab-content .navlink, #section1 .tab-content #logo-top .top-nav .language-bar, #logo-top .top-nav #section1 .tab-content .language-bar, #section1 .tab-content #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li {
+  text-align: left;
+  padding: 20px;
+}
+/* line 349, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default .col1, #section1 .tab-content .btn1 .col1, #section1 .tab-content .btn2 .col1, #section1 .tab-content .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section1 .tab-content .slick-dots .col1, #section1 .tab-content .hr-title .col1, #section1 .tab-content #top-nav ul .col1, #top-nav #section1 .tab-content ul .col1, #section1 .tab-content #logo-top .top-nav .col1, #logo-top #section1 .tab-content .top-nav .col1, #logo-top .top-nav #section1 .tab-content .navlink .col1, #logo-top .top-nav #section1 .tab-content .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li .col1 {
+  padding-right: 140px;
+}
+/* line 352, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default .col1 h4, #section1 .tab-content .btn1 .col1 h4, #section1 .tab-content .btn2 .col1 h4, #section1 .tab-content .g-slick-carousel .slick-dots .col1 h4, .g-slick-carousel #section1 .tab-content .slick-dots .col1 h4, #section1 .tab-content .hr-title .col1 h4, #section1 .tab-content #top-nav ul .col1 h4, #top-nav #section1 .tab-content ul .col1 h4, #section1 .tab-content #logo-top .top-nav .col1 h4, #logo-top #section1 .tab-content .top-nav .col1 h4, #logo-top .top-nav #section1 .tab-content .navlink .col1 h4, #logo-top .top-nav #section1 .tab-content .language-bar .col1 h4, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li .col1 h4 {
+  padding-top: 0px;
+}
+/* line 355, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default .col1 p, #section1 .tab-content .btn1 .col1 p, #section1 .tab-content .btn2 .col1 p, #section1 .tab-content .g-slick-carousel .slick-dots .col1 p, .g-slick-carousel #section1 .tab-content .slick-dots .col1 p, #section1 .tab-content .hr-title .col1 p, #section1 .tab-content #top-nav ul .col1 p, #top-nav #section1 .tab-content ul .col1 p, #section1 .tab-content #logo-top .top-nav .col1 p, #logo-top #section1 .tab-content .top-nav .col1 p, #logo-top .top-nav #section1 .tab-content .navlink .col1 p, #logo-top .top-nav #section1 .tab-content .language-bar .col1 p, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li .col1 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 360, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default .col2, #section1 .tab-content .btn1 .col2, #section1 .tab-content .btn2 .col2, #section1 .tab-content .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section1 .tab-content .slick-dots .col2, #section1 .tab-content .hr-title .col2, #section1 .tab-content #top-nav ul .col2, #top-nav #section1 .tab-content ul .col2, #section1 .tab-content #logo-top .top-nav .col2, #logo-top #section1 .tab-content .top-nav .col2, #logo-top .top-nav #section1 .tab-content .navlink .col2, #logo-top .top-nav #section1 .tab-content .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li .col2 {
+  padding-top: 15px;
+  padding-right: 20px;
+  margin: auto 0px;
+}
+/* line 364, ../../../app/assets/styles/main.scss */
+#section1 .tab-content .flex-default .col2 img, #section1 .tab-content .btn1 .col2 img, #section1 .tab-content .btn2 .col2 img, #section1 .tab-content .g-slick-carousel .slick-dots .col2 img, .g-slick-carousel #section1 .tab-content .slick-dots .col2 img, #section1 .tab-content .hr-title .col2 img, #section1 .tab-content #top-nav ul .col2 img, #top-nav #section1 .tab-content ul .col2 img, #section1 .tab-content #logo-top .top-nav .col2 img, #logo-top #section1 .tab-content .top-nav .col2 img, #logo-top .top-nav #section1 .tab-content .navlink .col2 img, #logo-top .top-nav #section1 .tab-content .language-bar .col2 img, #logo-top .top-nav .language-bar .dropdown-menu #section1 .tab-content li .col2 img {
+  width: 100%;
+}
+/* line 371, ../../../app/assets/styles/main.scss */
+#section1 .btn1 {
+  margin: 50px auto;
+}
+/* line 374, ../../../app/assets/styles/main.scss */
+#section1 .container-arrow {
+  width: 1040px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1000;
+  top: -245px;
+}
+/* line 380, ../../../app/assets/styles/main.scss */
+#section1 .container-arrow .div-arrow-left, #section1 .container-arrow .div-arrow-right {
+  font-size: 2em;
+}
+/* line 382, ../../../app/assets/styles/main.scss */
+#section1 .container-arrow .div-arrow-left:hover, #section1 .container-arrow .div-arrow-right:hover {
+  color: #f6a623;
+}
+/* line 386, ../../../app/assets/styles/main.scss */
+#section1 .container-arrow .div-arrow-left {
+  float: left;
+  padding-left: 20px;
+}
+/* line 390, ../../../app/assets/styles/main.scss */
+#section1 .container-arrow .div-arrow-right {
+  float: right;
+}
+
+/* line 397, ../../../app/assets/styles/main.scss */
+#section2 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section2/section2-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+  padding-bottom: 80px;
+}
+/* line 404, ../../../app/assets/styles/main.scss */
+#section2 .container {
+  text-align: center;
+}
+/* line 406, ../../../app/assets/styles/main.scss */
+#section2 .container h1 {
+  padding-top: 60px;
+}
+/* line 409, ../../../app/assets/styles/main.scss */
+#section2 .container p {
+  padding-top: 120px;
+  margin: 10px auto;
+  width: 76%;
+}
+/* line 415, ../../../app/assets/styles/main.scss */
+#section2 .flex-default, #section2 .btn1, #section2 .btn2, #section2 .g-slick-carousel .slick-dots, .g-slick-carousel #section2 .slick-dots, #section2 .hr-title, #section2 #top-nav ul, #top-nav #section2 ul, #section2 #logo-top .top-nav, #logo-top #section2 .top-nav, #section2 #logo-top .top-nav .navlink, #logo-top .top-nav #section2 .navlink, #section2 #logo-top .top-nav .language-bar, #logo-top .top-nav #section2 .language-bar, #section2 #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section2 li {
+  padding-top: 50px;
+  text-align: left;
+}
+/* line 418, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col1, #section2 .btn1 .col1, #section2 .btn2 .col1, #section2 .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section2 .slick-dots .col1, #section2 .hr-title .col1, #section2 #top-nav ul .col1, #top-nav #section2 ul .col1, #section2 #logo-top .top-nav .col1, #logo-top #section2 .top-nav .col1, #logo-top .top-nav #section2 .navlink .col1, #logo-top .top-nav #section2 .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col1 {
+  width: 25%;
+}
+/* line 421, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2, #section2 .btn1 .col2, #section2 .btn2 .col2, #section2 .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section2 .slick-dots .col2, #section2 .hr-title .col2, #section2 #top-nav ul .col2, #top-nav #section2 ul .col2, #section2 #logo-top .top-nav .col2, #logo-top #section2 .top-nav .col2, #logo-top .top-nav #section2 .navlink .col2, #logo-top .top-nav #section2 .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 {
+  width: 75%;
+}
+/* line 423, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2 .tab-pane, #section2 .btn1 .col2 .tab-pane, #section2 .btn2 .col2 .tab-pane, #section2 .g-slick-carousel .slick-dots .col2 .tab-pane, .g-slick-carousel #section2 .slick-dots .col2 .tab-pane, #section2 .hr-title .col2 .tab-pane, #section2 #top-nav ul .col2 .tab-pane, #top-nav #section2 ul .col2 .tab-pane, #section2 #logo-top .top-nav .col2 .tab-pane, #logo-top #section2 .top-nav .col2 .tab-pane, #logo-top .top-nav #section2 .navlink .col2 .tab-pane, #logo-top .top-nav #section2 .language-bar .col2 .tab-pane, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 .tab-pane {
+  height: 612px;
+  padding-left: 20px;
+}
+/* line 429, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2 .tab-pane h2, #section2 .btn1 .col2 .tab-pane h2, #section2 .btn2 .col2 .tab-pane h2, #section2 .g-slick-carousel .slick-dots .col2 .tab-pane h2, .g-slick-carousel #section2 .slick-dots .col2 .tab-pane h2, #section2 .hr-title .col2 .tab-pane h2, #section2 #top-nav ul .col2 .tab-pane h2, #top-nav #section2 ul .col2 .tab-pane h2, #section2 #logo-top .top-nav .col2 .tab-pane h2, #logo-top #section2 .top-nav .col2 .tab-pane h2, #logo-top .top-nav #section2 .navlink .col2 .tab-pane h2, #logo-top .top-nav #section2 .language-bar .col2 .tab-pane h2, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 .tab-pane h2 {
+  padding-top: 30px;
+}
+/* line 432, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2 .tab-pane p, #section2 .btn1 .col2 .tab-pane p, #section2 .btn2 .col2 .tab-pane p, #section2 .g-slick-carousel .slick-dots .col2 .tab-pane p, .g-slick-carousel #section2 .slick-dots .col2 .tab-pane p, #section2 .hr-title .col2 .tab-pane p, #section2 #top-nav ul .col2 .tab-pane p, #top-nav #section2 ul .col2 .tab-pane p, #section2 #logo-top .top-nav .col2 .tab-pane p, #logo-top #section2 .top-nav .col2 .tab-pane p, #logo-top .top-nav #section2 .navlink .col2 .tab-pane p, #logo-top .top-nav #section2 .language-bar .col2 .tab-pane p, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 .tab-pane p {
+  padding-top: 30px;
+  width: 100%;
+}
+/* line 436, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2 .tab-pane .map-wrap, #section2 .btn1 .col2 .tab-pane .map-wrap, #section2 .btn2 .col2 .tab-pane .map-wrap, #section2 .g-slick-carousel .slick-dots .col2 .tab-pane .map-wrap, .g-slick-carousel #section2 .slick-dots .col2 .tab-pane .map-wrap, #section2 .hr-title .col2 .tab-pane .map-wrap, #section2 #top-nav ul .col2 .tab-pane .map-wrap, #top-nav #section2 ul .col2 .tab-pane .map-wrap, #section2 #logo-top .top-nav .col2 .tab-pane .map-wrap, #logo-top #section2 .top-nav .col2 .tab-pane .map-wrap, #logo-top .top-nav #section2 .navlink .col2 .tab-pane .map-wrap, #logo-top .top-nav #section2 .language-bar .col2 .tab-pane .map-wrap, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 .tab-pane .map-wrap {
+  padding-top: 60px;
+}
+/* line 439, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .col2 .tab-pane .map-wrap span, #section2 .btn1 .col2 .tab-pane .map-wrap span, #section2 .btn2 .col2 .tab-pane .map-wrap span, #section2 .g-slick-carousel .slick-dots .col2 .tab-pane .map-wrap span, .g-slick-carousel #section2 .slick-dots .col2 .tab-pane .map-wrap span, #section2 .hr-title .col2 .tab-pane .map-wrap span, #section2 #top-nav ul .col2 .tab-pane .map-wrap span, #top-nav #section2 ul .col2 .tab-pane .map-wrap span, #section2 #logo-top .top-nav .col2 .tab-pane .map-wrap span, #logo-top #section2 .top-nav .col2 .tab-pane .map-wrap span, #logo-top .top-nav #section2 .navlink .col2 .tab-pane .map-wrap span, #logo-top .top-nav #section2 .language-bar .col2 .tab-pane .map-wrap span, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .col2 .tab-pane .map-wrap span {
+  color: #f6a623;
+  font-size: 20px;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+/* line 448, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills, #section2 .btn1 .nav-pills, #section2 .btn2 .nav-pills, #section2 .g-slick-carousel .slick-dots .nav-pills, .g-slick-carousel #section2 .slick-dots .nav-pills, #section2 .hr-title .nav-pills, #section2 #top-nav ul .nav-pills, #top-nav #section2 ul .nav-pills, #section2 #logo-top .top-nav .nav-pills, #logo-top #section2 .top-nav .nav-pills, #logo-top .top-nav #section2 .navlink .nav-pills, #logo-top .top-nav #section2 .language-bar .nav-pills, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills {
+  text-align: left;
+}
+/* line 450, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li, #section2 .btn1 .nav-pills li, #section2 .btn2 .nav-pills li, #section2 .g-slick-carousel .slick-dots .nav-pills li, .g-slick-carousel #section2 .slick-dots .nav-pills li, #section2 .hr-title .nav-pills li, #section2 #top-nav ul .nav-pills li, #top-nav #section2 ul .nav-pills li, #section2 #logo-top .top-nav .nav-pills li, #logo-top #section2 .top-nav .nav-pills li, #logo-top .top-nav #section2 .navlink .nav-pills li, #logo-top .top-nav #section2 .language-bar .nav-pills li, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li {
+  padding: 9px;
+  float: none;
+  border-left: 3px solid transparent;
+}
+/* line 454, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li a, #section2 .btn1 .nav-pills li a, #section2 .btn2 .nav-pills li a, #section2 .g-slick-carousel .slick-dots .nav-pills li a, .g-slick-carousel #section2 .slick-dots .nav-pills li a, #section2 .hr-title .nav-pills li a, #section2 #top-nav ul .nav-pills li a, #top-nav #section2 ul .nav-pills li a, #section2 #logo-top .top-nav .nav-pills li a, #logo-top #section2 .top-nav .nav-pills li a, #logo-top .top-nav #section2 .navlink .nav-pills li a, #logo-top .top-nav #section2 .language-bar .nav-pills li a, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* line 459, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li:hover, #section2 .btn1 .nav-pills li:hover, #section2 .btn2 .nav-pills li:hover, #section2 .g-slick-carousel .slick-dots .nav-pills li:hover, .g-slick-carousel #section2 .slick-dots .nav-pills li:hover, #section2 .hr-title .nav-pills li:hover, #section2 #top-nav ul .nav-pills li:hover, #top-nav #section2 ul .nav-pills li:hover, #section2 #logo-top .top-nav .nav-pills li:hover, #logo-top #section2 .top-nav .nav-pills li:hover, #logo-top .top-nav #section2 .navlink .nav-pills li:hover, #logo-top .top-nav #section2 .language-bar .nav-pills li:hover, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li:hover {
+  padding: 9px;
+  border-left: 3px solid #f6a623;
+  background-color: #131313;
+}
+/* line 463, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li:hover a, #section2 .btn1 .nav-pills li:hover a, #section2 .btn2 .nav-pills li:hover a, #section2 .g-slick-carousel .slick-dots .nav-pills li:hover a, .g-slick-carousel #section2 .slick-dots .nav-pills li:hover a, #section2 .hr-title .nav-pills li:hover a, #section2 #top-nav ul .nav-pills li:hover a, #top-nav #section2 ul .nav-pills li:hover a, #section2 #logo-top .top-nav .nav-pills li:hover a, #logo-top #section2 .top-nav .nav-pills li:hover a, #logo-top .top-nav #section2 .navlink .nav-pills li:hover a, #logo-top .top-nav #section2 .language-bar .nav-pills li:hover a, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li:hover a {
+  color: #fff;
+}
+/* line 467, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li.active, #section2 .btn1 .nav-pills li.active, #section2 .btn2 .nav-pills li.active, #section2 .g-slick-carousel .slick-dots .nav-pills li.active, .g-slick-carousel #section2 .slick-dots .nav-pills li.active, #section2 .hr-title .nav-pills li.active, #section2 #top-nav ul .nav-pills li.active, #top-nav #section2 ul .nav-pills li.active, #section2 #logo-top .top-nav .nav-pills li.active, #logo-top #section2 .top-nav .nav-pills li.active, #logo-top .top-nav #section2 .navlink .nav-pills li.active, #logo-top .top-nav #section2 .language-bar .nav-pills li.active, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li.active {
+  border-left: 3px solid #f6a623;
+  z-index: 100;
+  background-color: #131313;
+}
+/* line 471, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .nav-pills li.active a, #section2 .btn1 .nav-pills li.active a, #section2 .btn2 .nav-pills li.active a, #section2 .g-slick-carousel .slick-dots .nav-pills li.active a, .g-slick-carousel #section2 .slick-dots .nav-pills li.active a, #section2 .hr-title .nav-pills li.active a, #section2 #top-nav ul .nav-pills li.active a, #top-nav #section2 ul .nav-pills li.active a, #section2 #logo-top .top-nav .nav-pills li.active a, #logo-top #section2 .top-nav .nav-pills li.active a, #logo-top .top-nav #section2 .navlink .nav-pills li.active a, #logo-top .top-nav #section2 .language-bar .nav-pills li.active a, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .nav-pills li.active a {
+  color: #fff;
+}
+/* line 477, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .tab-content, #section2 .btn1 .tab-content, #section2 .btn2 .tab-content, #section2 .g-slick-carousel .slick-dots .tab-content, .g-slick-carousel #section2 .slick-dots .tab-content, #section2 .hr-title .tab-content, #section2 #top-nav ul .tab-content, #top-nav #section2 ul .tab-content, #section2 #logo-top .top-nav .tab-content, #logo-top #section2 .top-nav .tab-content, #logo-top .top-nav #section2 .navlink .tab-content, #logo-top .top-nav #section2 .language-bar .tab-content, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .tab-content {
+  padding: 10% 5%;
+  background-color: #131313;
+}
+/* line 480, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .tab-content #section-six-slide, #section2 .btn1 .tab-content #section-six-slide, #section2 .btn2 .tab-content #section-six-slide, #section2 .g-slick-carousel .slick-dots .tab-content #section-six-slide, .g-slick-carousel #section2 .slick-dots .tab-content #section-six-slide, #section2 .hr-title .tab-content #section-six-slide, #section2 #top-nav ul .tab-content #section-six-slide, #top-nav #section2 ul .tab-content #section-six-slide, #section2 #logo-top .top-nav .tab-content #section-six-slide, #logo-top #section2 .top-nav .tab-content #section-six-slide, #logo-top .top-nav #section2 .navlink .tab-content #section-six-slide, #logo-top .top-nav #section2 .language-bar .tab-content #section-six-slide, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .tab-content #section-six-slide {
+  position: relative;
+  padding: 2%;
+}
+/* line 483, ../../../app/assets/styles/main.scss */
+#section2 .flex-default .tab-content #section-six-slide img, #section2 .btn1 .tab-content #section-six-slide img, #section2 .btn2 .tab-content #section-six-slide img, #section2 .g-slick-carousel .slick-dots .tab-content #section-six-slide img, .g-slick-carousel #section2 .slick-dots .tab-content #section-six-slide img, #section2 .hr-title .tab-content #section-six-slide img, #section2 #top-nav ul .tab-content #section-six-slide img, #top-nav #section2 ul .tab-content #section-six-slide img, #section2 #logo-top .top-nav .tab-content #section-six-slide img, #logo-top #section2 .top-nav .tab-content #section-six-slide img, #logo-top .top-nav #section2 .navlink .tab-content #section-six-slide img, #logo-top .top-nav #section2 .language-bar .tab-content #section-six-slide img, #logo-top .top-nav .language-bar .dropdown-menu #section2 li .tab-content #section-six-slide img {
+  width: 98%;
+}
+
+/* line 491, ../../../app/assets/styles/main.scss */
+#section3 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section3/section3-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+  padding-bottom: 80px;
+}
+/* line 498, ../../../app/assets/styles/main.scss */
+#section3 .container {
+  text-align: center;
+}
+/* line 501, ../../../app/assets/styles/main.scss */
+#section3 .container h1 {
+  padding-top: 60px;
+}
+/* line 505, ../../../app/assets/styles/main.scss */
+#section3 .container p {
+  padding-top: 120px;
+  margin: 10px auto;
+  width: 76%;
+}
+/* line 511, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs {
+  padding-top: 40px;
+  text-align: center;
+  border-bottom: 1px solid #979797;
+}
+/* line 515, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs li {
+  float: none;
+  display: inline-block;
+  border-bottom: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */
+}
+/* line 524, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+  margin-right: 0;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  border-bottom: transparent;
+}
+/* line 533, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs li a:hover {
+  color: #f6a623;
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+/* line 542, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs li.active {
+  border-top: 1px solid #979797;
+  border-bottom: transparent;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  z-index: 100;
+  background-color: #080808;
+}
+/* line 549, ../../../app/assets/styles/main.scss */
+#section3 .container .nav-tabs li.active a {
+  color: #fff;
+  border: none !important;
+}
+/* line 556, ../../../app/assets/styles/main.scss */
+#section3 .container .tab-content {
+  background-color: #080808;
+  height: 460px;
+}
+/* line 559, ../../../app/assets/styles/main.scss */
+#section3 .container .tab-content .tab-pane > img {
+  padding-top: 80px;
+  width: 98%;
+}
+/* line 565, ../../../app/assets/styles/main.scss */
+#section3 .container .flex-default, #section3 .container .btn1, #section3 .container .btn2, #section3 .container .g-slick-carousel .slick-dots, .g-slick-carousel #section3 .container .slick-dots, #section3 .container .hr-title, #section3 .container #top-nav ul, #top-nav #section3 .container ul, #section3 .container #logo-top .top-nav, #logo-top #section3 .container .top-nav, #section3 .container #logo-top .top-nav .navlink, #logo-top .top-nav #section3 .container .navlink, #section3 .container #logo-top .top-nav .language-bar, #logo-top .top-nav #section3 .container .language-bar, #section3 .container #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section3 .container li {
+  text-align: left;
+  padding-top: 35px;
+  padding-left: 25px;
+  padding-right: 20px;
+}
+/* line 570, ../../../app/assets/styles/main.scss */
+#section3 .container .flex-default .col1, #section3 .container .btn1 .col1, #section3 .container .btn2 .col1, #section3 .container .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section3 .container .slick-dots .col1, #section3 .container .hr-title .col1, #section3 .container #top-nav ul .col1, #top-nav #section3 .container ul .col1, #section3 .container #logo-top .top-nav .col1, #logo-top #section3 .container .top-nav .col1, #logo-top .top-nav #section3 .container .navlink .col1, #logo-top .top-nav #section3 .container .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section3 .container li .col1 {
+  padding-right: 100px;
+}
+/* line 572, ../../../app/assets/styles/main.scss */
+#section3 .container .flex-default .col1 h4, #section3 .container .btn1 .col1 h4, #section3 .container .btn2 .col1 h4, #section3 .container .g-slick-carousel .slick-dots .col1 h4, .g-slick-carousel #section3 .container .slick-dots .col1 h4, #section3 .container .hr-title .col1 h4, #section3 .container #top-nav ul .col1 h4, #top-nav #section3 .container ul .col1 h4, #section3 .container #logo-top .top-nav .col1 h4, #logo-top #section3 .container .top-nav .col1 h4, #logo-top .top-nav #section3 .container .navlink .col1 h4, #logo-top .top-nav #section3 .container .language-bar .col1 h4, #logo-top .top-nav .language-bar .dropdown-menu #section3 .container li .col1 h4 {
+  padding-top: 0px;
+}
+/* line 575, ../../../app/assets/styles/main.scss */
+#section3 .container .flex-default .col1 p, #section3 .container .btn1 .col1 p, #section3 .container .btn2 .col1 p, #section3 .container .g-slick-carousel .slick-dots .col1 p, .g-slick-carousel #section3 .container .slick-dots .col1 p, #section3 .container .hr-title .col1 p, #section3 .container #top-nav ul .col1 p, #top-nav #section3 .container ul .col1 p, #section3 .container #logo-top .top-nav .col1 p, #logo-top #section3 .container .top-nav .col1 p, #logo-top .top-nav #section3 .container .navlink .col1 p, #logo-top .top-nav #section3 .container .language-bar .col1 p, #logo-top .top-nav .language-bar .dropdown-menu #section3 .container li .col1 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 580, ../../../app/assets/styles/main.scss */
+#section3 .container .flex-default .col2, #section3 .container .btn1 .col2, #section3 .container .btn2 .col2, #section3 .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section3 .container .slick-dots .col2, #section3 .container .hr-title .col2, #section3 .container #top-nav ul .col2, #top-nav #section3 .container ul .col2, #section3 .container #logo-top .top-nav .col2, #logo-top #section3 .container .top-nav .col2, #logo-top .top-nav #section3 .container .navlink .col2, #logo-top .top-nav #section3 .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section3 .container li .col2 {
+  padding-top: 20px;
+  padding-right: 30px;
+  margin: auto 0px;
+}
+/* line 588, ../../../app/assets/styles/main.scss */
+#section3 .btn1 {
+  margin: 30px auto;
+}
+/* line 592, ../../../app/assets/styles/main.scss */
+#section3 .container-arrow {
+  width: 1040px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1000;
+  top: -250px;
+}
+/* line 598, ../../../app/assets/styles/main.scss */
+#section3 .container-arrow .div-arrow-left1, #section3 .container-arrow .div-arrow-right1 {
+  font-size: 2em;
+}
+/* line 600, ../../../app/assets/styles/main.scss */
+#section3 .container-arrow .div-arrow-left1:hover, #section3 .container-arrow .div-arrow-right1:hover {
+  color: #f6a623;
+}
+/* line 604, ../../../app/assets/styles/main.scss */
+#section3 .container-arrow .div-arrow-left1 {
+  float: left;
+  padding-left: 20px;
+}
+/* line 608, ../../../app/assets/styles/main.scss */
+#section3 .container-arrow .div-arrow-right1 {
+  float: right;
+}
+
+/* line 615, ../../../app/assets/styles/main.scss */
+#section4 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section4/section4-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+  padding-bottom: 80px;
+}
+/* line 621, ../../../app/assets/styles/main.scss */
+#section4 .container {
+  text-align: center;
+}
+/* line 623, ../../../app/assets/styles/main.scss */
+#section4 .container h1 {
+  padding-top: 60px;
+}
+/* line 626, ../../../app/assets/styles/main.scss */
+#section4 .container p {
+  padding-top: 100px;
+  margin: 10px auto;
+  width: 85%;
+}
+/* line 632, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs {
+  padding-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid #979797;
+}
+/* line 636, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs li {
+  float: none;
+  display: inline-block;
+  border-bottom: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */
+}
+/* line 645, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+  margin-right: 0;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  border-bottom: transparent;
+}
+/* line 654, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs li a:hover {
+  color: #f6a623;
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+/* line 663, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs li.active {
+  border-top: 1px solid #979797;
+  border-bottom: transparent;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  z-index: 100;
+  background-color: #111111;
+}
+/* line 670, ../../../app/assets/styles/main.scss */
+#section4 .container .nav-tabs li.active a {
+  color: #fff;
+  border: none !important;
+}
+/* line 677, ../../../app/assets/styles/main.scss */
+#section4 .container .tab-content {
+  background-color: #111111;
+  height: 340px;
+}
+/* line 681, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default, #section4 .container .btn1, #section4 .container .btn2, #section4 .container .g-slick-carousel .slick-dots, .g-slick-carousel #section4 .container .slick-dots, #section4 .container .hr-title, #section4 .container #top-nav ul, #top-nav #section4 .container ul, #section4 .container #logo-top .top-nav, #logo-top #section4 .container .top-nav, #section4 .container #logo-top .top-nav .navlink, #logo-top .top-nav #section4 .container .navlink, #section4 .container #logo-top .top-nav .language-bar, #logo-top .top-nav #section4 .container .language-bar, #section4 .container #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li {
+  text-align: left;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+/* line 688, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col1, #section4 .container .btn1 .col1, #section4 .container .btn2 .col1, #section4 .container .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section4 .container .slick-dots .col1, #section4 .container .hr-title .col1, #section4 .container #top-nav ul .col1, #top-nav #section4 .container ul .col1, #section4 .container #logo-top .top-nav .col1, #logo-top #section4 .container .top-nav .col1, #logo-top .top-nav #section4 .container .navlink .col1, #logo-top .top-nav #section4 .container .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col1 {
+  width: 50%;
+}
+/* line 690, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col1 h4, #section4 .container .btn1 .col1 h4, #section4 .container .btn2 .col1 h4, #section4 .container .g-slick-carousel .slick-dots .col1 h4, .g-slick-carousel #section4 .container .slick-dots .col1 h4, #section4 .container .hr-title .col1 h4, #section4 .container #top-nav ul .col1 h4, #top-nav #section4 .container ul .col1 h4, #section4 .container #logo-top .top-nav .col1 h4, #logo-top #section4 .container .top-nav .col1 h4, #logo-top .top-nav #section4 .container .navlink .col1 h4, #logo-top .top-nav #section4 .container .language-bar .col1 h4, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col1 h4 {
+  padding-top: 0px;
+}
+/* line 693, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col1 p, #section4 .container .btn1 .col1 p, #section4 .container .btn2 .col1 p, #section4 .container .g-slick-carousel .slick-dots .col1 p, .g-slick-carousel #section4 .container .slick-dots .col1 p, #section4 .container .hr-title .col1 p, #section4 .container #top-nav ul .col1 p, #top-nav #section4 .container ul .col1 p, #section4 .container #logo-top .top-nav .col1 p, #logo-top #section4 .container .top-nav .col1 p, #logo-top .top-nav #section4 .container .navlink .col1 p, #logo-top .top-nav #section4 .container .language-bar .col1 p, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col1 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 698, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2, #section4 .container .btn1 .col2, #section4 .container .btn2 .col2, #section4 .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section4 .container .slick-dots .col2, #section4 .container .hr-title .col2, #section4 .container #top-nav ul .col2, #top-nav #section4 .container ul .col2, #section4 .container #logo-top .top-nav .col2, #logo-top #section4 .container .top-nav .col2, #logo-top .top-nav #section4 .container .navlink .col2, #logo-top .top-nav #section4 .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 {
+  position: relative;
+  width: 50%;
+}
+/* line 701, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 h1, #section4 .container .btn1 .col2 h1, #section4 .container .btn2 .col2 h1, #section4 .container .g-slick-carousel .slick-dots .col2 h1, .g-slick-carousel #section4 .container .slick-dots .col2 h1, #section4 .container .hr-title .col2 h1, #section4 .container #top-nav ul .col2 h1, #top-nav #section4 .container ul .col2 h1, #section4 .container #logo-top .top-nav .col2 h1, #logo-top #section4 .container .top-nav .col2 h1, #logo-top .top-nav #section4 .container .navlink .col2 h1, #logo-top .top-nav #section4 .container .language-bar .col2 h1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 h1 {
+  padding-top: 0px;
+}
+/* line 704, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 p, #section4 .container .btn1 .col2 p, #section4 .container .btn2 .col2 p, #section4 .container .g-slick-carousel .slick-dots .col2 p, .g-slick-carousel #section4 .container .slick-dots .col2 p, #section4 .container .hr-title .col2 p, #section4 .container #top-nav ul .col2 p, #top-nav #section4 .container ul .col2 p, #section4 .container #logo-top .top-nav .col2 p, #logo-top #section4 .container .top-nav .col2 p, #logo-top .top-nav #section4 .container .navlink .col2 p, #logo-top .top-nav #section4 .container .language-bar .col2 p, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 708, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 .row, #section4 .container .btn1 .col2 .row, #section4 .container .btn2 .col2 .row, #section4 .container .g-slick-carousel .slick-dots .col2 .row, .g-slick-carousel #section4 .container .slick-dots .col2 .row, #section4 .container .hr-title .col2 .row, #section4 .container #top-nav ul .col2 .row, #top-nav #section4 .container ul .col2 .row, #section4 .container #logo-top .top-nav .col2 .row, #logo-top #section4 .container .top-nav .col2 .row, #logo-top .top-nav #section4 .container .navlink .col2 .row, #logo-top .top-nav #section4 .container .language-bar .col2 .row, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 .row {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+}
+/* line 712, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 .row img, #section4 .container .btn1 .col2 .row img, #section4 .container .btn2 .col2 .row img, #section4 .container .g-slick-carousel .slick-dots .col2 .row img, .g-slick-carousel #section4 .container .slick-dots .col2 .row img, #section4 .container .hr-title .col2 .row img, #section4 .container #top-nav ul .col2 .row img, #top-nav #section4 .container ul .col2 .row img, #section4 .container #logo-top .top-nav .col2 .row img, #logo-top #section4 .container .top-nav .col2 .row img, #logo-top .top-nav #section4 .container .navlink .col2 .row img, #logo-top .top-nav #section4 .container .language-bar .col2 .row img, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 .row img {
+  width: 100%;
+  height: 240px;
+}
+/* line 718, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 #s4-arrows0, #section4 .container .btn1 .col2 #s4-arrows0, #section4 .container .btn2 .col2 #s4-arrows0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0, #section4 .container .hr-title .col2 #s4-arrows0, #section4 .container #top-nav ul .col2 #s4-arrows0, #top-nav #section4 .container ul .col2 #s4-arrows0, #section4 .container #logo-top .top-nav .col2 #s4-arrows0, #logo-top #section4 .container .top-nav .col2 #s4-arrows0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0, #section4 .container .flex-default .col2 #s4-arrows1, #section4 .container .btn1 .col2 #s4-arrows1, #section4 .container .btn2 .col2 #s4-arrows1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1, #section4 .container .hr-title .col2 #s4-arrows1, #section4 .container #top-nav ul .col2 #s4-arrows1, #top-nav #section4 .container ul .col2 #s4-arrows1, #section4 .container #logo-top .top-nav .col2 #s4-arrows1, #logo-top #section4 .container .top-nav .col2 #s4-arrows1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 {
+  position: relative;
+  right: 10px;
+  width: 100%;
+  height: 40px;
+  bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 725, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container .btn1 .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container .btn2 .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 .s4-slick-prev0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container .hr-title .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container #top-nav ul .col2 #s4-arrows0 .s4-slick-prev0, #top-nav #section4 .container ul .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 .s4-slick-prev0, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 .s4-slick-prev0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 .s4-slick-prev0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 .s4-slick-prev0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 .s4-slick-prev0, #section4 .container .flex-default .col2 #s4-arrows0 .s4-slick-next0, #section4 .container .btn1 .col2 #s4-arrows0 .s4-slick-next0, #section4 .container .btn2 .col2 #s4-arrows0 .s4-slick-next0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 .s4-slick-next0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 .s4-slick-next0, #section4 .container .hr-title .col2 #s4-arrows0 .s4-slick-next0, #section4 .container #top-nav ul .col2 #s4-arrows0 .s4-slick-next0, #top-nav #section4 .container ul .col2 #s4-arrows0 .s4-slick-next0, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 .s4-slick-next0, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 .s4-slick-next0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 .s4-slick-next0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 .s4-slick-next0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 .s4-slick-next0, #section4 .container .flex-default .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container .btn1 .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container .btn2 .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 .s4-slick-prev1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container .hr-title .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container #top-nav ul .col2 #s4-arrows0 .s4-slick-prev1, #top-nav #section4 .container ul .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 .s4-slick-prev1, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 .s4-slick-prev1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 .s4-slick-prev1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 .s4-slick-prev1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 .s4-slick-prev1, #section4 .container .flex-default .col2 #s4-arrows0 .s4-slick-next1, #section4 .container .btn1 .col2 #s4-arrows0 .s4-slick-next1, #section4 .container .btn2 .col2 #s4-arrows0 .s4-slick-next1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 .s4-slick-next1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 .s4-slick-next1, #section4 .container .hr-title .col2 #s4-arrows0 .s4-slick-next1, #section4 .container #top-nav ul .col2 #s4-arrows0 .s4-slick-next1, #top-nav #section4 .container ul .col2 #s4-arrows0 .s4-slick-next1, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 .s4-slick-next1, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 .s4-slick-next1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 .s4-slick-next1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 .s4-slick-next1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 .s4-slick-next1, #section4 .container .flex-default .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container .btn1 .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container .btn2 .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 .s4-slick-prev0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container .hr-title .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container #top-nav ul .col2 #s4-arrows1 .s4-slick-prev0, #top-nav #section4 .container ul .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 .s4-slick-prev0, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 .s4-slick-prev0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 .s4-slick-prev0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 .s4-slick-prev0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 .s4-slick-prev0, #section4 .container .flex-default .col2 #s4-arrows1 .s4-slick-next0, #section4 .container .btn1 .col2 #s4-arrows1 .s4-slick-next0, #section4 .container .btn2 .col2 #s4-arrows1 .s4-slick-next0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 .s4-slick-next0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 .s4-slick-next0, #section4 .container .hr-title .col2 #s4-arrows1 .s4-slick-next0, #section4 .container #top-nav ul .col2 #s4-arrows1 .s4-slick-next0, #top-nav #section4 .container ul .col2 #s4-arrows1 .s4-slick-next0, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 .s4-slick-next0, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 .s4-slick-next0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 .s4-slick-next0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 .s4-slick-next0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 .s4-slick-next0, #section4 .container .flex-default .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container .btn1 .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container .btn2 .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 .s4-slick-prev1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container .hr-title .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container #top-nav ul .col2 #s4-arrows1 .s4-slick-prev1, #top-nav #section4 .container ul .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 .s4-slick-prev1, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 .s4-slick-prev1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 .s4-slick-prev1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 .s4-slick-prev1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 .s4-slick-prev1, #section4 .container .flex-default .col2 #s4-arrows1 .s4-slick-next1, #section4 .container .btn1 .col2 #s4-arrows1 .s4-slick-next1, #section4 .container .btn2 .col2 #s4-arrows1 .s4-slick-next1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 .s4-slick-next1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 .s4-slick-next1, #section4 .container .hr-title .col2 #s4-arrows1 .s4-slick-next1, #section4 .container #top-nav ul .col2 #s4-arrows1 .s4-slick-next1, #top-nav #section4 .container ul .col2 #s4-arrows1 .s4-slick-next1, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 .s4-slick-next1, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 .s4-slick-next1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 .s4-slick-next1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 .s4-slick-next1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 .s4-slick-next1 {
+  position: relative;
+  bottom: -13px;
+  right: 30px;
+  padding-left: 20px;
+  float: right;
+  font-size: 1em;
+}
+/* line 734, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 #s4-arrows0 #s4-title0, #section4 .container .btn1 .col2 #s4-arrows0 #s4-title0, #section4 .container .btn2 .col2 #s4-arrows0 #s4-title0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 #s4-title0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 #s4-title0, #section4 .container .hr-title .col2 #s4-arrows0 #s4-title0, #section4 .container #top-nav ul .col2 #s4-arrows0 #s4-title0, #top-nav #section4 .container ul .col2 #s4-arrows0 #s4-title0, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 #s4-title0, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 #s4-title0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 #s4-title0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 #s4-title0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 #s4-title0, #section4 .container .flex-default .col2 #s4-arrows0 #s4-title1, #section4 .container .btn1 .col2 #s4-arrows0 #s4-title1, #section4 .container .btn2 .col2 #s4-arrows0 #s4-title1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 #s4-title1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 #s4-title1, #section4 .container .hr-title .col2 #s4-arrows0 #s4-title1, #section4 .container #top-nav ul .col2 #s4-arrows0 #s4-title1, #top-nav #section4 .container ul .col2 #s4-arrows0 #s4-title1, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 #s4-title1, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 #s4-title1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 #s4-title1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 #s4-title1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 #s4-title1, #section4 .container .flex-default .col2 #s4-arrows1 #s4-title0, #section4 .container .btn1 .col2 #s4-arrows1 #s4-title0, #section4 .container .btn2 .col2 #s4-arrows1 #s4-title0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 #s4-title0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 #s4-title0, #section4 .container .hr-title .col2 #s4-arrows1 #s4-title0, #section4 .container #top-nav ul .col2 #s4-arrows1 #s4-title0, #top-nav #section4 .container ul .col2 #s4-arrows1 #s4-title0, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 #s4-title0, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 #s4-title0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 #s4-title0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 #s4-title0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 #s4-title0, #section4 .container .flex-default .col2 #s4-arrows1 #s4-title1, #section4 .container .btn1 .col2 #s4-arrows1 #s4-title1, #section4 .container .btn2 .col2 #s4-arrows1 #s4-title1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 #s4-title1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 #s4-title1, #section4 .container .hr-title .col2 #s4-arrows1 #s4-title1, #section4 .container #top-nav ul .col2 #s4-arrows1 #s4-title1, #top-nav #section4 .container ul .col2 #s4-arrows1 #s4-title1, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 #s4-title1, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 #s4-title1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 #s4-title1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 #s4-title1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 #s4-title1 {
+  position: relative;
+  left: 30px;
+  bottom: -11px;
+}
+/* line 740, ../../../app/assets/styles/main.scss */
+#section4 .container .flex-default .col2 #s4-arrows0 #s4-pageNo0, #section4 .container .btn1 .col2 #s4-arrows0 #s4-pageNo0, #section4 .container .btn2 .col2 #s4-arrows0 #s4-pageNo0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 #s4-pageNo0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 #s4-pageNo0, #section4 .container .hr-title .col2 #s4-arrows0 #s4-pageNo0, #section4 .container #top-nav ul .col2 #s4-arrows0 #s4-pageNo0, #top-nav #section4 .container ul .col2 #s4-arrows0 #s4-pageNo0, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 #s4-pageNo0, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 #s4-pageNo0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 #s4-pageNo0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 #s4-pageNo0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 #s4-pageNo0, #section4 .container .flex-default .col2 #s4-arrows0 #s4-pageNo1, #section4 .container .btn1 .col2 #s4-arrows0 #s4-pageNo1, #section4 .container .btn2 .col2 #s4-arrows0 #s4-pageNo1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows0 #s4-pageNo1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows0 #s4-pageNo1, #section4 .container .hr-title .col2 #s4-arrows0 #s4-pageNo1, #section4 .container #top-nav ul .col2 #s4-arrows0 #s4-pageNo1, #top-nav #section4 .container ul .col2 #s4-arrows0 #s4-pageNo1, #section4 .container #logo-top .top-nav .col2 #s4-arrows0 #s4-pageNo1, #logo-top #section4 .container .top-nav .col2 #s4-arrows0 #s4-pageNo1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows0 #s4-pageNo1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows0 #s4-pageNo1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows0 #s4-pageNo1, #section4 .container .flex-default .col2 #s4-arrows1 #s4-pageNo0, #section4 .container .btn1 .col2 #s4-arrows1 #s4-pageNo0, #section4 .container .btn2 .col2 #s4-arrows1 #s4-pageNo0, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 #s4-pageNo0, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 #s4-pageNo0, #section4 .container .hr-title .col2 #s4-arrows1 #s4-pageNo0, #section4 .container #top-nav ul .col2 #s4-arrows1 #s4-pageNo0, #top-nav #section4 .container ul .col2 #s4-arrows1 #s4-pageNo0, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 #s4-pageNo0, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 #s4-pageNo0, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 #s4-pageNo0, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 #s4-pageNo0, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 #s4-pageNo0, #section4 .container .flex-default .col2 #s4-arrows1 #s4-pageNo1, #section4 .container .btn1 .col2 #s4-arrows1 #s4-pageNo1, #section4 .container .btn2 .col2 #s4-arrows1 #s4-pageNo1, #section4 .container .g-slick-carousel .slick-dots .col2 #s4-arrows1 #s4-pageNo1, .g-slick-carousel #section4 .container .slick-dots .col2 #s4-arrows1 #s4-pageNo1, #section4 .container .hr-title .col2 #s4-arrows1 #s4-pageNo1, #section4 .container #top-nav ul .col2 #s4-arrows1 #s4-pageNo1, #top-nav #section4 .container ul .col2 #s4-arrows1 #s4-pageNo1, #section4 .container #logo-top .top-nav .col2 #s4-arrows1 #s4-pageNo1, #logo-top #section4 .container .top-nav .col2 #s4-arrows1 #s4-pageNo1, #logo-top .top-nav #section4 .container .navlink .col2 #s4-arrows1 #s4-pageNo1, #logo-top .top-nav #section4 .container .language-bar .col2 #s4-arrows1 #s4-pageNo1, #logo-top .top-nav .language-bar .dropdown-menu #section4 .container li .col2 #s4-arrows1 #s4-pageNo1 {
+  position: relative;
+  float: right;
+  bottom: -11px;
+  right: 20px;
+}
+/* line 752, ../../../app/assets/styles/main.scss */
+#section4 .container #s4-node3 .col-xs-6 {
+  padding: 50px;
+  text-align: left;
+}
+/* line 755, ../../../app/assets/styles/main.scss */
+#section4 .container #s4-node3 .col-xs-6 h1 {
+  padding-top: 0px;
+}
+/* line 758, ../../../app/assets/styles/main.scss */
+#section4 .container #s4-node3 .col-xs-6 h4 {
+  padding-top: 0px;
+}
+/* line 761, ../../../app/assets/styles/main.scss */
+#section4 .container #s4-node3 .col-xs-6 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 769, ../../../app/assets/styles/main.scss */
+#section4 .btn1 {
+  margin: 30px auto;
+}
+/* line 772, ../../../app/assets/styles/main.scss */
+#section4 .container-arrow {
+  width: 1040px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1000;
+  top: -200px;
+}
+/* line 778, ../../../app/assets/styles/main.scss */
+#section4 .container-arrow .div-arrow-left3, #section4 .container-arrow .div-arrow-right3 {
+  font-size: 2em;
+}
+/* line 780, ../../../app/assets/styles/main.scss */
+#section4 .container-arrow .div-arrow-left3:hover, #section4 .container-arrow .div-arrow-right3:hover {
+  color: #f6a623;
+}
+/* line 784, ../../../app/assets/styles/main.scss */
+#section4 .container-arrow .div-arrow-left3 {
+  float: left;
+  padding-left: 20px;
+}
+/* line 788, ../../../app/assets/styles/main.scss */
+#section4 .container-arrow .div-arrow-right3 {
+  float: right;
+}
+
+/* line 795, ../../../app/assets/styles/main.scss */
+#section5 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section5/section5-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+}
+/* line 801, ../../../app/assets/styles/main.scss */
+#section5 .container {
+  text-align: center;
+}
+/* line 803, ../../../app/assets/styles/main.scss */
+#section5 .container h1 {
+  padding-top: 60px;
+}
+/* line 806, ../../../app/assets/styles/main.scss */
+#section5 .container p {
+  padding-top: 120px;
+  width: 76%;
+  margin: 0px auto;
+}
+/* line 812, ../../../app/assets/styles/main.scss */
+#section5 .container .flex-default, #section5 .container .btn1, #section5 .container .btn2, #section5 .container .g-slick-carousel .slick-dots, .g-slick-carousel #section5 .container .slick-dots, #section5 .container .hr-title, #section5 .container #top-nav ul, #top-nav #section5 .container ul, #section5 .container #logo-top .top-nav, #logo-top #section5 .container .top-nav, #section5 .container #logo-top .top-nav .navlink, #logo-top .top-nav #section5 .container .navlink, #section5 .container #logo-top .top-nav .language-bar, #logo-top .top-nav #section5 .container .language-bar, #section5 .container #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section5 .container li {
+  text-align: left;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+/* line 816, ../../../app/assets/styles/main.scss */
+#section5 .container .flex-default .col1, #section5 .container .btn1 .col1, #section5 .container .btn2 .col1, #section5 .container .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section5 .container .slick-dots .col1, #section5 .container .hr-title .col1, #section5 .container #top-nav ul .col1, #top-nav #section5 .container ul .col1, #section5 .container #logo-top .top-nav .col1, #logo-top #section5 .container .top-nav .col1, #logo-top .top-nav #section5 .container .navlink .col1, #logo-top .top-nav #section5 .container .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section5 .container li .col1 {
+  padding-right: 40px;
+}
+/* line 819, ../../../app/assets/styles/main.scss */
+#section5 .container .flex-default .col1 h4, #section5 .container .btn1 .col1 h4, #section5 .container .btn2 .col1 h4, #section5 .container .g-slick-carousel .slick-dots .col1 h4, .g-slick-carousel #section5 .container .slick-dots .col1 h4, #section5 .container .hr-title .col1 h4, #section5 .container #top-nav ul .col1 h4, #top-nav #section5 .container ul .col1 h4, #section5 .container #logo-top .top-nav .col1 h4, #logo-top #section5 .container .top-nav .col1 h4, #logo-top .top-nav #section5 .container .navlink .col1 h4, #logo-top .top-nav #section5 .container .language-bar .col1 h4, #logo-top .top-nav .language-bar .dropdown-menu #section5 .container li .col1 h4 {
+  padding-top: 0px;
+}
+/* line 822, ../../../app/assets/styles/main.scss */
+#section5 .container .flex-default .col1 p, #section5 .container .btn1 .col1 p, #section5 .container .btn2 .col1 p, #section5 .container .g-slick-carousel .slick-dots .col1 p, .g-slick-carousel #section5 .container .slick-dots .col1 p, #section5 .container .hr-title .col1 p, #section5 .container #top-nav ul .col1 p, #top-nav #section5 .container ul .col1 p, #section5 .container #logo-top .top-nav .col1 p, #logo-top #section5 .container .top-nav .col1 p, #logo-top .top-nav #section5 .container .navlink .col1 p, #logo-top .top-nav #section5 .container .language-bar .col1 p, #logo-top .top-nav .language-bar .dropdown-menu #section5 .container li .col1 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 827, ../../../app/assets/styles/main.scss */
+#section5 .container .flex-default .col2, #section5 .container .btn1 .col2, #section5 .container .btn2 .col2, #section5 .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section5 .container .slick-dots .col2, #section5 .container .hr-title .col2, #section5 .container #top-nav ul .col2, #top-nav #section5 .container ul .col2, #section5 .container #logo-top .top-nav .col2, #logo-top #section5 .container .top-nav .col2, #logo-top .top-nav #section5 .container .navlink .col2, #logo-top .top-nav #section5 .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section5 .container li .col2 {
+  padding-left: 5%;
+  margin: auto 0px;
+}
+
+/* line 835, ../../../app/assets/styles/main.scss */
+#section6 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section6/section6-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+  padding-bottom: 80px;
+}
+/* line 841, ../../../app/assets/styles/main.scss */
+#section6 .container {
+  text-align: center;
+}
+/* line 843, ../../../app/assets/styles/main.scss */
+#section6 .container h1 {
+  padding-top: 60px;
+}
+/* line 846, ../../../app/assets/styles/main.scss */
+#section6 .container p {
+  padding-top: 120px;
+  width: 76%;
+  margin: 0px auto;
+}
+/* line 852, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs {
+  padding-top: 30px;
+  text-align: center;
+  border-bottom: 1px solid #979797;
+}
+/* line 856, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs li {
+  float: none;
+  display: inline-block;
+  border-bottom: none;
+  padding-left: 40px;
+  padding-right: 40px;
+  *display: inline;
+  /* ie7 fix */
+  zoom: 1;
+  /* hasLayout ie7 trigger */
+}
+/* line 865, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+  margin-right: 0;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  border-bottom: transparent;
+}
+/* line 874, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs li a:hover {
+  color: #f6a623;
+  background-color: transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+/* line 883, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs li.active {
+  border-top: 1px solid #979797;
+  border-bottom: transparent;
+  border-left: 1px solid #979797;
+  border-right: 1px solid #979797;
+  z-index: 100;
+  background-color: #111111;
+}
+/* line 890, ../../../app/assets/styles/main.scss */
+#section6 .nav-tabs li.active a {
+  color: #fff;
+  border: none !important;
+}
+/* line 897, ../../../app/assets/styles/main.scss */
+#section6 .tab-content {
+  background-color: #111111;
+  height: 316px;
+}
+/* line 900, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane {
+  postion: relative;
+}
+/* line 902, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .col-xs-6 {
+  padding: 50px;
+  text-align: left;
+}
+/* line 905, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .col-xs-6 h4 {
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+/* line 909, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .col-xs-6 h2 {
+  padding-top: 0px;
+}
+/* line 912, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .col-xs-6 p {
+  padding-top: 12px;
+  padding-bottom: 14px;
+  width: 100%;
+}
+/* line 918, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .img-float {
+  position: relative;
+  z-index: 30;
+  top: -270px;
+  left: -11px;
+}
+/* line 923, ../../../app/assets/styles/main.scss */
+#section6 .tab-content .tab-pane .img-float img {
+  width: 13%;
+}
+/* line 929, ../../../app/assets/styles/main.scss */
+#section6 .btn1 {
+  margin: 30px auto;
+}
+/* line 932, ../../../app/assets/styles/main.scss */
+#section6 .container-arrow {
+  width: 1040px;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1000;
+  top: -180px;
+}
+/* line 938, ../../../app/assets/styles/main.scss */
+#section6 .container-arrow .div-arrow-left4, #section6 .container-arrow .div-arrow-right4 {
+  font-size: 2em;
+}
+/* line 940, ../../../app/assets/styles/main.scss */
+#section6 .container-arrow .div-arrow-left4:hover, #section6 .container-arrow .div-arrow-right4:hover {
+  color: #f6a623;
+}
+/* line 944, ../../../app/assets/styles/main.scss */
+#section6 .container-arrow .div-arrow-left4 {
+  float: left;
+  padding-left: 20px;
+}
+/* line 948, ../../../app/assets/styles/main.scss */
+#section6 .container-arrow .div-arrow-right4 {
+  float: right;
+}
+
+/* line 955, ../../../app/assets/styles/main.scss */
+#section7 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section2/section2-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+  padding-bottom: 40px;
+}
+/* line 962, ../../../app/assets/styles/main.scss */
+#section7 .container {
+  text-align: center;
+}
+/* line 964, ../../../app/assets/styles/main.scss */
+#section7 .container h1 {
+  padding-top: 60px;
+}
+/* line 967, ../../../app/assets/styles/main.scss */
+#section7 .container p {
+  padding-top: 120px;
+  margin: 10px auto;
+  width: 80%;
+}
+/* line 973, ../../../app/assets/styles/main.scss */
+#section7 .flex-default, #section7 .btn1, #section7 .btn2, #section7 .g-slick-carousel .slick-dots, .g-slick-carousel #section7 .slick-dots, #section7 .hr-title, #section7 #top-nav ul, #top-nav #section7 ul, #section7 #logo-top .top-nav, #logo-top #section7 .top-nav, #section7 #logo-top .top-nav .navlink, #logo-top .top-nav #section7 .navlink, #section7 #logo-top .top-nav .language-bar, #logo-top .top-nav #section7 .language-bar, #section7 #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section7 li {
+  padding-top: 50px;
+  text-align: left;
+}
+/* line 976, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col1, #section7 .btn1 .col1, #section7 .btn2 .col1, #section7 .g-slick-carousel .slick-dots .col1, .g-slick-carousel #section7 .slick-dots .col1, #section7 .hr-title .col1, #section7 #top-nav ul .col1, #top-nav #section7 ul .col1, #section7 #logo-top .top-nav .col1, #logo-top #section7 .top-nav .col1, #logo-top .top-nav #section7 .navlink .col1, #logo-top .top-nav #section7 .language-bar .col1, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col1 {
+  width: 25%;
+}
+/* line 979, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2, #section7 .btn1 .col2, #section7 .btn2 .col2, #section7 .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section7 .slick-dots .col2, #section7 .hr-title .col2, #section7 #top-nav ul .col2, #top-nav #section7 ul .col2, #section7 #logo-top .top-nav .col2, #logo-top #section7 .top-nav .col2, #logo-top .top-nav #section7 .navlink .col2, #logo-top .top-nav #section7 .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 {
+  width: 75%;
+}
+/* line 981, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane, #section7 .btn1 .col2 .tab-pane, #section7 .btn2 .col2 .tab-pane, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane, #section7 .hr-title .col2 .tab-pane, #section7 #top-nav ul .col2 .tab-pane, #top-nav #section7 ul .col2 .tab-pane, #section7 #logo-top .top-nav .col2 .tab-pane, #logo-top #section7 .top-nav .col2 .tab-pane, #logo-top .top-nav #section7 .navlink .col2 .tab-pane, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane {
+  height: 552px;
+  padding-left: 20px;
+}
+/* line 984, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane .col-xs-6, #section7 .btn1 .col2 .tab-pane .col-xs-6, #section7 .btn2 .col2 .tab-pane .col-xs-6, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane .col-xs-6, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane .col-xs-6, #section7 .hr-title .col2 .tab-pane .col-xs-6, #section7 #top-nav ul .col2 .tab-pane .col-xs-6, #top-nav #section7 ul .col2 .tab-pane .col-xs-6, #section7 #logo-top .top-nav .col2 .tab-pane .col-xs-6, #logo-top #section7 .top-nav .col2 .tab-pane .col-xs-6, #logo-top .top-nav #section7 .navlink .col2 .tab-pane .col-xs-6, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane .col-xs-6, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane .col-xs-6 {
+  text-align: left;
+}
+/* line 987, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane .col-xs-6 h4, #section7 .btn1 .col2 .tab-pane .col-xs-6 h4, #section7 .btn2 .col2 .tab-pane .col-xs-6 h4, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane .col-xs-6 h4, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane .col-xs-6 h4, #section7 .hr-title .col2 .tab-pane .col-xs-6 h4, #section7 #top-nav ul .col2 .tab-pane .col-xs-6 h4, #top-nav #section7 ul .col2 .tab-pane .col-xs-6 h4, #section7 #logo-top .top-nav .col2 .tab-pane .col-xs-6 h4, #logo-top #section7 .top-nav .col2 .tab-pane .col-xs-6 h4, #logo-top .top-nav #section7 .navlink .col2 .tab-pane .col-xs-6 h4, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane .col-xs-6 h4, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane .col-xs-6 h4 {
+  padding-top: 0px;
+  padding-bottom: 18px;
+}
+/* line 991, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane .col-xs-6 h2, #section7 .btn1 .col2 .tab-pane .col-xs-6 h2, #section7 .btn2 .col2 .tab-pane .col-xs-6 h2, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane .col-xs-6 h2, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane .col-xs-6 h2, #section7 .hr-title .col2 .tab-pane .col-xs-6 h2, #section7 #top-nav ul .col2 .tab-pane .col-xs-6 h2, #top-nav #section7 ul .col2 .tab-pane .col-xs-6 h2, #section7 #logo-top .top-nav .col2 .tab-pane .col-xs-6 h2, #logo-top #section7 .top-nav .col2 .tab-pane .col-xs-6 h2, #logo-top .top-nav #section7 .navlink .col2 .tab-pane .col-xs-6 h2, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane .col-xs-6 h2, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane .col-xs-6 h2 {
+  padding-top: 0px;
+  padding-bottom: 8px;
+}
+/* line 995, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane .col-xs-6 h3, #section7 .btn1 .col2 .tab-pane .col-xs-6 h3, #section7 .btn2 .col2 .tab-pane .col-xs-6 h3, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane .col-xs-6 h3, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane .col-xs-6 h3, #section7 .hr-title .col2 .tab-pane .col-xs-6 h3, #section7 #top-nav ul .col2 .tab-pane .col-xs-6 h3, #top-nav #section7 ul .col2 .tab-pane .col-xs-6 h3, #section7 #logo-top .top-nav .col2 .tab-pane .col-xs-6 h3, #logo-top #section7 .top-nav .col2 .tab-pane .col-xs-6 h3, #logo-top .top-nav #section7 .navlink .col2 .tab-pane .col-xs-6 h3, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane .col-xs-6 h3, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane .col-xs-6 h3 {
+  padding-top: 0px;
+  padding-bottom: 2px;
+}
+/* line 999, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .col2 .tab-pane .col-xs-6 p, #section7 .btn1 .col2 .tab-pane .col-xs-6 p, #section7 .btn2 .col2 .tab-pane .col-xs-6 p, #section7 .g-slick-carousel .slick-dots .col2 .tab-pane .col-xs-6 p, .g-slick-carousel #section7 .slick-dots .col2 .tab-pane .col-xs-6 p, #section7 .hr-title .col2 .tab-pane .col-xs-6 p, #section7 #top-nav ul .col2 .tab-pane .col-xs-6 p, #top-nav #section7 ul .col2 .tab-pane .col-xs-6 p, #section7 #logo-top .top-nav .col2 .tab-pane .col-xs-6 p, #logo-top #section7 .top-nav .col2 .tab-pane .col-xs-6 p, #logo-top .top-nav #section7 .navlink .col2 .tab-pane .col-xs-6 p, #logo-top .top-nav #section7 .language-bar .col2 .tab-pane .col-xs-6 p, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .col2 .tab-pane .col-xs-6 p {
+  padding-top: 0px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+/* line 1008, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills, #section7 .btn1 .nav-pills, #section7 .btn2 .nav-pills, #section7 .g-slick-carousel .slick-dots .nav-pills, .g-slick-carousel #section7 .slick-dots .nav-pills, #section7 .hr-title .nav-pills, #section7 #top-nav ul .nav-pills, #top-nav #section7 ul .nav-pills, #section7 #logo-top .top-nav .nav-pills, #logo-top #section7 .top-nav .nav-pills, #logo-top .top-nav #section7 .navlink .nav-pills, #logo-top .top-nav #section7 .language-bar .nav-pills, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills {
+  text-align: left;
+}
+/* line 1010, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li, #section7 .btn1 .nav-pills li, #section7 .btn2 .nav-pills li, #section7 .g-slick-carousel .slick-dots .nav-pills li, .g-slick-carousel #section7 .slick-dots .nav-pills li, #section7 .hr-title .nav-pills li, #section7 #top-nav ul .nav-pills li, #top-nav #section7 ul .nav-pills li, #section7 #logo-top .top-nav .nav-pills li, #logo-top #section7 .top-nav .nav-pills li, #logo-top .top-nav #section7 .navlink .nav-pills li, #logo-top .top-nav #section7 .language-bar .nav-pills li, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li {
+  padding: 9px;
+  float: none;
+  border-left: 3px solid transparent;
+}
+/* line 1014, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li a, #section7 .btn1 .nav-pills li a, #section7 .btn2 .nav-pills li a, #section7 .g-slick-carousel .slick-dots .nav-pills li a, .g-slick-carousel #section7 .slick-dots .nav-pills li a, #section7 .hr-title .nav-pills li a, #section7 #top-nav ul .nav-pills li a, #top-nav #section7 ul .nav-pills li a, #section7 #logo-top .top-nav .nav-pills li a, #logo-top #section7 .top-nav .nav-pills li a, #logo-top .top-nav #section7 .navlink .nav-pills li a, #logo-top .top-nav #section7 .language-bar .nav-pills li a, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li a {
+  color: #999999;
+  background-color: transparent;
+  border-radius: 0;
+}
+/* line 1019, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li:hover, #section7 .btn1 .nav-pills li:hover, #section7 .btn2 .nav-pills li:hover, #section7 .g-slick-carousel .slick-dots .nav-pills li:hover, .g-slick-carousel #section7 .slick-dots .nav-pills li:hover, #section7 .hr-title .nav-pills li:hover, #section7 #top-nav ul .nav-pills li:hover, #top-nav #section7 ul .nav-pills li:hover, #section7 #logo-top .top-nav .nav-pills li:hover, #logo-top #section7 .top-nav .nav-pills li:hover, #logo-top .top-nav #section7 .navlink .nav-pills li:hover, #logo-top .top-nav #section7 .language-bar .nav-pills li:hover, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li:hover {
+  padding: 9px;
+  border-left: 3px solid #f6a623;
+  background-color: #131313;
+}
+/* line 1023, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li:hover a, #section7 .btn1 .nav-pills li:hover a, #section7 .btn2 .nav-pills li:hover a, #section7 .g-slick-carousel .slick-dots .nav-pills li:hover a, .g-slick-carousel #section7 .slick-dots .nav-pills li:hover a, #section7 .hr-title .nav-pills li:hover a, #section7 #top-nav ul .nav-pills li:hover a, #top-nav #section7 ul .nav-pills li:hover a, #section7 #logo-top .top-nav .nav-pills li:hover a, #logo-top #section7 .top-nav .nav-pills li:hover a, #logo-top .top-nav #section7 .navlink .nav-pills li:hover a, #logo-top .top-nav #section7 .language-bar .nav-pills li:hover a, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li:hover a {
+  color: #fff;
+}
+/* line 1027, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li.active, #section7 .btn1 .nav-pills li.active, #section7 .btn2 .nav-pills li.active, #section7 .g-slick-carousel .slick-dots .nav-pills li.active, .g-slick-carousel #section7 .slick-dots .nav-pills li.active, #section7 .hr-title .nav-pills li.active, #section7 #top-nav ul .nav-pills li.active, #top-nav #section7 ul .nav-pills li.active, #section7 #logo-top .top-nav .nav-pills li.active, #logo-top #section7 .top-nav .nav-pills li.active, #logo-top .top-nav #section7 .navlink .nav-pills li.active, #logo-top .top-nav #section7 .language-bar .nav-pills li.active, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li.active {
+  border-left: 3px solid #f6a623;
+  z-index: 100;
+  background-color: #131313;
+}
+/* line 1031, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .nav-pills li.active a, #section7 .btn1 .nav-pills li.active a, #section7 .btn2 .nav-pills li.active a, #section7 .g-slick-carousel .slick-dots .nav-pills li.active a, .g-slick-carousel #section7 .slick-dots .nav-pills li.active a, #section7 .hr-title .nav-pills li.active a, #section7 #top-nav ul .nav-pills li.active a, #top-nav #section7 ul .nav-pills li.active a, #section7 #logo-top .top-nav .nav-pills li.active a, #logo-top #section7 .top-nav .nav-pills li.active a, #logo-top .top-nav #section7 .navlink .nav-pills li.active a, #logo-top .top-nav #section7 .language-bar .nav-pills li.active a, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .nav-pills li.active a {
+  color: #fff;
+}
+/* line 1037, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .tab-content, #section7 .btn1 .tab-content, #section7 .btn2 .tab-content, #section7 .g-slick-carousel .slick-dots .tab-content, .g-slick-carousel #section7 .slick-dots .tab-content, #section7 .hr-title .tab-content, #section7 #top-nav ul .tab-content, #top-nav #section7 ul .tab-content, #section7 #logo-top .top-nav .tab-content, #logo-top #section7 .top-nav .tab-content, #logo-top .top-nav #section7 .navlink .tab-content, #logo-top .top-nav #section7 .language-bar .tab-content, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .tab-content {
+  padding: 10% 5%;
+  background-color: #131313;
+}
+/* line 1040, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .tab-content #section-six-slide, #section7 .btn1 .tab-content #section-six-slide, #section7 .btn2 .tab-content #section-six-slide, #section7 .g-slick-carousel .slick-dots .tab-content #section-six-slide, .g-slick-carousel #section7 .slick-dots .tab-content #section-six-slide, #section7 .hr-title .tab-content #section-six-slide, #section7 #top-nav ul .tab-content #section-six-slide, #top-nav #section7 ul .tab-content #section-six-slide, #section7 #logo-top .top-nav .tab-content #section-six-slide, #logo-top #section7 .top-nav .tab-content #section-six-slide, #logo-top .top-nav #section7 .navlink .tab-content #section-six-slide, #logo-top .top-nav #section7 .language-bar .tab-content #section-six-slide, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .tab-content #section-six-slide {
+  position: relative;
+  padding: 2%;
+}
+/* line 1043, ../../../app/assets/styles/main.scss */
+#section7 .flex-default .tab-content #section-six-slide img, #section7 .btn1 .tab-content #section-six-slide img, #section7 .btn2 .tab-content #section-six-slide img, #section7 .g-slick-carousel .slick-dots .tab-content #section-six-slide img, .g-slick-carousel #section7 .slick-dots .tab-content #section-six-slide img, #section7 .hr-title .tab-content #section-six-slide img, #section7 #top-nav ul .tab-content #section-six-slide img, #top-nav #section7 ul .tab-content #section-six-slide img, #section7 #logo-top .top-nav .tab-content #section-six-slide img, #logo-top #section7 .top-nav .tab-content #section-six-slide img, #logo-top .top-nav #section7 .navlink .tab-content #section-six-slide img, #logo-top .top-nav #section7 .language-bar .tab-content #section-six-slide img, #logo-top .top-nav .language-bar .dropdown-menu #section7 li .tab-content #section-six-slide img {
+  width: 98%;
+}
+
+/* line 1051, ../../../app/assets/styles/main.scss */
+#section8 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section4/section4-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #181818;
+}
+/* line 1057, ../../../app/assets/styles/main.scss */
+#section8 .container {
+  text-align: center;
+}
+/* line 1059, ../../../app/assets/styles/main.scss */
+#section8 .container h1 {
+  padding-top: 60px;
+}
+/* line 1062, ../../../app/assets/styles/main.scss */
+#section8 .container p {
+  padding-top: 120px;
+  width: 80%;
+  margin: 0px auto;
+}
+/* line 1067, ../../../app/assets/styles/main.scss */
+#section8 .container .flex-default, #section8 .container .btn1, #section8 .container .btn2, #section8 .container .g-slick-carousel .slick-dots, .g-slick-carousel #section8 .container .slick-dots, #section8 .container .hr-title, #section8 .container #top-nav ul, #top-nav #section8 .container ul, #section8 .container #logo-top .top-nav, #logo-top #section8 .container .top-nav, #section8 .container #logo-top .top-nav .navlink, #logo-top .top-nav #section8 .container .navlink, #section8 .container #logo-top .top-nav .language-bar, #logo-top .top-nav #section8 .container .language-bar, #section8 .container #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu #section8 .container li {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  width: 96%;
+  margin: 0px auto;
+  text-align: left;
+}
+/* line 1074, ../../../app/assets/styles/main.scss */
+#section8 .container .flex-default .col1 h4, #section8 .container .btn1 .col1 h4, #section8 .container .btn2 .col1 h4, #section8 .container .g-slick-carousel .slick-dots .col1 h4, .g-slick-carousel #section8 .container .slick-dots .col1 h4, #section8 .container .hr-title .col1 h4, #section8 .container #top-nav ul .col1 h4, #top-nav #section8 .container ul .col1 h4, #section8 .container #logo-top .top-nav .col1 h4, #logo-top #section8 .container .top-nav .col1 h4, #logo-top .top-nav #section8 .container .navlink .col1 h4, #logo-top .top-nav #section8 .container .language-bar .col1 h4, #logo-top .top-nav .language-bar .dropdown-menu #section8 .container li .col1 h4 {
+  padding-top: 0px;
+}
+/* line 1077, ../../../app/assets/styles/main.scss */
+#section8 .container .flex-default .col1 p, #section8 .container .btn1 .col1 p, #section8 .container .btn2 .col1 p, #section8 .container .g-slick-carousel .slick-dots .col1 p, .g-slick-carousel #section8 .container .slick-dots .col1 p, #section8 .container .hr-title .col1 p, #section8 .container #top-nav ul .col1 p, #top-nav #section8 .container ul .col1 p, #section8 .container #logo-top .top-nav .col1 p, #logo-top #section8 .container .top-nav .col1 p, #logo-top .top-nav #section8 .container .navlink .col1 p, #logo-top .top-nav #section8 .container .language-bar .col1 p, #logo-top .top-nav .language-bar .dropdown-menu #section8 .container li .col1 p {
+  padding-top: 20px;
+  width: 100%;
+}
+/* line 1082, ../../../app/assets/styles/main.scss */
+#section8 .container .flex-default .col2, #section8 .container .btn1 .col2, #section8 .container .btn2 .col2, #section8 .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section8 .container .slick-dots .col2, #section8 .container .hr-title .col2, #section8 .container #top-nav ul .col2, #top-nav #section8 .container ul .col2, #section8 .container #logo-top .top-nav .col2, #logo-top #section8 .container .top-nav .col2, #logo-top .top-nav #section8 .container .navlink .col2, #logo-top .top-nav #section8 .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section8 .container li .col2 {
+  padding-left: 20px;
+  margin: auto 0px;
+}
+
+/* line 1093, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section11-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: #111111;
+}
+/* line 1098, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 920px;
+  margin: 0px auto;
+}
+/* line 1105, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container .flex-default .col1 h1, #section-node:nth-child(2n) .container .btn1 .col1 h1, #section-node:nth-child(2n) .container .btn2 .col1 h1, #section-node:nth-child(2n) .container .g-slick-carousel .slick-dots .col1 h1, .g-slick-carousel #section-node:nth-child(2n) .container .slick-dots .col1 h1, #section-node:nth-child(2n) .container .hr-title .col1 h1, #section-node:nth-child(2n) .container #top-nav ul .col1 h1, #top-nav #section-node:nth-child(2n) .container ul .col1 h1, #section-node:nth-child(2n) .container #logo-top .top-nav .col1 h1, #logo-top #section-node:nth-child(2n) .container .top-nav .col1 h1, #logo-top .top-nav #section-node:nth-child(2n) .container .navlink .col1 h1, #logo-top .top-nav #section-node:nth-child(2n) .container .language-bar .col1 h1, #logo-top .top-nav .language-bar .dropdown-menu #section-node:nth-child(2n) .container li .col1 h1 {
+  padding-bottom: 10px;
+}
+/* line 1108, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container .flex-default .col1 h2, #section-node:nth-child(2n) .container .btn1 .col1 h2, #section-node:nth-child(2n) .container .btn2 .col1 h2, #section-node:nth-child(2n) .container .g-slick-carousel .slick-dots .col1 h2, .g-slick-carousel #section-node:nth-child(2n) .container .slick-dots .col1 h2, #section-node:nth-child(2n) .container .hr-title .col1 h2, #section-node:nth-child(2n) .container #top-nav ul .col1 h2, #top-nav #section-node:nth-child(2n) .container ul .col1 h2, #section-node:nth-child(2n) .container #logo-top .top-nav .col1 h2, #logo-top #section-node:nth-child(2n) .container .top-nav .col1 h2, #logo-top .top-nav #section-node:nth-child(2n) .container .navlink .col1 h2, #logo-top .top-nav #section-node:nth-child(2n) .container .language-bar .col1 h2, #logo-top .top-nav .language-bar .dropdown-menu #section-node:nth-child(2n) .container li .col1 h2 {
+  padding-bottom: 15px;
+}
+/* line 1111, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container .flex-default .col1 a, #section-node:nth-child(2n) .container .btn1 .col1 a, #section-node:nth-child(2n) .container .btn2 .col1 a, #section-node:nth-child(2n) .container .g-slick-carousel .slick-dots .col1 a, .g-slick-carousel #section-node:nth-child(2n) .container .slick-dots .col1 a, #section-node:nth-child(2n) .container .hr-title .col1 a, #section-node:nth-child(2n) .container #top-nav ul .col1 a, #top-nav #section-node:nth-child(2n) .container ul .col1 a, #section-node:nth-child(2n) .container #logo-top .top-nav .col1 a, #logo-top #section-node:nth-child(2n) .container .top-nav .col1 a, #logo-top .top-nav #section-node:nth-child(2n) .container .navlink .col1 a, #logo-top .top-nav #section-node:nth-child(2n) .container .language-bar .col1 a, #logo-top .top-nav .language-bar .dropdown-menu #section-node:nth-child(2n) .container li .col1 a {
+  margin-top: 20px;
+}
+/* line 1115, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container .flex-default .col2, #section-node:nth-child(2n) .container .btn1 .col2, #section-node:nth-child(2n) .container .btn2 .col2, #section-node:nth-child(2n) .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section-node:nth-child(2n) .container .slick-dots .col2, #section-node:nth-child(2n) .container .hr-title .col2, #section-node:nth-child(2n) .container #top-nav ul .col2, #top-nav #section-node:nth-child(2n) .container ul .col2, #section-node:nth-child(2n) .container #logo-top .top-nav .col2, #logo-top #section-node:nth-child(2n) .container .top-nav .col2, #logo-top .top-nav #section-node:nth-child(2n) .container .navlink .col2, #logo-top .top-nav #section-node:nth-child(2n) .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section-node:nth-child(2n) .container li .col2 {
+  padding-left: 5%;
+}
+/* line 1117, ../../../app/assets/styles/main.scss */
+#section-node:nth-child(2n) .container .flex-default .col2 img, #section-node:nth-child(2n) .container .btn1 .col2 img, #section-node:nth-child(2n) .container .btn2 .col2 img, #section-node:nth-child(2n) .container .g-slick-carousel .slick-dots .col2 img, .g-slick-carousel #section-node:nth-child(2n) .container .slick-dots .col2 img, #section-node:nth-child(2n) .container .hr-title .col2 img, #section-node:nth-child(2n) .container #top-nav ul .col2 img, #top-nav #section-node:nth-child(2n) .container ul .col2 img, #section-node:nth-child(2n) .container #logo-top .top-nav .col2 img, #logo-top #section-node:nth-child(2n) .container .top-nav .col2 img, #logo-top .top-nav #section-node:nth-child(2n) .container .navlink .col2 img, #logo-top .top-nav #section-node:nth-child(2n) .container .language-bar .col2 img, #logo-top .top-nav .language-bar .dropdown-menu #section-node:nth-child(2n) .container li .col2 img {
+  margin: auto 0px;
+}
+
+/* line 1126, ../../../app/assets/styles/main.scss */
+#section-node {
+  background-color: #181818;
+}
+/* line 1129, ../../../app/assets/styles/main.scss */
+#section-node .container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 920px;
+  margin: 0px auto;
+}
+/* line 1136, ../../../app/assets/styles/main.scss */
+#section-node .container .flex-default .col1 h1, #section-node .container .btn1 .col1 h1, #section-node .container .btn2 .col1 h1, #section-node .container .g-slick-carousel .slick-dots .col1 h1, .g-slick-carousel #section-node .container .slick-dots .col1 h1, #section-node .container .hr-title .col1 h1, #section-node .container #top-nav ul .col1 h1, #top-nav #section-node .container ul .col1 h1, #section-node .container #logo-top .top-nav .col1 h1, #logo-top #section-node .container .top-nav .col1 h1, #logo-top .top-nav #section-node .container .navlink .col1 h1, #logo-top .top-nav #section-node .container .language-bar .col1 h1, #logo-top .top-nav .language-bar .dropdown-menu #section-node .container li .col1 h1 {
+  padding-bottom: 10px;
+}
+/* line 1139, ../../../app/assets/styles/main.scss */
+#section-node .container .flex-default .col1 h2, #section-node .container .btn1 .col1 h2, #section-node .container .btn2 .col1 h2, #section-node .container .g-slick-carousel .slick-dots .col1 h2, .g-slick-carousel #section-node .container .slick-dots .col1 h2, #section-node .container .hr-title .col1 h2, #section-node .container #top-nav ul .col1 h2, #top-nav #section-node .container ul .col1 h2, #section-node .container #logo-top .top-nav .col1 h2, #logo-top #section-node .container .top-nav .col1 h2, #logo-top .top-nav #section-node .container .navlink .col1 h2, #logo-top .top-nav #section-node .container .language-bar .col1 h2, #logo-top .top-nav .language-bar .dropdown-menu #section-node .container li .col1 h2 {
+  padding-bottom: 15px;
+}
+/* line 1142, ../../../app/assets/styles/main.scss */
+#section-node .container .flex-default .col1 a, #section-node .container .btn1 .col1 a, #section-node .container .btn2 .col1 a, #section-node .container .g-slick-carousel .slick-dots .col1 a, .g-slick-carousel #section-node .container .slick-dots .col1 a, #section-node .container .hr-title .col1 a, #section-node .container #top-nav ul .col1 a, #top-nav #section-node .container ul .col1 a, #section-node .container #logo-top .top-nav .col1 a, #logo-top #section-node .container .top-nav .col1 a, #logo-top .top-nav #section-node .container .navlink .col1 a, #logo-top .top-nav #section-node .container .language-bar .col1 a, #logo-top .top-nav .language-bar .dropdown-menu #section-node .container li .col1 a {
+  margin-top: 20px;
+}
+/* line 1146, ../../../app/assets/styles/main.scss */
+#section-node .container .flex-default .col2, #section-node .container .btn1 .col2, #section-node .container .btn2 .col2, #section-node .container .g-slick-carousel .slick-dots .col2, .g-slick-carousel #section-node .container .slick-dots .col2, #section-node .container .hr-title .col2, #section-node .container #top-nav ul .col2, #top-nav #section-node .container ul .col2, #section-node .container #logo-top .top-nav .col2, #logo-top #section-node .container .top-nav .col2, #logo-top .top-nav #section-node .container .navlink .col2, #logo-top .top-nav #section-node .container .language-bar .col2, #logo-top .top-nav .language-bar .dropdown-menu #section-node .container li .col2 {
+  padding-left: 5%;
+}
+/* line 1148, ../../../app/assets/styles/main.scss */
+#section-node .container .flex-default .col2 img, #section-node .container .btn1 .col2 img, #section-node .container .btn2 .col2 img, #section-node .container .g-slick-carousel .slick-dots .col2 img, .g-slick-carousel #section-node .container .slick-dots .col2 img, #section-node .container .hr-title .col2 img, #section-node .container #top-nav ul .col2 img, #top-nav #section-node .container ul .col2 img, #section-node .container #logo-top .top-nav .col2 img, #logo-top #section-node .container .top-nav .col2 img, #logo-top .top-nav #section-node .container .navlink .col2 img, #logo-top .top-nav #section-node .container .language-bar .col2 img, #logo-top .top-nav .language-bar .dropdown-menu #section-node .container li .col2 img {
+  margin: auto 0px;
+}
+
+/* line 1156, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #4A4A4A;
+  padding: 30px 0;
+  font-size: 1.3rem;
+  color: #fff;
+}
+/* line 1162, ../../../app/assets/styles/main.scss */
+footer small {
+  margin-left: 15px;
+}
+/* line 1165, ../../../app/assets/styles/main.scss */
+footer .flex-default, footer .btn1, footer .btn2, footer .g-slick-carousel .slick-dots, .g-slick-carousel footer .slick-dots, footer .hr-title, footer #top-nav ul, #top-nav footer ul, footer #logo-top .top-nav, #logo-top footer .top-nav, footer #logo-top .top-nav .navlink, #logo-top .top-nav footer .navlink, footer #logo-top .top-nav .language-bar, #logo-top .top-nav footer .language-bar, footer #logo-top .top-nav .language-bar .dropdown-menu li, #logo-top .top-nav .language-bar .dropdown-menu footer li {
+  justify-content: space-between;
+}

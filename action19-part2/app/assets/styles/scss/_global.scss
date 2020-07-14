@@ -1,0 +1,141 @@
+@import 'variables';
+
+.flex-default {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 970px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btn1 {
+	@extend .flex-default;
+	width: 160px;
+	height: 40px;
+	border: 1px solid $white;
+	background-color: transparent;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: all 0.2s;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+    font-size: 1.5rem;
+
+	&:hover, &:focus {
+		background-color: $yellow;
+		border-color: $yellow;
+		color: $white;
+	}
+}
+
+.btn2 {
+	@extend .flex-default;
+	width: 120px;
+	height: 20px;
+	border: 1px solid $white;
+	border-radius: 10px;
+	margin: 0 auto;
+	span {
+		font-size: 1rem;
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-left: 5px;
+	}
+	&:hover, &:focus {
+		background-color: $color2;
+		color: $white;
+	}
+}
+
+.color1 {
+	color: $color2;
+}
+
+.arrow {
+	position: absolute;
+	top: 0;
+	left: 0; 
+	right: 0;
+	height: 20px;
+	background-size: cover;
+}
+
+.g-slick-carousel {
+	.slick-dots {
+		@extend .flex-default;
+		margin-top: 35px;
+
+		.dot {
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: #666;
+			border-radius: 100%;
+			margin-right: 5px;
+			
+			&:hover, &:focus {
+				background-color: $white;
+			}
+		}
+
+		.slick-active {
+			.dot {
+				width: 15px;
+				height: 15px;
+				background-color: $white;
+			}
+		}
+	}
+	
+	.slick-arrow {
+		position: absolute;
+		top: 35%;
+		z-index: 2;
+		cursor: pointer;
+		font-size: 5rem;
+		&.icon-arrow1 {
+			left: 50px;
+		}
+		&.icon-arrow2 {
+			right: 50px;
+		}
+		&:hover, &:focus {
+			color: $color2;
+		}
+	}
+}
+
+.hr-title {
+	@extend .flex-default;
+
+	height: 30px;
+	margin-top: 40px;
+	margin-bottom: 35px;
+
+	hr {
+		width: 200px;
+		height: 3px;
+		border: none;
+
+		&:first-child {
+			background: linear-gradient(to right, rgba($black, 0) 0%, rgba($white, 1) 100%);
+		}
+
+		&:last-child {
+			background: linear-gradient(to left, rgba($black, 0) 0%, rgba($white, 1) 100%);
+		}
+	}
+
+	h3 {
+		padding-top: 0 !important;
+	}	
+}
+
+.invisible { display: none; }
+
+.visible { display: block; }

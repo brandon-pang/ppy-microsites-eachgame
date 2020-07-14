@@ -1,0 +1,100 @@
+<section class="section-info" ng-style="{'background-image':'url('+imgUrl+'new-vg.jpg)'}">
+	<a href="https://bs.sea.papayaplay.com/blackshotsea.do" class="btn-top"></a>
+	<article class="content-top">
+		<p class="title">{{'section_1_title' | translate }}</p>
+		<p class="subtitle">{{'section_1_subtitle' | translate }}</p>
+		<p class="desc" translate="section_1_desc"></p>
+		<div class="mid--img">
+			<img ng-src="{{imgUrl}}chart.jpg" alt="">
+		</div>
+		<div class="cont--textbox">
+			<p class="box__title">{{'section_2_title_1' | translate }}</p>
+			<div class="box__line"></div>
+			<p class="box__desc" translate="section_2_desc_1"></p>
+		</div>
+		<div class="cont--textbox">
+			<p class="box__title">{{'section_2_title_2' | translate }}</p>
+			<div class="box__line"></div>
+			<p class="box__desc" translate="section_2_desc_2"></p>
+		</div>
+	</article>
+	<article class="content-bt">
+		<div class="cont--date">
+			<ul class="cont--times">
+				<li>
+					<div class="box">{{ rday }}</div>
+					<div class="desc">DAYS</div>
+				</li>
+				<li>
+					<div class="box">{{ rhour }}</div>
+					<div class="desc">hours</div>
+				</li>
+				<li>
+					<div class="box">{{ rmin }}</div>
+					<div class="desc">min</div>
+				</li>
+				<li>
+					<div class="box">{{ rsec }}</div>
+					<div class="desc">sec</div>
+				</li>
+			</ul>
+		</div>
+		<p class="mid-title">{{'section_3_title' | translate }}</p>
+		<ul class="list--social-icons">
+			<li><a href="https://www.youtube.com/c/BlackShotSEAOfficial" target="_blank"><i class="bs-social-icon-youtube"></i></a></li>
+			<li><a href="https://discordapp.com/invite/PGBupmx" target="_blank"><i class="bs-social-icon-discord"></i></a></li>
+			<li><a href="https://www.facebook.com/blackshotsea/" target="_blank"><i class="bs-social-icon-facebook"></i></a></li>
+		</ul>
+	</article>
+</section>
+<article class="footer">
+	<div class="foot--line"></div>
+	<div class="language-bar">
+		<div class="dropdown">
+			<a class="dropdown-toggle lang-box" data-toggle="dropdown">
+				<span class="flag"><img ng-src="{{ imgUrl }}flag-{{ flag }}.svg" height="15" alt="flag"></span>
+				<span class="text">{{ lang }}</span>
+				<i class="fa fa-caret-down"></i>
+			</a>
+			<ul class="dropdown-menu">
+				<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img ng-src="{{imgUrl}}flag-uk.svg" height="15" alt="english flag">
+                            </span>
+					<span translate="{{ 'english' }}"></span>
+				</li>
+				<li ng-click="switchLanguage('ms')">
+                            <span>
+                                <img ng-src="{{imgUrl}}flag-malay.svg" height="15" alt="malay flag">
+                            </span>
+					<span translate="{{ 'malay' }}"></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="cont--footer">
+		<div class="item1">
+			<a href="{{pathUrl[4].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+					style="width:142px;"></a>
+		</div>
+		<div class="item2">
+			<p class="copyright">{{ 'copyright' | translate }}</p>
+		</div>
+		<div class="item3">
+			<a href="{{pathUrl[5].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+					style="width:161px;"></a>
+		</div>
+	</div>
+</article>
+<script>
+	$(function(){
+		var hei=$(this).height();
+		$('.main').css({'height':hei});
+	});
+
+	$( window ).resize(function() {
+		var hei=$(this).height();
+		console.log(hei);
+		$('.main').css({'height':hei});
+	});
+</script>

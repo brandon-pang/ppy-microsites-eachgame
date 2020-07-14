@@ -1,0 +1,2953 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Open+Sans:300,400,600,700,800");
+/* line 4, ../../../app/assets/styles/scss/_global.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 10, ../../../app/assets/styles/scss/_global.scss */
+.tooltip-inner {
+  background-color: #fadd01;
+  color: #000;
+  font-size: 1.4rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  border-radius: 0;
+}
+
+/* line 19, ../../../app/assets/styles/scss/_global.scss */
+.tooltip.left .tooltip-arrow {
+  border-left-color: #fadd01;
+}
+
+/* line 23, ../../../app/assets/styles/scss/_global.scss */
+.white {
+  color: #fff;
+}
+
+/* line 27, ../../../app/assets/styles/scss/_global.scss */
+.black {
+  color: #000;
+}
+
+/* line 31, ../../../app/assets/styles/scss/_global.scss */
+.bright-yellow-color {
+  color: #fadd01;
+}
+
+/* line 35, ../../../app/assets/styles/scss/_global.scss */
+.extrabold {
+  font-weight: 900;
+}
+
+/* line 39, ../../../app/assets/styles/scss/_global.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 43, ../../../app/assets/styles/scss/_global.scss */
+.semi-bold {
+  font-weight: 500;
+}
+
+/* line 47, ../../../app/assets/styles/scss/_global.scss */
+.strike {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* line 52, ../../../app/assets/styles/scss/_global.scss */
+.no-strike {
+  text-decoration: none;
+}
+
+/* line 56, ../../../app/assets/styles/scss/_global.scss */
+.accent-font {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* line 60, ../../../app/assets/styles/scss/_global.scss */
+.text-shadow {
+  text-shadow: 3px 3px 15px #000;
+}
+
+/* line 64, ../../../app/assets/styles/scss/_global.scss */
+.drop-shadow {
+  box-shadow: 5px 5px 10px #555;
+}
+
+/* line 68, ../../../app/assets/styles/scss/_global.scss */
+.pad-bot-70 {
+  padding-bottom: 70px;
+}
+
+/* line 73, ../../../app/assets/styles/scss/_global.scss */
+.flex-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+/* line 79, ../../../app/assets/styles/scss/_global.scss */
+.flex-center-start {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+/* line 85, ../../../app/assets/styles/scss/_global.scss */
+.table-center {
+  margin: 0 auto;
+  display: table;
+}
+
+/* line 91, ../../../app/assets/styles/scss/_global.scss */
+.flex-direction {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+/* line 97, ../../../app/assets/styles/scss/_global.scss */
+.flex-direction-row {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+/* line 103, ../../../app/assets/styles/scss/_global.scss */
+.flex-align-items, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 109, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify {
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+/* line 115, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify-center, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+/* line 121, ../../../app/assets/styles/scss/_global.scss */
+.flex-justify-between {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* line 127, ../../../app/assets/styles/scss/_global.scss */
+.flex-flow-wrap {
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* line 134, ../../../app/assets/styles/scss/_global.scss */
+.flex-container, .flex-default, .btn1, .btn2, .section-1 .container .top-nav, .section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar, .section-1 .container .top-nav .language-bar .dropdown-menu li {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 140, ../../../app/assets/styles/scss/_global.scss */
+.flex-item {
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 146, ../../../app/assets/styles/scss/_global.scss */
+.flex-item-left {
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+/* line 151, ../../../app/assets/styles/scss/_global.scss */
+.flex-item-right {
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+/* line 163, ../../../app/assets/styles/scss/_global.scss */
+.container {
+  width: 960px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 169, ../../../app/assets/styles/scss/_global.scss */
+.btn1 {
+  width: 160px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 182, ../../../app/assets/styles/scss/_global.scss */
+.btn1 span:first-child {
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 0;
+  padding-right: 10px;
+}
+/* line 188, ../../../app/assets/styles/scss/_global.scss */
+.btn1 span:last-child {
+  font-size: 1.3rem;
+}
+/* line 193, ../../../app/assets/styles/scss/_global.scss */
+.btn1:hover, .btn1:focus {
+  background-color: #f6a623;
+  border-color: #f6a623;
+  color: #fff;
+}
+
+/* line 200, ../../../app/assets/styles/scss/_global.scss */
+.btn2 {
+  width: 271px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #29B06D;
+  text-transform: uppercase;
+}
+/* line 211, ../../../app/assets/styles/scss/_global.scss */
+.btn2 span {
+  font-size: 1rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+/* line 218, ../../../app/assets/styles/scss/_global.scss */
+.btn2:hover, .btn2:focus {
+  background-color: #FDBB01;
+  color: #fff;
+}
+
+/* line 224, ../../../app/assets/styles/scss/_global.scss */
+.color1 {
+  color: #FDBB01;
+}
+
+/* line 228, ../../../app/assets/styles/scss/_global.scss */
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-size: cover;
+}
+
+/* line 237, ../../../app/assets/styles/scss/_global.scss */
+.invisible {
+  display: none;
+}
+
+/* line 239, ../../../app/assets/styles/scss/_global.scss */
+.visible {
+  display: block;
+}
+
+/* line 241, ../../../app/assets/styles/scss/_global.scss */
+.text-bold {
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Glyphter';
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.eot");
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.eot?#iefix") format("embedded-opentype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.woff") format("woff"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.ttf") format("truetype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/Glyphter.svg#Glyphter") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 13, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='icon-']:before {
+  font-family: 'Glyphter';
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 23, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-locked:before {
+  content: '\0041';
+}
+
+/* line 24, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-blackshot:before {
+  content: '\0042';
+}
+
+/* line 25, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-calendar:before {
+  content: '\0043';
+}
+
+/* line 26, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-aim:before {
+  content: '\0044';
+}
+
+/* line 27, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-right:before {
+  content: '\0045';
+}
+
+/* line 28, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow-left:before {
+  content: '\0046';
+}
+
+/* line 29, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-new-page:before {
+  content: '\0047';
+}
+
+/* line 30, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-snow:before {
+  content: '\0048';
+}
+
+/* line 31, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-dot:before {
+  content: '\0049';
+}
+
+/* line 32, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-clock:before {
+  content: '\004a';
+}
+
+/* line 33, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-skull:before {
+  content: '\004b';
+}
+
+/* line 34, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-completed:before {
+  content: '\004c';
+}
+
+/* line 35, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-fail:before {
+  content: '\004d';
+}
+
+/* line 36, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-logout:before {
+  content: '\004f';
+}
+
+/* line 37, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-papaya:before {
+  content: '\0050';
+}
+
+/* line 38, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-hashtag:before {
+  content: '\0052';
+}
+
+/* line 39, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-stats:before {
+  content: '\0053';
+}
+
+/* line 40, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrowlong:before {
+  content: '\0054';
+}
+
+/* line 41, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-phoenix:before {
+  content: '\0055';
+}
+
+/* line 42, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-show-more:before {
+  content: '\0057';
+}
+
+/* line 43, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-show-less:before {
+  content: '\0058';
+}
+
+/* line 44, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-meme:before {
+  content: '\006d';
+}
+
+/* line 45, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-180view:before {
+  content: '\0070';
+}
+
+/* line 46, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-return:before {
+  content: '\0072';
+}
+
+/* line 47, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-time:before {
+  content: '\0074';
+}
+
+/* line 48, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-close:before {
+  content: '\0078';
+}
+
+/* line 49, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-morebsc:before {
+  content: '\0024';
+}
+
+/* line 50, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-plus:before {
+  content: '\002b';
+}
+
+/* line 51, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-check:before {
+  content: '\005e';
+}
+
+/* line 52, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow1:before {
+  content: '\007b';
+}
+
+/* line 53, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-arrow2:before {
+  content: '\007d';
+}
+
+/* line 54, ../../../app/assets/styles/scss/_fonts.scss */
+.icon-attention:before {
+  content: '\007e';
+}
+
+@font-face {
+  font-family: 'cs75-icon-text';
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.eot");
+  src: url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.eot?#iefix") format("embedded-opentype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.woff2") format("woff2"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.woff") format("woff"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.ttf") format("truetype"), url("https://blackshot.s3.amazonaws.com/static/event/cs75/assets/styles/fonts/lt_festival.svg#lt_festival") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 69, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='cs75-icon-']:before {
+  font-family: "cs75-icon-text";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 79, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-spin1:before {
+  content: '\e830';
+}
+
+/* line 83, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-shield:before {
+  content: '\f132';
+  font-size: 40px;
+}
+
+/* line 88, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-heart:before {
+  content: '\e800';
+}
+
+/* line 92, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-zone:before {
+  content: '\e801';
+  font-size: 42px;
+  margin-top: 8px;
+}
+
+/* line 98, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-kill:before {
+  content: '\e802';
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: -6px;
+  margin-right: -5px;
+}
+
+/* line 106, ../../../app/assets/styles/scss/_fonts.scss */
+.cs75-icon-crown:before {
+  content: '\e844';
+  font-size: 38px;
+  margin-top: 8px;
+}
+
+@font-face {
+  font-family: 'cs79-icon-text';
+  src: url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.eot");
+  src: url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.woff2") format("woff2"), url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.woff") format("woff"), url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.ttf") format("truetype"), url("https://s3.amazonaws.com/papayacdn/static/event/blackshot/cs79/assets/styles/fonts/cs79_webfont.svg#cs79_webfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 125, ../../../app/assets/styles/scss/_fonts.scss */
+[class*='cs79-icon-']:before {
+  font-family: "cs79-icon-text";
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 135, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-arrow1:before {
+  content: '\e800';
+}
+
+/* line 136, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-arrow2:before {
+  content: '\e80a';
+}
+
+/* line 137, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-calendar:before {
+  content: '\e801';
+}
+
+/* line 138, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-check:before {
+  content: '\e802';
+}
+
+/* line 139, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-clock:before {
+  content: '\e803';
+}
+
+/* line 140, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-lock:before {
+  content: '\e805';
+}
+
+/* line 141, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-papaya:before {
+  content: '\e806';
+}
+
+/* line 142, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-star:before {
+  content: '\e807';
+}
+
+/* line 143, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-cross:before {
+  content: '\e808';
+}
+
+/* line 144, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-dot:before {
+  content: '\e809';
+}
+
+/* line 145, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-incomplete:before {
+  content: '\e80b';
+}
+
+/* line 146, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-completed:before {
+  content: '\e80c';
+}
+
+/* line 147, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-open:before {
+  content: '\e80d';
+}
+
+/* line 148, ../../../app/assets/styles/scss/_fonts.scss */
+.cs79-icon-close:before {
+  content: '\e80e';
+}
+
+/* line 27, ../../../app/assets/styles/main.scss */
+.tooltip.bottom .tooltip-inner {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+/* line 32, ../../../app/assets/styles/main.scss */
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #fff;
+}
+
+/* line 39, ../../../app/assets/styles/main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 83, ../../../app/assets/styles/main.scss */
+body {
+  overflow-x: hidden;
+  color: #676767;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  min-width: 960px;
+  font-size: 15px;
+}
+/* line 90, ../../../app/assets/styles/main.scss */
+body [aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+/* line 95, ../../../app/assets/styles/main.scss */
+body [aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+/* line 101, ../../../app/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* line 105, ../../../app/assets/styles/main.scss */
+h1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #BC1D1B;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+/* line 114, ../../../app/assets/styles/main.scss */
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 61px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* line 120, ../../../app/assets/styles/main.scss */
+p, a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* line 124, ../../../app/assets/styles/main.scss */
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* line 130, ../../../app/assets/styles/main.scss */
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* line 136, ../../../app/assets/styles/main.scss */
+h5 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  color: black;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+/* line 147, ../../../app/assets/styles/main.scss */
+a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+/* line 152, ../../../app/assets/styles/main.scss */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #f6a623;
+}
+
+/* line 158, ../../../app/assets/styles/main.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 163, ../../../app/assets/styles/main.scss */
+button:focus {
+  outline: 0;
+}
+
+/* line 165, ../../../app/assets/styles/main.scss */
+.see-btn-link {
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 40px;
+  width: 160px;
+  border: 1px solid white;
+  border-radius: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 176, ../../../app/assets/styles/main.scss */
+.see-btn-link:hover {
+  color: #BC1D1B;
+  background-color: white;
+  transition: all .3s ease-in;
+}
+
+/* line 183, ../../../app/assets/styles/main.scss */
+.circle-text {
+  cursor: pointer;
+  position: relative;
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #077432;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  transition: all .3s ease-out;
+}
+/* line 196, ../../../app/assets/styles/main.scss */
+.circle-text:hover {
+  background-color: #077432;
+  color: white;
+  transition: all .3s ease-in;
+}
+
+/* line 203, ../../../app/assets/styles/main.scss */
+.p-green-bg {
+  background-color: #077432;
+  color: white;
+}
+
+/* line 208, ../../../app/assets/styles/main.scss */
+.box-index20 {
+  z-index: 38 !important;
+}
+
+/* line 213, ../../../app/assets/styles/main.scss */
+#side-nav {
+  position: fixed;
+  top: 35%;
+  right: 40px;
+  z-index: 9999;
+}
+/* line 219, ../../../app/assets/styles/main.scss */
+#side-nav .home {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px 3px #000;
+}
+/* line 229, ../../../app/assets/styles/main.scss */
+#side-nav .bullet {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #000;
+}
+/* line 237, ../../../app/assets/styles/main.scss */
+#side-nav .bullet:hover {
+  background-color: #fadd01;
+}
+
+/* line 243, ../../../app/assets/styles/main.scss */
+.section-1 {
+  background: no-repeat top center;
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 251, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  height: 170px;
+  font-size: 0.9em;
+}
+/* line 256, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink, .section-1 .container .top-nav .language-bar {
+  height: 40px;
+  background-color: rgba(124, 15, 15, 0.9);
+}
+/* line 260, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink a, .section-1 .container .top-nav .language-bar a {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+/* line 264, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink a:hover, .section-1 .container .top-nav .navlink a:focus, .section-1 .container .top-nav .language-bar a:hover, .section-1 .container .top-nav .language-bar a:focus {
+  color: #f6a623;
+}
+/* line 270, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .navlink {
+  width: 170px;
+}
+/* line 274, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar {
+  cursor: pointer;
+}
+/* line 276, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown {
+  width: 160px;
+  padding-left: 30px;
+}
+/* line 280, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu {
+  background-color: rgba(124, 15, 15, 0.9);
+  border: none;
+  border-radius: 0;
+  top: 28px;
+}
+/* line 285, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: white;
+  padding: 5px 0 5px 16px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+/* line 294, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li span:first-child {
+  width: 20%;
+  text-align: right;
+}
+/* line 298, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li span:last-child {
+  width: 80%;
+  padding-left: 10px;
+}
+/* line 303, ../../../app/assets/styles/main.scss */
+.section-1 .container .top-nav .language-bar .dropdown-menu li:hover, .section-1 .container .top-nav .language-bar .dropdown-menu li:focus {
+  background-color: #f6a623;
+}
+/* line 310, ../../../app/assets/styles/main.scss */
+.section-1 .container .event-logo-cont {
+  margin-top: 569px;
+  margin-bottom: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: no-repeat top center;
+  background-size: cover;
+  width: 900px;
+  height: 300px;
+}
+/* line 321, ../../../app/assets/styles/main.scss */
+.section-1 .container .event-exp-cont {
+  margin-bottom: 78px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 940px;
+  height: 165px;
+  border-radius: 10px;
+  border: 1px solid #770000;
+  background-color: rgba(158, 13, 0, 0.8);
+  padding-top: 10px;
+}
+/* line 333, ../../../app/assets/styles/main.scss */
+.section-1 .container .event-exp-cont .desc {
+  width: 80%;
+  text-align: center;
+  line-height: 20px;
+}
+/* line 340, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 20px;
+  height: 560px;
+  width: 940px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 350, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__img {
+  margin-bottom: 20px;
+}
+/* line 353, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__title {
+  font-style: italic;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #D5B77B;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 61px;
+}
+/* line 358, ../../../app/assets/styles/main.scss */
+.section-1 .s1--cont .s1__desc {
+  width: 86%;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #676767;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+/* line 366, ../../../app/assets/styles/main.scss */
+.section-2 {
+  padding-top: 120px;
+  padding-bottom: 54px;
+  background: no-repeat top center;
+  background-color: #810000;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 375, ../../../app/assets/styles/main.scss */
+.section-2 .cont__texts {
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 381, ../../../app/assets/styles/main.scss */
+.section-2 .cont__texts .texts__title {
+  margin-bottom: 20px;
+}
+/* line 384, ../../../app/assets/styles/main.scss */
+.section-2 .cont__texts .texts__desc {
+  margin-bottom: 20px;
+  width: 90%;
+  text-align: center;
+}
+/* line 390, ../../../app/assets/styles/main.scss */
+.section-2 .cont__slider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 790px;
+  height: 413px;
+}
+/* line 396, ../../../app/assets/styles/main.scss */
+.section-2 .cont__slider .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 44%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  transition: all .3s ease-out;
+}
+/* line 404, ../../../app/assets/styles/main.scss */
+.section-2 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow1 {
+  left: -10%;
+}
+/* line 407, ../../../app/assets/styles/main.scss */
+.section-2 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow2 {
+  right: -10%;
+}
+/* line 410, ../../../app/assets/styles/main.scss */
+.section-2 .cont__slider .slider-wrap .slick-arrow:hover, .section-2 .cont__slider .slider-wrap .slick-arrow:focus {
+  color: #BD262D;
+  transition: all .3s ease-in;
+}
+/* line 417, ../../../app/assets/styles/main.scss */
+.section-2 .cont__left_texts {
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 423, ../../../app/assets/styles/main.scss */
+.section-2 .cont__left_texts .texts__title {
+  margin-bottom: 10px;
+}
+/* line 426, ../../../app/assets/styles/main.scss */
+.section-2 .cont__left_texts .texts__desc {
+  width: 50%;
+  text-align: left;
+}
+/* line 431, ../../../app/assets/styles/main.scss */
+.section-2 .btn--container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+/* line 434, ../../../app/assets/styles/main.scss */
+.section-2 .see-btn-link {
+  margin-right: 10px;
+  margin-top: 20px;
+  height: 40px;
+  min-width: 200px;
+  border: 1px solid white;
+  border-radius: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 445, ../../../app/assets/styles/main.scss */
+.section-2 .see-btn-link:hover {
+  color: #BC1D1B;
+  background-color: white;
+  transition: all .3s ease-in;
+}
+/* line 452, ../../../app/assets/styles/main.scss */
+.section-2 .div-line {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 1px;
+  width: 940px;
+  background-color: transparent;
+}
+/* line 460, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont {
+  margin-top: 134px;
+}
+/* line 462, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .texts__title {
+  font-size: 50px;
+  text-align: center;
+}
+/* line 466, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders {
+  margin-top: 35px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width: 950px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 473, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders .cont__slider {
+  width: 950px;
+  height: 345px;
+}
+/* line 477, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders .cont__slider .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  transition: all .3s ease-out;
+}
+/* line 485, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow1 {
+  left: 1%;
+}
+/* line 488, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow2 {
+  right: 1%;
+}
+/* line 491, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .cont--sliders .cont__slider .slider-wrap .slick-arrow:hover, .section-2 .look--cont .cont--sliders .cont__slider .slider-wrap .slick-arrow:focus {
+  color: #BD262D;
+  transition: all .3s ease-in;
+}
+/* line 499, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider {
+  height: 180px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 503, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .slider__box {
+  cursor: pointer;
+  margin: 5px;
+  height: 180px;
+  width: 230px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all .3s ease-out;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+/* line 511, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .slider__box .title {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  transition: all .3s ease-out;
+}
+/* line 522, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .slider__box:hover {
+  background-color: rgba(95, 10, 10, 0.5);
+  transition: all .3s ease-in;
+}
+/* line 525, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .slider__box:hover .title {
+  color: #D5B77B;
+  transition: all .3s ease-in;
+}
+/* line 531, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .active {
+  background-color: rgba(95, 10, 10, 0.5);
+  transition: all .3s ease-in;
+}
+/* line 534, ../../../app/assets/styles/main.scss */
+.section-2 .look--cont .nav__slider .active .title {
+  color: #D5B77B;
+  transition: all .3s ease-in;
+}
+
+/* line 543, ../../../app/assets/styles/main.scss */
+.section-3 {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  background: repeat-y top center;
+  background-color: #1e1e1e;
+}
+/* line 554, ../../../app/assets/styles/main.scss */
+.section-3 .server-time {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  animation-name: colorFlash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-transform: uppercase;
+}
+/* line 564, ../../../app/assets/styles/main.scss */
+.section-3 .server-time i {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 2.8rem;
+  margin-right: 10px;
+  vertical-align: -34%;
+}
+/* line 573, ../../../app/assets/styles/main.scss */
+.section-3 .cont__texts {
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 579, ../../../app/assets/styles/main.scss */
+.section-3 .cont__texts .title {
+  margin-bottom: 20px;
+}
+/* line 582, ../../../app/assets/styles/main.scss */
+.section-3 .cont__texts .desc {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+/* line 589, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items {
+  width: 950px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 593, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .noc__title {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 61px;
+  text-align: center;
+}
+/* line 602, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section3-carousel {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 950px;
+  height: auto;
+  border: none;
+  overflow: visible;
+}
+/* line 610, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section3-carousel .slides {
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+/* line 615, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section3-carousel .slides .slideItem {
+  position: absolute;
+  display: block !important;
+  opacity: 0.6 !important;
+}
+/* line 619, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section3-carousel .slides .slideItem img {
+  border: none;
+  display: block;
+}
+/* line 624, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section3-carousel .slides .active-slide {
+  opacity: 1 !important;
+}
+/* line 629, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section4-carousel {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  position: relative;
+  width: 950px;
+  height: auto;
+  border: none;
+  overflow: visible;
+}
+/* line 637, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section4-carousel .slides {
+  border: none;
+  list-style: none;
+  position: relative;
+  overflow: visible;
+}
+/* line 642, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section4-carousel .slides .slideItem {
+  position: absolute;
+  display: block !important;
+  opacity: 0.6 !important;
+}
+/* line 646, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section4-carousel .slides .slideItem img {
+  border: none;
+  display: block;
+}
+/* line 651, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .section4-carousel .slides .active-slide {
+  opacity: 1 !important;
+}
+/* line 656, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items {
+  width: 950px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/* line 660, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box {
+  margin: 5px;
+  height: 280px;
+  width: 220px;
+  border: 1px solid #880000;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 668, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box .box__top {
+  margin-top: 20px;
+  height: 30px;
+  width: 156px;
+  border-radius: 5px;
+  background-color: #D5B77B;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #982A1F;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: right;
+}
+/* line 683, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box .box__mid {
+  height: 157px;
+}
+/* line 686, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box .box__bt {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 689, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box .box__bt .subtitle {
+  color: #D5B77B;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/* line 698, ../../../app/assets/styles/main.scss */
+.section-3 .section--daily-items .cont--daily-items .daily-item__box .box__bt .name {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 711, ../../../app/assets/styles/main.scss */
+.section-3 .div--line2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 1px;
+  width: 940px;
+  background-color: #D5B77B;
+}
+
+/* line 720, ../../../app/assets/styles/main.scss */
+.section-4 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 728, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts {
+  width: 960px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 732, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts .subtitle {
+  color: white;
+}
+/* line 735, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts .title {
+  color: #413110;
+  margin-bottom: 10px;
+}
+/* line 739, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts .desc {
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+/* line 744, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts .gold-btn-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  min-width: 244px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 755, ../../../app/assets/styles/main.scss */
+.section-4 .cont__texts .gold-btn-link:hover {
+  background-color: white;
+  color: black;
+  transition: all .3s ease-in;
+}
+/* line 762, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider {
+  width: 790px;
+  height: 413px;
+}
+/* line 765, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slick-dots {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 20px;
+}
+/* line 772, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slick-dots .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #676767;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+/* line 780, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slick-dots .dot:hover, .section-4 .cont__slider .slick-dots .dot:focus {
+  background-color: #fff;
+}
+/* line 786, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slick-dots .slick-active .dot {
+  background-color: #fff;
+}
+/* line 792, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 44%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 799, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow1 {
+  left: -5%;
+}
+/* line 802, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow2 {
+  right: -5%;
+}
+/* line 805, ../../../app/assets/styles/main.scss */
+.section-4 .cont__slider .slider-wrap .slick-arrow:hover, .section-4 .cont__slider .slider-wrap .slick-arrow:focus {
+  color: #fff;
+}
+
+/* line 813, ../../../app/assets/styles/main.scss */
+.section-4-1 {
+  padding-top: 800px;
+  padding-bottom: 100px;
+  background: no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 821, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__texts {
+  width: 960px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 827, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__texts .title {
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+/* line 831, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__texts .desc {
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+/* line 836, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__texts .gold-btn-link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  min-width: 244px;
+  border: 1px solid #FFFFFF;
+  border-radius: 100px;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 847, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__texts .gold-btn-link:hover {
+  background-color: white;
+  color: black;
+  transition: all .3s ease-in;
+}
+/* line 854, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider {
+  width: 790px;
+  height: 413px;
+}
+/* line 857, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slick-dots {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 20px;
+}
+/* line 864, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slick-dots .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #676767;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+/* line 872, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slick-dots .dot:hover, .section-4-1 .cont__slider .slick-dots .dot:focus {
+  background-color: #fff;
+}
+/* line 878, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slick-dots .slick-active .dot {
+  background-color: #fff;
+}
+/* line 884, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slider-wrap .slick-arrow {
+  position: absolute;
+  top: 44%;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 28px;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* line 891, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow1 {
+  left: -5%;
+}
+/* line 894, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slider-wrap .slick-arrow.cs79-icon-arrow2 {
+  right: -5%;
+}
+/* line 897, ../../../app/assets/styles/main.scss */
+.section-4-1 .cont__slider .slider-wrap .slick-arrow:hover, .section-4-1 .cont__slider .slider-wrap .slick-arrow:focus {
+  color: #fff;
+}
+
+/* line 905, ../../../app/assets/styles/main.scss */
+.section-5 {
+  background: no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 914, ../../../app/assets/styles/main.scss */
+.section-5 .s7--cont__texts {
+  width: 940px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 918, ../../../app/assets/styles/main.scss */
+.section-5 .s7--cont__texts .texts__subtitle {
+  color: white;
+}
+/* line 921, ../../../app/assets/styles/main.scss */
+.section-5 .s7--cont__texts .texts__title {
+  color: white;
+  margin-bottom: 10px;
+}
+/* line 925, ../../../app/assets/styles/main.scss */
+.section-5 .s7--cont__texts .texts__desc {
+  color: white;
+  width: 80%;
+  text-align: center;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+/* line 934, ../../../app/assets/styles/main.scss */
+.section-5 .s7--tabs {
+  margin-bottom: 10px;
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 938, ../../../app/assets/styles/main.scss */
+.section-5 .s7--tabs .s7--tab {
+  cursor: pointer;
+  margin: 2px;
+  height: 40px;
+  width: 188px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: all .3s ease-out;
+}
+/* line 949, ../../../app/assets/styles/main.scss */
+.section-5 .s7--tabs .s7--tab:hover {
+  background-color: rgba(208, 2, 27, 0.9);
+  color: white;
+  transition: all .3s ease-in;
+}
+/* line 955, ../../../app/assets/styles/main.scss */
+.section-5 .s7--tabs .active {
+  background-color: rgba(208, 2, 27, 0.9);
+  color: white;
+  transition: all .3s ease-in;
+}
+/* line 962, ../../../app/assets/styles/main.scss */
+.section-5 .s7--map-cont {
+  height: 520px;
+  width: 940px;
+}
+/* line 965, ../../../app/assets/styles/main.scss */
+.section-5 .s7--map-cont .map__bg {
+  background: no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 972, ../../../app/assets/styles/main.scss */
+.section-5 .s7--map-cont .map__bg .bg__text {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFFFFF;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 61px;
+}
+
+/* line 984, ../../../app/assets/styles/main.scss */
+.section-6 {
+  background: #fff no-repeat top;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+/* line 989, ../../../app/assets/styles/main.scss */
+.section-6 .container {
+  position: relative;
+  width: 940px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 995, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left {
+  width: 60%;
+  z-index: 30;
+}
+/* line 1000, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .title {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/* line 1004, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .context {
+  width: 96%;
+  margin-bottom: 30px;
+}
+/* line 1008, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap {
+  width: 90%;
+  border: 1px solid #353535;
+  border-radius: 5px;
+  background-color: rgba(18, 18, 18, 0.6);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+/* line 1019, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap .cal-left {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 16px;
+  margin-right: 26px;
+}
+/* line 1025, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap .cal-left i {
+  color: white;
+  font-size: 50px;
+}
+/* line 1030, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap .cal-right {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1034, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap .cal-right p, .section-6 .container .cont-left .calender-wrap .cal-right a {
+  margin-bottom: 0;
+}
+/* line 1035, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-left .calender-wrap .cal-right p .text-bold, .section-6 .container .cont-left .calender-wrap .cal-right a .text-bold {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 1044, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-right {
+  position: relative;
+  width: 40%;
+  height: 500px;
+}
+/* line 1048, ../../../app/assets/styles/main.scss */
+.section-6 .container .cont-right img {
+  position: absolute;
+  top: -150px;
+  left: -450px;
+  z-index: 100;
+  height: 700px;
+}
+
+/* line 1060, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1068, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .cont__texts {
+  width: 940px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1072, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .cont__texts .title {
+  margin-bottom: 20px;
+}
+/* line 1075, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .cont__texts .desc {
+  width: 86%;
+  text-align: center;
+}
+/* line 1080, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container {
+  height: inherit;
+}
+/* line 1082, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1085, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 1088, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col1 p, .section-7 #subsection1 .container #step1 .s__col1 a {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 1100, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col2 a {
+  height: 40px;
+  width: 253px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1113, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col2 a:hover, .section-7 #subsection1 .container #step1 .s__col2 a:focus {
+  border: 1px solid #fff;
+  background-color: white;
+  color: black;
+}
+/* line 1120, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col3 {
+  margin-top: 10px;
+}
+/* line 1122, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col3 .create--btn {
+  color: #A20909;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1129, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step1 .s__col3 .create--btn:hover, .section-7 #subsection1 .container #step1 .s__col3 .create--btn:focus {
+  color: white;
+}
+/* line 1136, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 {
+  height: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1142, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .subtitle {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 61px;
+  text-transform: uppercase;
+}
+/* line 1151, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 10px;
+}
+/* line 1158, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col1 .flag-wrapper {
+  float: left;
+}
+/* line 1160, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col1 .flag-wrapper img {
+  margin: 4px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+/* line 1164, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col1 .flag-wrapper img:hover, .section-7 #subsection1 .container #step2 .row .col1 .flag-wrapper img:focus {
+  border: 2px solid #fff;
+  border-radius: 100%;
+}
+/* line 1172, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col2 {
+  padding-left: 20px;
+}
+/* line 1174, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col2 div {
+  border-radius: 35px;
+  width: 270px;
+  height: 55px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  color: #2eb020;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 1184, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step2 .row .col2 div span {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+}
+/* line 1195, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 {
+  height: inherit;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1201, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .subtitle {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 61px;
+  text-transform: uppercase;
+}
+/* line 1210, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 10px;
+}
+/* line 1216, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col1 div {
+  border-radius: 35px;
+  width: 270px;
+  height: 55px;
+  background-color: rgba(133, 2, 2, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1222, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col1 div span {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 1238, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col2 {
+  padding-left: 50px;
+}
+/* line 1240, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col2 .gold, .section-7 #subsection1 .container #step3 .row .col2 .silver, .section-7 #subsection1 .container #step3 .row .col2 .bronze {
+  width: 71px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  float: left;
+  color: #404040;
+  text-align: center;
+  padding-top: 45px;
+  font-weight: 600;
+  font-size: 3rem;
+}
+/* line 1253, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col2 .gold {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/event/blackshot/cs80/assets/images/section5/subsection1/gold.png);
+}
+/* line 1256, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col2 .silver {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/event/blackshot/cs80/assets/images/section5/subsection1/silver.png);
+}
+/* line 1259, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col2 .bronze {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/event/blackshot/cs80/assets/images/section5/subsection1/bronze.png);
+}
+/* line 1264, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col3 {
+  padding-left: 55px;
+}
+/* line 1266, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col3 div {
+  border-radius: 35px;
+  width: 270px;
+  height: 55px;
+  background-color: rgba(133, 2, 2, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1272, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col3 div .img-circle {
+  border-radius: 100%;
+  width: 19%;
+}
+/* line 1276, ../../../app/assets/styles/main.scss */
+.section-7 #subsection1 .container #step3 .row .col3 div span {
+  margin-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+/* line 1293, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 {
+  background-color: #fff;
+  padding-top: 30px;
+}
+/* line 1296, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 h3 {
+  margin-bottom: 10px;
+  color: #C00303;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 61px;
+  text-align: center;
+}
+/* line 1309, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table thead th {
+  color: #AAAAAA;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  font-weight: 400;
+  border: none;
+}
+/* line 1317, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table thead th:nth-child(1) {
+  padding-bottom: 16px;
+}
+/* line 1320, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table thead th:nth-child(2) {
+  text-align: left;
+  width: 50%;
+  padding-bottom: 16px;
+}
+/* line 1325, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table thead th:last-child {
+  font-size: 14px;
+  color: #C00303;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+/* line 1337, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr:hover, .section-7 #subsection2 table tbody tr:focus, .section-7 #subsection2 table tbody tr.highlighted {
+  background-color: rgba(32, 123, 176, 0.1);
+}
+/* line 1341, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+/* line 1346, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:first-child {
+  color: #C00303;
+  font-size: 2.6rem;
+}
+/* line 1349, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:first-child.red {
+  color: #D5B77B;
+}
+/* line 1354, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(2) {
+  padding-top: 7px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1357, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(2) img {
+  width: 33px;
+  height: 22px;
+  border: 1px solid #d2d2d2;
+  margin-top: 5px;
+  margin-right: 10px;
+  float: left;
+}
+/* line 1365, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(2) p, .section-7 #subsection2 table tbody tr td:nth-child(2) a {
+  padding-top: 11px;
+  color: #676767;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19px;
+  text-transform: uppercase;
+  float: left;
+}
+/* line 1376, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(3) {
+  padding-top: 14px;
+  color: #D5B77B;
+}
+/* line 1380, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(4) {
+  padding-top: 14px;
+  color: #858585;
+}
+/* line 1384, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(5) {
+  padding-top: 14px;
+  color: #9B660E;
+}
+/* line 1388, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr td:nth-child(6) {
+  padding-top: 14px;
+  color: #C00303;
+}
+/* line 1393, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 table tbody tr:last-child {
+  border-bottom: 1px solid #E1E1E1;
+}
+/* line 1399, ../../../app/assets/styles/main.scss */
+.section-7 #subsection2 .img--logo {
+  height: 145px;
+  width: 900px;
+}
+/* line 1405, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 {
+  background-color: #fff;
+  padding-top: 140px;
+}
+/* line 1409, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container-fluid {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/event/blackshot/cs80/assets/images/bgs/medals-bg.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  position: relative;
+  padding-bottom: 70px;
+}
+/* line 1417, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container {
+  width: 880px;
+  margin: -93px auto 0;
+  background-color: #fff;
+  box-shadow: 0 1px 3px #ccc;
+  border-radius: 10px;
+  padding-bottom: 45px;
+}
+/* line 1425, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container h5 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: #e4b745;
+}
+/* line 1431, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2eb020;
+}
+/* line 1437, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container p, .section-7 #subsection3 .container a {
+  color: #e4b745;
+}
+/* line 1441, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container {
+  border: 2px solid #BF0000;
+  border-radius: 3px;
+  width: 420px;
+  height: 180px;
+  margin: 0 auto 45px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+/* line 1454, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #C41111;
+  padding-bottom: 15px;
+  line-height: 32px;
+  text-align: center;
+}
+/* line 1464, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container p, .section-7 #subsection3 .container .text-container a {
+  width: 100%;
+  text-align: center;
+  color: #CD3737;
+}
+/* line 1471, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container.text-container1 img {
+  position: absolute;
+  top: -27px;
+  left: -125px;
+}
+/* line 1479, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container.text-container2 img {
+  position: absolute;
+  top: -15px;
+  right: -170px;
+}
+/* line 1487, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .text-container.text-container3 img {
+  position: absolute;
+  top: -10px;
+  left: -167px;
+}
+/* line 1495, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .date-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 420px;
+  border: 2px solid #BF0000;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1503, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .date-container i {
+  font-size: 40px;
+  color: #CD3737;
+  margin-right: 10px;
+}
+/* line 1508, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .date-container p, .section-7 #subsection3 .container .date-container a {
+  padding-top: 12px;
+  color: #CD3737;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+/* line 1518, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .mid--title {
+  margin-bottom: 20px;
+  color: #CD3737;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 61px;
+  text-align: center;
+}
+/* line 1528, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .notice--title {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #C00303;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+/* line 1538, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+}
+/* line 1540, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col {
+  margin: 10px;
+  width: 230px;
+}
+/* line 1543, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box {
+  margin-top: 14px;
+  position: relative;
+  box-sizing: border-box;
+  height: 228px;
+  width: 230px;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1552, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .rate--box {
+  position: absolute;
+  top: -60px;
+  left: 60px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  height: 108px;
+  width: 108px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1563, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .rate--box .big-text {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 71px;
+}
+/* line 1571, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .rate--box .small-text {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 35px;
+}
+/* line 1580, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .rank {
+  width: 80%;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 1592, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .com-prize {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 1603, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .r--col .wrap--box .prize {
+  height: 60px;
+  width: 203px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+}
+/* line 1615, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col1 img {
+  max-width: 60%;
+}
+/* line 1618, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col1 .wrap--box {
+  border: 2px solid #979797;
+  color: #A9A9A9;
+}
+/* line 1621, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col1 .wrap--box .rate--box {
+  background-color: #C2C2C2;
+}
+/* line 1629, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col2 .wrap--box {
+  border: 2px solid #D5B77B;
+  color: #D5B77B;
+}
+/* line 1632, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col2 .wrap--box .rate--box {
+  background-color: #D5B77B;
+}
+/* line 1639, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col3 img {
+  max-width: 60%;
+}
+/* line 1642, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col3 .wrap--box {
+  border: 2px solid #C47653;
+  color: #C47653;
+}
+/* line 1645, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col3 .wrap--box .rate--box {
+  background-color: #C47653;
+}
+/* line 1651, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col4 .wrap--box {
+  border: 2px solid #C00303;
+  color: #C00303;
+}
+/* line 1654, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .rate--row .col4 .wrap--box .rate--box {
+  background-color: #C00303;
+}
+/* line 1660, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .reward--icon {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+/* line 1665, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .luckybox--cont {
+  margin-top: 40px;
+  box-sizing: border-box;
+  height: 164px;
+  width: 651px;
+  border: 2px solid #C00303;
+  border-radius: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 1673, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .luckybox--cont .cont__left {
+  width: 50%;
+}
+/* line 1676, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .luckybox--cont .cont__right {
+  margin-right: 2%;
+  width: 48%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1681, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .luckybox--cont .cont__right .title {
+  color: #C00303;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 19px;
+  text-align: center;
+}
+/* line 1690, ../../../app/assets/styles/main.scss */
+.section-7 #subsection3 .container .luckybox--cont .cont__right .desc {
+  margin-top: 10px;
+  color: #C00303;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* line 1705, ../../../app/assets/styles/main.scss */
+.section-8 {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  z-index: 3;
+}
+/* line 1714, ../../../app/assets/styles/main.scss */
+.section-8 #sil {
+  position: absolute;
+  top: 86px;
+  left: 0;
+  right: 0;
+}
+/* line 1721, ../../../app/assets/styles/main.scss */
+.section-8 .container {
+  position: relative;
+  z-index: 2;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1726, ../../../app/assets/styles/main.scss */
+.section-8 .container .title {
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 61px;
+  text-transform: uppercase;
+}
+/* line 1735, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge {
+  background-image: url(https://static.papayapla.com/static/event/blackshot/cs80/assets/images/section7/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 285px;
+  height: 285px;
+  margin-top: 80px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 10px;
+}
+/* line 1747, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #before-login {
+  width: 220px;
+  height: 220px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border: 15px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+}
+/* line 1756, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #before-login .top__text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+/* line 1762, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #before-login a {
+  border-radius: 15px;
+  width: 145px;
+  height: 35px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #fff;
+  color: #D0021B;
+  margin-top: 10px;
+  cursor: pointer;
+}
+/* line 1774, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #before-login a:hover, .section-8 .container #gauge #before-login a:focus {
+  background-color: #ffe400;
+}
+/* line 1780, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login {
+  width: 220px;
+  height: 220px;
+  position: relative;
+}
+/* line 1784, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login .afterlogin__wrap {
+  height: 220px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1788, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login .afterlogin__wrap .top__text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+/* line 1794, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login .afterlogin__wrap .time__text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 46px;
+  font-weight: 300;
+  text-transform: none;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+/* line 1803, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login .afterlogin__wrap .bt__text {
+  color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+/* line 1810, ../../../app/assets/styles/main.scss */
+.section-8 .container #gauge #after-login .round-progress-wrapper {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+/* line 1820, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont {
+  margin-top: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1824, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .subtitle {
+  color: white;
+  font-size: 20px;
+}
+/* line 1830, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .desc {
+  margin-top: 10px;
+  width: 80%;
+  text-align: center;
+}
+/* line 1835, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .items--cont {
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+/* line 1838, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .items--cont .item {
+  width: 300px;
+  margin: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+/* line 1843, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .items--cont .item .title {
+  font-size: 36px;
+}
+/* line 1846, ../../../app/assets/styles/main.scss */
+.section-8 .objective--cont .items--cont .item .desc {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 1862, ../../../app/assets/styles/main.scss */
+footer {
+  background-color: #1e1e1e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+/* line 1867, ../../../app/assets/styles/main.scss */
+footer .container {
+  width: 860px;
+}
+/* line 1870, ../../../app/assets/styles/main.scss */
+footer .container .flex-container .item1, footer .container .flex-default .item1, footer .container .btn1 .item1, footer .container .btn2 .item1, footer .section-1 .container .top-nav .item1, .section-1 footer .container .top-nav .item1, footer .section-1 .container .top-nav .language-bar .dropdown-menu li .item1, .section-1 footer .container .top-nav .language-bar .dropdown-menu li .item1 {
+  padding-top: 4px;
+}
+/* line 1873, ../../../app/assets/styles/main.scss */
+footer .container .flex-container .item2, footer .container .flex-default .item2, footer .container .btn1 .item2, footer .container .btn2 .item2, footer .section-1 .container .top-nav .item2, .section-1 footer .container .top-nav .item2, footer .section-1 .container .top-nav .language-bar .dropdown-menu li .item2, .section-1 footer .container .top-nav .language-bar .dropdown-menu li .item2 {
+  padding-top: 10px;
+}
+/* line 1880, ../../../app/assets/styles/main.scss */
+footer .copyright {
+  color: #DCDCDC;
+  font-size: 15px;
+}
+
+@keyframes colorFlash {
+  0% {
+    color: white;
+  }
+  100% {
+    color: #bf3d3d;
+  }
+}

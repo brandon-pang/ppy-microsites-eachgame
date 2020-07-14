@@ -1,0 +1,1146 @@
+@import "scss/variables";
+@import "scss/global";
+@import "scss/fonts";
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+// elements //
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $primary-font;
+  color: $light-gray;
+  //font-size:15px;
+  line-height: 1.3em;
+  font-weight: 300;
+
+  min-width: 1100px;
+
+  //max-width: 1920px;
+}
+
+h2, h3, h4, p {
+  margin: 0;
+  font-family: $pri-font;
+}
+
+h1 {
+  font-family: $sec-font;
+  color: $white;
+  font-size: 32px;
+  line-height: 1.3em;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+h4 {
+  color: $light-gray;
+  font-size: 24px;
+  line-height: 1.1em;
+  font-weight: 700;
+}
+
+h2 {
+  color: $yellow;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+p {
+  color: $light-gray;
+  font-size: 15px;
+  line-height: 1.3em;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+h3 {
+  color: $dark-gray;
+  font-size:14px;
+  line-height: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+a {
+  font-family: $pri-font;
+  text-decoration: none;
+  color: $white;
+  cursor: pointer;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -17px;
+}
+
+// ------------- //
+
+#top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: $black;
+  ul {
+    @extend .flex-default;
+    height: 50px;
+    justify-content: space-around;
+    margin: 0;
+    li {
+      a {
+        font-size: 1.6rem;
+        color: $color2;
+        font-family: $secondary-font;
+        font-style: italic;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 13px;
+        &:hover, &:focus, &.active {
+          border-bottom: 2px solid $color2;
+        }
+      }
+
+      &:nth-child(4) {
+        line-height: 0;
+      }
+
+      i {
+        font-size: 3.5rem;
+        line-height: 0;
+      }
+    }
+  }
+}
+
+#logo-top {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/header_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+
+  .container {
+    position: relative;
+  }
+
+  .top-nav {
+    @extend .flex-default;
+    justify-content: space-between;
+    height: 90px;
+    font-size: 0.9em;
+
+    .navlink, .language-bar {
+      @extend .flex-default;
+      height: 40px;
+      background-color: rgba($black, 0.5);
+
+      a {
+        font-size: 1.4rem;
+        &:hover, &:focus {
+          color: $color1;
+        }
+      }
+    }
+
+    .navlink {
+      width: 170px;
+    }
+
+    .language-bar {
+      .dropdown {
+        width: 160px;
+        padding-left: 30px;
+      }
+      .dropdown-menu {
+        background-color: rgba($black, 0.5);
+        border: none;
+        border-radius: 0;
+        padding-left: 17px;
+        top: 28px;
+        li {
+          @extend .flex-default;
+          text-transform: capitalize;
+          font-size: 1.4rem;
+          color: $white;
+          padding: 5px 0;
+          transition: all 0.3s;
+          cursor: pointer;
+          span {
+            &:first-child {
+              width: 20%;
+              text-align: right;
+            }
+            &:last-child {
+              width: 80%;
+              padding-left: 10px;
+            }
+          }
+          &:hover, &:focus {
+            background-color: $color1;
+          }
+        }
+      }
+    }
+  }
+
+  .logo-wrapper {
+    padding-bottom: 90px;
+    li:first-child {
+      text-align: center;
+      margin: 0 auto;
+    }
+    li:last-child {
+      text-align: center;
+      margin: 40px auto;
+    }
+  }
+}
+
+#section1, #section2, #section3, #section4, #section5, #section7, #section8, #section9 {
+  position: relative;
+}
+
+#section1 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section1/section1-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $black;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+
+  .container {
+    text-align: center;
+    position: relative;
+    //z-index: 2;
+
+    h2 {
+      margin: 10px auto;
+    }
+    h1 {
+      margin: 10px auto;
+    }
+    p {
+      padding-top: 30px;
+      margin: 10px auto;
+      width: 80%;
+    }
+
+    .nav-tabs {
+      padding-top: 30px;
+      text-align: center;
+      border-bottom: 1px solid $tab-boarder-color;
+
+      li {
+        padding-left: 20px;
+        padding-right: 20px;
+        float: none;
+        display: inline-block;
+        border-bottom: none;
+        *display: inline; /* ie7 fix */
+        zoom: 1; /* hasLayout ie7 trigger */
+
+        a {
+          color: $dark-gray;
+          background-color: transparent;
+          border-radius: 0;
+          margin-right: 0;
+          font-size: 13px;
+          letter-spacing: 1.2px;
+          border-bottom: transparent;
+
+          &:hover {
+            color: $yellow;
+            background-color: transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-top: 1px solid transparent;
+          }
+        }
+
+        &.active {
+          border-top: 1px solid $tab-boarder-color;
+          border-bottom: transparent;
+          border-left: 1px solid $tab-boarder-color;
+          border-right: 1px solid $tab-boarder-color;
+          z-index: 100;
+          background-color: $tabpane-bg-color;
+          a {
+            color: $white;
+            border: none !important;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: $tabpane-bg-color;
+      height: 450px;
+      //position: relative;
+      .tab-pane{
+          padding-top:25px;
+          .container{
+            width:98%;
+          }
+      }
+      #arrows0, #arrows1, #arrows2 {
+        position: relative;
+        bottom: 40px;
+        width: 100%;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.5);
+
+        .slick-prev0, .slick-next0,
+        .slick-prev1, .slick-next1,
+        .slick-prev2, .slick-next2 {
+          position: relative;
+          bottom: -13px;
+          right: 30px;
+          padding-left: 20px;
+          float: right;
+          font-size: 1em;
+        }
+
+        #title0, #title1, #title2 {
+          position: relative;
+          left: 30px;
+          bottom: -11px;
+        }
+
+        #pageNo0, #pageNo1, #pageNo2 {
+          position: relative;
+          float: right;
+          bottom: -11px;
+          right: 20px;
+        }
+      }
+    }
+    .flex-default {
+      text-align: left;
+      padding: 20px;
+
+      .col1 {
+        padding-right: 140px;
+
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width: 100%;
+        }
+      }
+      .col2 {
+        padding-top: 15px;
+        padding-right: 20px;
+        margin: auto 0px;
+        img{
+          width:100%;
+        }
+
+      }
+    }
+  }
+  .btn1 {
+    margin: 50px auto;
+  }
+  .container-arrow {
+    width:1040px;
+    margin:0px auto;
+    position: relative;
+    z-index: 1000;
+    top: -230px;
+    .div-arrow-left, .div-arrow-right {
+      font-size: 2em;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    .div-arrow-left {
+      float: left;
+      padding-left: 20px;
+    }
+    .div-arrow-right {
+      float: right;
+    }
+  }
+}
+
+#section2 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section2/section2-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+  padding-bottom: 80px;
+
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 120px;
+      margin: 10px auto;
+      width: 76%;
+    }
+  }
+  .flex-default {
+    padding-top: 50px;
+    text-align: left;
+    .col1 {
+      width: 25%;
+    }
+    .col2 {
+      width: 75%;
+      .tab-pane {
+        height: 612px;
+        padding-left: 20px;
+        h4 {
+
+        }
+        h2 {
+          padding-top: 30px;
+        }
+        p {
+          padding-top: 30px;
+          width: 100%;
+        }
+        .map-wrap {
+          padding-top: 60px;
+
+          span {
+            color: $yellow;
+            font-size: 20px;
+            vertical-align: middle;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    .nav-pills {
+      text-align: left;
+      li {
+        padding: 9px;
+        float: none;
+        border-left: 3px solid transparent;
+        a {
+          color: $dark-gray;
+          background-color: transparent;
+          border-radius: 0;
+        }
+        &:hover {
+          padding: 9px;
+          border-left: 3px solid $yellow;
+          background-color: #131313;
+          a {
+            color: $white;
+          }
+        }
+        &.active {
+          border-left: 3px solid $yellow;
+          z-index: 100;
+          background-color: #131313;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+    .tab-content {
+      padding: 10% 5%;
+      background-color: #131313;
+      #section-six-slide {
+        position: relative;
+        padding: 2%;
+        img {
+          width: 98%;
+        }
+      }
+    }
+  }
+}
+
+#section3 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section3/section3-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+  padding-bottom: 80px;
+
+  .container {
+    text-align: center;
+
+    h1 {
+      padding-top: 60px;
+    }
+
+    p {
+      padding-top: 120px;
+      margin: 10px auto;
+      width: 76%;
+    }
+
+    .nav-tabs {
+      padding-top: 40px;
+      text-align: center;
+      border-bottom: 1px solid $tab-boarder-color;
+      li {
+        float: none;
+        display: inline-block;
+        border-bottom: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        *display: inline; /* ie7 fix */
+        zoom: 1; /* hasLayout ie7 trigger */
+
+        a {
+          color: $dark-gray;
+          background-color: transparent;
+          border-radius: 0;
+          margin-right: 0;
+          font-size: 13px;
+          letter-spacing: 1.2px;
+          border-bottom: transparent;
+
+          &:hover {
+            color: $yellow;
+            background-color: transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-top: 1px solid transparent;
+          }
+        }
+
+        &.active {
+          border-top: 1px solid $tab-boarder-color;
+          border-bottom: transparent;
+          border-left: 1px solid $tab-boarder-color;
+          border-right: 1px solid $tab-boarder-color;
+          z-index: 100;
+          background-color: #080808;
+          a {
+            color: $white;
+            border: none !important;
+          }
+        }
+      }
+    }
+    .tab-content {
+      background-color: #080808;
+      height: 460px;
+      .tab-pane > img {
+        padding-top: 80px;
+
+        width: 98%;
+      }
+    }
+    .flex-default {
+      text-align: left;
+      padding-top: 35px;
+      padding-left: 25px;
+      padding-right: 20px;
+      .col1 {
+        padding-right: 100px;
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width: 100%;
+        }
+      }
+      .col2 {
+        padding-top: 20px;
+        padding-right: 30px;
+        margin: auto 0px;
+      }
+    }
+
+  }
+  .btn1 {
+    margin: 30px auto;
+  }
+
+  .container-arrow {
+    width:1040px;
+    margin:0px auto;
+    position: relative;
+    z-index: 1000;
+    top: -250px;
+    .div-arrow-left1, .div-arrow-right1 {
+      font-size: 2em;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    .div-arrow-left1 {
+      float: left;
+      padding-left: 20px;
+    }
+    .div-arrow-right1 {
+      float: right;
+      //padding-right: 40px;
+    }
+  }
+}
+
+#section4 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section4/section4-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+  padding-bottom: 80px;
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 100px;
+      margin: 10px auto;
+      width: 85%;
+    }
+
+    .nav-tabs {
+      padding-top: 30px;
+      text-align: center;
+      border-bottom: 1px solid $tab-boarder-color;
+      li {
+        float: none;
+        display: inline-block;
+        border-bottom: none;
+        padding-left: 40px;
+        padding-right: 40px;
+        *display: inline; /* ie7 fix */
+        zoom: 1; /* hasLayout ie7 trigger */
+
+        a {
+          color: $dark-gray;
+          background-color: transparent;
+          border-radius: 0;
+          margin-right: 0;
+          font-size: 13px;
+          letter-spacing: 1.2px;
+          border-bottom: transparent;
+
+          &:hover {
+            color: $yellow;
+            background-color: transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-top: 1px solid transparent;
+          }
+        }
+
+        &.active {
+          border-top: 1px solid $tab-boarder-color;
+          border-bottom: transparent;
+          border-left: 1px solid $tab-boarder-color;
+          border-right: 1px solid $tab-boarder-color;
+          z-index: 100;
+          background-color: $tabpane-bg-color;
+          a {
+            color: $white;
+            border: none !important;
+          }
+        }
+      }
+    }
+    .tab-content {
+      background-color: $tabpane-bg-color;
+      height: 340px;
+    }
+    .flex-default {
+      text-align: left;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+
+      .col1 {
+        width: 50%;
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width: 100%;
+        }
+      }
+      .col2 {
+        width: 50%;
+        h1 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width: 100%;
+        }
+
+        #s4-arrows0, #s4-arrows1 {
+          position: relative;
+          right: 10px;
+          width: 100%;
+          height: 40px;
+          bottom: 30px;
+          background-color: rgba(0, 0, 0, 0.5);
+
+          .s4-slick-prev0, .s4-slick-next0, .s4-slick-prev1, .s4-slick-next1 {
+            position: relative;
+            bottom: -13px;
+            right: 30px;
+            padding-left: 20px;
+            float: right;
+            font-size: 1em;
+          }
+
+          #s4-title0, #s4-title1 {
+            position: relative;
+            left: 30px;
+            bottom: -11px;
+          }
+
+          #s4-pageNo0, #s4-pageNo1 {
+            position: relative;
+            float: right;
+            bottom: -11px;
+            right: 20px;
+          }
+        }
+      }
+    }
+    #s4-node3{
+      .col-xs-6{
+        padding:50px;
+        text-align:left;
+        h1 {
+          padding-top: 0px;
+        }
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .btn1 {
+    margin: 30px auto;
+  }
+  .container-arrow {
+    width:1040px;
+    margin:0px auto;
+    position: relative;
+    z-index: 1000;
+    top: -200px;
+    .div-arrow-left3, .div-arrow-right3 {
+      font-size: 2em;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    .div-arrow-left3 {
+      float: left;
+      padding-left: 20px;
+    }
+    .div-arrow-right3 {
+      float: right;
+      //padding-right: 40px;
+    }
+  }
+}
+
+#section5 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section5/section5-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 120px;
+      width:76%;
+      margin:0px auto;
+    }
+
+    .flex-default {
+      text-align: left;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      .col1 {
+        padding-right:40px;
+
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width:100%;
+        }
+      }
+      .col2 {
+        padding-left: 5%;
+        margin: auto 0px;
+      }
+    }
+  }
+}
+
+#section6 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section6/section6-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+  padding-bottom:80px;
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 120px;
+      width:76%;
+      margin:0px auto;
+    }
+  }
+  .nav-tabs {
+    padding-top: 30px;
+    text-align: center;
+    border-bottom: 1px solid $tab-boarder-color;
+    li {
+      float: none;
+      display: inline-block;
+      border-bottom: none;
+      padding-left: 40px;
+      padding-right: 40px;
+      *display: inline; /* ie7 fix */
+      zoom: 1; /* hasLayout ie7 trigger */
+
+      a {
+        color: $dark-gray;
+        background-color: transparent;
+        border-radius: 0;
+        margin-right: 0;
+        font-size: 13px;
+        letter-spacing: 1.2px;
+        border-bottom: transparent;
+
+        &:hover {
+          color: $yellow;
+          background-color: transparent;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent;
+          border-top: 1px solid transparent;
+        }
+      }
+
+      &.active {
+        border-top: 1px solid $tab-boarder-color;
+        border-bottom: transparent;
+        border-left: 1px solid $tab-boarder-color;
+        border-right: 1px solid $tab-boarder-color;
+        z-index: 100;
+        background-color: $tabpane-bg-color;
+        a {
+          color: $white;
+          border: none !important;
+        }
+      }
+    }
+  }
+  .tab-content {
+    background-color:$tabpane-bg-color;
+    height: 316px;
+    .tab-pane {
+      postion:relative;
+      .col-xs-6{
+        padding:50px;
+        text-align:left;
+        h4 {
+          padding-top: 0px;
+          padding-bottom:16px;
+        }
+        h2 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top:12px;
+          padding-bottom:14px;
+          width: 100%;
+        }
+      }
+      .img-float{
+        position: relative;
+        z-index: 30;
+        top: -270px;
+        left:-11px;
+        img{
+          width:13%;
+        }
+      }
+    }
+  }
+  .btn1 {
+    margin: 30px auto;
+  }
+  .container-arrow {
+    width:1040px;
+    margin:0px auto;
+    position: relative;
+    z-index: 1000;
+    top: -180px;
+    .div-arrow-left4, .div-arrow-right4 {
+      font-size: 2em;
+      &:hover {
+        color: $yellow;
+      }
+    }
+    .div-arrow-left4 {
+      float: left;
+      padding-left: 20px;
+    }
+    .div-arrow-right4 {
+      float: right;
+      //padding-right: 40px;
+    }
+  }
+}
+
+#section7 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section2/section2-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+  padding-bottom: 40px;
+
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 120px;
+      margin: 10px auto;
+      width: 80%;
+    }
+  }
+  .flex-default {
+    padding-top: 50px;
+    text-align: left;
+    .col1 {
+      width: 25%;
+    }
+    .col2 {
+      width: 75%;
+      .tab-pane {
+        height: 552px;
+        padding-left: 20px;
+        .col-xs-6{
+          //padding:18px;
+          text-align:left;
+          h4 {
+            padding-top: 0px;
+            padding-bottom:18px;
+          }
+          h2 {
+            padding-top: 0px;
+            padding-bottom:8px;
+          }
+          h3{
+            padding-top: 0px;
+            padding-bottom:2px;
+          }
+          p {
+            padding-top:0px;
+            padding-bottom:12px;
+            width: 100%;
+
+          }
+        }
+      }
+    }
+    .nav-pills {
+      text-align: left;
+      li {
+        padding: 9px;
+        float: none;
+        border-left: 3px solid transparent;
+        a {
+          color: $dark-gray;
+          background-color: transparent;
+          border-radius: 0;
+        }
+        &:hover {
+          padding: 9px;
+          border-left: 3px solid $yellow;
+          background-color: #131313;
+          a {
+            color: $white;
+          }
+        }
+        &.active {
+          border-left: 3px solid $yellow;
+          z-index: 100;
+          background-color: #131313;
+          a {
+            color: $white;
+          }
+        }
+      }
+    }
+    .tab-content {
+      padding: 10% 5%;
+      background-color: #131313;
+      #section-six-slide {
+        position: relative;
+        padding: 2%;
+        img {
+          width: 98%;
+        }
+      }
+    }
+  }
+}
+
+#section8 {
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section4/section4-header.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $background-gray;
+
+  .container {
+    text-align: center;
+    h1 {
+      padding-top: 60px;
+    }
+    p {
+      padding-top: 120px;
+      width:80%;
+      margin:0px auto;
+    }
+    .flex-default {
+      padding-top:40px;
+      padding-bottom:20px;
+      width:96%;
+      margin:0px auto;
+      text-align: left;
+      .col1 {
+        h4 {
+          padding-top: 0px;
+        }
+        p {
+          padding-top: 20px;
+          width:100%;
+        }
+      }
+      .col2 {
+        padding-left:20px;
+        margin: auto 0px;
+        img {
+          //margin-top:10px;
+        }
+      }
+    }
+  }
+}
+
+#section-node:nth-child(2n){
+  background-image: url(https://papayacdn.s3.amazonaws.com/static/dekaron/update/action19/assets/images/section11-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color:$tabpane-bg-color;
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width:920px;
+    margin:0px auto;
+    .flex-default {
+      .col1 {
+        h1 {
+          padding-bottom: 10px;
+        }
+        h2 {
+          padding-bottom: 15px;
+        }
+        a {
+          margin-top: 20px;
+        }
+      }
+      .col2 {
+        padding-left: 5%;
+        img {
+          margin: auto 0px;
+        }
+      }
+    }
+  }
+
+}
+
+#section-node {
+  background-color: $background-gray;
+
+  .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width:920px;
+    margin:0px auto;
+    .flex-default {
+      .col1 {
+        h1 {
+          padding-bottom: 10px;
+        }
+        h2 {
+          padding-bottom: 15px;
+        }
+        a {
+          margin-top: 20px;
+        }
+      }
+      .col2 {
+        padding-left: 5%;
+        img {
+          margin: auto 0px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $footer-color;
+  padding: 30px 0;
+  font-size: 1.3rem;
+  color: $white;
+
+  small {
+    margin-left: 15px;
+  }
+  .flex-default {
+    justify-content: space-between;
+  }
+}

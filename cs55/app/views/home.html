@@ -1,0 +1,298 @@
+<nav id="side-nav">
+    <ul class="text-center">
+        <li class="up" ng-click="main.prev()"><i class="icon-arrow-up white"></i></li>
+        <li class="home"><a href="#header" class="tabs" du-smooth-scroll du-scrollspy><i class="icon-home"></i></a></li>
+        <li class="bullet"><a href="#section-one" class="tabs" du-smooth-scroll du-scrollspy></a></li>
+        <li class="bullet"><a href="#section-two" class="tabs" du-smooth-scroll du-scrollspy></a></li>
+        <li class="bullet"><a href="#section-three" class="tabs" du-smooth-scroll du-scrollspy></a></li>
+        <li class="bullet"><a href="#section-four" class="tabs" du-smooth-scroll du-scrollspy></a></li>
+        <li class="down" ng-click="main.next()"><i class="icon-arrow-down white"></i></li>
+    </ul>
+</nav>
+
+<header id="header">
+    <div id="top-divider" style="visibility: hidden;"></div>
+    <div class="shadow-bg"></div>
+
+    <div class="container">
+        <div class="go-back pad-top-50 pull-left"><a href="http://www.blackshot.com" target="_blank" class="text-capitalize"><i class="icon-go-back"></i>{{ 'goback' | translate }}</a></div>
+        <div class="dropdown pad-top-50 pull-right">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+                <span><img ng-src="assets/images/flag-{{ main.flag }}.svg" height="15"></span><span>{{ main.lang }}</span><b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a ng-click="main.switchLanguage('en')">
+                        <span><img src="assets/images/flag-uk.svg" height="15"></span><span class="text-capitalize">{{ 'english' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('fr')">
+                        <span><img src="assets/images/flag-france.svg" height="15"></span><span class="text-capitalize">{{ 'french' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('de')">
+                        <span><img src="assets/images/flag-germany.svg" height="15"></span><span class="text-capitalize">{{ 'german' | translate }}</span>
+                    </a>
+                </li>
+                <li>
+                    <a ng-click="main.switchLanguage('pt')">
+                        <span><img src="assets/images/flag-brazil.svg" height="15"></span><span class="text-capitalize">{{ 'portuguese' | translate }}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <a href="#" class="text-center logo"><img src="assets/images/blackshot-logo.png" alt="Image"></a>
+        
+        <h1 class="special-font pad-top-50"><div class="red" id="header-title-line-one">Running</div><div class="blue" id="header-title-line-two" style="margin-top: -30px;">Man</div></h1>
+        <h4 class="text-shadow white pad-bot-30" id="header-subtitle">CS 55</h4>
+        
+        <img src="assets/images/header-cartoon.png" class="header-cartoon pad-bot-70" alt="Image">
+        <img src="assets/images/header-char.png" class="header-char" alt="Image">
+
+        <a href="#section-one" class="text-center scroll-down" du-smooth-scroll du-scrollspy><i class="icon-header-mouse"></i><span class="text-uppercase" translate="{{ 'scrolldown' }}"></span></a>
+    </div> 
+</header>
+
+<section id="section-one">
+    <div class="divider"></div>
+    <div class="container pad-bot-70">
+        <img src="assets/images/new-flag.svg" class="center-block new-flag" alt="Image">
+        <h4 class="text-center text-uppercase pad-top-30">{{ 'new' | translate }} {{ 'mode' | translate }}! {{ 'new' | translate }} {{ 'map' | translate }}!</h4>
+        <h2 class="text-center text-capitalize special-font red pad-top-20 text-shadow">{{ 'section-one-title-one' | translate }}</h2>
+        <p class="text-center pad-top-20">{{ 'section-one-desc' | translate }}</p>
+        <p class="text-center" translate="{{ 'section-one-tip' }}"></p>
+        <iframe width="480" height="260" class="drop-shadow center-block" src="https://www.youtube.com/embed/X5t_C8g1nik?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <h2 class="text-center special-font text-shadow red pad-top-30 pad-bot-30">{{ 'section-one-title-two' | translate }}</h2>
+        
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="cartoon-container drop-shadow">
+                    <img src="assets/images/cartoon-cut-one.jpg" alt="Image">
+                    <h5 class="text-center text-uppercase pad-top-20">{{ 'section-one-cartoon-one-desc' | translate }}</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="cartoon-container drop-shadow">
+                    <img src="assets/images/cartoon-cut-two.jpg" alt="Image">
+                    <h5 class="text-center text-uppercase pad-top-20">{{ 'section-one-cartoon-two-desc' | translate }}</h5>
+                </div>
+            </div>
+        </div>
+        
+        <h2 class="text-center pad-top-20 pad-bot-20 text-shadow special-font blue">Or</h2>
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="cartoon-container drop-shadow">
+                    <img src="assets/images/cartoon-cut-three.jpg" alt="Image">
+                    <h5 class="text-center text-uppercase pad-top-20">{{ 'section-one-cartoon-three-desc' | translate }}</h5>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="cartoon-container drop-shadow">
+                    <img src="assets/images/cartoon-cut-four.jpg" alt="Image">
+                    <h5 class="text-center text-uppercase pad-top-20">{{ 'section-one-cartoon-four-desc' | translate }}</h5>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section id="section-two">
+    <div class="divider"></div>    
+    <div class="container pad-top-70 pad-bot-70">
+        <h2 class="text-center text-capitalize text-shadow red special-font pad-bot-50">{{ 'section-two-title-one' | translate }}</h2>
+
+        <div class="event-one drop-shadow">
+            <div style="width: 40%;">
+                <h3 class="text-uppercase blue accent-font">{{ 'section-two-img-one-title' | translate }}</h3>
+                <p class="white pad-top-10">{{ 'section-two-img-one-desc-sent-one' | translate }}</p>
+                <p class="white">{{ 'section-two-img-one-desc-sent-two' | translate }}</p>
+                <p class="white small">{{ 'section-two-img-one-ps' | translate }}</p>
+            </div>
+        </div>
+
+        <div class="event-two drop-shadow">
+            <div style="width: 40%;">
+                <h3 class="text-uppercase blue accent-font">{{ 'section-two-img-two-title' | translate }}</h3>
+                <p class="white pad-top-10">{{ 'section-two-img-two-desc' | translate }}</p>
+                <ul class="white">
+                    <li>{{ 'section-two-img-two-pt-one' | translate }}</li>
+                    <li>{{ 'section-two-img-two-pt-two' | translate }}</li>
+                </ul>
+                <p class="white small">{{ 'section-two-img-two-ps' | translate }}</p>
+            </div>
+        </div>
+        
+        <a class="cust-btn text-uppercase" style="margin-top: 50px;">{{ 'section-two-btn' | translate }}</a>
+
+        <h2 class="text-center text-capitalize special-font red text-shadow pad-top-50">{{ 'section-two-title-two' | translate }}</h2>
+        <p class="text-center white pad-top-20 pad-bot-20">{{ 'section-two-title-two-desc' | translate }}</p>
+
+        <img src="assets/images/section-two-screenshot.jpg" class="center-block drop-shadow" alt="Image">
+        <img src="assets/images/section-two-cartoon-characters.svg" class="center-block pad-top-30" alt="Image">
+    </div>
+</section>
+
+<section id="section-three">
+    <div class="divider"></div>
+    <div class="container pad-bot-70">
+        <img src="assets/images/new-flag.svg" class="center-block new-flag" alt="Image">
+
+        <h2 class="text-center special-font red text-shadow pad-top-50">{{ 'section-three-title-one' | translate }}</h2>
+        <h4 class="text-center text-uppercase pad-top-20 pad-bot-30" translate="{{ 'section-three-title-one-desc' }}"></h4>
+        
+        <div class="video-container">
+           <video class="center-block drop-shadow">
+                <source src="assets/video/fkey.mp4" type="video/mp4">
+                <source src="assets/video/fkey.ogv" type="video/ogv">
+            </video>
+
+            <img src="assets/images/section-three-blue-char.png" class="blue-char" alt="Image">
+            <img src="assets/images/section-three-red-char.png" class="red-char" alt="Image">
+        </div>
+        
+        <div style="width: 49%; float: left;">
+            <h4 class="text-center text-capitalize special-font red pad-top-50">{{ 'section-three-title-two' | translate }}</h4>
+            <p class="text-center pad-top-30" translate="{{ 'section-three-title-two-desc' }}"></p>
+            <img src="assets/images/widescreen.jpg" class="img-responsive">
+        </div>
+
+        <div style="width: 49%; float: right;">
+            <h4 class="text-center text-capitalize special-font red pad-top-50">protect the commander mode(PC) in clan war</h2>
+            <p class="text-center pad-top-30">Now, you can enjoy Protect Commander mode in Clan War</p><br>
+            <img src="assets/images/protectcommander.jpg" class="img-responsive" alt="Image"> 
+        </div>
+        
+        <div class="clearfix"></div>
+        <h2 class="text-center text-capitalize red special-font text-shadow pad-top-50 pad-bot-30">{{ 'section-three-title-three' | translate }}</h2>
+
+        <div class="carousel">
+            <div class="slides">
+                <div class="slideItem gold-box drop-shadow active-slide">
+                    <div class="carousel-image">
+                        <img src="assets/images/weapon-enfield.png">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">{{ 'section-three-gun-one-name' | translate }}</h4>
+                        <p>{{ 'section-three-gun-one-desc' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem drop-shadow">
+                    <div class="carousel-image">
+                        <img src="assets/images/weapon-hk416.png">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">{{ 'section-three-gun-two-name' | translate }}</h4>
+                        <p>{{ 'section-three-gun-two-desc' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem gold-box drop-shadow">
+                    <div class="carousel-image">
+                        <img src="assets/images/weapon-m24.png">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">{{ 'section-three-gun-three-name' | translate }}</h4>
+                        <p>{{ 'section-three-gun-three-desc' | translate }}</p>
+                    </div>
+                </div>
+                <div class="slideItem gold-box drop-shadow">
+                    <div class="carousel-image">
+                        <img src="assets/images/weapon-kris-vector.png">
+                    </div>
+                    <div class="description">
+                        <h4 class="text-uppercase text-center">{{ 'section-three-gun-four-name' | translate }}</h4>
+                        <p>{{ 'section-three-gun-four-desc' | translate }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <h2 class="text-center text-capitalize red text-shadow special-font pad-top-50 pad-bot-30">{{ 'section-three-title-four' | translate }}</h2>
+        
+        <video class="center-block drop-shadow" id="ak47">
+            <source src="assets/video/ak47.mp4" type="video/mp4">
+            <source src="assets/video/ak47.ogv" type="video/ogv">
+        </video>
+      
+        <div style="width: 50%; float: left;">
+            <h3 class="text-uppercase accent-font pad-top-30 pad-bot-20"> {{ 'section-three-ak47-name' | translate }}</h3>
+            <p class="pad-bot-20">{{ 'section-three-ak47-desc' | translate }}</p>
+            <a class="cust-btn text-uppercase">{{ 'section-three-btn' | translate }}</a>
+        </div>
+
+        <div style="width: 50%; float: left; margin-top: 30px;">
+            <div class="ct-chart"></div>
+        </div>
+    </div>
+</section>
+
+<section id="section-four">
+    <div class="divider"></div>
+    <div class="container">
+        <div style="width: 50%; float: left;">
+            <img src="assets/images/section-four-char.png" alt="Image">
+        </div>
+        <div style="width: 50%; float: left;">
+            <h1 class="text-uppercase red text-shadow accent-font">udt</h1>
+            <h4 class="text-uppercase white pad-bot-30">{{ 'section-four-desc' | translate }}</h4>
+            <iframe width="480" height="260" class="drop-shadow" style="margin-bottom: 50px;" src="https://www.youtube.com/embed/X5t_C8g1nik?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <a class="cust-btn text-uppercase">{{ 'section-four-btn' | translate }}</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <div class="divider"></div>
+    <div class="container">
+        <div class="pull-left"><img src="assets/images/vertigo-logo.svg" class="img-responsive" alt="Image"></div>
+        <div class="pull-right">&copy;2015 Vertigo Games, Inc. <span class="text-capitalize">{{ 'copyright' | translate }}</span></div>
+    </div>
+</footer>
+    
+<script>
+    $(document).ready(function() {
+
+      $('.carousel').carousel({
+          carouselWidth:960,
+          carouselHeight:340,
+          directionNav:true
+      });
+
+      var data = {  
+        labels: ['Damage', 'Fire Rate', 'Weight', 'Magazine', 'Accuracy'],
+        // Our series array that contains series objects or in this case series data arrays
+        series: [
+          [9.8, 1.5, 8, 1, 10]
+        ]
+      };
+
+      var options = {
+        height: 250,
+        axisX: {
+            showGrid: false
+        },
+        axisY: {
+            type: Chartist.FixedScaleAxis,
+            ticks: [0, 2, 4, 6, 8, 10]
+        }
+      }
+
+      var chart = new Chartist.Bar('.ct-chart', data, options);
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      // build scene
+      var scene = new ScrollMagic.Scene({triggerElement: "#ak47", duration: 340})
+        .addTo(controller)
+        // .addIndicators() // add indicators (requires plugin)
+        .on("start end", function (e) {
+          $("#ak47").get(0).play();
+        })
+    });
+</script>

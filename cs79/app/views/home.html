@@ -1,0 +1,388 @@
+<!--<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>-->
+<!--top-->
+<section class="section-1" ng-style="{'background-image':'url('+imgUrl+'bgs/top.jpg)'}">
+	<div class="container">
+		<!-- top nav starts -->
+		<div class="top-nav">
+			<div class="navlink"><a href="{{pathUrl[0].loc}}" target="_blank">{{ 'goback' | translate}}</a></div>
+			<div class="logo-wrapper">
+				<a href="{{pathUrl[0].loc}}" target="_blank">
+					<img ng-src="https://blackshot.s3.amazonaws.com/static/event/cs74/assets/images/BS_LOGO-Transparent.png"
+					     class="logo" alt="logo" style="width:300px;">
+				</a>
+			</div>
+			<div class="language-bar">
+				<div class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;">
+                            <img preload-image ng-src="{{imgUrl}}flag-{{ flag }}.svg" height="15" alt="flag">
+                        </span>
+						<span>{{ lang }}</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-uk.svg"
+                                     height="15" alt="english flag">
+                            </span>
+							<span translate="{{ 'english' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('de')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-germany.svg" height="15" alt="german flag">
+                            </span>
+							<span translate="{{ 'german' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('fr')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-france.svg" height="15"
+                                     alt="french flag"></span>
+							<span translate="{{ 'french' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('pt')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-brazil.svg" height="15"
+                                     alt="brazil flag"></span>
+							<span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- top nav ends -->
+		<div class="event-logo-cont" ng-style="{'background-image':'url('+imgUrl+'title-'+flag+'.png)'}" data-aos="zoom-in">
+		</div>
+		<div class="event-exp-cont" data-aos="fade-up">
+			<h2 class="title" translate="s1_title"></h2>
+			<p class="desc" translate="s1_desc"></p>
+		</div>
+	</div>
+</section>
+
+<!-- new weapons -->
+<section class="section-2" ng-style="{'background-image':'url('+imgUrl+'bgs/bg1.jpg)'}">
+	<div class="cont__texts" data-aos="fade-up">
+		<h3 class="texts__subtitle" translate="s2_subtitle"></h3>
+		<h2 class="texts__title" translate="s2_title"></h2>
+		<p class="texts__desc" translate="s2_desc"></p>
+	</div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}weapons/legionA_1.png" alt="">
+			<img ng-src="{{imgUrl}}weapons/legionA_2.png" alt="">
+		</slick>
+	</div>
+	<div class="cont__left_texts" data-aos="fade-up">
+		<h4 class="texts__subtitle" translate="s2_subtitle"></h4>
+		<h2 class="texts__title" translate="common_kaltec_title"></h2>
+		<p class="texts__desc" translate="common_kaltec_desc"></p>
+		<div class="btn--container">
+			<a href="{{imgUrl}}weapons/KALTEC_KSG_LEGION.mp4" class="see-btn-link various fancybox.iframe">{{'common_3dview' | translate}}</a>
+			<a href="{{imgUrl}}weapons/kaltec-stats.png" class="see-btn-link various">{{'stats' | translate}}</a>
+		</div>
+
+	</div>
+	<div class="div-line"></div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}weapons/legionB_1.png" alt="">
+			<img ng-src="{{imgUrl}}weapons/legionB_2.png" alt="">
+		</slick>
+	</div>
+	<div class="cont__left_texts" data-aos="fade-up">
+		<h4 class="texts__subtitle" translate="s2_subtitle"></h4>
+		<h2 class="texts__title" translate="common_p90_title"></h2>
+		<p class="texts__desc" translate="common_p90_desc"></p>
+		<div class="btn--container">
+			<a href="{{imgUrl}}weapons/P90_LEGION.mp4" class="see-btn-link various fancybox.iframe">{{'common_3dview' | translate}}</a>
+			<a href="{{imgUrl}}weapons/p90-stats.png" class="see-btn-link various fancybox.iframe">{{'stats' | translate}}</a>
+		</div>
+	</div>
+	<div class="div-line"></div>
+	<div class="cont__texts" data-aos="fade-up">
+		<p class="texts__desc" translate="s2_notice"></p>
+		<a href="{{pathUrl[1].loc}}" class="see-btn-link">{{'common_seefullcont' | translate}}</a>
+	</div>
+</section>
+
+<!-- new weapons -->
+<section class="section-3" ng-style="{'background-image':'url('+imgUrl+'bgs/bg2.jpg)'}">
+	<div class="cont__texts" data-aos="fade-up">
+		<h3 class="subtitle" translate="s3_subtitle"></h3>
+		<h2 class="title" translate="s3_title"></h2>
+		<p class="desc" translate="s3_desc"></p>
+	</div>
+	<div class="cont__how">
+		<div class="wrap__how">
+			<h5 class="title" translate="s3_box_title"></h5>
+			<p class="desc" translate="s3_box_desc"></p>
+		</div>
+		<div class="wrap__login">
+			<h5 class="title" ng-if="user.isLogin==false" translate="s3_sign_box_title"></h5>
+			<h5 class="title" ng-if="user.isLogin==true">{{'common_hello'|translate}}, {{user.userid}}</h5>
+			<p class="desc" ng-if="user.isLogin==false">{{'s3_sign_box_desc'|translate}}</p>
+			<div class="box__login" ng-if="user.isLogin==false">
+				<a href="https://www.papayaplay.com/account/signin.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs79" class="btn__login">{{'sign-in'|translate}}</a>
+				<a href="https://www.papayaplay.com/account/signup.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs79" class="btn__text">{{'create-account'|translate}}</a>
+			</div>
+			<div class="after__login" ng-if="user.isLogin==true">
+				<div class="userphoto">
+					<img ng-src="https://blackshotupload.s3.amazonaws.com/{{ user.photo }}" alt="" class="img-circle">
+					<div class="papaya-icon-wrapper"><i class="icon-papaya"></i></div>
+				</div>
+				<a href="https://www.papayaplay.com/account/signout.do?redirect_url=http%3A%2F%2Fevent.blackshot.com%2Fcs79" class="btn__text">{{'common_logout'|translate}}</a>
+			</div>
+		</div>
+	</div>
+	<div class="cont--popup-join" ng-if="event.isJoinPopup==true">
+		<i class="cs79-icon-close" aria-hidden="true" ng-click="event.isJoinPopup=false"></i>
+		<div class="title">{{'sign_popup_join_title'|translate}}</div>
+		<p class="desc">{{'sign_popup_join_desc'|translate}}</p>
+		<a href="" class="btn--join" ng-click="setJoinState(user.unid)">{{'common_wantjoin'|translate}}</a>
+	</div>
+	<div class="cont__join" ng-if="user.isLogin==true && event.isJoin==false">
+		<div class="left--title">{{'common_join_header'|translate}}</div>
+		<div class="right--btn"><a href="" class="btn__login" ng-click="event.isJoinPopup=true">{{'common_join_now'|translate}}</a></div>
+	</div>
+
+	<div class="cont__progress" ng-if="user.isLogin==true && event.isJoin==true">
+		<div class="pro__title" translate="common_your_progress"></div>
+		<div class="wrap__mid">
+		<div class="cir__mid">
+			<ul>
+				<li ng-repeat="(key,value) in event.missions" data-toggle="tooltip" data-placement="bottom" title="Day {{ key+1 }} | {{ value.date | amDateFormat:'DD/MM' }}"
+				    ng-class="{ 'active': value.ongoing,
+				                    'success': value.finished && value.cleared,
+				                    'fail': value.finished && !value.cleared}" ng-if="value.ongoing || value.finished" tooltip>
+					<i ng-class="{ 'cs79-icon-star': value.ongoing,
+				                    'cs79-icon-check': value.finished && value.cleared,
+				                    'cs79-icon-cross': value.finished && !value.cleared}"></i>
+				</li>
+				<li ng-repeat="(key,value) in event.missions" data-toggle="tooltip" data-placement="bottom" title="Day {{ key+1 }} | {{ value.date | amDateFormat:'DD/MM' }}" ng-if="!value.finished && !value.ongoing" class="normal" tooltip>
+					<i class="cs79-icon-lock"></i>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="wrap__circle">
+			<div class="cir__left">
+				<div class="title" translate="common_completed"></div>
+				<div class="count">{{ event.missionCompleted }}/22</div>
+			</div>
+
+			<div class="cir__right">
+				<div class="title" translate="common_reward"></div>
+				<div class="count">KALTEC KSG LEGION</div>
+			</div>
+		</div>
+	</div>
+	<div class="cont__daily" ng-if="user.isLogin==true && event.isJoin==true">
+		<ul class="wrap__dailyBox">
+			<li class="wrap__box" ng-repeat="(key, value) in event.missions">
+
+				<div class="box__close" ng-if="!value.finished && !value.ongoing">
+					<div class="day__tag">{{'day' | translate }} {{ key+1 }}</div>
+					<i class="cs79-icon-lock"></i>
+					<div class="data" ng-if="!value.next">{{ value.date | amDateFormat:'MMMM Do' }} CET</div>
+					<div class="data" ng-if="value.next">{{ value.countdown }}</div>
+				</div>
+
+				<div class="box__open" ng-if="value.ongoing || value.finished"
+				     ng-class="{ 'active': value.ongoing,
+				                 'success': value.finished && value.cleared,
+				                 'fail': value.finished && !value.cleared}">
+					<div class="wrap--day">
+						<div class="tag" ng-class="{ 'tag--active': value.ongoing,
+				     'tag--success': value.finished && value.cleared,
+				     'tag--fail': value.finished && !value.cleared}">{{'day' | translate }} {{ key+1 }}</div>
+						<div class="text">{{ value.date | amDateFormat:'MM/DD  |  dddd' }}</div>
+					</div>
+					<div class="cont--img">
+						<img ng-src="{{imgUrl}}prizes/prize{{key+1}}.png" class="wrap--img">
+					</div>
+					<div class="wrap--title">
+						<div class="prize" translate="{{ 'prize' }}"></div>
+						<div class="name">{{ value.GiftName }}</div>
+					</div>
+					<div class="div--line"></div>
+					<div class="wrap--achieve">
+						<div class="title" translate="{{ 'achievements' }}"></div>
+						<ul>
+							<li>
+								<i ng-class="{ 'cs79-icon-incomplete': value.Mission1 == 0, 'cs79-icon-completed': value.Mission1 == 1 }" ng-show="value.finished"></i>
+								<i ng-class="{ 'cs79-icon-open': value.Mission1 == 0, 'cs79-icon-completed': value.Mission1 == 1 }" ng-show="!value.finished"></i>
+								<div class="desc" translate="{{ 'day' + (key+1) + 'mission1' }}"></div>
+							</li>
+							<li>
+								<i ng-class="{ 'cs79-icon-incomplete': value.Mission1 == 0, 'cs79-icon-completed': value.Mission1 == 1 }" ng-show="value.finished"></i>
+								<i ng-class="{ 'cs79-icon-open': value.Mission1 == 0, 'cs79-icon-completed': value.Mission1 == 1 }" ng-show="!value.finished"></i>
+								<div class="desc" translate="{{ 'day' + (key+1) + 'mission2' }}"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="server-time">
+		<p><i class="icon-clock"></i>{{'server'|translate}} {{'time'|translate}} (CEST) {{ event.serverTime | amDateFormat:'H:mm A - MMMM DD' }}</p>
+	</div>
+</section>
+
+<!-- snow is gone -->
+<section class="section-4" ng-style="{'background-image':'url('+imgUrl+'bgs/bg3.jpg)'}">
+	<div class="container">
+		<div class="cont-left" data-aos="fade-up">
+			<h3 class="subtitle">{{'s4_subtitle'|translate}}</h3>
+			<h2 class="title">{{'s4_title'|translate}}</h2>
+			<p translate="s4_desc" class="context"></p>
+		</div>
+		<div class="cont-right" data-aos="fade-up">
+			<img ng-src="{{imgUrl}}event.png">
+		</div>
+	</div>
+</section>
+
+<!-- 200% exp-->
+<section class="section-5" ng-style="{'background-image':'url('+imgUrl+'bgs/bg4.jpg)'}">
+	<div class="s7--cont__texts" data-aos="fade-up">
+		<h3 class="texts__subtitle" translate="s5_subtitle"></h3>
+		<h2 class="texts__title" translate="s5_title"></h2>
+		<p class="texts__desc" translate="s5_desc"></p>
+	</div>
+	<ul class="s7--tabs" data-aos="fade-up">
+		<li class="s7--tab" ng-class="{active:s7tabIndex[0]}" ng-click="s7tabClick(0)">school</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[1]}" ng-click="s7tabClick(1)">sniper site</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[2]}" ng-click="s7tabClick(2)">scrap yard</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[3]}" ng-click="s7tabClick(3)">station (WR)</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[4]}" ng-click="s7tabClick(4)">summit (wr)</li>
+	</ul>
+	<div class="s7--map-cont" ng-show="s7tabIndex[0]" ng-class="{'animated fadeIn':s7tabIndex[0]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/school.jpg)'}">
+			<div class="bg__text">school</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[1]" ng-class="{'animated fadeIn':s7tabIndex[1]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/sniper.jpg)'}">
+			<div class="bg__text">sniper site</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[2]" ng-class="{'animated fadeIn':s7tabIndex[2]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/scrapyard.jpg)'}">
+			<div class="bg__text">scrap yard</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[3]" ng-class="{'animated fadeIn':s7tabIndex[3]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/station.jpg)'}">
+			<div class="bg__text">station (WR)</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[4]" ng-class="{'animated fadeIn':s7tabIndex[4]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/summit.jpg)'}">
+			<div class="bg__text">summit (wr)</div>
+		</div>
+	</div>
+</section>
+
+<!--2018 reason why-->
+<section class="section-6" ng-style="{'background-image':'url('+imgUrl+'bgs/bg5.jpg)'}">
+	<div class="cont__texts">
+		<h3 class="subtitle" translate="s6_subtitle"></h3>
+		<h2 class="title" translate="s6_title"></h2>
+		<p class="desc" translate="s6_desc"></p>
+		<a class="gold-btn-link" href="{{pathUrl[2].loc}}" target="_blank">{{'common_full_goldbox_list' | translate}}</a>
+	</div>
+	<div class="cont__slider">
+		<slick class="slider-wrap" settings="slickConfig" id="slick1">
+			<img ng-src="{{imgUrl}}goldbox/goldbox1.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox2.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox3.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox4.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox5.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox6.png" alt="">
+		</slick>
+	</div>
+</section>
+
+<!-- gm event -->
+<section class="section-7" ng-style="{'background-image':'url('+imgUrl+'bgs/bg6.jpg)'}">
+	<div class="container">
+		<div class="cont-left">
+			<h3 class="subtitle">{{'s7_subtitle'|translate}}</h3>
+			<h2 class="title">{{'s7_title'|translate}}</h2>
+			<p translate="s7_desc" class="context"></p>
+			<div class="calender-wrap">
+				<div class="cal-left">
+					<i class="icon-calendar"></i>
+				</div>
+				<div class="cal-right">
+					<p translate="s7_date"></p>
+				</div>
+			</div>
+			<a class="see-btn-link" href="{{pathUrl[3].loc}}" target="_blank">{{'more-info' | translate}}</a>
+		</div>
+		<div class="cont-right"></div>
+	</div>
+</section>
+
+<!-- live streaming -->
+<section class="section-8" ng-style="{'background-image':'url('+imgUrl+'bgs/bg7.jpg)'}">
+	<div class="container">
+		<h3 class="subtitle">{{'s8_subtitle'|translate}}</h3>
+		<h2 class="title">{{'s8_title'|translate}}</h2>
+		<p translate="s8_desc" class="context"></p>
+		<ul class="cont--video-box">
+			<a href="https://www.youtube.com/watch?v=BfrnPFTdcGI&t=34s" class="various fancybox.iframe"><li class="box" ng-style="{'background-image':'url('+imgUrl+'thumb-german.jpg)'}"></li></a>
+			<a href="https://www.youtube.com/watch?v=ty9jk-Pjq90&t=4677s" class="various fancybox.iframe"><li class="box" ng-style="{'background-image':'url('+imgUrl+'thumb-br.jpg)'}"></li></a>
+			<a href="https://youtu.be/DiF0wBDHbbU" class="various fancybox.iframe"><li class="box" ng-style="{'background-image':'url('+imgUrl+'thumb-sea.jpg)'}"></li></a>
+		</ul>
+		<a class="btn--channel" href="https://www.youtube.com/channel/UCfQMEybHcEKTwvOs9lIbriQ" target="_blank">{{'more-info' | translate}}</a>
+	</div>
+</section>
+
+<script>
+	AOS.init({
+		offset: -500,
+		duration: 1000,
+		delay: 100
+	});
+	$(document).ready(function() {
+		$('.various').fancybox({
+			maxWidth    : 800,
+			maxHeight   : 600,
+			fitToView   : false,
+			width       : '70%',
+			height      : '70%',
+			autoSize    : false,
+			closeClick  : false,
+			openEffect  : 'none',
+			closeEffect : 'none'
+		});
+	});
+</script>
+<footer id="footer">
+	<div class="container">
+		<div class="flex-align-items flex-justify-between flex-container">
+			<div class="item1">
+				<a href="{{pathUrl[4].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+				                                  style="width:142px;"></a>
+			</div>
+			<div class="item2">
+				<p class="copyright">{{ 'copyright' | translate }}</p>
+			</div>
+			<div class="item3">
+				<a href="{{pathUrl[5].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+				                                  style="width:161px;"></a>
+			</div>
+		</div>
+	</div>
+</footer>

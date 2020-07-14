@@ -1,0 +1,421 @@
+<!--<nav id="side-nav">
+    <ul class="text-center">
+        <li><a href="#section-one" class="home fa fa-angle-double-up" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="HOME"></a></li>
+        <li><a href="#section-two" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="LUCKYBOX"></a></li>
+        <li><a href="#section-three" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="MISSIONS"></a></li>
+        <li><a href="#section-four" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="STEAM"></a></li>
+        <li><a href="#section-five" class="bullet" du-smooth-scroll du-scrollspy data-placement="left" data-toggle="tooltip" title="DISCORD"></a></li>
+    </ul>
+</nav>-->
+<!--sec1 top-->
+<section class="section-1" ng-style="{'background-image':'url('+imgUrl+'bgs/bg1-top.jpg)'}">
+	<div class="container">
+		<!-- top nav starts -->
+		<div class="top-nav">
+			<div class="navlink"><a href="{{pathUrl[0].loc}}" target="_blank">{{ 'goback' | translate}}</a></div>
+			<div class="logo-wrapper">
+				<a href="{{pathUrl[0].loc}}" target="_blank">
+					<img ng-src="https://blackshot.s3.amazonaws.com/static/event/cs74/assets/images/BS_LOGO-Transparent.png"
+					     class="logo" alt="logo" style="width:300px;">
+				</a>
+			</div>
+			<div class="language-bar">
+				<div class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+                        <span style="padding-right: 10px;">
+                            <img preload-image ng-src="{{imgUrl}}flag-{{ flag }}.svg" height="15" alt="flag">
+                        </span>
+						<span>{{ lang }}</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li ng-click="switchLanguage('en')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-uk.svg"
+                                     height="15" alt="english flag">
+                            </span>
+							<span translate="{{ 'english' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('de')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-germany.svg" height="15" alt="german flag">
+                            </span>
+							<span translate="{{ 'german' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('fr')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-france.svg" height="15"
+                                     alt="french flag"></span>
+							<span translate="{{ 'french' }}"></span>
+						</li>
+						<li ng-click="switchLanguage('pt')">
+                            <span>
+                                <img preload-image ng-src="{{imgUrl}}flag-brazil.svg" height="15"
+                                     alt="brazil flag"></span>
+							<span class="text-capitalize" translate="{{ 'portuguese' }}"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- top nav ends -->
+		<div class="event-logo-cont" ng-style="{'background-image':'url('+imgUrl+'title-'+flag+'.png)'}"
+		     data-aos="zoom-in">
+		</div>
+		<div class="part--cont">
+			<a href="http://event.blackshot.com/cs77/" class="part--left__btn active">Part 1</a>
+			<a href="http://event.blackshot.com/cs77_2/" class="part--right__btn">Part 2</a>
+		</div>
+		<div class="event-exp-cont" data-aos="fade-up">
+			<p class="desc" translate="s1-text1"></p>
+		</div>
+	</div>
+	<div class="s1--cont" data-aos="fade-up">
+		<img ng-src="{{imgUrl}}cake.png" class="s1__img" alt="">
+		<h2 class="s1__title" translate="s2-title"></h2>
+		<p class="s1__desc" translate="s2-text1"></p>
+	</div>
+</section>
+<!--sec3 urf mode-->
+<section class="section-2" ng-style="{'background-image':'url('+imgUrl+'bgs/bg3.jpg)'}">
+	<div class="s2--cont__texts" data-aos="fade-up">
+		<h3 class="texts__subtitle" translate="s3-subtitle"></h3>
+		<h2 class="texts__title" translate="s3-title"></h2>
+		<div class="texts--textbox">
+			<p class="textbox__desc" translate="s3-text1"></p>
+		</div>
+	</div>
+	<ul class="s2--cont__maps" data-aos="fade-up">
+		<li class="maps--li">
+			<div class="maps--slider">
+				<img ng-src="{{imgUrl}}urf/map1_a.jpg" alt="">
+			</div>
+			<p class="maps__title">LOST TEMPLE HALLOWEEN</p>
+		</li>
+		<li class="maps--li">
+			<div class="maps--slider">
+				<img ng-src="{{imgUrl}}urf/map2_a.jpg" alt="">
+			</div>
+			<p class="maps__title">OFFICE</p>
+		</li>
+		<li class="maps--li">
+			<div class="maps--slider">
+				<img ng-src="{{imgUrl}}urf/map3_a.jpg" alt="">
+			</div>
+			<p class="maps__title">ICE CAVE</p>
+		</li>
+	</ul>
+</section>
+<!--sec4 new map -->
+<section class="section-3" ng-style="{'background-image':'url('+imgUrl+'bgs/bg4.jpg)'}">
+	<div class="container">
+		<div class="s4-title-wrap">
+			<h3 translate="s4-subtitle" data-aos="fade-up"></h3>
+			<h2 translate="s4-title" data-aos="fade-up"></h2>
+			<p translate="s4-text1" data-aos="fade-up"></p>
+		</div>
+		<div class="map-cont">
+			<div class="map-left" data-aos="fade-right">
+				<div class="pageNoWrap">
+					<p>{{slickIndex0}}/4</p>
+				</div>
+				<slick class="slider-wrap" settings="slickConfig" id="slick0">
+					<img ng-src="{{imgUrl}}new-map/new-map1.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/new-map2.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/new-map3.jpg" alt="">
+					<img ng-src="{{imgUrl}}new-map/new-map4.jpg" alt="">
+				</slick>
+			</div>
+			<div class="map-right" data-aos="fade-left">
+				<p class="map__title" translate="s4-title"></p>
+				<div class="blueprint" ng-style="{'background-image':'url('+imgUrl+'new-map/new-map-view.png)'}">
+					<div class="point1">
+						<div class="point" ng-init="point1Visible = false" ng-mouseover="point1Visible = true"
+						     ng-mouseleave="point1Visible = false">
+							<span class="pulse1"></span>
+							<span class="pulse2"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-a.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point1Visible"
+						     ng-style="{'background-image':'url('+imgUrl+'new-map/pointA.jpg)'}"></div>
+					</div>
+
+					<div class="point2">
+						<div class="point" ng-init="point2Visible = false" ng-mouseover="point2Visible = true"
+						     ng-mouseleave="point2Visible = false">
+							<span class="pulse1-1"></span>
+							<span class="pulse2-1"></span>
+							<img width="25px" height="25px"
+							     ng-src="{{imgUrl}}point-b.svg">
+						</div>
+						<div class="tb ng-hide" ng-show="point2Visible"
+						     ng-style="{'background-image':'url('+imgUrl+'new-map/pointB.jpg)'}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Sec3; End -->
+
+<!--Sec4; 10th anniversary -->
+<section class="section-4" ng-style="{'background-image':'url('+imgUrl+'bgs/bg5.jpg)'}">
+	<div class="s4--cont__texts" data-aos="fade-up">
+		<img ng-src="{{imgUrl}}tournament/bst-logo.png" alt="">
+		<h3 class="texts__subtitle" translate="s5-subtitle"></h3>
+		<h2 class="texts__title" translate="s5-title"></h2>
+		<p class="texts__desc" translate="s5-text"></p>
+	</div>
+	<ul class="s4--ul">
+		<li class="s4--li" data-aos="fade-up" data-aos-delay="1500">
+			<div class="ul__img">
+				<img ng-src="{{imgUrl}}tournament/img-2nd.png" alt="">
+			</div>
+			<div class="ul__textbox silver">{{'s5-box2-title'|translate}}</div>
+
+			<ul class="sub--boxes">
+				<li translate="prizes"></li>
+				<li>Silver Tournament Trophy 365d</li>
+				<li><img ng-src="{{imgUrl}}tournament/silver-bsc.png"> 10,000 BSC</li>
+				<li>Blazing Glory Sniper - 180 {{'days'|translate}}</li>
+				<li>Blazing Glory Melee - 180 {{'days'|translate}}</li>
+			</ul>
+		</li>
+		<li class="s4--li" data-aos="fade-up" data-aos-delay="1000">
+			<div class="ul__img">
+				<img ng-src="{{imgUrl}}tournament/img-1st.png" alt="">
+			</div>
+			<div class="ul__textbox gold">{{'s5-box1-title'|translate}}</div>
+
+			<ul class="sub--boxes">
+				<li translate="prizes"></li>
+				<li>Gold Tournament Trophy 365d</li>
+				<li><img ng-src="{{imgUrl}}tournament/gold-bsc.png"> 25,000 BSC</li>
+				<li>Blazing Glory Sniper - 360 {{'days'|translate}}</li>
+				<li>Blazing Glory Melee - 360 {{'days'|translate}}</li>
+			</ul>
+		</li>
+		<li class="s4--li" data-aos="fade-up" data-aos-delay="2000">
+			<div class="ul__img">
+				<img ng-src="{{imgUrl}}tournament/img-3rd.png" alt="">
+			</div>
+			<div class="ul__textbox blonze">{{'s5-box3-title'|translate}}</div>
+
+			<ul class="sub--boxes">
+				<li translate="prizes"></li>
+				<li>Bronze Tournament Trophy 365d</li>
+				<li><img ng-src="{{imgUrl}}tournament/bronze-bsc.png"> 5,000 BSC</li>
+				<li>Blazing Glory Sniper - 90 {{'days'|translate}}</li>
+				<li>Blazing Glory Melee - 90 {{'days'|translate}}</li>
+			</ul>
+		</li>
+	</ul>
+	<a href="{{pathUrl[1].loc}}" class="btn--tour">{{'s5-box-btn-text'|translate}}</a>
+	<div class="s4--bet-cont" data-aos="fade-up">
+		<div class="bet__left">
+			<h2 class="bet__title" translate="s6-title"></h2>
+			<p class="bet__desc" translate="s6-text"></p>
+			<a href="{{pathUrl[2].loc}}" class="btn--bet" translate="s6-btn-text"></a>
+		</div>
+		<div class="bet__right">
+			<img ng-src="{{imgUrl}}tournament/img-prizes.png" alt="">
+		</div>
+	</div>
+</section>
+<!--Sec5; sales -->
+<section class="section-5" ng-style="{'background-image':'url('+imgUrl+'bgs/bg6.jpg)'}">
+	<div class="s5--cont__texts" data-aos="fade-up">
+		<img src="" alt="">
+		<h3 class="texts__subtitle" translate="s7-subtitle"></h3>
+		<h2 class="texts__title" translate="s7-title"></h2>
+		<p class="texts__desc" translate="s7-text"></p>
+	</div>
+	<ul class="s5--ul" data-aos="fade-up">
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item1.png)'}">
+				<div class="item__desc">Gold Dragon Package</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item2.png)'}">
+				<div class="item__desc">Silver Dragon Package</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item3.png)'}">
+				<div class="item__desc">Samurai Mask</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item4.png)'}">
+				<div class="item__desc">Crimson Package Assassin</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item5.png)'}">
+				<div class="item__desc">crimson Package Assault</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item6.png)'}">
+				<div class="item__desc">Formal Hat</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item7.png)'}">
+				<div class="item__desc">Patrol Suit</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item8.png)'}">
+				<div class="item__desc">Hog Wild Mask</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item9.png)'}">
+				<div class="item__desc">Hog Wild Bag</div>
+			</div>
+		</li>
+		<li class="s5--li">
+			<div class="item--cont" ng-style="{'background-image':'url('+imgUrl+'items/item10.png)'}">
+				<div class="item__desc">Red beret</div>
+			</div>
+		</li>
+
+	</ul>
+</section>
+<!--Sec6; goldboxes -->
+<section class="section-6" ng-style="{'background-image':'url('+imgUrl+'bgs/bg7.jpg)'}">
+	<div class="container">
+		<h3 data-aos="fade-up" translate="s8-subtitle"></h3>
+		<h2 data-aos="fade-up">GOLDBOXES</h2>
+		<p class="text-desc" translate="s8-text" data-aos="fade-up"></p>
+		<a class="see-btn-link" href="{{pathUrl[3].loc}}" target="_blank">
+			<div class="see-btn" data-aos="fade-up"><p class="text">{{'goldbox-info' | translate}}</p></div>
+		</a>
+	</div>
+</section>
+<section class="section-6-1" ng-style="{'background-image':'url('+imgUrl+'bgs/bg8.jpg)'}">
+	<div class="container" data-aos="fade-up">
+		<slick class="slider-wrap" settings="slickConfig">
+			<img ng-src="{{imgUrl}}goldbox/goldbox-item1.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox-item2.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox-item3.png" alt="">
+			<img ng-src="{{imgUrl}}goldbox/goldbox-item4.png" alt="">
+		</slick>
+	</div>
+</section>
+
+<section class="section-7" ng-style="{'background-image':'url('+imgUrl+'bgs/bg9.jpg)'}">
+	<div class="s7--cont__texts" data-aos="fade-up">
+		<img src="" alt="">
+		<h3 class="texts__subtitle" translate="s9-subtitle"></h3>
+		<h2 class="texts__title" translate="s9-title"></h2>
+		<p class="texts__desc" translate="s9-text"></p>
+	</div>
+	<ul class="s7--tabs" data-aos="fade-up">
+		<li class="s7--tab" ng-class="{active:s7tabIndex[0]}" ng-click="s7tabClick(0)">sand storm ii</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[1]}" ng-click="s7tabClick(1)">Lost Temple</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[2]}" ng-click="s7tabClick(2)">Sand Storm I</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[3]}" ng-click="s7tabClick(3)">Hans Cargo</li>
+		<li class="s7--tab" ng-class="{active:s7tabIndex[4]}" ng-click="s7tabClick(4)">Summit</li>
+	</ul>
+	<div class="s7--map-cont" ng-show="s7tabIndex[0]" ng-class="{'animated fadeIn':s7tabIndex[0]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/sandstorm2.jpg)'}">
+			<div class="bg__text">sand storm ii</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[1]" ng-class="{'animated fadeIn':s7tabIndex[1]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/lost-temple.jpg)'}">
+			<div class="bg__text">Lost Temple</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[2]" ng-class="{'animated fadeIn':s7tabIndex[2]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/sandstorm1.jpg)'}">
+			<div class="bg__text">Sand Storm I</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[3]" ng-class="{'animated fadeIn':s7tabIndex[3]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/hans-cargo.jpg)'}">
+			<div class="bg__text">Hans Cargo</div>
+		</div>
+	</div>
+	<div class="s7--map-cont" ng-show="s7tabIndex[4]" ng-class="{'animated fadeIn':s7tabIndex[4]}">
+		<div class="map__bg" ng-style="{'background-image':'url('+imgUrl+'boost/summit.jpg)'}">
+			<div class="bg__text">Summit</div>
+		</div>
+	</div>
+</section>
+
+<section class="section-8" ng-style="{'background-image':'url('+imgUrl+'bgs/bg10.jpg)'}">
+	<div class="container">
+		<div class="cont-left" data-aos="fade-up">
+			<h2>{{'s10-title'|translate}}</h2>
+			<p translate="s10-text" class="context"></p>
+			<div class="calender-wrap">
+				<div class="cal-left">
+					<i class="icon-calendar"></i>
+				</div>
+				<div class="cal-right">
+					<p>
+						<span class="text-bold">Every {{'wednesday' | translate}}</span><br>
+						From 03.11.17 to 15.12.17<br>
+						20:00 (CST)
+					</p>
+				</div>
+			</div>
+			<a class="see-btn-link" href="{{pathUrl[4].loc}}" target="_blank">
+				<div class="see-btn"><p class="text">{{'more-info' | translate}}</p></div>
+			</a>
+		</div>
+		<div class="cont-right" data-aos="fade-up">
+			<img ng-src="{{imgUrl}}events/mastering-char.png">
+		</div>
+	</div>
+</section>
+<!--Sec6; Mastering zone control: End -->
+
+<script>
+	AOS.init({
+		offset: -500,
+		duration: 1000,
+		delay: 100
+	})
+	$('.various').fancybox({
+		maxWidth: 800,
+		maxHeight: 600,
+		fitToView: false,
+		width: '70%',
+		height: '70%',
+		autoSize: false,
+		closeClick: false,
+		openEffect: 'none',
+		closeEffect: 'none'
+	});
+
+	$('.mid-item-box').on('mouseover', function () {
+		$(this).find('.mid-text-state').removeClass('mid-out').addClass('mid-hover');
+	})
+
+	$('.mid-item-box').on('mouseout', function () {
+		$(this).find('.mid-text-state').removeClass('mid-hover').addClass('mid-out');
+	})
+</script>
+<footer id="footer">
+	<div class="container">
+		<div class="flex-align-items flex-justify-between flex-container">
+			<div class="item1">
+				<a href="{{pathUrl[5].loc}}"><img ng-src="{{imgUrl}}papaya-white-logo.svg" alt="papaya game logo"
+				                                  style="width:142px;"></a>
+			</div>
+			<div class="item2">
+				<p class="copyright">{{ 'copyright' | translate }}</p>
+			</div>
+			<div class="item3">
+				<a href="{{pathUrl[6].loc}}"><img ng-src="{{imgUrl}}vertigo-white-logo.svg" alt="vertigo game logo"
+				                                  style="width:161px;"></a>
+			</div>
+		</div>
+	</div>
+</footer>

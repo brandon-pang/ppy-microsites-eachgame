@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext);
+
+// font //
+$font-size-normal: 1.4rem;
+$font-size-large: 3rem;
+$font-size-small: 1rem;
+
+$font-weight-normal: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 600;
+$font-weight-extra-bold: 700;
+
+
+// color //
+$white-color: #fff;
+$black-color: #000;
+$brand-color-red: #dc273b;
+$brand-color-blue: #1699f5;
+$bg-color: #1e1e1e;
+
+// url //
+$url-header-bg: url('../images/header-bg.jpg');
+$url-section-one-bg: url('../images/section-one-bg.jpg');
+$url-section-two-bg: url('../images/section-two-bg.jpg');
+$url-section-two-event-one: url('../images/section-two-event-one.jpg');
+$url-section-two-event-two: url('../images/section-two-event-two.jpg');
+$url-section-three-bg: url('../images/section-three-bg.jpg');
+$url-section-four-bg: url('../images/section-four-bg.jpg');
+
+$url-blackshot-logo: url('../images/blackshot-logo.png');
+$url-weapon-bg-regular: url('../images/weapon-bg-regular.jpg');
+$url-weapon-bg-goldbox: url('../images/weapon-bg-goldbox.jpg');
+
+// font-family //
+$font-family-default: "proxima-nova", verdana, sans-serif;
+$font-family-accent: "proxima-nova-alt-ext-cond", verdana, sans-serif;
+$special-font: 'Lobster', cursive;
