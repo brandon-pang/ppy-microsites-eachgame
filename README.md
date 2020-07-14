@@ -1,6 +1,18 @@
-# bsm-news
+# Microsite for BlackShot on the papayaplay.com 
 
-## Project setup
+### Spec
+> - AngularJS 1.5
+> - SASS
+
+### Link
+> - [BlackShot Microsites](https://blackshot.papayaplay.com/bsglb.do?tp=update)
+
+### Each folders 
+```
+cd /folders/package.json
+```
+
+### Project setup
 ```
 npm install
 ```
@@ -19,11 +31,3 @@ npm run build
 ```
 npm run test
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
