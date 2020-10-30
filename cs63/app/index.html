@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BlackShot CS56 - Winter Battle Field</title>
+        <!-- link css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc4/angular-material.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.4/chartist.min.css">
+
+        <!-- build:css(.tmp) assets/styles/main.css -->
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <!-- endbuild -->
+        
+        <!-- <base href="/"> -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body ng-app="cs56" ng-cloak>
+        
+        <div ui-view></div>
+
+        <script src="https://use.typekit.net/kaf5zba.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+        <!-- angularjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-cookies.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0-rc4/angular-material.min.js"></script> -->
+        
+        <!-- angular ui-router -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+        <!-- angular translate  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.8.1/angular-translate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.8.1/angular-translate-storage-cookie.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.8.1/angular-translate-storage-local.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.8.1/angular-translate-loader-static-files.min.js"></script>
+        
+        <!-- angular scroll -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/0.7.3/angular-scroll.min.js"></script>
+
+        <!-- scroll magic  -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+        <!-- chartist -->
+        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.8.0/angular-spinner.min.js"></script> -->
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-40809004-7', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+        <!-- build:js({.tmp,app}) assets/scripts/scripts.js -->
+        <!-- angular loadingbar -->
+        <script src="assets/libs/loading-bar.js"></script>
+        <script src="assets/libs/jquery.lettering.js"></script>
+        <script src="assets/libs/circletype.min.js"></script>
+        <!-- <script src="assets/libs/snowstorm.js"></script> -->
+        <script src="assets/libs/modernizr.js"></script>
+        <script src="assets/libs/angular-preload-image.min.js"></script>
+        
+        <!-- scripts -->
+        <script src="assets/scripts/app.js"></script>
+        <script src="assets/scripts/controller.js"></script>
+        <!-- endbuild -->
+
+    </body>
+</html>

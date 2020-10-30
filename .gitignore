@@ -12,4 +12,9 @@
 */.DS_Store
 */config.codekit3
 */Gruntfile-min.js
+/.DS_Store/
+.DS_Store
+*/Package-lock.json
+*/.eslintrc.js
+*/.jshintrc
 
